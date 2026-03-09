@@ -1,0 +1,128 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+  --section-bg: #0b1222;
+  --section-overlay:
+    linear-gradient(125deg, rgba(14, 165, 233, 0.16), rgba(99, 102, 241, 0.12)),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.08),
+      transparent 35%
+    );
+  color: #e2e8f0;
+  padding: 4.6rem 0 2.2rem;
+}
+
+.footer__container {
+  @include container;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.1fr;
+  gap: 1.2rem;
+}
+
+.footer__brand,
+.footer__col {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 0.95rem;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.footer__title {
+  margin: 0 0 0.7rem;
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+.footer__text {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.footer__socials {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer__social {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.36);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.footer__social:hover {
+  background: rgba(14, 165, 233, 0.2);
+  border-color: rgba(14, 165, 233, 0.8);
+}
+
+.footer__link {
+  display: block;
+  margin: 0 0 0.45rem;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: #7dd3fc;
+}
+
+.footer__cta {
+  margin-top: 0.85rem;
+  border-color: rgba(125, 211, 252, 0.6);
+  color: #f8fafc;
+  background: rgba(14, 165, 233, 0.22);
+}
+
+.footer__cta:hover {
+  background: rgba(14, 165, 233, 0.35);
+}
+
+.footer__bottom {
+  @include container;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.footer__copyright {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+@include respond-max($breakpoint-tablet) {
+  .footer__container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include respond-max($breakpoint-mobile) {
+  .footer {
+    padding: 3.4rem 0 1.8rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}

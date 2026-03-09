@@ -1,0 +1,28 @@
+.button {
+  display: inline-flex;
+  padding: 0.7rem 1.1rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button--primary {
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(14, 165, 233, 0.35);
+}
+
+.button--secondary {
+  border-color: var(--color-button-secondary-border);
+  color: var(--color-button-secondary-text);
+  background: var(--color-button-secondary-bg);
+  backdrop-filter: blur(2px);
+}

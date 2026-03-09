@@ -1,0 +1,107 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--color-nav-bg);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-nav__container {
+  @include container;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-nav__logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-bg);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.site-nav__list {
+  order: 2;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  gap: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.site-nav__link:hover {
+  color: var(--color-accent);
+}
+
+.site-nav__toggle {
+  order: 3;
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 45%, var(--color-border));
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
+  cursor: pointer;
+  padding: 0.35rem;
+  margin-left: 0.75rem;
+  box-shadow: 0 6px 14px rgba(2, 6, 23, 0.12);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.site-nav__toggle-line {
+  display: block;
+  height: 2px;
+  background: color-mix(in srgb, var(--color-bg) 70%, var(--color-accent));
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+.site-nav__toggle:hover {
+  background: color-mix(in srgb, var(--color-accent) 22%, var(--color-surface));
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+@include respond-max($breakpoint-mobile) {
+  .site-nav__container {
+    position: relative;
+  }
+
+  .site-nav__list {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 1rem;
+    right: 1rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.85rem;
+    z-index: 10;
+  }
+
+  .site-nav__list--open {
+    display: flex;
+  }
+}

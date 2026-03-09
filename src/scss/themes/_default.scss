@@ -1,0 +1,246 @@
+.page--home {
+  min-height: 100vh;
+}
+
+.page--theme-ocean {
+  --color-bg: #0b1324;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #475569;
+  --color-accent: #0ea5e9;
+  --color-border: #e2e8f0;
+  --color-nav-bg: rgba(255, 255, 255, 0.9);
+  --color-surface-soft: #f8fafc;
+  --color-chip-bg: #e0f2fe;
+  --color-chip-border: #bae6fd;
+  --color-chip-text: #0369a1;
+  --color-card-back-text: #e2e8f0;
+  --color-card-back-meta: #bfdbfe;
+  --color-hero-eyebrow: #bae6fd;
+  --color-hero-title: #ffffff;
+  --color-hero-description: #dbeafe;
+  --color-hero-card-bg: rgba(15, 23, 42, 0.58);
+  --color-hero-card-border: rgba(255, 255, 255, 0.25);
+  --color-hero-card-text: #ffffff;
+  --color-hero-card-muted: #e0f2fe;
+  --hero-overlay-start: rgba(2, 6, 23, 0.78);
+  --hero-overlay-mid: rgba(2, 6, 23, 0.58);
+  --hero-overlay-end: rgba(2, 6, 23, 0.7);
+  --hero-overlay-accent: rgba(14, 165, 233, 0.2);
+  --font-body: "DM Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --gradient-page:
+    radial-gradient(circle at 10% 10%, #dbeafe 0%, rgba(219, 234, 254, 0) 36%),
+    radial-gradient(circle at 90% 0%, #e0f2fe 0%, rgba(224, 242, 254, 0) 34%),
+    #f8fafc;
+}
+
+.page--theme-editorial {
+  --color-bg: #2d1f1a;
+  --color-surface: #fffaf5;
+  --color-text: #2f2825;
+  --color-muted: #6e5d54;
+  --color-accent: #b45309;
+  --color-border: #ecdccf;
+  --color-nav-bg: rgba(255, 250, 245, 0.9);
+  --color-surface-soft: #f9efe5;
+  --color-chip-bg: #ffedd5;
+  --color-chip-border: #fdba74;
+  --color-chip-text: #9a3412;
+  --color-card-back-text: #ffedd5;
+  --color-card-back-meta: #fed7aa;
+  --color-hero-eyebrow: #fed7aa;
+  --color-hero-title: #fff7ed;
+  --color-hero-description: #ffedd5;
+  --color-hero-card-bg: rgba(68, 27, 13, 0.55);
+  --color-hero-card-border: rgba(255, 255, 255, 0.22);
+  --color-hero-card-text: #fff7ed;
+  --color-hero-card-muted: #ffedd5;
+  --hero-overlay-start: rgba(28, 25, 23, 0.68);
+  --hero-overlay-mid: rgba(68, 27, 13, 0.56);
+  --hero-overlay-end: rgba(120, 53, 15, 0.66);
+  --hero-overlay-accent: rgba(251, 146, 60, 0.16);
+  --font-body: "DM Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --gradient-page:
+    radial-gradient(circle at 8% 6%, #ffedd5 0%, rgba(255, 237, 213, 0) 38%),
+    radial-gradient(circle at 92% 4%, #fee2e2 0%, rgba(254, 226, 226, 0) 34%),
+    #fffaf5;
+}
+
+.page--theme-noir {
+  --color-bg: #08090f;
+  --color-surface: #11131b;
+  --color-text: #e2e8f0;
+  --color-muted: #94a3b8;
+  --color-accent: #22d3ee;
+  --color-border: #243041;
+  --color-nav-bg: rgba(8, 9, 15, 0.85);
+  --color-surface-soft: #161b26;
+  --color-chip-bg: #113645;
+  --color-chip-border: #1d4b5e;
+  --color-chip-text: #a5f3fc;
+  --color-card-back-text: #e2e8f0;
+  --color-card-back-meta: #a5f3fc;
+  --color-hero-eyebrow: #67e8f9;
+  --color-hero-title: #f8fafc;
+  --color-hero-description: #cbd5e1;
+  --color-hero-card-bg: rgba(2, 6, 23, 0.62);
+  --color-hero-card-border: rgba(103, 232, 249, 0.24);
+  --color-hero-card-text: #f8fafc;
+  --color-hero-card-muted: #bae6fd;
+  --hero-overlay-start: rgba(2, 6, 23, 0.84);
+  --hero-overlay-mid: rgba(2, 6, 23, 0.72);
+  --hero-overlay-end: rgba(15, 23, 42, 0.78);
+  --hero-overlay-accent: rgba(34, 211, 238, 0.2);
+  --font-body: "DM Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --gradient-page:
+    radial-gradient(circle at 12% 8%, #0f172a 0%, rgba(15, 23, 42, 0) 34%),
+    radial-gradient(circle at 92% 6%, #164e63 0%, rgba(22, 78, 99, 0) 32%),
+    #05070d;
+}
+
+.page--theme-sunset {
+  --color-bg: #3b1023;
+  --color-surface: #fff7ed;
+  --color-text: #3f2a24;
+  --color-muted: #7a5a51;
+  --color-accent: #f97316;
+  --color-border: #fed7aa;
+  --color-nav-bg: rgba(255, 247, 237, 0.9);
+  --color-surface-soft: #ffedd5;
+  --color-chip-bg: #ffedd5;
+  --color-chip-border: #fdba74;
+  --color-chip-text: #9a3412;
+  --color-card-back-text: #ffedd5;
+  --color-card-back-meta: #fed7aa;
+  --color-button-secondary-text: #fff7ed;
+  --color-button-secondary-bg: rgba(255, 247, 237, 0.15);
+  --color-button-secondary-border: rgba(255, 237, 213, 0.55);
+  --color-hero-eyebrow: #fdba74;
+  --color-hero-title: #fff7ed;
+  --color-hero-description: #ffedd5;
+  --color-hero-card-bg: rgba(88, 28, 12, 0.55);
+  --color-hero-card-border: rgba(255, 237, 213, 0.24);
+  --color-hero-card-text: #fff7ed;
+  --color-hero-card-muted: #fed7aa;
+  --hero-overlay-start: rgba(67, 20, 7, 0.74);
+  --hero-overlay-mid: rgba(88, 28, 12, 0.62);
+  --hero-overlay-end: rgba(120, 53, 15, 0.68);
+  --hero-overlay-accent: rgba(251, 146, 60, 0.2);
+  --font-body: "DM Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --gradient-page:
+    radial-gradient(circle at 10% 10%, #ffedd5 0%, rgba(255, 237, 213, 0) 40%),
+    radial-gradient(circle at 90% 0%, #ffe4e6 0%, rgba(255, 228, 230, 0) 35%),
+    #fff7ed;
+}
+
+.page--theme-forest {
+  --color-bg: #0f2a1f;
+  --color-surface: #f3faf5;
+  --color-text: #1b3228;
+  --color-muted: #4f6b5e;
+  --color-accent: #16a34a;
+  --color-border: #cde9d6;
+  --color-nav-bg: rgba(243, 250, 245, 0.9);
+  --color-surface-soft: #e8f6ed;
+  --color-chip-bg: #dcfce7;
+  --color-chip-border: #86efac;
+  --color-chip-text: #166534;
+  --color-card-back-text: #dcfce7;
+  --color-card-back-meta: #bbf7d0;
+  --color-button-secondary-text: #f0fdf4;
+  --color-button-secondary-bg: rgba(240, 253, 244, 0.14);
+  --color-button-secondary-border: rgba(187, 247, 208, 0.55);
+  --color-hero-eyebrow: #86efac;
+  --color-hero-title: #f0fdf4;
+  --color-hero-description: #dcfce7;
+  --color-hero-card-bg: rgba(20, 83, 45, 0.5);
+  --color-hero-card-border: rgba(240, 253, 244, 0.24);
+  --color-hero-card-text: #f0fdf4;
+  --color-hero-card-muted: #bbf7d0;
+  --hero-overlay-start: rgba(5, 46, 22, 0.75);
+  --hero-overlay-mid: rgba(20, 83, 45, 0.62);
+  --hero-overlay-end: rgba(22, 101, 52, 0.65);
+  --hero-overlay-accent: rgba(22, 163, 74, 0.2);
+  --font-body: "DM Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --gradient-page:
+    radial-gradient(circle at 12% 8%, #dcfce7 0%, rgba(220, 252, 231, 0) 36%),
+    radial-gradient(circle at 88% 6%, #ccfbf1 0%, rgba(204, 251, 241, 0) 33%),
+    #f3faf5;
+}
+
+.page--theme-royal {
+  --color-bg: #1e1b4b;
+  --color-surface: #f8f7ff;
+  --color-text: #2b2a4f;
+  --color-muted: #5f6291;
+  --color-accent: #7c3aed;
+  --color-border: #ddd6fe;
+  --color-nav-bg: rgba(248, 247, 255, 0.9);
+  --color-surface-soft: #ede9fe;
+  --color-chip-bg: #ede9fe;
+  --color-chip-border: #c4b5fd;
+  --color-chip-text: #5b21b6;
+  --color-card-back-text: #ede9fe;
+  --color-card-back-meta: #c4b5fd;
+  --color-button-secondary-text: #f5f3ff;
+  --color-button-secondary-bg: rgba(245, 243, 255, 0.15);
+  --color-button-secondary-border: rgba(221, 214, 254, 0.55);
+  --color-hero-eyebrow: #c4b5fd;
+  --color-hero-title: #f5f3ff;
+  --color-hero-description: #ddd6fe;
+  --color-hero-card-bg: rgba(49, 46, 129, 0.52);
+  --color-hero-card-border: rgba(237, 233, 254, 0.24);
+  --color-hero-card-text: #f5f3ff;
+  --color-hero-card-muted: #ddd6fe;
+  --hero-overlay-start: rgba(30, 27, 75, 0.77);
+  --hero-overlay-mid: rgba(49, 46, 129, 0.64);
+  --hero-overlay-end: rgba(67, 56, 202, 0.65);
+  --hero-overlay-accent: rgba(124, 58, 237, 0.2);
+  --font-body: "DM Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --gradient-page:
+    radial-gradient(circle at 12% 10%, #ede9fe 0%, rgba(237, 233, 254, 0) 37%),
+    radial-gradient(circle at 92% 6%, #e0e7ff 0%, rgba(224, 231, 255, 0) 34%),
+    #f8f7ff;
+}
+
+.page--theme-mono {
+  --color-bg: #111111;
+  --color-surface: #ffffff;
+  --color-text: #1f1f1f;
+  --color-muted: #5c5c5c;
+  --color-accent: #2f2f2f;
+  --color-border: #e5e5e5;
+  --color-nav-bg: rgba(255, 255, 255, 0.9);
+  --color-surface-soft: #f7f7f7;
+  --color-chip-bg: #f0f0f0;
+  --color-chip-border: #d4d4d4;
+  --color-chip-text: #303030;
+  --color-card-back-text: #f5f5f5;
+  --color-card-back-meta: #d4d4d4;
+  --color-button-secondary-text: #ffffff;
+  --color-button-secondary-bg: rgba(255, 255, 255, 0.12);
+  --color-button-secondary-border: rgba(255, 255, 255, 0.45);
+  --color-hero-eyebrow: #d4d4d4;
+  --color-hero-title: #fafafa;
+  --color-hero-description: #e5e5e5;
+  --color-hero-card-bg: rgba(20, 20, 20, 0.58);
+  --color-hero-card-border: rgba(255, 255, 255, 0.2);
+  --color-hero-card-text: #fafafa;
+  --color-hero-card-muted: #d4d4d4;
+  --hero-overlay-start: rgba(17, 17, 17, 0.76);
+  --hero-overlay-mid: rgba(26, 26, 26, 0.66);
+  --hero-overlay-end: rgba(40, 40, 40, 0.68);
+  --hero-overlay-accent: rgba(255, 255, 255, 0.12);
+  --font-body: "DM Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --gradient-page:
+    radial-gradient(circle at 10% 10%, #f0f0f0 0%, rgba(240, 240, 240, 0) 34%),
+    radial-gradient(circle at 90% 0%, #e5e5e5 0%, rgba(229, 229, 229, 0) 32%),
+    #fafafa;
+}

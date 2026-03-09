@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  color: var(--color-bg);
+}
+
+p {
+  color: var(--color-muted);
+}

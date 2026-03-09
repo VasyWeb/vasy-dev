@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Free CSS box shadow generator with sliders, live preview and copy CSS button."
+    />
+    <meta property="og:title" content="Box Shadow Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Create custom box shadows and copy production-ready CSS."
+    />
+    <meta property="og:image" content="../../assets/img/mason-c-W7Jasy4wBYA-unsplash.jpg" />
+    <meta property="og:type" content="website" />
+    <title>Box Shadow Generator | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-ocean">
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <h1>CSS Box Shadow Generator</h1>
+            <p>Preview live, adjust with sliders and copy CSS.</p>
+            <a href="../index.html" class="button button--secondary">All tools</a>
+          </div>
+
+          <section class="shadow-generator" aria-labelledby="shadowGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="shadowGenTitle" class="shadow-generator__title">Box Shadow Controls</h2>
+            </div>
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control"><span>Horizontal</span><input type="range" id="shadowX" min="-50" max="50" value="10" /></label>
+                <label class="shadow-generator__control"><span>Vertical</span><input type="range" id="shadowY" min="-50" max="50" value="10" /></label>
+                <label class="shadow-generator__control"><span>Blur</span><input type="range" id="shadowBlur" min="0" max="80" value="20" /></label>
+                <label class="shadow-generator__control"><span>Spread</span><input type="range" id="shadowSpread" min="-20" max="40" value="0" /></label>
+                <label class="shadow-generator__control"><span>Opacity</span><input type="range" id="shadowOpacity" min="0" max="1" step="0.01" value="0.3" /></label>
+              </div>
+              <div class="shadow-generator__preview-wrap">
+                <div id="shadowPreview" class="shadow-generator__preview">Preview</div>
+                <code id="shadowCode" class="shadow-generator__code">box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);</code>
+                <button id="copyShadowBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>
+
+

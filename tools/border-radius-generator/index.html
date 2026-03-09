@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Free CSS border radius generator with live preview and one-click copy CSS output."
+    />
+    <meta property="og:title" content="Border Radius Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Generate custom rounded corners and copy CSS instantly."
+    />
+    <meta property="og:image" content="../../assets/img/mason-c-W7Jasy4wBYA-unsplash.jpg" />
+    <meta property="og:type" content="website" />
+    <title>Border Radius Generator | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-ocean">
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <h1>CSS Border Radius Generator</h1>
+            <p>Create rounded shapes and copy clean CSS values.</p>
+            <a href="../index.html" class="button button--secondary">All tools</a>
+          </div>
+
+          <section class="radius-generator" aria-labelledby="radiusGenTitle">
+            <div class="radius-generator__header">
+              <h2 id="radiusGenTitle" class="radius-generator__title">Border Radius Controls</h2>
+            </div>
+            <div class="radius-generator__layout">
+              <div class="radius-generator__controls">
+                <label class="radius-generator__control"><span>Top Left</span><input type="range" id="radiusTl" min="0" max="120" value="20" /></label>
+                <label class="radius-generator__control"><span>Top Right</span><input type="range" id="radiusTr" min="0" max="120" value="40" /></label>
+                <label class="radius-generator__control"><span>Bottom Right</span><input type="range" id="radiusBr" min="0" max="120" value="10" /></label>
+                <label class="radius-generator__control"><span>Bottom Left</span><input type="range" id="radiusBl" min="0" max="120" value="30" /></label>
+              </div>
+              <div class="radius-generator__preview-wrap">
+                <div id="radiusPreview" class="radius-generator__preview">Preview</div>
+                <code id="radiusCode" class="radius-generator__code">border-radius: 20px 40px 10px 30px;</code>
+                <button id="copyRadiusBtn" class="button radius-generator__copy" type="button">Copy CSS</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>
+
+

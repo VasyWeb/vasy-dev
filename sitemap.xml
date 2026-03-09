@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://vasy.dev/</loc>
+  </url>
+  <url>
+    <loc>https://vasy.dev/tools/</loc>
+  </url>
+  <url>
+    <loc>https://vasy.dev/tools/box-shadow-generator/</loc>
+  </url>
+  <url>
+    <loc>https://vasy.dev/tools/border-radius-generator/</loc>
+  </url>
+  <url>
+    <loc>https://vasy.dev/tools/gradient-generator/</loc>
+  </url>
+  <url>
+    <loc>https://vasy.dev/tools/color-palette-generator/</loc>
+  </url>
+  <url>
+    <loc>https://vasy.dev/projects/</loc>
+  </url>
+  <url>
+    <loc>https://vasy.dev/blog/</loc>
+  </url>
+</urlset>

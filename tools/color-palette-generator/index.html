@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Free CSS color palette generator with random colors, lock controls and CSS variables export."
+    />
+    <meta property="og:title" content="Color Palette Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Generate random palettes, lock favorite colors and export CSS variables."
+    />
+    <meta property="og:image" content="../../assets/img/mason-c-W7Jasy4wBYA-unsplash.jpg" />
+    <meta property="og:type" content="website" />
+    <title>Color Palette Generator | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-ocean">
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <h1>Color Palette Generator</h1>
+            <p>Generate palettes, lock colors and export CSS variables.</p>
+            <a href="../index.html" class="button button--secondary">All tools</a>
+          </div>
+
+          <section class="palette-generator" aria-labelledby="paletteGenTitle">
+            <div class="palette-generator__header">
+              <h2 id="paletteGenTitle" class="palette-generator__title">Palette Controls</h2>
+            </div>
+            <div class="palette-generator__actions">
+              <button id="paletteRandomBtn" class="button palette-generator__btn" type="button">Random Palette</button>
+              <button id="paletteExportBtn" class="button palette-generator__btn" type="button">Export CSS Variables</button>
+            </div>
+            <div class="palette-generator__swatches" id="paletteSwatches">
+              <article class="swatch" data-index="0"><div class="swatch__color" style="background:#0ea5e9"></div><div class="swatch__meta"><span class="swatch__hex">#0EA5E9</span><button class="swatch__lock" type="button" aria-pressed="false">Lock</button></div></article>
+              <article class="swatch" data-index="1"><div class="swatch__color" style="background:#6366f1"></div><div class="swatch__meta"><span class="swatch__hex">#6366F1</span><button class="swatch__lock" type="button" aria-pressed="false">Lock</button></div></article>
+              <article class="swatch" data-index="2"><div class="swatch__color" style="background:#14b8a6"></div><div class="swatch__meta"><span class="swatch__hex">#14B8A6</span><button class="swatch__lock" type="button" aria-pressed="false">Lock</button></div></article>
+              <article class="swatch" data-index="3"><div class="swatch__color" style="background:#f97316"></div><div class="swatch__meta"><span class="swatch__hex">#F97316</span><button class="swatch__lock" type="button" aria-pressed="false">Lock</button></div></article>
+              <article class="swatch" data-index="4"><div class="swatch__color" style="background:#f43f5e"></div><div class="swatch__meta"><span class="swatch__hex">#F43F5E</span><button class="swatch__lock" type="button" aria-pressed="false">Lock</button></div></article>
+            </div>
+            <code id="paletteCode" class="palette-generator__code">:root { --color-1: #0EA5E9; --color-2: #6366F1; --color-3: #14B8A6; --color-4: #F97316; --color-5: #F43F5E; }</code>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>
+
+

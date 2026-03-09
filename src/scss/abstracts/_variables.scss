@@ -1,0 +1,40 @@
+:root {
+  --color-bg: #0b1324;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #475569;
+  --color-accent: #0ea5e9;
+  --color-border: #e2e8f0;
+  --color-nav-bg: rgba(255, 255, 255, 0.9);
+  --color-surface-soft: #f8fafc;
+  --color-chip-bg: #e0f2fe;
+  --color-chip-border: #bae6fd;
+  --color-chip-text: #0369a1;
+  --color-card-back-text: #e2e8f0;
+  --color-card-back-meta: #bfdbfe;
+  --color-button-secondary-text: #ffffff;
+  --color-button-secondary-bg: rgba(255, 255, 255, 0.12);
+  --color-button-secondary-border: rgba(255, 255, 255, 0.5);
+  --color-hero-eyebrow: #bae6fd;
+  --color-hero-title: #ffffff;
+  --color-hero-description: #dbeafe;
+  --color-hero-card-bg: rgba(15, 23, 42, 0.58);
+  --color-hero-card-border: rgba(255, 255, 255, 0.25);
+  --color-hero-card-text: #ffffff;
+  --color-hero-card-muted: #e0f2fe;
+  --hero-overlay-start: rgba(2, 6, 23, 0.78);
+  --hero-overlay-mid: rgba(2, 6, 23, 0.58);
+  --hero-overlay-end: rgba(2, 6, 23, 0.7);
+  --hero-overlay-accent: rgba(14, 165, 233, 0.2);
+  --font-body: "DM Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-heading: "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --gradient-page:
+    radial-gradient(circle at 10% 10%, #dbeafe 0%, rgba(219, 234, 254, 0) 36%),
+    radial-gradient(circle at 90% 0%, #e0f2fe 0%, rgba(224, 242, 254, 0) 34%),
+    #f8fafc;
+}
+
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 992px;
+$container-width: 1100px;

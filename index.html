@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frontend developer portfolio showcasing responsive websites, landing pages and developer tools built with HTML, SCSS and JavaScript."
+    />
+    <meta property="og:title" content="Vasy.dev - Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Fast, modern websites that convert visitors into customers."
+    />
+    <meta property="og:image" content="assets/img/og-preview.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vasy",
+        "jobTitle": "Frontend Developer",
+        "url": "https://vasy.dev",
+        "sameAs": ["https://github.com/VasyWeb", "https://vasytech.netlify.app"]
+      }
+    </script>
+    <title>Portfolio | Vasy.dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;700;800&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-ocean">
+    <header class="site-header" id="top">
+      <nav class="site-nav">
+        <div class="site-nav__container l-container">
+          <a href="#home" class="site-nav__logo">Vasy.dev</a>
+          <button
+            class="site-nav__toggle"
+            id="siteNavToggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="siteNavList"
+          >
+            <!-- These 3 lines create the hamburger icon -->
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+          </button>
+          <ul class="site-nav__list" id="siteNavList">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#home">Home</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#about">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#projects">Projects</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#services">Services</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#tools">Tools</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section class="hero section-slice section-slice--a" id="home">
+        <video
+          class="hero__video"
+          poster="assets/img/mason-c-W7Jasy4wBYA-unsplash.jpg"
+          preload="metadata"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-hidden="true"
+        >
+          <source
+            src="assets/img/coverr-woman-with-blue-nails-typing-on-a-laptop-805-1080p.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+          <div class="hero__main">
+            <p class="hero__eyebrow">Frontend Developer</p>
+            <h1 class="hero__title">
+              I build fast, modern websites and developer tools.
+            </h1>
+            <p class="hero__description">
+              Frontend developer focused on clean UI, performance optimization
+              and interactive web tools built with HTML, SCSS and JavaScript.
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="button button--primary"
+                >View Projects</a
+              >
+              <a href="#contact" class="button button--secondary">Hire Me</a>
+              <a
+                href="assets/cv/vasile-olaru-frontend-cv.pdf"
+                class="button button--secondary"
+                target="_blank"
+                rel="noopener"
+                >Download CV</a
+              >
+            </div>
+          </div>
+          <div class="hero-card hero__card">
+            <h3 class="hero-card__title">Professional Snapshot</h3>
+            <p class="hero-card__description">
+              UI/UX design, frontend implementation, and performance
+              optimization. Deliver faster with clean code and clear structure.
+            </p>
+            <div class="hero-card__metrics">
+              <div class="hero-card__metric">
+                <strong>40+</strong><span>projects</span>
+              </div>
+              <div class="hero-card__metric">
+                <strong>4 years</strong><span>experience</span>
+              </div>
+              <div class="hero-card__metric">
+                <strong>99%</strong><span>positive feedback</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section-slice section-slice--b" id="about">
+        <div class="about__container">
+          <div class="about__content">
+            <h2 class="about__title">About Me</h2>
+            <p>
+              I am a frontend developer focused on building modern user
+              interfaces and high-performance websites.
+            </p>
+            <p>
+              My work combines strong design, clean code and fast loading
+              experiences.
+            </p>
+
+            <p>
+              I also create small developer tools that help streamline frontend
+              workflows and speed up development.
+            </p>
+            <ul class="about__list">
+              <li class="about__item">Content structure and strategy audit</li>
+              <li class="about__item">
+                Pixel-perfect implementation based on design
+              </li>
+              <li class="about__item">
+                Post-launch maintenance and optimization
+              </li>
+            </ul>
+          </div>
+          <div class="about__stats">
+            <div class="metric-card">
+              <strong>40+</strong><span>Delivered projects</span>
+            </div>
+            <div class="metric-card">
+              <strong>4+</strong><span>Years of experience</span>
+            </div>
+            <div class="metric-card">
+              <strong>99%</strong><span>Happy clients</span>
+            </div>
+            <div class="metric-card">
+              <strong>10 days</strong><span>Average launch time</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block section-slice section-slice--b">
+        <div class="l-container">
+          <h2>Featured Work</h2>
+          <p>
+            A selection of real projects and experiments built to explore modern
+            frontend techniques.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects section-slice section-slice--a" id="projects">
+        <div class="projects__container">
+          <div class="projects__header">
+            <h2 class="projects__title">Selected Projects</h2>
+            <p>
+              Selected frontend projects demonstrating responsive layouts, UI
+              components and interactive web features
+            </p>
+          </div>
+          <div class="projects__grid">
+            <article class="card card--project">
+              <div class="card__side card__side--front card__side--front-1">
+                <img
+                  class="card__media"
+                  src="assets/img/Nexora-demo.png"
+                  alt="Nexora landing page screenshot built with HTML SCSS and JavaScript"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <p class="card__tag">Frontend Landing Page</p>
+                <h3 class="card__title">Nexora Landing Page</h3>
+                <p class="card__text">
+                  Modern responsive landing page built with HTML, SCSS and
+                  JavaScript featuring animations, responsive layout and
+                  interactive UI elements.
+                </p>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <p class="card__meta">Result</p>
+                <p class="card__text">
+                  Responsive landing page built as a frontend demo showcasing
+                  component structure, animations and modern UI layout.
+                </p>
+                <div class="card__actions">
+                  <a
+                    href="https://nexora-demo.netlify.app/"
+                    target="_blank"
+                    class="button card__action"
+                    >View Site</a
+                  >
+                  <a
+                    href="https://github.com/VasyWeb/nexora-landing-page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button card__action card__action--secondary"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--project">
+              <div class="card__side card__side--front card__side--front-2">
+                <img
+                  class="card__media"
+                  src="assets/img/VasyTech.png"
+                  alt="VasyTech frontend developer portfolio website screenshot"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <p class="card__tag">Developer Portfolio</p>
+                <h3 class="card__title">VasyTech Website</h3>
+                <p class="card__text">
+                  Frontend developer website showcasing projects, articles and
+                  performance-optimized layouts built with modular CSS and
+                  JavaScript.
+                </p>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <p class="card__meta">Result</p>
+                <p class="card__text">
+                  Time-to-launch reduced by 40% through reusable components.
+                </p>
+                <div class="card__actions">
+                  <a
+                    href="https://vasytech.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button card__action"
+                    >View Site</a
+                  >
+                  <a
+                    href="https://github.com/VasyWeb/VasyTech"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button card__action card__action--secondary"
+                    >View Code</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="stack section-block section-slice section-slice--b"
+        id="stack"
+      >
+        <div class="l-container">
+          <h2>Tech Stack</h2>
+          <div class="stack__grid">
+            <span class="stack__item">HTML</span>
+            <span class="stack__item">CSS / SCSS</span>
+            <span class="stack__item">JavaScript</span>
+            <span class="stack__item">Responsive Design</span>
+            <span class="stack__item">Performance Optimization</span>
+            <span class="stack__item">Git / GitHub</span>
+            <span class="stack__item">Netlify</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="lighthouse section-block section-slice section-slice--a"
+        id="lighthouse"
+      >
+        <div class="l-container">
+          <h2>Lighthouse Score</h2>
+          <div class="lighthouse__grid">
+            <article class="lighthouse__card">
+              <strong>96</strong>
+              <span>Performance</span>
+            </article>
+            <article class="lighthouse__card">
+              <strong>100</strong>
+              <span>Accessibility</span>
+            </article>
+            <article class="lighthouse__card">
+              <strong>100</strong>
+              <span>Best Practices</span>
+            </article>
+            <article class="lighthouse__card">
+              <strong>92</strong>
+              <span>SEO</span>
+            </article>
+          </div>
+          <figure class="lighthouse__report">
+            <img
+              src="assets/img/lighthouse-report.png"
+              alt="Lighthouse audit report screenshot"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="services section-block section-slice section-slice--b"
+        id="services"
+      >
+        <div class="l-container services__container">
+          <div class="services__header">
+            <h2>Services</h2>
+            <p>
+              UI Design, Frontend Development, performance optimization, and
+              post-launch support.
+            </p>
+          </div>
+          <div class="services__grid">
+            <article class="service-card">
+              <h3 class="service-card__title">UI/UX Design</h3>
+              <p class="service-card__text">
+                Wireframes, design systems, and modern interfaces optimized for
+                conversion.
+              </p>
+              <a href="#" class="button service-card__action">Details</a>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Frontend Development</h3>
+              <p class="service-card__text">
+                Pixel-perfect implementation with HTML, SCSS, and modular
+                JavaScript, easy to maintain.
+              </p>
+              <a href="#" class="button service-card__action">Details</a>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Performance Boost</h3>
+              <p class="service-card__text">
+                Technical audit, Core Web Vitals optimization, and load-time
+                reduction.
+              </p>
+              <a href="#" class="button service-card__action">Details</a>
+            </article>
+            <article class="service-card">
+              <h3 class="service-card__title">Maintenance</h3>
+              <p class="service-card__text">
+                Continuous updates, monitoring, and post-launch support for
+                stability.
+              </p>
+              <a href="#" class="button service-card__action">Details</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="testimonials section-block section-slice section-slice--b"
+        id="testimonials"
+      >
+        <div class="l-container">
+          <h2>Clients Say</h2>
+          <div class="testimonials__grid">
+            <article class="testimonial-card">
+              <p class="testimonial-card__rating" aria-label="5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </p>
+              <blockquote class="testimonial-card__quote">
+                "Great developer, fast delivery and clean code."
+              </blockquote>
+              <p class="testimonial-card__author">- Client</p>
+            </article>
+            <article class="testimonial-card">
+              <p class="testimonial-card__rating" aria-label="5 stars">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </p>
+              <blockquote class="testimonial-card__quote">
+                "Excellent communication and very strong attention to detail."
+              </blockquote>
+              <p class="testimonial-card__author">- Startup Founder</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="tools section-block section-slice section-slice--a"
+        id="tools"
+      >
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <h2>Developer Tools</h2>
+            <p>
+              A collection of small interactive utilities designed to speed up
+              workflows.
+            </p>
+            <p>
+              These tools generate real CSS code and provide live previews for
+              faster UI development.
+            </p>
+            <a href="tools/" class="button button--primary">Open Tools Hub</a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact section-block section-slice section-slice--a"
+        id="contact"
+      >
+        <div class="l-container" aria-label="Contact information">
+          <h2>Contact</h2>
+          <p>
+            Email:
+            <a href="mailto:milanjakub9@gmail.com">milanjakub9@gmail.com</a>
+          </p>
+          <p>Phone: +40 747 700 904</p>
+          <p>
+            Available for freelance projects, landing pages and frontend
+            development collaborations.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-slice section-slice--b" id="footer">
+      <div class="footer__container l-container">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">Vasy.dev</a>
+          <p class="footer__text">
+            Modern design, high-performance frontend, and web experiences built
+            for conversion.
+          </p>
+          <p class="footer__text">
+            Projects and developer tools created by Vasy.dev
+          </p>
+          <div class="footer__socials">
+            <a
+              href="https://nexora-demo.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="Nexora"
+              >NX</a
+            >
+            <a
+              href="https://vasytech.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="VasyTech"
+              >VT</a
+            >
+            <a
+              href="https://github.com/VasyWeb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="GitHub"
+              >GH</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Navigation</h3>
+          <a href="#home" class="footer__link">Home</a>
+          <a href="#about" class="footer__link">About</a>
+          <a href="#projects" class="footer__link">Projects</a>
+          <a href="#services" class="footer__link">Services</a>
+          <a href="#tools" class="footer__link">Tools</a>
+          <a href="blog/" class="footer__link">Blog</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Services</h3>
+          <a href="#" class="footer__link">UI/UX Design</a>
+          <a href="#" class="footer__link">Frontend Development</a>
+          <a href="#" class="footer__link">Performance</a>
+          <a href="#" class="footer__link">Maintenance</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Contact</h3>
+          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
+            >milanjakub9@gmail.com
+          </a>
+          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
+          <p class="footer__text">Available for new projects in 2026.</p>
+          <a href="#contact" class="button footer__cta">Send Brief</a>
+        </div>
+      </div>
+      <div class="footer__bottom l-container">
+        <p class="footer__copyright">(c) 2026 Vasy.dev. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

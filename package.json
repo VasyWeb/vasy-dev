@@ -1,0 +1,16 @@
+{
+    "name":  "website-demo",
+    "version":  "1.0.0",
+    "private":  true,
+    "scripts":  {
+                    "sass":  "sass src/scss/main.scss assets/css/main.css",
+                    "watch":  "sass --watch src/scss/main.scss:assets/css/main.css",
+                    "build":  "sass src/scss/main.scss assets/css/main.css --style=compressed",
+                    "compile:sass":  "sass -w src/scss/main.scss:assets/css/main.css --style=expanded",
+                    "build:sass":  "sass src/scss/main.scss assets/css/main.css --style=expanded",
+                    "build:sass:prod":  "sass src/scss/main.scss assets/css/main.css --style=compressed"
+                },
+    "devDependencies":  {
+                            "sass":  "^1.93.0"
+                        }
+}
