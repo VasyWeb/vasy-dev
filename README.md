@@ -36,5 +36,6 @@ Frontend developer portfolio built with semantic HTML, SCSS 7-1 architecture, an
 - `npm run build:sass:prod`
 
 ## Live Demo
-
-https://vasytech.netlify.app
+https://vasy-dev.netlify.app/
+https://vasytech.netlify.app/
+https://nexora-demo.netlify.app/
