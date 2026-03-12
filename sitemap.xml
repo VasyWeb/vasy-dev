@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vasy.dev/</loc>
+    <loc>https://vasy-dev.netlify.app/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/box-shadow-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/box-shadow-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/border-radius-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/border-radius-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/gradient-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/gradient-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/color-palette-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/color-palette-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/projects/</loc>
+    <loc>https://vasy-dev.netlify.app/projects/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/</loc>
   </url>
 </urlset>
