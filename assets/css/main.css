@@ -196,7 +196,7 @@ p {
 }
 .hero {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 0;
   border-radius: 1.2rem;
   position: relative;
@@ -205,7 +205,7 @@ p {
   box-shadow: 0 24px 44px rgba(15, 23, 42, 0.18);
 }
 
-.hero__video {
+.hero__media {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -308,6 +308,7 @@ p {
   .hero {
     min-height: 0;
     border-radius: 0.9rem;
+    margin: 2rem auto;
   }
   .hero__content {
     grid-template-columns: 1fr;
