@@ -192,6 +192,22 @@
   color: var(--color-bg);
 }
 
+.grid-preview {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+}
+
+.grid-preview > div {
+  min-height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 0.7rem;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  color: #fff;
+  font-weight: 700;
+}
+
 .radius-generator {
   margin-top: 1rem;
   background: color-mix(in srgb, var(--color-surface) 86%, white);

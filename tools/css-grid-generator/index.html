@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create responsive CSS Grid layouts easily. Generate grid-template-columns and rows with live preview."
+    />
+    <meta property="og:title" content="CSS Grid Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Create responsive CSS Grid layouts easily. Generate grid-template-columns and rows with live preview."
+    />
+    <meta property="og:image" content="../../assets/img/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="website" />
+    <title>CSS Grid Generator | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-ocean">
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <h1>CSS Grid Generator</h1>
+            <p>
+              CSS Grid helps you build two-dimensional layouts by defining rows,
+              columns and spacing. This tool generates grid values and previews
+              the layout live so you can adjust structure faster.
+            </p>
+            <a href="../../tools/" class="button button--secondary">All tools</a>
+          </div>
+
+          <section class="shadow-generator" aria-labelledby="gridGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="gridGenTitle" class="shadow-generator__title">Grid Controls</h2>
+            </div>
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control">
+                  <span>Columns</span>
+                  <input type="number" id="gridColumns" min="1" max="6" value="3" />
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Rows</span>
+                  <input type="number" id="gridRows" min="1" max="6" value="2" />
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Gap</span>
+                  <input type="range" id="gridGap" min="0" max="40" value="20" />
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Grid Template Columns</span>
+                  <input type="text" id="gridTemplateColumns" value="repeat(3, 1fr)" />
+                </label>
+              </div>
+              <div class="shadow-generator__preview-wrap">
+                <div class="shadow-generator__preview">
+                  <div id="gridPreview" class="grid-preview">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                  </div>
+                </div>
+                <code id="gridCode" class="shadow-generator__code">display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, auto);
+gap: 20px;</code>
+                <button id="copyGridBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="../../assets/js/main.js"></script>
+  </body>
+</html>
