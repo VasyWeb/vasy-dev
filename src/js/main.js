@@ -9,6 +9,7 @@ import { setupGlassGenerator } from "./tools/glass.js";
 import { setupGridGenerator } from "./tools/grid.js";
 import { setupFlexboxGenerator } from "./tools/flexbox.js";
 import { setupAnimationGenerator } from "./tools/animation.js";
+import { setupFilterGenerator } from "./tools/filter.js";
 
 setupNav();
 setupShadowGenerator();
@@ -21,3 +22,4 @@ setupGlassGenerator();
 setupGridGenerator();
 setupFlexboxGenerator();
 setupAnimationGenerator();
+setupFilterGenerator();

@@ -259,6 +259,15 @@
   box-shadow: 0 12px 22px rgba(15, 23, 42, 0.22);
 }
 
+.filter-preview {
+  width: min(100%, 320px);
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 22px rgba(15, 23, 42, 0.22);
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
