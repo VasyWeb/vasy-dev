@@ -550,6 +550,16 @@
 
 .blog__actions {
   margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.blog__actions .button--secondary {
+  color: var(--color-bg);
+  background: color-mix(in srgb, var(--color-surface) 88%, white);
+  border-color: color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  backdrop-filter: none;
 }
 
 .stack__grid {
