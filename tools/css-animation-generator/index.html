@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5YW4LB5N1T');
+  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create CSS animations visually. Generate keyframes, animation timing and duration with live preview."
+    />
+    <meta property="og:title" content="CSS Animation Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Build CSS animations with live preview and copy the generated code instantly."
+    />
+    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="website" />
+    <title>CSS Animation Generator | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="page page--home page--theme-ocean">
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <h1>CSS Animation Generator</h1>
+            <p>
+              Choose a preset animation, duration and timing, then preview the
+              motion live and copy the final CSS.
+            </p>
+            <a href="../../tools/" class="button button--secondary">All tools</a>
+          </div>
+
+          <section class="shadow-generator" aria-labelledby="animationGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="animationGenTitle" class="shadow-generator__title">Animation Controls</h2>
+            </div>
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control">
+                  <span>Animation Name</span>
+                  <select id="animationName">
+                    <option value="fadeIn" selected>fade-in</option>
+                    <option value="slideUp">slide-up</option>
+                    <option value="scaleIn">scale-in</option>
+                    <option value="rotateIn">rotate</option>
+                  </select>
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Animation Duration</span>
+                  <input type="range" id="animationDuration" min="0.2" max="5" step="0.1" value="1" />
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Timing Function</span>
+                  <select id="animationTimingFunction">
+                    <option value="ease" selected>ease</option>
+                    <option value="linear">linear</option>
+                    <option value="ease-in">ease-in</option>
+                    <option value="ease-out">ease-out</option>
+                    <option value="ease-in-out">ease-in-out</option>
+                  </select>
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Iteration Count</span>
+                  <select id="animationIterationCount">
+                    <option value="1" selected>1</option>
+                    <option value="infinite">infinite</option>
+                  </select>
+                </label>
+              </div>
+              <div class="shadow-generator__preview-wrap">
+                <div class="shadow-generator__preview">
+                  <div id="animationPreview" class="animation-preview">Animate</div>
+                </div>
+                <code id="animationCode" class="shadow-generator__code">@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.element {
+  animation: fadeIn 1s ease 1;
+}</code>
+                <button id="copyAnimationBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="tool-seo section-block section-slice section-slice--b">
+        <div class="l-container">
+          <h2>What is CSS Animation?</h2>
+          <p>
+            CSS animations allow developers to animate elements without
+            JavaScript. Animations are defined using <code>@keyframes</code> and
+            applied with the <code>animation</code> property. This makes it easy
+            to create fade, scale, slide or rotation effects for interface
+            elements while keeping the code lightweight and reusable.
+          </p>
+          <h3>Example CSS Animation</h3>
+          <pre><code>@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}</code></pre>
+          <h3>Other CSS generators</h3>
+          <ul class="tool-internal-links">
+            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
+            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
+            <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
+            <li><a href="/tools/flexbox-generator/">Flexbox Generator</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../../js/main.js"></script>
+  </body>
+</html>
