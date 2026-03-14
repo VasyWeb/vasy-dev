@@ -1303,6 +1303,13 @@ p {
   margin-top: 0.7rem;
 }
 
+.tools__header .button--secondary {
+  color: var(--color-bg);
+  background: color-mix(in srgb, var(--color-surface) 88%, white);
+  border-color: color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  backdrop-filter: none;
+}
+
 .blog__actions {
   margin-top: 1.2rem;
   display: flex;
