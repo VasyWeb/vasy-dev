@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5YW4LB5N1T');
+  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create Flexbox layouts visually. Generate flex-direction, justify-content, align-items and gap with live preview."
+    />
+    <meta property="og:title" content="Flexbox Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Build CSS Flexbox layouts with live preview and copy the generated CSS instantly."
+    />
+    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="website" />
+    <title>Flexbox Generator | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="page page--home page--theme-ocean">
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <h1>Flexbox Generator</h1>
+            <p>
+              Adjust Flexbox direction, alignment and spacing visually, then copy
+              clean CSS for responsive layouts.
+            </p>
+            <a href="../../tools/" class="button button--secondary">All tools</a>
+          </div>
+
+          <section class="shadow-generator" aria-labelledby="flexboxGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="flexboxGenTitle" class="shadow-generator__title">Flexbox Controls</h2>
+            </div>
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control">
+                  <span>Display</span>
+                  <input type="text" value="flex" readonly />
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Flex Direction</span>
+                  <select id="flexDirection">
+                    <option value="row" selected>row</option>
+                    <option value="column">column</option>
+                    <option value="row-reverse">row-reverse</option>
+                    <option value="column-reverse">column-reverse</option>
+                  </select>
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Justify Content</span>
+                  <select id="flexJustifyContent">
+                    <option value="flex-start">flex-start</option>
+                    <option value="center" selected>center</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option>
+                  </select>
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Align Items</span>
+                  <select id="flexAlignItems">
+                    <option value="stretch">stretch</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="center" selected>center</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="baseline">baseline</option>
+                  </select>
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Gap</span>
+                  <input type="range" id="flexGap" min="0" max="60" value="20" />
+                </label>
+              </div>
+              <div class="shadow-generator__preview-wrap">
+                <div class="shadow-generator__preview">
+                  <div id="flexPreview" class="flex-preview">
+                    <div class="flex-preview__item">1</div>
+                    <div class="flex-preview__item">2</div>
+                    <div class="flex-preview__item">3</div>
+                    <div class="flex-preview__item">4</div>
+                  </div>
+                </div>
+                <code id="flexCode" class="shadow-generator__code">display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;</code>
+                <button id="copyFlexBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="tool-seo section-block section-slice section-slice--b">
+        <div class="l-container">
+          <h2>What is CSS Flexbox?</h2>
+          <p>
+            CSS Flexbox is a layout system designed to align elements in rows or
+            columns. It makes it easy to center items, distribute space and
+            create responsive layouts. This generator helps developers test the
+            most important Flexbox settings visually, including direction,
+            horizontal alignment, vertical alignment and gap. Instead of
+            guessing values in code, you can adjust them live and copy the final
+            result immediately.
+          </p>
+          <h3>Example Flexbox CSS</h3>
+          <pre><code>display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;</code></pre>
+          <h3>Other CSS generators</h3>
+          <ul class="tool-internal-links">
+            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
+            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
+            <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../../js/main.js"></script>
+  </body>
+</html>

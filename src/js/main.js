@@ -7,6 +7,7 @@ import { setupTextShadowGenerator } from "./tools/text-shadow.js";
 import { setupTransformGenerator } from "./tools/transform.js";
 import { setupGlassGenerator } from "./tools/glass.js";
 import { setupGridGenerator } from "./tools/grid.js";
+import { setupFlexboxGenerator } from "./tools/flexbox.js";
 
 setupNav();
 setupShadowGenerator();
@@ -17,3 +18,4 @@ setupTextShadowGenerator();
 setupTransformGenerator();
 setupGlassGenerator();
 setupGridGenerator();
+setupFlexboxGenerator();
