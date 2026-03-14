@@ -4,12 +4,12 @@
     "private":  true,
     "scripts":  {
                     "prepare:dist":  "node scripts/build-dist.mjs",
-                    "sass":  "sass src/scss/main.scss dist/css/main.css",
-                    "watch":  "sass --watch src/scss/main.scss:dist/css/main.css",
-                    "build":  "node scripts/build-dist.mjs && sass src/scss/main.scss dist/css/main.css --style=compressed",
-                    "compile:sass":  "sass -w src/scss/main.scss:dist/css/main.css --style=expanded",
-                    "build:sass":  "node scripts/build-dist.mjs && sass src/scss/main.scss dist/css/main.css --style=expanded",
-                    "build:sass:prod":  "node scripts/build-dist.mjs && sass src/scss/main.scss dist/css/main.css --style=compressed"
+                    "sass":  "npx sass src/scss/main.scss dist/css/main.css",
+                    "watch":  "npx sass --watch src/scss/main.scss:dist/css/main.css",
+                    "build":  "node scripts/build-dist.mjs && npx sass src/scss/main.scss dist/css/main.css --style=compressed",
+                    "compile:sass":  "npx sass -w src/scss/main.scss:dist/css/main.css --style=expanded",
+                    "build:sass":  "node scripts/build-dist.mjs && npx sass src/scss/main.scss dist/css/main.css --style=expanded",
+                    "build:sass:prod":  "node scripts/build-dist.mjs && npx sass src/scss/main.scss dist/css/main.css --style=compressed"
                 },
     "devDependencies":  {
                             "sass":  "^1.93.0"
