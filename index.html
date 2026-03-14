@@ -29,9 +29,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;700;800&family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;700;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body class="page page--home page--theme-editorial">
@@ -167,6 +175,33 @@
             </p>
             <a href="tools/" class="button button--primary">Open Tools Hub</a>
           </div>
+        </div>
+      </section>
+
+      <section class="tools-info section-block section-slice section-slice--b">
+        <div class="l-container">
+          <h2>CSS Tools for Frontend Developers</h2>
+
+          <p>
+            This website provides a collection of practical CSS generators
+            designed to help frontend developers build modern user interfaces
+            faster. These tools generate production-ready CSS code and include
+            live previews.
+          </p>
+
+          <p>
+            Available utilities include generators for box shadows, border
+            radius, gradients and color palettes. Each tool helps streamline UI
+            development and reduces the time needed to experiment with CSS
+            values.
+          </p>
+
+          <ul>
+            <li>CSS Box Shadow Generator</li>
+            <li>CSS Border Radius Generator</li>
+            <li>CSS Gradient Generator</li>
+            <li>Color Palette Generator</li>
+          </ul>
         </div>
       </section>
 
