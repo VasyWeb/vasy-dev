@@ -893,11 +893,12 @@ p {
 .shadow-generator__preview {
   min-height: 170px;
   border-radius: 0.9rem;
-  background: #fff;
+  padding: 1rem;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.28), transparent 34%), linear-gradient(135deg, #0f172a, #2563eb 52%, #14b8a6);
   display: grid;
   place-items: center;
-  border: 1px dashed var(--color-border);
-  color: var(--color-muted);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #e2e8f0;
   font-weight: 700;
 }
 
@@ -932,6 +933,18 @@ p {
   background: linear-gradient(135deg, #0ea5e9, #6366f1);
   color: #fff;
   font-weight: 700;
+}
+
+.transform-preview {
+  min-width: min(100%, 180px);
+  min-height: 96px;
+  padding: 1rem 1.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.9rem;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
 }
 
 .radius-generator {
