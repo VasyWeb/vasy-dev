@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how CSS transform works and generate rotate, scale and translate values instantly with our transform generator."
+    />
+    <meta property="og:title" content="CSS Transform Guide + Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Learn how CSS transform works and generate rotate, scale and translate values instantly with our transform generator."
+    />
+    <meta property="og:image" content="../../assets/img/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="article" />
+    <title>CSS Transform Guide + Generator | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-mono">
+    <main class="site-main">
+      <section class="stack section-block section-slice section-slice--b">
+        <div class="l-container">
+          <article class="blog-article">
+            <h1>CSS Transform Explained: Rotate, Scale and Translate Elements</h1>
+            <p>
+              The CSS <code>transform</code> property changes how an element is
+              displayed visually without affecting the surrounding document flow.
+              It is essential for motion, hover effects and interactive UI.
+            </p>
+            <section aria-labelledby="what-is-transform">
+              <h2 id="what-is-transform">What is CSS transform?</h2>
+              <p>
+                <code>transform</code> can rotate, scale, skew and translate
+                elements. These functions can also be combined in a single declaration.
+              </p>
+              <pre><code>transform: rotate(45deg) scale(1.2) translate(10px, 20px);</code></pre>
+            </section>
+            <section aria-labelledby="transform-example">
+              <h2 id="transform-example">Example of CSS transform</h2>
+              <pre><code>.card:hover {
+  transform: scale(1.04) translateY(-4px);
+}</code></pre>
+              <p>
+                This pattern is common in UI design because it adds feedback
+                without changing layout measurements.
+              </p>
+            </section>
+            <section aria-labelledby="generate-transform">
+              <h2 id="generate-transform">Generate your own transform</h2>
+              <p>Use our generator to test rotate, scale and translate values visually and copy the exact CSS output.</p>
+              <div class="blog-article__cta">
+                <a href="https://vasy-dev.netlify.app/tools/css-transform-generator/" class="button button--primary">CSS Transform Generator</a>
+                <a href="../../tools/css-transform-generator/" class="button button--secondary">Open local tool page</a>
+              </div>
+            </section>
+            <section aria-labelledby="transform-tips">
+              <h2 id="transform-tips">Tips for better transforms</h2>
+              <ul>
+                <li>Use small scale values for polished hover effects.</li>
+                <li>Combine translate and scale for better motion feel.</li>
+                <li>Avoid excessive rotation in production UI.</li>
+              </ul>
+            </section>
+            <section aria-labelledby="transform-faq">
+              <h2 id="transform-faq">FAQ</h2>
+              <h3>What does transform do in CSS?</h3>
+              <p>It visually changes an element with functions like rotate, scale and translate.</p>
+              <h3>Can I combine multiple transform functions?</h3>
+              <p>Yes, multiple transform functions can be used in one declaration.</p>
+              <h3>Does transform affect layout flow?</h3>
+              <p>No, it changes visual appearance without changing normal document flow.</p>
+            </section>
+          </article>
+          <div class="blog__actions">
+            <a href="../index.html" class="button button--secondary">Back to blog</a>
+            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

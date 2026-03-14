@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how CSS Grid works and generate rows, columns and gap values instantly with our grid generator."
+    />
+    <meta property="og:title" content="CSS Grid Guide + Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Learn how CSS Grid works and generate rows, columns and gap values instantly with our grid generator."
+    />
+    <meta property="og:image" content="../../assets/img/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="article" />
+    <title>CSS Grid Guide + Generator | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-mono">
+    <main class="site-main">
+      <section class="stack section-block section-slice section-slice--b">
+        <div class="l-container">
+          <article class="blog-article">
+            <h1>CSS Grid Guide: How to Build Responsive Layouts Faster</h1>
+            <p>
+              CSS Grid is one of the strongest layout systems in modern CSS. It
+              gives you direct control over rows, columns and spacing, which
+              makes it ideal for dashboards, cards, galleries and full-page layouts.
+            </p>
+            <section aria-labelledby="what-is-grid">
+              <h2 id="what-is-grid">What is CSS Grid?</h2>
+              <p>
+                CSS Grid is a two-dimensional layout system. Unlike flexbox,
+                which is usually one-dimensional, Grid handles both columns and
+                rows at the same time.
+              </p>
+              <pre><code>display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, auto);
+gap: 20px;</code></pre>
+            </section>
+            <section aria-labelledby="generate-grid">
+              <h2 id="generate-grid">Generate your own grid layout</h2>
+              <p>Use our grid generator to experiment with column count, row structure and gap values while previewing the layout live.</p>
+              <div class="blog-article__cta">
+                <a href="https://vasy-dev.netlify.app/tools/css-grid-generator/" class="button button--primary">CSS Grid Generator</a>
+                <a href="../../tools/css-grid-generator/" class="button button--secondary">Open local tool page</a>
+              </div>
+            </section>
+            <section aria-labelledby="grid-tips">
+              <h2 id="grid-tips">Tips for better grid layouts</h2>
+              <ul>
+                <li>Use repeat() to keep columns consistent and readable.</li>
+                <li>Keep gap values systematic across the interface.</li>
+                <li>Adjust column count for different breakpoints.</li>
+              </ul>
+            </section>
+            <section aria-labelledby="grid-faq">
+              <h2 id="grid-faq">FAQ</h2>
+              <h3>What is the difference between Grid and Flexbox?</h3>
+              <p>Grid is better for two-dimensional layouts, while Flexbox is often better for one-dimensional alignment.</p>
+              <h3>Can CSS Grid be responsive?</h3>
+              <p>Yes, Grid works very well with media queries and responsive sizing.</p>
+              <h3>What does 1fr mean in CSS Grid?</h3>
+              <p>It represents one fraction of the available space in the grid container.</p>
+            </section>
+          </article>
+          <div class="blog__actions">
+            <a href="../index.html" class="button button--secondary">Back to blog</a>
+            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
