@@ -15,22 +15,31 @@ Main goals:
 ```text
 .
 |-- index.html
-|-- assets/
+|-- src/
+|   |-- scss/
+|   |   |-- main.scss
+|   |   |-- abstracts/
+|   |   |-- base/
+|   |   |-- components/
+|   |   |-- layout/
+|   |   |-- pages/
+|   |   |-- themes/
+|   |   `-- vendors/
+|   |-- js/
+|   |   `-- main.js
+|   |-- images/
+|   `-- cv/
+|-- dist/
 |   |-- css/
 |   |   |-- main.css
 |   |   `-- main.css.map
-|   `-- js/
-|       `-- main.js
-|-- src/
-|   `-- scss/
-|       |-- main.scss
-|       |-- abstracts/
-|       |-- base/
-|       |-- components/
-|       |-- layout/
-|       |-- pages/
-|       |-- themes/
-|       `-- vendors/
+|   |-- js/
+|   |   `-- main.js
+|   |-- images/
+|   |-- cv/
+|   |-- blog/
+|   |-- projects/
+|   `-- tools/
 |-- tools/
 |   |-- index.html
 |   |-- box-shadow-generator/index.html
@@ -63,7 +72,7 @@ Main sections in `main`:
 - Contact
 
 ## 4. SCSS Architecture (7-1)
-SCSS source is in `src/scss/` and compiled into `assets/css/main.css`.
+SCSS source is in `src/scss/` and compiled into `dist/css/main.css`.
 
 - `abstracts/`: variables, functions, mixins
 - `base/`: reset, typography, global base rules
@@ -76,7 +85,7 @@ SCSS source is in `src/scss/` and compiled into `assets/css/main.css`.
 Entry file: `src/scss/main.scss` using `@use` imports.
 
 ## 5. JavaScript Architecture
-File: `assets/js/main.js`
+File: `src/js/main.js`
 
 Structure is split by feature functions:
 - `setupNav()`
@@ -103,12 +112,14 @@ Implemented assets and files:
 
 ## 7. NPM Scripts
 From `package.json`:
+- `npm run build`
+  - prepares `dist/` and creates the production CSS output
 - `npm run compile:sass`
-  - watches SCSS and recompiles automatically (`-w`)
+  - watches SCSS and recompiles automatically into `dist/css/`
 - `npm run build:sass`
-  - one-time expanded build
+  - prepares `dist/` and creates one-time expanded CSS output
 - `npm run build:sass:prod`
-  - one-time compressed production build
+  - prepares `dist/` and creates one-time compressed production build
 
 ## 8. Recommended Workflow
 1. Run `npm run compile:sass` during development.
@@ -120,4 +131,4 @@ From `package.json`:
    - `/tools/border-radius-generator/`
    - `/tools/color-palette-generator/`
    - `/tools/gradient-generator/`
-4. Before deploy, run `npm run build:sass:prod`.
+4. Before deploy, run `npm run build`.
