@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Articles about frontend development, CSS techniques, JavaScript tips and web performance."
+      content="Learn how CSS box-shadow works, see examples, and generate custom shadows with the Vasy.dev box-shadow generator."
     />
-    <meta property="og:title" content="Frontend Blog | Vasy.dev" />
+    <meta property="og:title" content="How to Create CSS Box Shadows | Vasy.dev" />
     <meta
       property="og:description"
-      content="Practical frontend articles for performance, UI and maintainable SCSS architecture."
+      content="Beginner guide to CSS box-shadow with examples, tips, FAQ and a direct link to the box-shadow generator."
     />
     <meta property="og:image" content="../assets/img/mason-c-W7Jasy4wBYA-unsplash.webp" />
     <meta property="og:type" content="website" />
-    <title>Frontend Development Blog | HTML, CSS, JavaScript | Vasy.dev</title>
+    <title>How to Create CSS Box Shadows (Beginner Guide + Generator) | Vasy.dev</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
@@ -25,47 +25,112 @@
         id="blog"
       >
         <div class="l-container">
-          <h1>Blog</h1>
-          <p>
-            Frontend tutorials focused on speed, SEO and clean architecture.
-          </p>
+          <article class="blog-article" id="box-shadow-guide">
+            <h1>How to Create CSS Box Shadows (Beginner Guide + Generator)</h1>
 
-          <div class="services__grid">
-            <article class="service-card">
-              <h2 class="service-card__title">
-                How to Build a Landing Page That Converts
-              </h2>
-              <p class="service-card__text">
-                Practical structure for hero, social proof, offer and CTA with
-                performance in mind.
+            <p>
+              The CSS <strong>box-shadow</strong> property allows you to add shadow
+              effects around elements such as cards, buttons or images. Shadows help
+              create depth and improve the visual hierarchy of a layout.
+            </p>
+
+            <p>
+              In this guide you will learn how CSS <code>box-shadow</code> works and
+              how you can generate custom shadows instantly using our tool.
+            </p>
+
+            <section aria-labelledby="what-is-box-shadow">
+              <h2 id="what-is-box-shadow">What is CSS box-shadow?</h2>
+              <p>
+                The <code>box-shadow</code> property adds shadow effects around the
+                frame of an HTML element. It accepts values for horizontal offset,
+                vertical offset, blur radius, spread radius and color.
               </p>
-              <a href="#" class="button service-card__action">Read article</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">CSS Box Shadow Tutorial</h2>
-              <p class="service-card__text">
-                Understand depth, blur and layering so shadows look premium
-                instead of noisy.
+            </section>
+
+            <section aria-labelledby="box-shadow-example">
+              <h2 id="box-shadow-example">Example of CSS box-shadow</h2>
+              <pre><code>box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);</code></pre>
+              <p>
+                This shadow moves 10px down, adds blur and creates a soft realistic
+                effect often used in modern UI design.
               </p>
-              <a
-                href="https://vasytech.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="button service-card__action"
-                >Read article</a
-              >
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">
-                SCSS 7-1 Architecture Explained
-              </h2>
-              <p class="service-card__text">
-                Organize large projects with BEM and maintainable partials for
-                long-term scalability.
-              </p>
-              <a href="#" class="button service-card__action">Read article</a>
-            </article>
-          </div>
+            </section>
+
+            <section aria-labelledby="create-shadow">
+              <h2 id="create-shadow">Create your own shadow</h2>
+              <p>You can quickly generate custom shadows using our tool:</p>
+              <div class="blog-article__cta">
+                <a
+                  href="https://vasy-dev.netlify.app/tools/box-shadow-generator/"
+                  class="button button--primary"
+                >
+                  CSS Box Shadow Generator
+                </a>
+                <a
+                  href="../tools/box-shadow-generator/"
+                  class="button button--secondary"
+                >
+                  Open local tool page
+                </a>
+              </div>
+            </section>
+
+            <section aria-labelledby="box-shadow-tips">
+              <h2 id="box-shadow-tips">Tips for better shadows</h2>
+              <ul>
+                <li>Use soft blur values for modern UI.</li>
+                <li>Avoid very dark shadows.</li>
+                <li>Combine multiple shadows for depth.</li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="box-shadow-faq">
+              <h2 id="box-shadow-faq">FAQ</h2>
+
+              <h3>What does box-shadow do in CSS?</h3>
+              <p>It adds shadow effects around HTML elements.</p>
+
+              <h3>Can I use multiple shadows?</h3>
+              <p>Yes, you can combine multiple shadows separated by commas.</p>
+            </section>
+          </article>
+
+          <section class="blog-list" aria-labelledby="more-articles">
+            <h2 id="more-articles">More articles</h2>
+            <p>Frontend tutorials focused on speed, SEO and clean architecture.</p>
+
+            <div class="services__grid">
+              <article class="service-card">
+                <h3 class="service-card__title">CSS Box Shadow Tutorial</h3>
+                <p class="service-card__text">
+                  Beginner-friendly explanation of offsets, blur, spread and
+                  practical usage in UI.
+                </p>
+                <a href="#box-shadow-guide" class="button service-card__action">Read article</a>
+              </article>
+              <article class="service-card">
+                <h3 class="service-card__title">
+                  How to Build a Landing Page That Converts
+                </h3>
+                <p class="service-card__text">
+                  Practical structure for hero, social proof, offer and CTA with
+                  performance in mind.
+                </p>
+                <a href="landing-page-converts/" class="button service-card__action">Read article</a>
+              </article>
+              <article class="service-card">
+                <h3 class="service-card__title">
+                  SCSS 7-1 Architecture Explained
+                </h3>
+                <p class="service-card__text">
+                  Organize large projects with BEM and maintainable partials for
+                  long-term scalability.
+                </p>
+                <a href="scss-7-1-architecture/" class="button service-card__action">Read article</a>
+              </article>
+            </div>
+          </section>
 
           <div class="blog__actions">
             <a href="../index.html" class="button button--primary"

@@ -63,6 +63,58 @@
   background: color-mix(in srgb, var(--color-accent) 24%, var(--color-surface));
 }
 
+.blog-article {
+  margin-top: 1.2rem;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  background: color-mix(in srgb, var(--color-surface) 82%, white);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  box-shadow: 0 14px 26px rgba(15, 23, 42, 0.08);
+}
+
+.blog-article > * + * {
+  margin-top: 1rem;
+}
+
+.blog-article h1,
+.blog-article h2,
+.blog-article h3 {
+  margin-bottom: 0.6rem;
+}
+
+.blog-article p,
+.blog-article li {
+  max-width: 68ch;
+}
+
+.blog-article pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.blog-article ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.blog-article__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.blog-article__cta .button {
+  margin: 0;
+}
+
+.blog-list {
+  margin-top: 1.6rem;
+}
+
 .shadow-generator {
   margin-top: 1rem;
   background: color-mix(in srgb, var(--color-surface) 86%, white);

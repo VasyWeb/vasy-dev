@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Understand the SCSS 7-1 architecture pattern and how it helps organize large frontend codebases."
+    />
+    <meta property="og:title" content="SCSS 7-1 Architecture Explained | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="A practical guide to the SCSS 7-1 pattern for scalable stylesheets and maintainable frontend systems."
+    />
+    <meta property="og:image" content="../../assets/img/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="article" />
+    <title>SCSS 7-1 Architecture Explained | Vasy.dev</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-mono">
+    <main class="site-main">
+      <section class="stack section-block section-slice section-slice--b">
+        <div class="l-container">
+          <article class="blog-article">
+            <h1>SCSS 7-1 Architecture Explained</h1>
+
+            <p>
+              The SCSS 7-1 pattern is a folder structure that keeps styles modular and
+              predictable as a project grows. Instead of placing everything in one large
+              stylesheet, you split concerns into focused partials.
+            </p>
+
+            <section aria-labelledby="what-is-7-1">
+              <h2 id="what-is-7-1">What does 7-1 mean?</h2>
+              <p>
+                The pattern uses seven folders and one main file. The main file imports
+                everything in a controlled order, while the folders separate concerns such
+                as abstracts, base styles, components, layout, pages, themes and vendors.
+              </p>
+            </section>
+
+            <section aria-labelledby="why-use-7-1">
+              <h2 id="why-use-7-1">Why use this architecture?</h2>
+              <p>
+                It reduces stylesheet chaos, makes naming easier to maintain and helps
+                teams understand where new code belongs. That matters once a site moves
+                beyond a few simple pages.
+              </p>
+            </section>
+
+            <section aria-labelledby="folder-example">
+              <h2 id="folder-example">Typical folder example</h2>
+              <pre><code>scss/
+  abstracts/
+  base/
+  components/
+  layout/
+  pages/
+  themes/
+  vendors/
+  main.scss</code></pre>
+              <p>
+                This structure works especially well when combined with a consistent naming
+                convention such as BEM.
+              </p>
+            </section>
+
+            <section aria-labelledby="scss-faq">
+              <h2 id="scss-faq">FAQ</h2>
+
+              <h3>Is SCSS 7-1 good for small websites?</h3>
+              <p>
+                It can be, but the biggest benefits appear once the project has multiple
+                pages and reusable UI pieces.
+              </p>
+
+              <h3>Do I have to use exactly seven folders?</h3>
+              <p>
+                No. The pattern is a guideline. Adjust it when the project size or team
+                workflow requires a slightly different structure.
+              </p>
+            </section>
+          </article>
+
+          <div class="blog__actions">
+            <a href="../index.html" class="button button--secondary">Back to blog</a>
+            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
