@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how CSS border-radius works and generate rounded corners instantly using our border radius generator."
+    />
+    <meta property="og:title" content="CSS Border Radius Guide + Generator | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Learn how CSS border-radius works and generate rounded corners instantly using our border radius generator."
+    />
+    <meta property="og:image" content="../../assets/img/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="article" />
+    <title>CSS Border Radius Guide + Generator</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+  </head>
+  <body class="page page--home page--theme-mono">
+    <main class="site-main">
+      <section class="stack section-block section-slice section-slice--b">
+        <div class="l-container">
+          <article class="blog-article">
+            <h1>CSS Border Radius Explained: Create Perfect Rounded Corners</h1>
+
+            <p>
+              The CSS <code>border-radius</code> property controls how rounded the corners
+              of an element should be. It is one of the simplest ways to make interfaces
+              feel more modern, approachable and polished. Developers use it on buttons,
+              cards, form inputs, images and containers to soften rigid rectangular edges.
+            </p>
+
+            <p>
+              Even a small radius can change the visual tone of a component. Sharp corners
+              often feel formal or technical, while rounded corners usually make the UI feel
+              friendlier and easier to scan. Because of that, <code>border-radius</code> is
+              a small property with a big design impact.
+            </p>
+
+            <section aria-labelledby="how-border-radius-works">
+              <h2 id="how-border-radius-works">How border-radius works in CSS</h2>
+              <p>
+                The <code>border-radius</code> property can accept from one to four values.
+                This gives you precise control over each corner of the element. When you use
+                one value, all corners get the same rounding. With two, three or four values,
+                CSS distributes the values across the corners in a predictable order.
+              </p>
+
+              <pre><code>border-radius: 10px;
+
+border-radius: 10px 20px;
+
+border-radius: 10px 20px 30px 40px;</code></pre>
+
+              <p>
+                In practice, one value means every corner is equal. Two values usually split
+                the rounding between opposite corners. Four values give full control in the
+                order top-left, top-right, bottom-right and bottom-left. That makes it useful
+                when you want asymmetrical shapes, custom cards or branded interface styles.
+              </p>
+            </section>
+
+            <section aria-labelledby="border-radius-example">
+              <h2 id="border-radius-example">Example of CSS border radius</h2>
+              <pre><code>.box {
+  border-radius: 20px;
+}</code></pre>
+              <p>
+                This example rounds all four corners equally. If you apply it to a card,
+                image container or button, the result is a clean and balanced shape. This is
+                the most common usage because it is simple, readable and works well across
+                many interface patterns.
+              </p>
+            </section>
+
+            <section aria-labelledby="generate-border-radius">
+              <h2 id="generate-border-radius">Generate your border radius</h2>
+              <p>
+                Writing the values manually is easy for basic cases, but a generator is much
+                faster when you want to test different corner combinations visually. You can
+                use our tool to preview rounded corners live and copy the CSS immediately.
+              </p>
+              <div class="blog-article__cta">
+                <a
+                  href="https://vasy-dev.netlify.app/tools/border-radius-generator"
+                  class="button button--primary"
+                >
+                  CSS Border Radius Generator
+                </a>
+                <a
+                  href="../../tools/border-radius-generator/"
+                  class="button button--secondary"
+                >
+                  Open local tool page
+                </a>
+              </div>
+            </section>
+
+            <section aria-labelledby="border-radius-tips">
+              <h2 id="border-radius-tips">Tips for using border-radius in modern UI</h2>
+              <ul>
+                <li>Use small radius values for subtle UI.</li>
+                <li>Use larger radius for cards and buttons.</li>
+                <li>Use 50% for circles.</li>
+              </ul>
+              <p>
+                These rules keep the interface consistent. Small values such as 4px or 8px
+                usually work well for inputs and compact controls. Larger values can make
+                cards and call-to-action buttons feel softer and more contemporary. When you
+                want a perfectly circular avatar or badge, set equal width and height and
+                use <code>border-radius: 50%;</code>.
+              </p>
+            </section>
+
+            <section aria-labelledby="border-radius-faq">
+              <h2 id="border-radius-faq">FAQ</h2>
+
+              <h3>What does border-radius do in CSS?</h3>
+              <p>
+                It rounds the corners of an HTML element by applying a radius value to the
+                box edges.
+              </p>
+
+              <h3>Can I round only one corner?</h3>
+              <p>
+                Yes. You can target corners individually with four values or with specific
+                corner properties such as <code>border-top-left-radius</code>.
+              </p>
+
+              <h3>How do I create a circle with CSS?</h3>
+              <p>
+                Give the element equal width and height, then set
+                <code>border-radius: 50%;</code>. This works for circles, avatars and icon
+                containers.
+              </p>
+            </section>
+          </article>
+
+          <div class="blog__actions">
+            <a href="../index.html" class="button button--secondary">Back to blog</a>
+            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
