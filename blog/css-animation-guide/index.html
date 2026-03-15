@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5YW4LB5N1T');
+  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how CSS animations and keyframes work and use our animation generator to create modern UI effects faster."
+    />
+    <meta property="og:title" content="CSS Animation Guide | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Learn how CSS animations and keyframes work and use our animation generator to create modern UI effects faster."
+    />
+    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="article" />
+    <title>CSS Animation Guide: Keyframes and Modern UI Effects</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="page page--home page--theme-mono">
+    <main class="site-main">
+      <section class="stack section-block section-slice section-slice--b">
+        <div class="l-container">
+          <article class="blog-article">
+            <h1>CSS Animation Guide</h1>
+            <p>
+              CSS animations make interfaces feel more polished, interactive and
+              easier to understand. Small motion effects can guide attention,
+              confirm user actions and improve the overall rhythm of a page.
+              Instead of relying on heavy JavaScript for simple motion, CSS
+              animations let developers create smooth visual feedback directly in
+              stylesheets. They are widely used in modern UI for hover states,
+              loading feedback, entrance effects and subtle transitions that
+              make components feel alive without overwhelming the user.
+            </p>
+
+            <section aria-labelledby="what-are-css-animations">
+              <h2 id="what-are-css-animations">What are CSS Animations</h2>
+              <p>
+                CSS animations allow elements to change styles over time using
+                <code>@keyframes</code>. A keyframes rule defines what happens
+                at different points in the animation, such as the beginning and
+                the end. Once the keyframes exist, they are applied to an
+                element with the <code>animation</code> property. This makes it
+                possible to animate opacity, transform, color and many other CSS
+                properties without writing extra JavaScript logic.
+              </p>
+            </section>
+
+            <section aria-labelledby="basic-animation-example">
+              <h2 id="basic-animation-example">Basic Animation Example</h2>
+              <pre><code>@keyframes fadeIn {
+0% { opacity:0; }
+100% { opacity:1; }
+}
+
+.element {
+animation: fadeIn 1s ease;
+}</code></pre>
+              <p>
+                In this example, the duration is <code>1s</code>, which means
+                the animation lasts one second. The timing function
+                <code>ease</code> controls how the speed changes during the
+                animation. A delay can also be added if you want the motion to
+                start after a short pause.
+              </p>
+            </section>
+
+            <section aria-labelledby="ui-use-cases">
+              <h2 id="ui-use-cases">UI Use Cases</h2>
+              <p>
+                CSS animations are commonly used for hover effects, where
+                buttons, cards or icons respond smoothly to user interaction.
+                They are also useful for loading indicators that show activity
+                while content is being prepared. Another common use is
+                micro-interactions, such as a subtle scale effect, a fade-in
+                message or an animated toggle state that improves clarity and
+                feedback in the interface.
+              </p>
+            </section>
+
+            <section aria-labelledby="use-animation-generator">
+              <h2 id="use-animation-generator">Use the CSS Animation Generator</h2>
+              <p>
+                Use the live CSS Animation Generator to experiment with
+                keyframes and generate production-ready CSS.
+              </p>
+              <div class="blog-article__cta">
+                <a href="../../tools/css-animation-generator/" class="button button--primary">CSS Animation Generator</a>
+              </div>
+            </section>
+          </article>
+          <div class="blog__actions">
+            <a href="../index.html" class="button button--secondary">Back to blog</a>
+            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
