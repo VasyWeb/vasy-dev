@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5YW4LB5N1T');
+  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how CSS filters work and use our filter generator to create blur, brightness and image effects faster."
+    />
+    <meta property="og:title" content="CSS Filter Guide | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Learn how CSS filters work and use our filter generator to create blur, brightness and image effects faster."
+    />
+    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="article" />
+    <title>CSS Filter Guide: Blur, Brightness and Image Effects</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="page page--home page--theme-mono">
+    <main class="site-main">
+      <section class="stack section-block section-slice section-slice--b">
+        <div class="l-container">
+          <article class="blog-article">
+            <h1>CSS Filter Guide</h1>
+            <p>
+              CSS filters let developers modify visual effects directly on
+              elements such as images, backgrounds and interface blocks. With a
+              single property, you can add blur, increase brightness, reduce
+              color, boost contrast or shift tones without editing the original
+              asset. This makes filters very useful for interactive design,
+              hover states and quick visual adjustments in modern UI. They are
+              lightweight, flexible and easy to test directly in the browser.
+            </p>
+
+            <section aria-labelledby="what-are-css-filters">
+              <h2 id="what-are-css-filters">What are CSS Filters</h2>
+              <p>
+                CSS filters are visual functions applied through the
+                <code>filter</code> property. Common filter functions include
+                <code>blur()</code>, which softens the image,
+                <code>brightness()</code>, which lightens or darkens it,
+                <code>contrast()</code>, which increases or reduces separation
+                between light and dark tones, <code>grayscale()</code>, which
+                removes color, and <code>saturate()</code>, which adjusts color
+                intensity. These effects can be combined into one declaration,
+                making CSS filters useful for both subtle styling and more
+                dramatic visual changes.
+              </p>
+            </section>
+
+            <section aria-labelledby="example-css-filter">
+              <h2 id="example-css-filter">Example CSS Filter</h2>
+              <pre><code>filter: blur(4px) brightness(110%) contrast(120%);</code></pre>
+              <p>
+                This example adds a small blur effect, makes the image slightly
+                brighter and increases contrast. Filters like these can change
+                the feeling of an image or background quickly without needing a
+                separate edited file.
+              </p>
+            </section>
+
+            <section aria-labelledby="practical-use-cases">
+              <h2 id="practical-use-cases">Practical Use Cases</h2>
+              <p>
+                CSS filters are often used for image hover effects, where a
+                photo becomes brighter, sharper or less saturated when the user
+                interacts with it. They are also useful on hero images to soften
+                or darken a background behind text. Another practical use is UI
+                backgrounds, where blur and brightness adjustments can help
+                create layered, modern interface effects without editing the
+                source image.
+              </p>
+            </section>
+
+            <section aria-labelledby="use-filter-generator">
+              <h2 id="use-filter-generator">Use the CSS Filter Generator</h2>
+              <p>
+                Use the CSS Filter Generator to preview visual effects and copy
+                the generated CSS code.
+              </p>
+              <div class="blog-article__cta">
+                <a href="../../tools/css-filter-generator/" class="button button--primary">CSS Filter Generator</a>
+              </div>
+            </section>
+          </article>
+          <div class="blog__actions">
+            <a href="../index.html" class="button button--secondary">Back to blog</a>
+            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
