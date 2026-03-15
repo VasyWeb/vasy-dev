@@ -10,6 +10,7 @@ import { setupGridGenerator } from "./tools/grid.js";
 import { setupFlexboxGenerator } from "./tools/flexbox.js";
 import { setupAnimationGenerator } from "./tools/animation.js";
 import { setupFilterGenerator } from "./tools/filter.js";
+import { setupPxToRemConverter } from "./tools/px-to-rem.js";
 
 setupNav();
 setupShadowGenerator();
@@ -23,3 +24,4 @@ setupGridGenerator();
 setupFlexboxGenerator();
 setupAnimationGenerator();
 setupFilterGenerator();
+setupPxToRemConverter();
