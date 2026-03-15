@@ -189,6 +189,7 @@
 
 .shadow-generator__control input[type="text"],
 .shadow-generator__control input[type="number"],
+.shadow-generator__control input[type="color"],
 .shadow-generator__control select {
   width: 100%;
   border: 1px solid color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
@@ -196,6 +197,11 @@
   padding: 0.75rem 0.9rem;
   background: color-mix(in srgb, var(--color-surface) 90%, white);
   color: var(--color-text);
+}
+
+.shadow-generator__control input[type="color"] {
+  min-height: 3rem;
+  padding: 0.35rem;
 }
 
 .shadow-generator__control input[readonly] {

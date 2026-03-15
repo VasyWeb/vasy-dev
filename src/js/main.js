@@ -13,6 +13,7 @@ import { setupFilterGenerator } from "./tools/filter.js";
 import { setupPxToRemConverter } from "./tools/px-to-rem.js";
 import { setupRemToPxConverter } from "./tools/rem-to-px.js";
 import { setupPxToEmConverter } from "./tools/px-to-em.js";
+import { setupHexToRgbConverter } from "./tools/hex-to-rgb.js";
 
 setupNav();
 setupShadowGenerator();
@@ -29,3 +30,4 @@ setupFilterGenerator();
 setupPxToRemConverter();
 setupRemToPxConverter();
 setupPxToEmConverter();
+setupHexToRgbConverter();
