@@ -18,6 +18,8 @@
     <meta property="og:image" content="../images/og-preview.webp" />
     <meta property="og:type" content="website" />
     <title>Frontend Projects - Landing Pages and Web Tools | Vasy.dev</title>
+    <link rel="canonical" href="https://vasy.dev/projects/" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Projects","item":"https://vasy.dev/projects/"}]}</script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
@@ -26,7 +28,12 @@
       <section class="projects section-block section-slice section-slice--a" id="projects-page">
         <div class="projects__container">
           <div class="projects__header">
-            <h1 class="projects__title">Projects</h1>
+                        <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="../index.html">Home</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <span aria-current="page">Projects</span>
+            </nav>
+<h1 class="projects__title">Projects</h1>
             <p>Selected work focused on clean UX, performance and conversion.</p>
             <a href="../index.html#projects" class="button button--secondary">Back to portfolio</a>
           </div>
