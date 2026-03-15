@@ -12,6 +12,7 @@ import { setupAnimationGenerator } from "./tools/animation.js";
 import { setupFilterGenerator } from "./tools/filter.js";
 import { setupPxToRemConverter } from "./tools/px-to-rem.js";
 import { setupRemToPxConverter } from "./tools/rem-to-px.js";
+import { setupPxToEmConverter } from "./tools/px-to-em.js";
 
 setupNav();
 setupShadowGenerator();
@@ -27,3 +28,4 @@ setupAnimationGenerator();
 setupFilterGenerator();
 setupPxToRemConverter();
 setupRemToPxConverter();
+setupPxToEmConverter();

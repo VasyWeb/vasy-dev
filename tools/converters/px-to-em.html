@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5YW4LB5N1T');
+  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Convert pixel values into em units instantly based on your selected base font size for responsive CSS workflows."
+    />
+    <meta property="og:title" content="PX to EM Converter | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Convert pixel values into em units instantly based on your selected base font size for responsive CSS workflows."
+    />
+    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="website" />
+    <title>PX to EM Converter | Vasy.dev</title>
+    <link rel="canonical" href="https://vasy.dev/tools/converters/px-to-em.html" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"Converters","item":"https://vasy.dev/tools/converters/"},{"@type":"ListItem","position":4,"name":"PX to EM Converter","item":"https://vasy.dev/tools/converters/px-to-em.html"}]}</script>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="page page--home page--theme-ocean">
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="../../index.html">Home</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <a href="../index.html">Tools</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <a href="./">Converters</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <span aria-current="page">PX to EM Converter</span>
+            </nav>
+            <h1>PX to EM Converter</h1>
+            <p>Convert pixel values into em units instantly using your selected base font size.</p>
+            <a href="./" class="button button--secondary">All converters</a>
+          </div>
+
+          <section class="shadow-generator" aria-labelledby="pxEmTitle">
+            <div class="shadow-generator__header">
+              <h2 id="pxEmTitle" class="shadow-generator__title">PX to EM Controls</h2>
+            </div>
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control">
+                  <span>PX value</span>
+                  <input type="number" id="pxToEmValue" min="0" step="0.1" value="32" />
+                </label>
+                <label class="shadow-generator__control">
+                  <span>Base font size</span>
+                  <input type="number" id="emBaseFontSize" min="1" step="0.1" value="16" />
+                </label>
+                <label class="shadow-generator__control">
+                  <span>EM value</span>
+                  <input type="text" id="emResult" value="2em" readonly />
+                </label>
+              </div>
+              <div class="shadow-generator__preview-wrap">
+                <div class="shadow-generator__preview">
+                  <div id="pxEmPreview" class="converter-preview">32px / 16px = 2em</div>
+                </div>
+                <code id="pxEmCode" class="shadow-generator__code">2em</code>
+                <button id="copyPxEmBtn" class="button shadow-generator__copy" type="button">Copy EM</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="tool-seo section-block section-slice section-slice--b">
+        <div class="l-container">
+          <h2>What are EM units in CSS?</h2>
+          <p>
+            EM units in CSS are relative units based on the font size of the current element or its
+            parent context. That means <code>2em</code> can resolve differently depending on where the
+            value is used, which makes em useful when you want spacing or typography to scale together
+            with a component. A PX to EM converter helps you move from fixed pixel measurements into
+            values that react more naturally inside flexible UI systems.
+          </p>
+          <p>
+            This is especially helpful for component-driven design, button sizing, nested typography
+            and interface elements that should scale with local font size instead of the root document
+            size. Instead of calculating conversions manually every time, you can enter a pixel value,
+            choose the base font size and copy the resulting em value instantly for production CSS.
+          </p>
+          <h3>Example conversion</h3>
+          <pre><code>32px / 16px = 2em</code></pre>
+          <p>Browse more frontend conversion tools here:</p>
+          <a class="button button--secondary" href="/tools/converters/">
+            View all converters
+          </a>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="../../js/main.js"></script>
+  </body>
+</html>
