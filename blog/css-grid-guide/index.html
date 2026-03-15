@@ -14,16 +14,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Learn how CSS Grid works and generate rows, columns and gap values instantly with our grid generator."
+      content="CSS Grid guide for building responsive layouts with rows and columns, plus a live grid generator to speed up layout work."
     />
-    <meta property="og:title" content="CSS Grid Guide + Generator | Vasy.dev" />
+    <meta
+      property="og:title"
+      content="CSS Grid Guide: Build Responsive Layouts with Grid | Vasy.dev"
+    />
     <meta
       property="og:description"
-      content="Learn how CSS Grid works and generate rows, columns and gap values instantly with our grid generator."
+      content="Learn how CSS Grid works, when to use it instead of Flexbox, and build responsive layouts faster with the CSS Grid Generator."
     />
     <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
     <meta property="og:type" content="article" />
-    <title>CSS Grid Guide + Generator | Vasy.dev</title>
+    <title>CSS Grid Guide: Build Responsive Layouts with Grid | Vasy.dev</title>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
@@ -32,48 +35,60 @@
       <section class="stack section-block section-slice section-slice--b">
         <div class="l-container">
           <article class="blog-article">
-            <h1>CSS Grid Guide: How to Build Responsive Layouts Faster</h1>
+            <h1>CSS Grid Guide</h1>
             <p>
-              CSS Grid is one of the strongest layout systems in modern CSS. It
-              gives you direct control over rows, columns and spacing, which
-              makes it ideal for dashboards, cards, galleries and full-page layouts.
+              CSS Grid is a two-dimensional layout system used for complex page
+              layouts. It gives you control over both rows and columns at the
+              same time, which makes it useful for dashboards, galleries, card
+              systems and full-page sections that need more structure than a
+              simple row or column layout.
             </p>
             <section aria-labelledby="what-is-grid">
-              <h2 id="what-is-grid">What is CSS Grid?</h2>
+              <h2 id="what-is-grid">What is CSS Grid</h2>
               <p>
-                CSS Grid is a two-dimensional layout system. Unlike flexbox,
-                which is usually one-dimensional, Grid handles both columns and
-                rows at the same time.
+                CSS Grid works with a grid container and grid items. The grid
+                container is the parent element where you set
+                <code>display: grid</code> and define the structure with
+                columns, rows and gaps. The direct children inside that
+                container become grid items, and each item can be placed
+                automatically or positioned more precisely depending on the
+                layout you want to build.
               </p>
-              <pre><code>display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, auto);
-gap: 20px;</code></pre>
             </section>
-            <section aria-labelledby="generate-grid">
-              <h2 id="generate-grid">Generate your own grid layout</h2>
-              <p>Use our grid generator to experiment with column count, row structure and gap values while previewing the layout live.</p>
+            <section aria-labelledby="basic-grid-example">
+              <h2 id="basic-grid-example">Basic Grid Example</h2>
+              <pre><code>.container {
+display:grid;
+grid-template-columns: repeat(3,1fr);
+gap:20px;
+}</code></pre>
+              <p>
+                This example creates a grid with three equal columns and a
+                <code>20px</code> gap between items. It is a common starting
+                point for responsive cards, feature blocks and content sections
+                that need clean, even spacing.
+              </p>
+            </section>
+            <section aria-labelledby="grid-vs-flexbox">
+              <h2 id="grid-vs-flexbox">When to Use Grid vs Flexbox</h2>
+              <p>
+                CSS Grid is best for two-dimensional layouts where you need to
+                control both rows and columns together. Flexbox is better for
+                one-dimensional layouts where items flow in a single direction,
+                such as a row of buttons, a navigation bar or a vertical stack
+                of elements. If the layout needs structure in both directions,
+                Grid is usually the better choice.
+              </p>
+            </section>
+            <section aria-labelledby="use-grid-generator">
+              <h2 id="use-grid-generator">Use the Grid Generator</h2>
+              <p>
+                Use the CSS Grid Generator to visually create responsive
+                layouts and copy the CSS instantly.
+              </p>
               <div class="blog-article__cta">
-                <a href="https://vasy-dev.netlify.app/tools/css-grid-generator/" class="button button--primary">CSS Grid Generator</a>
-                <a href="../../tools/css-grid-generator/" class="button button--secondary">Open local tool page</a>
+                <a href="../../tools/css-grid-generator/" class="button button--primary">CSS Grid Generator</a>
               </div>
-            </section>
-            <section aria-labelledby="grid-tips">
-              <h2 id="grid-tips">Tips for better grid layouts</h2>
-              <ul>
-                <li>Use repeat() to keep columns consistent and readable.</li>
-                <li>Keep gap values systematic across the interface.</li>
-                <li>Adjust column count for different breakpoints.</li>
-              </ul>
-            </section>
-            <section aria-labelledby="grid-faq">
-              <h2 id="grid-faq">FAQ</h2>
-              <h3>What is the difference between Grid and Flexbox?</h3>
-              <p>Grid is better for two-dimensional layouts, while Flexbox is often better for one-dimensional alignment.</p>
-              <h3>Can CSS Grid be responsive?</h3>
-              <p>Yes, Grid works very well with media queries and responsive sizing.</p>
-              <h3>What does 1fr mean in CSS Grid?</h3>
-              <p>It represents one fraction of the available space in the grid container.</p>
             </section>
           </article>
           <div class="blog__actions">
