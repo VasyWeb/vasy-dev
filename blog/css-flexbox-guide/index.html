@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5YW4LB5N1T');
+  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn how CSS Flexbox works and use our Flexbox Generator to build responsive layouts faster."
+    />
+    <meta property="og:title" content="CSS Flexbox Guide | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Learn how CSS Flexbox works and use our Flexbox Generator to build responsive layouts faster."
+    />
+    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta property="og:type" content="article" />
+    <title>CSS Flexbox Guide: How to Build Responsive Layouts Easily</title>
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body class="page page--home page--theme-mono">
+    <main class="site-main">
+      <section class="stack section-block section-slice section-slice--b">
+        <div class="l-container">
+          <article class="blog-article">
+            <h1>CSS Flexbox Guide</h1>
+            <p>
+              CSS Flexbox is one of the easiest ways to build modern layouts in
+              web design. It helps developers align items, center content and
+              distribute space without writing complex positioning rules.
+              Flexbox is especially useful for navigation bars, card rows,
+              buttons, toolbars and responsive interface sections where items
+              need to adapt naturally to different screen sizes. Because it is
+              simple to learn and very practical, Flexbox has become a core
+              layout technique in modern frontend development.
+            </p>
+
+            <section aria-labelledby="what-is-flexbox">
+              <h2 id="what-is-flexbox">What is CSS Flexbox</h2>
+              <p>
+                CSS Flexbox is a one-dimensional layout system used to
+                distribute space and align elements inside a container. Unlike
+                CSS Grid, which manages rows and columns together, Flexbox
+                focuses on a single direction at a time, either horizontally or
+                vertically. Every flex container works with a main axis and a
+                cross axis. The main axis follows the chosen direction, such as
+                a row or a column, while the cross axis runs perpendicular to
+                it. This model makes it much easier to center items, push them
+                apart, reorder them visually and keep layouts flexible across
+                different screen sizes. It is a practical solution for menus,
+                button groups, cards, media objects and many UI patterns that
+                need strong alignment without complex CSS hacks.
+              </p>
+            </section>
+
+            <section aria-labelledby="key-flexbox-properties">
+              <h2 id="key-flexbox-properties">Key Flexbox Properties</h2>
+              <p>
+                The most important Flexbox properties are
+                <code>flex-direction</code>, <code>justify-content</code>,
+                <code>align-items</code> and <code>gap</code>.
+                <code>flex-direction</code> defines whether items flow in a row
+                or a column. <code>justify-content</code> controls alignment on
+                the main axis, while <code>align-items</code> controls alignment
+                on the cross axis. <code>gap</code> adds consistent spacing
+                between flex items without extra margins.
+              </p>
+              <pre><code>.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}</code></pre>
+            </section>
+
+            <section aria-labelledby="flexbox-example-layout">
+              <h2 id="flexbox-example-layout">Example Layout</h2>
+              <p>
+                Flexbox is commonly used for navigation bars because it can keep
+                links aligned in a row while pushing actions or logos into the
+                correct positions. It also works very well for card layouts,
+                especially when you want items to sit next to each other with
+                even spacing and consistent alignment. On smaller screens, the
+                direction can change from row to column, which makes responsive
+                layouts easier to manage.
+              </p>
+            </section>
+
+            <section aria-labelledby="use-flexbox-generator">
+              <h2 id="use-flexbox-generator">Use the Flexbox Generator</h2>
+              <p>
+                Use the live Flexbox Generator to visually build layouts and
+                copy the generated CSS instantly.
+              </p>
+              <div class="blog-article__cta">
+                <a href="../../tools/flexbox-generator/" class="button button--primary">Flexbox Generator</a>
+              </div>
+            </section>
+          </article>
+          <div class="blog__actions">
+            <a href="../index.html" class="button button--secondary">Back to blog</a>
+            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
