@@ -11,6 +11,7 @@ import { setupFlexboxGenerator } from "./tools/flexbox.js";
 import { setupAnimationGenerator } from "./tools/animation.js";
 import { setupFilterGenerator } from "./tools/filter.js";
 import { setupPxToRemConverter } from "./tools/px-to-rem.js";
+import { setupRemToPxConverter } from "./tools/rem-to-px.js";
 
 setupNav();
 setupShadowGenerator();
@@ -25,3 +26,4 @@ setupFlexboxGenerator();
 setupAnimationGenerator();
 setupFilterGenerator();
 setupPxToRemConverter();
+setupRemToPxConverter();
