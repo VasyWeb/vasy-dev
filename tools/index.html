@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,34 +26,67 @@
       property="og:description"
       content="Explore generators, converters and checkers built for frontend development workflows."
     />
-    <meta property="og:image" content="../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
-    <title>Frontend Tools - Generators, Converters and Checkers | Vasy.dev</title>
+    <title>
+      Frontend Tools - Generators, Converters and Checkers | Vasy.dev
+    </title>
     <link rel="canonical" href="https://vasy.dev/tools/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"}]}</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body class="page page--home page--theme-ocean">
     <main class="site-main">
-      <section class="tools section-block section-slice section-slice--a" id="tools">
+      <section
+        class="tools section-block section-slice section-slice--a"
+        id="tools"
+      >
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">Tools</span>
             </nav>
-<h1>CSS Tools</h1>
-            <p>Choose a tool category and work faster with generators, converters and frontend checks.</p>
-            <a href="../index.html" class="button button--secondary">Back to portfolio</a>
+            <h1>CSS Tools</h1>
+            <p>
+              Choose a tool category and work faster with generators, converters
+              and frontend checks.
+            </p>
+            <a href="../index.html" class="button button--secondary"
+              >Back to portfolio</a
+            >
           </div>
 
           <div class="services__grid">
             <article class="service-card">
               <h2 class="service-card__title">Generators</h2>
               <p class="service-card__text">
-                Generate production-ready CSS for layouts, effects, animation and interface styling.
+                Generate production-ready CSS for layouts, effects, animation
+                and interface styling.
               </p>
               <ul class="tool-category__list">
                 <li>Box Shadow Generator</li>
@@ -67,127 +105,21 @@
                 <li>PX to EM Converter</li>
                 <li>HEX to RGB Converter</li>
               </ul>
-              <a href="converters/" class="button service-card__action">View all converters &rarr;</a>
+              <a href="converters/" class="button service-card__action"
+                >View all converters &rarr;</a
+              >
             </article>
             <article class="service-card">
               <h2 class="service-card__title">Checkers</h2>
               <p class="service-card__text">
-                Review CSS, layout and UI output with quick validation tools for cleaner frontend work.
+                Review CSS, layout and UI output with quick validation tools for
+                cleaner frontend work.
               </p>
               <ul class="tool-category__list">
                 <li>Accessibility checkers coming next</li>
               </ul>
             </article>
           </div>
-
-          <section class="tool-section" aria-labelledby="generatorsTitle">
-            <div class="tool-section__header">
-              <h2 id="generatorsTitle">Generators</h2>
-              <p>Generate CSS visually and copy production-ready values instantly.</p>
-            </div>
-
-            <div class="services__grid">
-            <article class="service-card">
-              <h2 class="service-card__title">Box Shadow Generator</h2>
-              <p class="service-card__text">Live preview, sliders and copy CSS output.</p>
-              <a href="box-shadow-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">Border Radius Generator</h2>
-              <p class="service-card__text">Create rounded shapes and copy the exact CSS.</p>
-              <a href="border-radius-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">Color Palette Generator</h2>
-              <p class="service-card__text">Random palettes, lock colors and export CSS variables.</p>
-              <a href="color-palette-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">Text Shadow Generator</h2>
-              <p class="service-card__text">Create text-shadow values with live preview and copy CSS instantly.</p>
-              <a href="text-shadow-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">CSS Transform Generator</h2>
-              <p class="service-card__text">Rotate, scale and translate elements with live preview and instant CSS output.</p>
-              <a href="css-transform-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">Glassmorphism Generator</h2>
-              <p class="service-card__text">Create frosted-glass UI effects with blur, transparency and borders.</p>
-              <a href="glassmorphism-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">CSS Grid Generator</h2>
-              <p class="service-card__text">Build grid-template-columns and rows with live layout preview.</p>
-              <a href="css-grid-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">Flexbox Generator</h2>
-              <p class="service-card__text">Control flex direction, alignment and spacing with live preview.</p>
-              <a href="flexbox-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">CSS Animation Generator</h2>
-              <p class="service-card__text">Preview preset animations and copy full keyframes and animation CSS.</p>
-              <a href="css-animation-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">CSS Filter Generator</h2>
-              <p class="service-card__text">Adjust blur, brightness, contrast and more with live image preview.</p>
-              <a href="css-filter-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            <article class="service-card">
-              <h2 class="service-card__title">Gradient Generator</h2>
-              <p class="service-card__text">Build linear gradients with instant code output.</p>
-              <a href="gradient-generator/" class="button service-card__action">Open tool</a>
-            </article>
-            </div>
-          </section>
-
-          <section class="tool-section" aria-labelledby="convertersTitle">
-            <div class="tool-section__header">
-              <h2 id="convertersTitle">Converters</h2>
-              <p>Quick conversion tools for responsive units and frontend formatting tasks.</p>
-            </div>
-
-            <div class="services__grid">
-              <article class="service-card">
-                <h2 class="service-card__title">PX to REM Converter</h2>
-                <p class="service-card__text">Convert pixel values to rem units instantly for responsive typography and scalable layouts.</p>
-                <a href="converters/px-to-rem.html" class="button service-card__action">Open tool</a>
-              </article>
-              <article class="service-card">
-                <h2 class="service-card__title">REM to PX Converter</h2>
-                <p class="service-card__text">Convert rem units into pixel values instantly based on your root font size.</p>
-                <a href="converters/rem-to-px.html" class="button service-card__action">Open tool</a>
-              </article>
-              <article class="service-card">
-                <h2 class="service-card__title">PX to EM Converter</h2>
-                <p class="service-card__text">Convert pixel values into em units instantly using your selected base font size.</p>
-                <a href="converters/px-to-em.html" class="button service-card__action">Open tool</a>
-              </article>
-              <article class="service-card">
-                <h2 class="service-card__title">HEX to RGB Converter</h2>
-                <p class="service-card__text">Convert HEX color values into RGB output instantly with a live preview.</p>
-                <a href="converters/hex-to-rgb.html" class="button service-card__action">Open tool</a>
-              </article>
-            </div>
-          </section>
-
-          <section class="tool-section" aria-labelledby="checkersTitle">
-            <div class="tool-section__header">
-              <h2 id="checkersTitle">Checkers</h2>
-              <p>Validation-focused frontend tools will be added here as the toolkit expands.</p>
-            </div>
-
-            <div class="services__grid">
-              <article class="service-card">
-                <h2 class="service-card__title">Checkers Coming Soon</h2>
-                <p class="service-card__text">This section is reserved for frontend utilities that inspect output, values and UI quality.</p>
-              </article>
-            </div>
-          </section>
         </div>
       </section>
     </main>
