@@ -21,6 +21,7 @@
   min-height: 320px;
   perspective: 1200px;
   transform-style: preserve-3d;
+  transform: translateZ(0);
   cursor: pointer;
 }
 
@@ -35,7 +36,7 @@
   transform-style: preserve-3d;
   will-change: transform;
   transition:
-    transform 0.5s ease,
+    transform 0.45s cubic-bezier(0.4, 0.2, 0.2, 1),
     box-shadow 0.3s ease;
 }
 
