@@ -52,7 +52,7 @@
 
 .site-nav__toggle {
   order: 3;
-  display: inline-block;
+  display: none;
   width: 2.2rem;
   height: 2.2rem;
   border: 1px solid
@@ -86,6 +86,10 @@
 @include respond-max($breakpoint-mobile) {
   .site-nav__container {
     position: relative;
+  }
+
+  .site-nav__toggle {
+    display: inline-block;
   }
 
   .site-nav__list {
