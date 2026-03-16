@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,15 +26,52 @@
       property="og:description"
       content="Convert HEX colors to RGB instantly with a live color preview and copy-ready output for frontend styling."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>HEX to RGB Converter | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/tools/converters/hex-to-rgb.html" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"Converters","item":"https://vasy.dev/tools/converters/"},{"@type":"ListItem","position":4,"name":"HEX to RGB Converter","item":"https://vasy.dev/tools/converters/hex-to-rgb.html"}]}</script>
+    <link
+      rel="canonical"
+      href="https://vasy.dev/tools/converters/hex-to-rgb.html"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Converters",
+            "item": "https://vasy.dev/tools/converters/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "HEX to RGB Converter",
+            "item": "https://vasy.dev/tools/converters/hex-to-rgb.html"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
@@ -44,13 +86,18 @@
               <span aria-current="page">HEX to RGB Converter</span>
             </nav>
             <h1>HEX to RGB Converter</h1>
-            <p>Convert HEX colors into RGB values instantly with a live color preview and copy-ready output.</p>
+            <p>
+              Convert HEX colors into RGB values instantly with a live color
+              preview and copy-ready output.
+            </p>
             <a href="./" class="button button--secondary">All converters</a>
           </div>
 
           <section class="shadow-generator" aria-labelledby="hexRgbTitle">
             <div class="shadow-generator__header">
-              <h2 id="hexRgbTitle" class="shadow-generator__title">HEX to RGB Controls</h2>
+              <h2 id="hexRgbTitle" class="shadow-generator__title">
+                HEX to RGB Controls
+              </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
@@ -64,15 +111,30 @@
                 </label>
                 <label class="shadow-generator__control">
                   <span>RGB output</span>
-                  <input type="text" id="rgbResult" value="rgb(255,0,0)" readonly />
+                  <input
+                    type="text"
+                    id="rgbResult"
+                    value="rgb(255,0,0)"
+                    readonly
+                  />
                 </label>
               </div>
               <div class="shadow-generator__preview-wrap">
                 <div class="shadow-generator__preview">
-                  <div id="hexRgbPreview" class="converter-preview">#ff0000 -> rgb(255,0,0)</div>
+                  <div id="hexRgbPreview" class="converter-preview">
+                    #ff0000 -> rgb(255,0,0)
+                  </div>
                 </div>
-                <code id="hexRgbCode" class="shadow-generator__code">rgb(255,0,0)</code>
-                <button id="copyHexRgbBtn" class="button shadow-generator__copy" type="button">Copy RGB</button>
+                <code id="hexRgbCode" class="shadow-generator__code"
+                  >rgb(255,0,0)</code
+                >
+                <button
+                  id="copyHexRgbBtn"
+                  class="button shadow-generator__copy"
+                  type="button"
+                >
+                  Copy RGB
+                </button>
               </div>
             </div>
           </section>
@@ -83,18 +145,23 @@
         <div class="l-container">
           <h2>HEX and RGB color formats explained</h2>
           <p>
-            HEX and RGB are two of the most common color formats used in frontend development.
-            HEX uses hexadecimal notation like <code>#ff0000</code> to represent red, green and blue
-            color channels in a compact string. RGB uses decimal values like <code>rgb(255,0,0)</code>
-            to describe the same color channel intensities more explicitly. Both formats describe the
-            same visual result, but developers often switch between them depending on design tools,
-            CSS patterns and browser debugging needs.
+            HEX and RGB are two of the most common color formats used in
+            frontend development. HEX uses hexadecimal notation like
+            <code>#ff0000</code> to represent red, green and blue color channels
+            in a compact string. RGB uses decimal values like
+            <code>rgb(255,0,0)</code>
+            to describe the same color channel intensities more explicitly. Both
+            formats describe the same visual result, but developers often switch
+            between them depending on design tools, CSS patterns and browser
+            debugging needs.
           </p>
           <p>
-            A HEX to RGB converter helps when you receive colors from design files in HEX format but
-            need RGB output for documentation, CSS functions, JavaScript styling or future conversion
-            into RGBA values. Instead of translating color channels manually, you can paste a HEX
-            value, preview the color instantly and copy the RGB output directly into your project.
+            A HEX to RGB converter helps when you receive colors from design
+            files in HEX format but need RGB output for documentation, CSS
+            functions, JavaScript styling or future conversion into RGBA values.
+            Instead of translating color channels manually, you can paste a HEX
+            value, preview the color instantly and copy the RGB output directly
+            into your project.
           </p>
           <h3>Example conversion</h3>
           <pre><code>#ff0000 -> rgb(255,0,0)</code></pre>

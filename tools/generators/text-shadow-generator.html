@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,51 +26,107 @@
       property="og:description"
       content="Generate CSS text-shadow easily with live preview and copy the CSS code instantly."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>CSS Text Shadow Generator | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/tools/text-shadow-generator/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"CSS Text Shadow Generator","item":"https://vasy.dev/tools/text-shadow-generator/"}]}</script>
+    <link
+      rel="canonical"
+      href="https://vasy.dev/tools/text-shadow-generator/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CSS Text Shadow Generator",
+            "item": "https://vasy.dev/tools/text-shadow-generator/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <a href="../../tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">CSS Text Shadow Generator</span>
             </nav>
-<h1>CSS Text Shadow Generator</h1>
+            <h1>CSS Text Shadow Generator</h1>
             <p>
               Adjust offsets, blur and color to create readable, stylish text
               shadows with instant CSS output.
             </p>
-            <a href="../../tools/" class="button button--secondary">All tools</a>
+            <a href="../../tools/" class="button button--secondary"
+              >All tools</a
+            >
           </div>
 
-          <section class="shadow-generator" aria-labelledby="textShadowGenTitle">
+          <section
+            class="shadow-generator"
+            aria-labelledby="textShadowGenTitle"
+          >
             <div class="shadow-generator__header">
-              <h2 id="textShadowGenTitle" class="shadow-generator__title">Text Shadow Controls</h2>
+              <h2 id="textShadowGenTitle" class="shadow-generator__title">
+                Text Shadow Controls
+              </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
                 <label class="shadow-generator__control">
                   <span>Horizontal</span>
-                  <input type="range" id="textShadowX" min="-50" max="50" value="2" />
+                  <input
+                    type="range"
+                    id="textShadowX"
+                    min="-50"
+                    max="50"
+                    value="2"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Vertical</span>
-                  <input type="range" id="textShadowY" min="-50" max="50" value="2" />
+                  <input
+                    type="range"
+                    id="textShadowY"
+                    min="-50"
+                    max="50"
+                    value="2"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Blur</span>
-                  <input type="range" id="textShadowBlur" min="0" max="80" value="5" />
+                  <input
+                    type="range"
+                    id="textShadowBlur"
+                    min="0"
+                    max="80"
+                    value="5"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Color</span>
@@ -73,13 +134,30 @@
                 </label>
                 <label class="shadow-generator__control">
                   <span>Opacity</span>
-                  <input type="range" id="textShadowOpacity" min="0" max="1" step="0.01" value="0.3" />
+                  <input
+                    type="range"
+                    id="textShadowOpacity"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.3"
+                  />
                 </label>
               </div>
               <div class="shadow-generator__preview-wrap">
-                <div id="textShadowPreview" class="shadow-generator__preview">Frontend Tools</div>
-                <code id="textShadowCode" class="shadow-generator__code">text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code>
-                <button id="copyTextShadowBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+                <div id="textShadowPreview" class="shadow-generator__preview">
+                  Frontend Tools
+                </div>
+                <code id="textShadowCode" class="shadow-generator__code"
+                  >text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code
+                >
+                <button
+                  id="copyTextShadowBtn"
+                  class="button shadow-generator__copy"
+                  type="button"
+                >
+                  Copy CSS
+                </button>
               </div>
             </div>
           </section>
@@ -100,10 +178,19 @@
             final CSS without manually testing every number for headings, hero
             text and decorative labels.
           </p>
-                    <p>
-            Text shadow can improve emphasis, legibility and visual atmosphere when it is used with restraint. It often appears in hero headings, image overlays, promotional banners and decorative typography where text needs stronger separation from the background. The problem is that heavy shadow values can quickly make type look blurry or outdated. A live generator helps you test offset, blur and opacity in a more controlled way, which makes it easier to find subtle settings that support readability. It is a practical shortcut for both design exploration and production work, especially when you need a stronger text treatment without sacrificing clarity.
+          <p>
+            Text shadow can improve emphasis, legibility and visual atmosphere
+            when it is used with restraint. It often appears in hero headings,
+            image overlays, promotional banners and decorative typography where
+            text needs stronger separation from the background. The problem is
+            that heavy shadow values can quickly make type look blurry or
+            outdated. A live generator helps you test offset, blur and opacity
+            in a more controlled way, which makes it easier to find subtle
+            settings that support readability. It is a practical shortcut for
+            both design exploration and production work, especially when you
+            need a stronger text treatment without sacrificing clarity.
           </p>
-<h3>Example CSS</h3>
+          <h3>Example CSS</h3>
           <pre><code>text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
           <p>Read the full guide here:</p>
           <a class="button button--secondary" href="/blog/text-shadow-guide/">
@@ -111,14 +198,34 @@
           </a>
           <h3>Other CSS generators</h3>
           <ul class="tool-internal-links">
-            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
-            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li>
+              <a href="/tools/box-shadow-generator/">Box Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/border-radius-generator/"
+                >Border Radius Generator</a
+              >
+            </li>
             <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
-            <li><a href="/tools/color-palette-generator/">Color Palette Generator</a></li>
+            <li>
+              <a href="/tools/color-palette-generator/"
+                >Color Palette Generator</a
+              >
+            </li>
             <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
-            <li><a href="/tools/glassmorphism-generator/">Glassmorphism Generator</a></li>
-            <li><a href="/tools/text-shadow-generator/">Text Shadow Generator</a></li>
-            <li><a href="/tools/css-transform-generator/">CSS Transform Generator</a></li>
+            <li>
+              <a href="/tools/glassmorphism-generator/"
+                >Glassmorphism Generator</a
+              >
+            </li>
+            <li>
+              <a href="/tools/text-shadow-generator/">Text Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/css-transform-generator/"
+                >CSS Transform Generator</a
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -126,7 +233,3 @@
     <script type="module" src="../../js/main.js"></script>
   </body>
 </html>
-
-
-
-

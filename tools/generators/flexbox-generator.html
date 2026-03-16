@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,37 +26,69 @@
       property="og:description"
       content="Build CSS Flexbox layouts with live preview and copy the generated CSS instantly."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>Flexbox Generator | Vasy.dev</title>
     <link rel="canonical" href="https://vasy.dev/tools/flexbox-generator/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"Flexbox Generator","item":"https://vasy.dev/tools/flexbox-generator/"}]}</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Flexbox Generator",
+            "item": "https://vasy.dev/tools/flexbox-generator/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <a href="../../tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">Flexbox Generator</span>
             </nav>
-<h1>Flexbox Generator</h1>
+            <h1>Flexbox Generator</h1>
             <p>
-              Adjust Flexbox direction, alignment and spacing visually, then copy
-              clean CSS for responsive layouts.
+              Adjust Flexbox direction, alignment and spacing visually, then
+              copy clean CSS for responsive layouts.
             </p>
-            <a href="../../tools/" class="button button--secondary">All tools</a>
+            <a href="../../tools/" class="button button--secondary"
+              >All tools</a
+            >
           </div>
 
           <section class="shadow-generator" aria-labelledby="flexboxGenTitle">
             <div class="shadow-generator__header">
-              <h2 id="flexboxGenTitle" class="shadow-generator__title">Flexbox Controls</h2>
+              <h2 id="flexboxGenTitle" class="shadow-generator__title">
+                Flexbox Controls
+              </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
@@ -91,7 +128,13 @@
                 </label>
                 <label class="shadow-generator__control">
                   <span>Gap</span>
-                  <input type="range" id="flexGap" min="0" max="60" value="20" />
+                  <input
+                    type="range"
+                    id="flexGap"
+                    min="0"
+                    max="60"
+                    value="20"
+                  />
                 </label>
               </div>
               <div class="shadow-generator__preview-wrap">
@@ -103,12 +146,17 @@
                     <div class="flex-preview__item">4</div>
                   </div>
                 </div>
-                <code id="flexCode" class="shadow-generator__code">display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap: 20px;</code>
-                <button id="copyFlexBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+                <code id="flexCode" class="shadow-generator__code"
+                  >display: flex; flex-direction: row; justify-content: center;
+                  align-items: center; gap: 20px;</code
+                >
+                <button
+                  id="copyFlexBtn"
+                  class="button shadow-generator__copy"
+                  type="button"
+                >
+                  Copy CSS
+                </button>
               </div>
             </div>
           </section>
@@ -128,7 +176,17 @@ gap: 20px;</code>
             result immediately.
           </p>
           <p>
-            Flexbox shines in interface patterns where alignment matters more than full page structure. Navigation bars, action groups, toolbars, card rows and centered content blocks are all easier to build when you can control direction, spacing and alignment from one container. A visual generator is valuable because it turns abstract properties like justify-content and align-items into something immediate and understandable. That makes troubleshooting faster when a layout feels off. It also helps beginners learn what each property does in practice, while experienced developers can use the tool to speed up layout setup and copy dependable CSS for reusable interface patterns.
+            Flexbox shines in interface patterns where alignment matters more
+            than full page structure. Navigation bars, action groups, toolbars,
+            card rows and centered content blocks are all easier to build when
+            you can control direction, spacing and alignment from one container.
+            A visual generator is valuable because it turns abstract properties
+            like justify-content and align-items into something immediate and
+            understandable. That makes troubleshooting faster when a layout
+            feels off. It also helps beginners learn what each property does in
+            practice, while experienced developers can use the tool to speed up
+            layout setup and copy dependable CSS for reusable interface
+            patterns.
           </p>
           <p>
             It is also a practical way to compare row and column behavior,
@@ -136,15 +194,21 @@ gap: 20px;</code>
             larger components. That saves time during prototyping and makes the
             final CSS easier to trust when you move into production.
           </p>
-<h3>Example Flexbox CSS</h3>
+          <h3>Example Flexbox CSS</h3>
           <pre><code>display: flex;
 justify-content: center;
 align-items: center;
 gap: 20px;</code></pre>
           <h3>Other CSS generators</h3>
           <ul class="tool-internal-links">
-            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
-            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li>
+              <a href="/tools/box-shadow-generator/">Box Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/border-radius-generator/"
+                >Border Radius Generator</a
+              >
+            </li>
             <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
             <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
           </ul>

@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,63 +26,134 @@
       property="og:description"
       content="Generate CSS transform properties including rotate, scale and translate with live preview."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>CSS Transform Generator | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/tools/css-transform-generator/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"CSS Transform Generator","item":"https://vasy.dev/tools/css-transform-generator/"}]}</script>
+    <link
+      rel="canonical"
+      href="https://vasy.dev/tools/css-transform-generator/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CSS Transform Generator",
+            "item": "https://vasy.dev/tools/css-transform-generator/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <a href="../../tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">CSS Transform Generator</span>
             </nav>
-<h1>CSS Transform Generator</h1>
+            <h1>CSS Transform Generator</h1>
             <p>
               The CSS <code>transform</code> property lets you rotate, scale and
               move elements visually without changing the document flow.
             </p>
-            <a href="../../tools/" class="button button--secondary">All tools</a>
+            <a href="../../tools/" class="button button--secondary"
+              >All tools</a
+            >
           </div>
 
           <section class="shadow-generator" aria-labelledby="transformGenTitle">
             <div class="shadow-generator__header">
-              <h2 id="transformGenTitle" class="shadow-generator__title">Transform Controls</h2>
+              <h2 id="transformGenTitle" class="shadow-generator__title">
+                Transform Controls
+              </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
                 <label class="shadow-generator__control">
                   <span>Rotate</span>
-                  <input type="range" id="transformRotate" min="-180" max="180" value="45" />
+                  <input
+                    type="range"
+                    id="transformRotate"
+                    min="-180"
+                    max="180"
+                    value="45"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Scale</span>
-                  <input type="range" id="transformScale" min="0.5" max="2" step="0.01" value="1.2" />
+                  <input
+                    type="range"
+                    id="transformScale"
+                    min="0.5"
+                    max="2"
+                    step="0.01"
+                    value="1.2"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Translate X</span>
-                  <input type="range" id="transformTranslateX" min="-100" max="100" value="10" />
+                  <input
+                    type="range"
+                    id="transformTranslateX"
+                    min="-100"
+                    max="100"
+                    value="10"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Translate Y</span>
-                  <input type="range" id="transformTranslateY" min="-100" max="100" value="20" />
+                  <input
+                    type="range"
+                    id="transformTranslateY"
+                    min="-100"
+                    max="100"
+                    value="20"
+                  />
                 </label>
               </div>
               <div class="shadow-generator__preview-wrap">
                 <div class="shadow-generator__preview">
-                  <div id="transformPreview" class="transform-preview">Preview</div>
+                  <div id="transformPreview" class="transform-preview">
+                    Preview
+                  </div>
                 </div>
-                <code id="transformCode" class="shadow-generator__code">transform: rotate(45deg) scale(1.2) translate(10px, 20px);</code>
-                <button id="copyTransformBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+                <code id="transformCode" class="shadow-generator__code"
+                  >transform: rotate(45deg) scale(1.2) translate(10px,
+                  20px);</code
+                >
+                <button
+                  id="copyTransformBtn"
+                  class="button shadow-generator__copy"
+                  type="button"
+                >
+                  Copy CSS
+                </button>
               </div>
             </div>
           </section>
@@ -98,10 +174,19 @@
             rotating and scaling an element, while developers can build hover
             states, animations and interactive UI effects faster.
           </p>
-                    <p>
-            Transforms are often used to create interaction without disturbing layout flow, which makes them a reliable tool for polished interfaces. Hover lift effects on cards, subtle scale changes on buttons and movement on media thumbnails all depend on transform values that feel natural. When those values are too strong, the UI can feel unstable; when they are too small, the feedback gets lost. A generator helps you find the right level quickly while seeing the visual result in context. It also makes it easier to combine rotate, scale and translate properties into one clean declaration that can be reused across interactive components.
+          <p>
+            Transforms are often used to create interaction without disturbing
+            layout flow, which makes them a reliable tool for polished
+            interfaces. Hover lift effects on cards, subtle scale changes on
+            buttons and movement on media thumbnails all depend on transform
+            values that feel natural. When those values are too strong, the UI
+            can feel unstable; when they are too small, the feedback gets lost.
+            A generator helps you find the right level quickly while seeing the
+            visual result in context. It also makes it easier to combine rotate,
+            scale and translate properties into one clean declaration that can
+            be reused across interactive components.
           </p>
-<h3>Example CSS</h3>
+          <h3>Example CSS</h3>
           <pre><code>transform: rotate(45deg) scale(1.2) translate(10px, 20px);</code></pre>
           <p>Read the full guide here:</p>
           <a class="button button--secondary" href="/blog/css-transform-guide/">
@@ -109,14 +194,34 @@
           </a>
           <h3>Other CSS generators</h3>
           <ul class="tool-internal-links">
-            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
-            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li>
+              <a href="/tools/box-shadow-generator/">Box Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/border-radius-generator/"
+                >Border Radius Generator</a
+              >
+            </li>
             <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
-            <li><a href="/tools/color-palette-generator/">Color Palette Generator</a></li>
+            <li>
+              <a href="/tools/color-palette-generator/"
+                >Color Palette Generator</a
+              >
+            </li>
             <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
-            <li><a href="/tools/glassmorphism-generator/">Glassmorphism Generator</a></li>
-            <li><a href="/tools/text-shadow-generator/">Text Shadow Generator</a></li>
-            <li><a href="/tools/css-transform-generator/">CSS Transform Generator</a></li>
+            <li>
+              <a href="/tools/glassmorphism-generator/"
+                >Glassmorphism Generator</a
+              >
+            </li>
+            <li>
+              <a href="/tools/text-shadow-generator/">Text Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/css-transform-generator/"
+                >CSS Transform Generator</a
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -124,7 +229,3 @@
     <script type="module" src="../../js/main.js"></script>
   </body>
 </html>
-
-
-
-

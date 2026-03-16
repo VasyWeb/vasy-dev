@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,63 +26,131 @@
       property="og:description"
       content="Build CSS filters with live image preview and copy the generated filter code instantly."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>CSS Filter Generator | Vasy.dev</title>
     <link rel="canonical" href="https://vasy.dev/tools/css-filter-generator/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"CSS Filter Generator","item":"https://vasy.dev/tools/css-filter-generator/"}]}</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CSS Filter Generator",
+            "item": "https://vasy.dev/tools/css-filter-generator/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <a href="../../tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">CSS Filter Generator</span>
             </nav>
-<h1>CSS Filter Generator</h1>
+            <h1>CSS Filter Generator</h1>
             <p>
               Adjust blur, brightness, contrast and other visual effects with a
               live image preview, then copy the final CSS filter string.
             </p>
-            <a href="../../tools/" class="button button--secondary">All tools</a>
+            <a href="../../tools/" class="button button--secondary"
+              >All tools</a
+            >
           </div>
 
           <section class="shadow-generator" aria-labelledby="filterGenTitle">
             <div class="shadow-generator__header">
-              <h2 id="filterGenTitle" class="shadow-generator__title">Filter Controls</h2>
+              <h2 id="filterGenTitle" class="shadow-generator__title">
+                Filter Controls
+              </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
                 <label class="shadow-generator__control">
                   <span>Blur</span>
-                  <input type="range" id="filterBlur" min="0" max="20" value="5" />
+                  <input
+                    type="range"
+                    id="filterBlur"
+                    min="0"
+                    max="20"
+                    value="5"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Brightness</span>
-                  <input type="range" id="filterBrightness" min="50" max="200" value="110" />
+                  <input
+                    type="range"
+                    id="filterBrightness"
+                    min="50"
+                    max="200"
+                    value="110"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Contrast</span>
-                  <input type="range" id="filterContrast" min="50" max="200" value="120" />
+                  <input
+                    type="range"
+                    id="filterContrast"
+                    min="50"
+                    max="200"
+                    value="120"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Grayscale</span>
-                  <input type="range" id="filterGrayscale" min="0" max="100" value="0" />
+                  <input
+                    type="range"
+                    id="filterGrayscale"
+                    min="0"
+                    max="100"
+                    value="0"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Saturate</span>
-                  <input type="range" id="filterSaturate" min="50" max="200" value="100" />
+                  <input
+                    type="range"
+                    id="filterSaturate"
+                    min="50"
+                    max="200"
+                    value="100"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Hue Rotate</span>
-                  <input type="range" id="filterHueRotate" min="0" max="360" value="0" />
+                  <input
+                    type="range"
+                    id="filterHueRotate"
+                    min="0"
+                    max="360"
+                    value="0"
+                  />
                 </label>
               </div>
               <div class="shadow-generator__preview-wrap">
@@ -89,8 +162,17 @@
                     alt="Preview image for CSS filter generator"
                   />
                 </div>
-                <code id="filterCode" class="shadow-generator__code">filter: blur(5px) brightness(110%) contrast(120%) grayscale(0%) saturate(100%) hue-rotate(0deg);</code>
-                <button id="copyFilterBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+                <code id="filterCode" class="shadow-generator__code"
+                  >filter: blur(5px) brightness(110%) contrast(120%)
+                  grayscale(0%) saturate(100%) hue-rotate(0deg);</code
+                >
+                <button
+                  id="copyFilterBtn"
+                  class="button shadow-generator__copy"
+                  type="button"
+                >
+                  Copy CSS
+                </button>
               </div>
             </div>
           </section>
@@ -107,7 +189,16 @@
             look of visuals directly in CSS without editing the image file.
           </p>
           <p>
-            CSS filters are practical when you need fast visual changes without editing the original asset in external software. They can help soften hero images behind text, emphasize hover states on product cards or create muted background treatments for sections that need stronger contrast. Because filter functions can stack together, small adjustments in blur, brightness and saturation can completely change how an image feels in the layout. A live tool is useful here because the visual difference between values is often easier to judge than the raw numbers themselves. That makes filters easier to use intentionally instead of through random experimentation.
+            CSS filters are practical when you need fast visual changes without
+            editing the original asset in external software. They can help
+            soften hero images behind text, emphasize hover states on product
+            cards or create muted background treatments for sections that need
+            stronger contrast. Because filter functions can stack together,
+            small adjustments in blur, brightness and saturation can completely
+            change how an image feels in the layout. A live tool is useful here
+            because the visual difference between values is often easier to
+            judge than the raw numbers themselves. That makes filters easier to
+            use intentionally instead of through random experimentation.
           </p>
           <p>
             They are also helpful for prototyping visual directions quickly in
@@ -115,16 +206,26 @@
             contrast matter. Instead of editing multiple assets, you can test
             several treatments in seconds and keep the final CSS lightweight.
           </p>
-<h3>Example CSS Filter</h3>
+          <h3>Example CSS Filter</h3>
           <pre><code>filter: blur(5px) brightness(110%) contrast(120%);</code></pre>
           <h3>Other CSS generators</h3>
           <ul class="tool-internal-links">
-            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
-            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li>
+              <a href="/tools/box-shadow-generator/">Box Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/border-radius-generator/"
+                >Border Radius Generator</a
+              >
+            </li>
             <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
             <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
             <li><a href="/tools/flexbox-generator/">Flexbox Generator</a></li>
-            <li><a href="/tools/css-animation-generator/">CSS Animation Generator</a></li>
+            <li>
+              <a href="/tools/css-animation-generator/"
+                >CSS Animation Generator</a
+              >
+            </li>
           </ul>
         </div>
       </section>

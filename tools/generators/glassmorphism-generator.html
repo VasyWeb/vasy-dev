@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,67 +26,137 @@
       property="og:description"
       content="Create glassmorphism UI effects with blur, transparency and borders. Generate CSS code instantly."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>Glassmorphism Generator | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/tools/glassmorphism-generator/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"Glassmorphism CSS Generator","item":"https://vasy.dev/tools/glassmorphism-generator/"}]}</script>
+    <link
+      rel="canonical"
+      href="https://vasy.dev/tools/glassmorphism-generator/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Glassmorphism CSS Generator",
+            "item": "https://vasy.dev/tools/glassmorphism-generator/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <a href="../../tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">Glassmorphism CSS Generator</span>
             </nav>
-<h1>Glassmorphism CSS Generator</h1>
+            <h1>Glassmorphism CSS Generator</h1>
             <p>
               Glassmorphism uses <code>backdrop-filter</code>, blur,
               transparency and soft borders to create layered translucent UI
               panels with a frosted-glass effect.
             </p>
-            <a href="../../tools/" class="button button--secondary">All tools</a>
+            <a href="../../tools/" class="button button--secondary"
+              >All tools</a
+            >
           </div>
 
           <section class="shadow-generator" aria-labelledby="glassGenTitle">
             <div class="shadow-generator__header">
-              <h2 id="glassGenTitle" class="shadow-generator__title">Glassmorphism Controls</h2>
+              <h2 id="glassGenTitle" class="shadow-generator__title">
+                Glassmorphism Controls
+              </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
                 <label class="shadow-generator__control">
                   <span>Blur</span>
-                  <input type="range" id="glassBlur" min="0" max="30" value="12" />
+                  <input
+                    type="range"
+                    id="glassBlur"
+                    min="0"
+                    max="30"
+                    value="12"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Background Opacity</span>
-                  <input type="range" id="glassBgOpacity" min="0" max="1" step="0.01" value="0.2" />
+                  <input
+                    type="range"
+                    id="glassBgOpacity"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.2"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Border Radius</span>
-                  <input type="range" id="glassRadius" min="0" max="40" value="12" />
+                  <input
+                    type="range"
+                    id="glassRadius"
+                    min="0"
+                    max="40"
+                    value="12"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Border Transparency</span>
-                  <input type="range" id="glassBorderOpacity" min="0" max="1" step="0.01" value="0.3" />
+                  <input
+                    type="range"
+                    id="glassBorderOpacity"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.3"
+                  />
                 </label>
               </div>
               <div class="shadow-generator__preview-wrap">
                 <div class="shadow-generator__preview">
-                  <div id="glassPreview" class="transform-preview">Glass UI</div>
+                  <div id="glassPreview" class="transform-preview">
+                    Glass UI
+                  </div>
                 </div>
-                <code id="glassCode" class="shadow-generator__code">backdrop-filter: blur(12px);
-background: rgba(255, 255, 255, 0.2);
-border: 1px solid rgba(255, 255, 255, 0.3);
-border-radius: 12px;</code>
-                <button id="copyGlassBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+                <code id="glassCode" class="shadow-generator__code"
+                  >backdrop-filter: blur(12px); background: rgba(255, 255, 255,
+                  0.2); border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 12px;</code
+                >
+                <button
+                  id="copyGlassBtn"
+                  class="button shadow-generator__copy"
+                  type="button"
+                >
+                  Copy CSS
+                </button>
               </div>
             </div>
           </section>
@@ -94,18 +169,27 @@ border-radius: 12px;</code>
           <p>
             Glassmorphism is a visual style that creates a frosted glass effect
             using blur, transparency and light borders. In CSS, this usually
-            relies on <code>backdrop-filter</code> together with semi-transparent
-            backgrounds and subtle outlines. This generator helps you test the
-            main values quickly, including blur strength, background opacity,
-            border transparency and corner radius. Beginners can see how each
-            setting changes the glass effect, while developers can generate the
-            CSS much faster than adjusting every layer by hand for cards,
-            overlays and translucent panels.
+            relies on <code>backdrop-filter</code> together with
+            semi-transparent backgrounds and subtle outlines. This generator
+            helps you test the main values quickly, including blur strength,
+            background opacity, border transparency and corner radius. Beginners
+            can see how each setting changes the glass effect, while developers
+            can generate the CSS much faster than adjusting every layer by hand
+            for cards, overlays and translucent panels.
           </p>
-                    <p>
-            Glassmorphism works best when blur, transparency, borders and shadow are balanced carefully. If the effect is too weak, the panel disappears into the background; if it is too strong, it can hurt readability and feel more decorative than useful. A generator helps you explore that balance quickly by previewing how opacity and blur interact together. This is especially useful for overlays, floating cards, profile panels and promotional sections where you want layered depth without losing contrast. Instead of adjusting several values blindly, you can shape the effect visually and move faster toward a style that feels deliberate and production-ready.
+          <p>
+            Glassmorphism works best when blur, transparency, borders and shadow
+            are balanced carefully. If the effect is too weak, the panel
+            disappears into the background; if it is too strong, it can hurt
+            readability and feel more decorative than useful. A generator helps
+            you explore that balance quickly by previewing how opacity and blur
+            interact together. This is especially useful for overlays, floating
+            cards, profile panels and promotional sections where you want
+            layered depth without losing contrast. Instead of adjusting several
+            values blindly, you can shape the effect visually and move faster
+            toward a style that feels deliberate and production-ready.
           </p>
-<h3>Example CSS</h3>
+          <h3>Example CSS</h3>
           <pre><code>backdrop-filter: blur(12px);
 background: rgba(255, 255, 255, 0.2);
 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -116,14 +200,34 @@ border-radius: 12px;</code></pre>
           </a>
           <h3>Other CSS generators</h3>
           <ul class="tool-internal-links">
-            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
-            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li>
+              <a href="/tools/box-shadow-generator/">Box Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/border-radius-generator/"
+                >Border Radius Generator</a
+              >
+            </li>
             <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
-            <li><a href="/tools/color-palette-generator/">Color Palette Generator</a></li>
+            <li>
+              <a href="/tools/color-palette-generator/"
+                >Color Palette Generator</a
+              >
+            </li>
             <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
-            <li><a href="/tools/glassmorphism-generator/">Glassmorphism Generator</a></li>
-            <li><a href="/tools/text-shadow-generator/">Text Shadow Generator</a></li>
-            <li><a href="/tools/css-transform-generator/">CSS Transform Generator</a></li>
+            <li>
+              <a href="/tools/glassmorphism-generator/"
+                >Glassmorphism Generator</a
+              >
+            </li>
+            <li>
+              <a href="/tools/text-shadow-generator/">Text Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/css-transform-generator/"
+                >CSS Transform Generator</a
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -131,7 +235,3 @@ border-radius: 12px;</code></pre>
     <script type="module" src="../../js/main.js"></script>
   </body>
 </html>
-
-
-
-

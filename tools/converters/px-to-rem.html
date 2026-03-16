@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,15 +26,52 @@
       property="og:description"
       content="Convert pixel values to rem units instantly for responsive typography and scalable layouts."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>PX to REM Converter | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/tools/converters/px-to-rem.html" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"Converters","item":"https://vasy.dev/tools/converters/"},{"@type":"ListItem","position":4,"name":"PX to REM Converter","item":"https://vasy.dev/tools/converters/px-to-rem.html"}]}</script>
+    <link
+      rel="canonical"
+      href="https://vasy.dev/tools/converters/px-to-rem.html"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Converters",
+            "item": "https://vasy.dev/tools/converters/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "PX to REM Converter",
+            "item": "https://vasy.dev/tools/converters/px-to-rem.html"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
@@ -44,23 +86,40 @@
               <span aria-current="page">PX to REM Converter</span>
             </nav>
             <h1>PX to REM Converter</h1>
-            <p>Convert pixel values into rem units instantly for responsive typography and scalable layouts.</p>
+            <p>
+              Convert pixel values into rem units instantly for responsive
+              typography and scalable layouts.
+            </p>
             <a href="./" class="button button--secondary">All converters</a>
           </div>
 
           <section class="shadow-generator" aria-labelledby="pxRemTitle">
             <div class="shadow-generator__header">
-              <h2 id="pxRemTitle" class="shadow-generator__title">PX to REM Controls</h2>
+              <h2 id="pxRemTitle" class="shadow-generator__title">
+                PX to REM Controls
+              </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
                 <label class="shadow-generator__control">
                   <span>PX value</span>
-                  <input type="number" id="pxValue" min="0" step="0.1" value="32" />
+                  <input
+                    type="number"
+                    id="pxValue"
+                    min="0"
+                    step="0.1"
+                    value="32"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Base font size</span>
-                  <input type="number" id="baseFontSize" min="1" step="0.1" value="16" />
+                  <input
+                    type="number"
+                    id="baseFontSize"
+                    min="1"
+                    step="0.1"
+                    value="16"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>REM value</span>
@@ -69,10 +128,18 @@
               </div>
               <div class="shadow-generator__preview-wrap">
                 <div class="shadow-generator__preview">
-                  <div id="pxRemPreview" class="converter-preview">32px / 16px = 2rem</div>
+                  <div id="pxRemPreview" class="converter-preview">
+                    32px / 16px = 2rem
+                  </div>
                 </div>
                 <code id="pxRemCode" class="shadow-generator__code">2rem</code>
-                <button id="copyPxRemBtn" class="button shadow-generator__copy" type="button">Copy REM</button>
+                <button
+                  id="copyPxRemBtn"
+                  class="button shadow-generator__copy"
+                  type="button"
+                >
+                  Copy REM
+                </button>
               </div>
             </div>
           </section>
@@ -83,18 +150,21 @@
         <div class="l-container">
           <h2>PX to REM Converter</h2>
           <p>
-            Convert pixel values to rem units instantly for responsive typography and scalable layouts.
-            This is useful when you want font sizes, spacing and component dimensions to scale more
-            predictably with the root font size of the document. Instead of calculating values manually,
-            you can enter a pixel value, choose the base font size and copy the resulting rem value
-            immediately.
+            Convert pixel values to rem units instantly for responsive
+            typography and scalable layouts. This is useful when you want font
+            sizes, spacing and component dimensions to scale more predictably
+            with the root font size of the document. Instead of calculating
+            values manually, you can enter a pixel value, choose the base font
+            size and copy the resulting rem value immediately.
           </p>
           <p>
-            PX to REM conversion is especially helpful in design systems, utility classes and responsive
-            components where consistent sizing matters. Using rem units makes it easier to keep layouts
-            accessible because elements can adapt better when users change default browser text size.
-            A simple converter like this speeds up daily frontend work and reduces mistakes when moving
-            between design files, code reviews and production CSS.
+            PX to REM conversion is especially helpful in design systems,
+            utility classes and responsive components where consistent sizing
+            matters. Using rem units makes it easier to keep layouts accessible
+            because elements can adapt better when users change default browser
+            text size. A simple converter like this speeds up daily frontend
+            work and reduces mistakes when moving between design files, code
+            reviews and production CSS.
           </p>
           <h3>Example conversion</h3>
           <pre><code>32px / 16px = 2rem</code></pre>

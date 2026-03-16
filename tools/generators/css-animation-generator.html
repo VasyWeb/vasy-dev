@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,37 +26,72 @@
       property="og:description"
       content="Build CSS animations with live preview and copy the generated code instantly."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>CSS Animation Generator | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/tools/css-animation-generator/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"CSS Animation Generator","item":"https://vasy.dev/tools/css-animation-generator/"}]}</script>
+    <link
+      rel="canonical"
+      href="https://vasy.dev/tools/css-animation-generator/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CSS Animation Generator",
+            "item": "https://vasy.dev/tools/css-animation-generator/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <a href="../../tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">CSS Animation Generator</span>
             </nav>
-<h1>CSS Animation Generator</h1>
+            <h1>CSS Animation Generator</h1>
             <p>
               Choose a preset animation, duration and timing, then preview the
               motion live and copy the final CSS.
             </p>
-            <a href="../../tools/" class="button button--secondary">All tools</a>
+            <a href="../../tools/" class="button button--secondary"
+              >All tools</a
+            >
           </div>
 
           <section class="shadow-generator" aria-labelledby="animationGenTitle">
             <div class="shadow-generator__header">
-              <h2 id="animationGenTitle" class="shadow-generator__title">Animation Controls</h2>
+              <h2 id="animationGenTitle" class="shadow-generator__title">
+                Animation Controls
+              </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
@@ -66,7 +106,14 @@
                 </label>
                 <label class="shadow-generator__control">
                   <span>Animation Duration</span>
-                  <input type="range" id="animationDuration" min="0.2" max="5" step="0.1" value="1" />
+                  <input
+                    type="range"
+                    id="animationDuration"
+                    min="0.2"
+                    max="5"
+                    step="0.1"
+                    value="1"
+                  />
                 </label>
                 <label class="shadow-generator__control">
                   <span>Timing Function</span>
@@ -88,17 +135,21 @@
               </div>
               <div class="shadow-generator__preview-wrap">
                 <div class="shadow-generator__preview">
-                  <div id="animationPreview" class="animation-preview">Animate</div>
+                  <div id="animationPreview" class="animation-preview">
+                    Animate
+                  </div>
                 </div>
-                <code id="animationCode" class="shadow-generator__code">@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-.element {
-  animation: fadeIn 1s ease 1;
-}</code>
-                <button id="copyAnimationBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+                <code id="animationCode" class="shadow-generator__code"
+                  >@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+                  .element { animation: fadeIn 1s ease 1; }</code
+                >
+                <button
+                  id="copyAnimationBtn"
+                  class="button shadow-generator__copy"
+                  type="button"
+                >
+                  Copy CSS
+                </button>
               </div>
             </div>
           </section>
@@ -116,24 +167,39 @@
             elements while keeping the code lightweight and reusable.
           </p>
           <p>
-            Animation is most effective when it supports clarity, not when it becomes decoration without purpose. Entrance effects can guide attention to new content, hover animations can make controls feel more responsive and loading motion can reassure users that something is happening. The challenge is keeping motion smooth and consistent so it improves the interface instead of distracting from it. A visual generator helps you test timing, easing and movement faster, which is important when polishing UI details. It also reduces trial and error by letting you compare animation choices before copying the final CSS into components or reusable classes.
+            Animation is most effective when it supports clarity, not when it
+            becomes decoration without purpose. Entrance effects can guide
+            attention to new content, hover animations can make controls feel
+            more responsive and loading motion can reassure users that something
+            is happening. The challenge is keeping motion smooth and consistent
+            so it improves the interface instead of distracting from it. A
+            visual generator helps you test timing, easing and movement faster,
+            which is important when polishing UI details. It also reduces trial
+            and error by letting you compare animation choices before copying
+            the final CSS into components or reusable classes.
           </p>
           <p>
-            This is especially useful when building buttons, cards, alerts,
-            hero sections and onboarding screens that need subtle motion to
-            feel more responsive. Testing animation values visually helps you
-            avoid effects that are too slow, too abrupt or too strong for the
-            rest of the interface.
+            This is especially useful when building buttons, cards, alerts, hero
+            sections and onboarding screens that need subtle motion to feel more
+            responsive. Testing animation values visually helps you avoid
+            effects that are too slow, too abrupt or too strong for the rest of
+            the interface.
           </p>
-<h3>Example CSS Animation</h3>
+          <h3>Example CSS Animation</h3>
           <pre><code>@keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
 }</code></pre>
           <h3>Other CSS generators</h3>
           <ul class="tool-internal-links">
-            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
-            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li>
+              <a href="/tools/box-shadow-generator/">Box Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/border-radius-generator/"
+                >Border Radius Generator</a
+              >
+            </li>
             <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
             <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
             <li><a href="/tools/flexbox-generator/">Flexbox Generator</a></li>

@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,45 +26,108 @@
       property="og:description"
       content="Generate custom gradient backgrounds and copy CSS instantly."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
     <title>CSS Gradient Generator - Linear & Radial Gradients | Vasy.dev</title>
     <link rel="canonical" href="https://vasy.dev/tools/gradient-generator/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"Gradient Generator","item":"https://vasy.dev/tools/gradient-generator/"}]}</script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Gradient Generator",
+            "item": "https://vasy.dev/tools/gradient-generator/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+  <body class="page page--theme-main">
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <a href="../../tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">Gradient Generator</span>
             </nav>
-<h1>Gradient Generator</h1>
-            <p>Create linear gradients with live preview and copy CSS output.</p>
-            <a href="../index.html" class="button button--secondary">All tools</a>
+            <h1>Gradient Generator</h1>
+            <p>
+              Create linear gradients with live preview and copy CSS output.
+            </p>
+            <a href="../index.html" class="button button--secondary"
+              >All tools</a
+            >
           </div>
 
-          <section class="gradient-generator" aria-labelledby="gradientGenTitle">
+          <section
+            class="gradient-generator"
+            aria-labelledby="gradientGenTitle"
+          >
             <div class="gradient-generator__header">
-              <h2 id="gradientGenTitle" class="gradient-generator__title">Gradient Controls</h2>
+              <h2 id="gradientGenTitle" class="gradient-generator__title">
+                Gradient Controls
+              </h2>
             </div>
             <div class="gradient-generator__layout">
               <div class="gradient-generator__controls">
-                <label class="gradient-generator__control"><span>Angle</span><input type="range" id="gradientAngle" min="0" max="360" value="45" /></label>
-                <label class="gradient-generator__control gradient-generator__control--color"><span>Color 1</span><input type="color" id="gradientColor1" value="#ff6b6b" /></label>
-                <label class="gradient-generator__control gradient-generator__control--color"><span>Color 2</span><input type="color" id="gradientColor2" value="#4ecdc4" /></label>
+                <label class="gradient-generator__control"
+                  ><span>Angle</span
+                  ><input
+                    type="range"
+                    id="gradientAngle"
+                    min="0"
+                    max="360"
+                    value="45"
+                /></label>
+                <label
+                  class="gradient-generator__control gradient-generator__control--color"
+                  ><span>Color 1</span
+                  ><input type="color" id="gradientColor1" value="#ff6b6b"
+                /></label>
+                <label
+                  class="gradient-generator__control gradient-generator__control--color"
+                  ><span>Color 2</span
+                  ><input type="color" id="gradientColor2" value="#4ecdc4"
+                /></label>
               </div>
               <div class="gradient-generator__preview-wrap">
-                <div id="gradientPreview" class="gradient-generator__preview">Preview</div>
-                <code id="gradientCode" class="gradient-generator__code">background: linear-gradient(45deg, #ff6b6b, #4ecdc4);</code>
-                <button id="copyGradientBtn" class="button gradient-generator__copy" type="button">Copy CSS</button>
+                <div id="gradientPreview" class="gradient-generator__preview">
+                  Preview
+                </div>
+                <code id="gradientCode" class="gradient-generator__code"
+                  >background: linear-gradient(45deg, #ff6b6b, #4ecdc4);</code
+                >
+                <button
+                  id="copyGradientBtn"
+                  class="button gradient-generator__copy"
+                  type="button"
+                >
+                  Copy CSS
+                </button>
               </div>
             </div>
           </section>
@@ -81,10 +149,19 @@
             layout, and developers can copy ready-to-use CSS without manually
             experimenting in DevTools.
           </p>
-                    <p>
-            Gradients are useful for adding depth and energy to backgrounds, buttons, hero areas and accent surfaces. Small changes in angle, stop position or color intensity can make a design feel either more premium or more playful, so being able to preview those changes immediately saves a lot of time. A generator is especially helpful when you want to create a gradient that still supports readable text and does not overpower the rest of the interface. It also helps teams move from experimentation into implementation faster because the final CSS can be copied directly into a real project with fewer manual tweaks afterward.
+          <p>
+            Gradients are useful for adding depth and energy to backgrounds,
+            buttons, hero areas and accent surfaces. Small changes in angle,
+            stop position or color intensity can make a design feel either more
+            premium or more playful, so being able to preview those changes
+            immediately saves a lot of time. A generator is especially helpful
+            when you want to create a gradient that still supports readable text
+            and does not overpower the rest of the interface. It also helps
+            teams move from experimentation into implementation faster because
+            the final CSS can be copied directly into a real project with fewer
+            manual tweaks afterward.
           </p>
-<h3>Example CSS</h3>
+          <h3>Example CSS</h3>
           <pre><code>background: linear-gradient(45deg, #ff6b6b, #4ecdc4);</code></pre>
           <p>Read the full guide here:</p>
           <a class="button button--secondary" href="/blog/gradient-guide/">
@@ -92,14 +169,34 @@
           </a>
           <h3>Other CSS generators</h3>
           <ul class="tool-internal-links">
-            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
-            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li>
+              <a href="/tools/box-shadow-generator/">Box Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/border-radius-generator/"
+                >Border Radius Generator</a
+              >
+            </li>
             <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
-            <li><a href="/tools/color-palette-generator/">Color Palette Generator</a></li>
+            <li>
+              <a href="/tools/color-palette-generator/"
+                >Color Palette Generator</a
+              >
+            </li>
             <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
-            <li><a href="/tools/glassmorphism-generator/">Glassmorphism Generator</a></li>
-            <li><a href="/tools/text-shadow-generator/">Text Shadow Generator</a></li>
-            <li><a href="/tools/css-transform-generator/">CSS Transform Generator</a></li>
+            <li>
+              <a href="/tools/glassmorphism-generator/"
+                >Glassmorphism Generator</a
+              >
+            </li>
+            <li>
+              <a href="/tools/text-shadow-generator/">Text Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/css-transform-generator/"
+                >CSS Transform Generator</a
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -107,9 +204,3 @@
     <script type="module" src="../../js/main.js"></script>
   </body>
 </html>
-
-
-
-
-
-
