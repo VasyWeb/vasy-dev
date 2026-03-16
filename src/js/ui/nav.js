@@ -27,8 +27,6 @@ export const setupNav = () => {
 
 const cards = document.querySelectorAll(".card");
 
-const cards = document.querySelectorAll(".card");
-
 cards.forEach((card) => {
   card.addEventListener("click", (e) => {
     // dacă se apasă pe link sau buton din card, nu face flip
