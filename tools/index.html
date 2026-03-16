@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
@@ -12,29 +12,38 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-5YW4LB5N1T");
     </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
-      content="Frontend tools including CSS generators, converters and checkers for faster UI development workflows."
+      content="Frontend tools including CSS generators, converters and checkers designed to speed up modern UI development workflows."
     />
+
     <meta property="og:title" content="Frontend Tools | Vasy.dev" />
     <meta
       property="og:description"
-      content="Explore generators, converters and checkers built for frontend development workflows."
+      content="Explore CSS generators, converters and developer utilities built for modern frontend workflows."
     />
     <meta
       property="og:image"
       content="https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp"
     />
     <meta property="og:type" content="website" />
+
     <title>
-      Frontend Tools - Generators, Converters and Checkers | Vasy.dev
+      Frontend Tools – CSS Generators, Converters and Developer Utilities |
+      Vasy.dev
     </title>
+
     <link rel="canonical" href="https://vasy.dev/tools/" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -55,10 +64,9 @@
         ]
       }
     </script>
-    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../css/main.css" />
   </head>
-  <body class="page page--home page--theme-ocean">
+
+  <body class="page page--tools page--theme-ocean">
     <main class="site-main">
       <section
         class="tools section-block section-slice section-slice--a"
@@ -67,63 +75,86 @@
         <div class="l-container tools__container">
           <div class="tools__header">
             <nav class="breadcrumb" aria-label="Breadcrumb">
-              <a href="../index.html">Home</a>
+              <a href="/">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">Tools</span>
             </nav>
+
             <h1>CSS Generators, Converters and Frontend Tools</h1>
+
             <p>
               Choose a tool category and work faster with generators, converters
-              and frontend checks.
+              and utilities built for modern frontend development.
             </p>
-            <a href="../index.html" class="button button--secondary"
-              >Back to portfolio</a
-            >
+
+            <a href="/" class="button button--secondary"> Back to portfolio </a>
           </div>
 
           <div class="services__grid">
+            <!-- GENERATORS -->
+
             <article class="service-card">
-              <h2 class="service-card__title">Generators</h2>
+              <h2 class="service-card__title">CSS Generators</h2>
+
               <p class="service-card__text">
-                Generate production-ready CSS for layouts, effects, animation
-                and interface styling.
+                Generate production-ready CSS for layouts, visual effects and
+                interface styling. These tools provide live previews and
+                ready-to-copy CSS values.
               </p>
+
               <ul class="tool-category__list">
                 <li>Box Shadow Generator</li>
                 <li>Border Radius Generator</li>
                 <li>Gradient Generator</li>
                 <li>Color Palette Generator</li>
+                <li>Text Shadow Generator</li>
+                <li>CSS Transform Generator</li>
+                <li>Glassmorphism Generator</li>
                 <li>CSS Grid Generator</li>
+                <li>Flexbox Generator</li>
                 <li>CSS Animation Generator</li>
+                <li>CSS Filter Generator</li>
               </ul>
-              <!-- TREBUIE MODIFICAT SI PUS ADRESA CORECTA IN ANCOR -->
-              <a href="generator/" class="button service-card__action"
-                >View all generators &rarr;</a
-              >
+
+              <a href="/tools/generators/" class="button service-card__action">
+                View all generators →
+              </a>
             </article>
+
+            <!-- CONVERTERS -->
+
             <article class="service-card">
-              <h2 class="service-card__title">Converters</h2>
+              <h2 class="service-card__title">CSS Converters</h2>
+
               <p class="service-card__text">
-                Convert units and formats commonly used in frontend development.
+                Convert units and formats used in responsive design and frontend
+                workflows. Quick utilities for everyday development tasks.
               </p>
+
               <ul class="tool-category__list">
                 <li>PX to REM Converter</li>
                 <li>REM to PX Converter</li>
                 <li>PX to EM Converter</li>
                 <li>HEX to RGB Converter</li>
               </ul>
-              <a href="converters/" class="button service-card__action"
-                >View all converters &rarr;</a
-              >
+
+              <a href="/tools/converters/" class="button service-card__action">
+                View all converters →
+              </a>
             </article>
+
+            <!-- CHECKERS -->
+
             <article class="service-card">
-              <h2 class="service-card__title">Checkers</h2>
+              <h2 class="service-card__title">Frontend Checkers</h2>
+
               <p class="service-card__text">
-                Review CSS, layout and UI output with quick validation tools for
-                cleaner frontend work.
+                Validation tools for accessibility, UI quality and CSS output
+                inspection. Additional frontend utilities will be added soon.
               </p>
+
               <ul class="tool-category__list">
-                <li>Accessibility checkers coming next</li>
+                <li>Accessibility Checker (coming soon)</li>
               </ul>
             </article>
           </div>
