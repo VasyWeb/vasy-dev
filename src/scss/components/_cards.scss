@@ -156,13 +156,25 @@
     min-height: 320px;
   }
 
-  .card__side--back {
-    margin-top: 0.7rem;
+  .card::after {
+    content: "Tap for details";
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    font-size: 0.7rem;
+    opacity: 0.6;
   }
 
   .card:hover .card__side--front,
   .card:hover .card__side--back {
     transform: none;
-    box-shadow: none;
+  }
+
+  .card.card--flipped .card__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  .card.card--flipped .card__side--back {
+    transform: rotateY(0deg);
   }
 }
