@@ -153,13 +153,7 @@
 
 @media (max-width: 768px) {
   .card {
-    min-height: auto;
-    perspective: none;
-  }
-
-  .card__side {
-    position: static;
-    transform: none;
+    min-height: 320px;
   }
 
   .card__side--back {
