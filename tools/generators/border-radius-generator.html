@@ -1,15 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -21,11 +26,44 @@
       property="og:description"
       content="Generate custom rounded corners and copy CSS instantly."
     />
-    <meta property="og:image" content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="website" />
-    <title>CSS Border Radius Generator - Create Rounded Corners | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/tools/border-radius-generator/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://vasy.dev/tools/"},{"@type":"ListItem","position":3,"name":"CSS Border Radius Generator","item":"https://vasy.dev/tools/border-radius-generator/"}]}</script>
+    <title>
+      CSS Border Radius Generator - Create Rounded Corners | Vasy.dev
+    </title>
+    <link
+      rel="canonical"
+      href="https://vasy.dev/tools/border-radius-generator/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Tools",
+            "item": "https://vasy.dev/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CSS Border Radius Generator",
+            "item": "https://vasy.dev/tools/border-radius-generator/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
@@ -34,33 +72,79 @@
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
-                        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <a href="../../tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">CSS Border Radius Generator</span>
             </nav>
-<h1>CSS Border Radius Generator</h1>
+            <h1>CSS Border Radius Generator</h1>
             <p>Create rounded shapes and copy clean CSS values.</p>
-            <a href="../index.html" class="button button--secondary">All tools</a>
+            <a href="../index.html" class="button button--secondary"
+              >All tools</a
+            >
           </div>
 
           <section class="radius-generator" aria-labelledby="radiusGenTitle">
             <div class="radius-generator__header">
-              <h2 id="radiusGenTitle" class="radius-generator__title">Border Radius Controls</h2>
+              <h2 id="radiusGenTitle" class="radius-generator__title">
+                Border Radius Controls
+              </h2>
             </div>
             <div class="radius-generator__layout">
               <div class="radius-generator__controls">
-                <label class="radius-generator__control"><span>Top Left</span><input type="range" id="radiusTl" min="0" max="120" value="20" /></label>
-                <label class="radius-generator__control"><span>Top Right</span><input type="range" id="radiusTr" min="0" max="120" value="40" /></label>
-                <label class="radius-generator__control"><span>Bottom Right</span><input type="range" id="radiusBr" min="0" max="120" value="10" /></label>
-                <label class="radius-generator__control"><span>Bottom Left</span><input type="range" id="radiusBl" min="0" max="120" value="30" /></label>
+                <label class="radius-generator__control"
+                  ><span>Top Left</span
+                  ><input
+                    type="range"
+                    id="radiusTl"
+                    min="0"
+                    max="120"
+                    value="20"
+                /></label>
+                <label class="radius-generator__control"
+                  ><span>Top Right</span
+                  ><input
+                    type="range"
+                    id="radiusTr"
+                    min="0"
+                    max="120"
+                    value="40"
+                /></label>
+                <label class="radius-generator__control"
+                  ><span>Bottom Right</span
+                  ><input
+                    type="range"
+                    id="radiusBr"
+                    min="0"
+                    max="120"
+                    value="10"
+                /></label>
+                <label class="radius-generator__control"
+                  ><span>Bottom Left</span
+                  ><input
+                    type="range"
+                    id="radiusBl"
+                    min="0"
+                    max="120"
+                    value="30"
+                /></label>
               </div>
               <div class="radius-generator__preview-wrap">
-                <div id="radiusPreview" class="radius-generator__preview">Preview</div>
-                <code id="radiusCode" class="radius-generator__code">border-radius: 20px 40px 10px 30px;</code>
-                <button id="copyRadiusBtn" class="button radius-generator__copy" type="button">Copy CSS</button>
+                <div id="radiusPreview" class="radius-generator__preview">
+                  Preview
+                </div>
+                <code id="radiusCode" class="radius-generator__code"
+                  >border-radius: 20px 40px 10px 30px;</code
+                >
+                <button
+                  id="copyRadiusBtn"
+                  class="button radius-generator__copy"
+                  type="button"
+                >
+                  Copy CSS
+                </button>
               </div>
             </div>
           </section>
@@ -80,10 +164,18 @@
             bottom-left values work together, while developers save time when
             creating cards, buttons, form fields or images with smoother edges.
           </p>
-                    <p>
-            Border radius becomes especially useful when you want components to feel friendlier and more refined. Buttons, cards, form fields, avatars and images all benefit from consistent corner values. A small radius can create a cleaner and more modern interface, while larger values can push a design toward a softer product look. This kind of tool is helpful because it lets you compare subtle changes visually instead of guessing values in code. It also makes it easier to keep a consistent radius system across a full website, which improves visual rhythm and makes UI components feel related.
+          <p>
+            Border radius becomes especially useful when you want components to
+            feel friendlier and more refined. Buttons, cards, form fields,
+            avatars and images all benefit from consistent corner values. A
+            small radius can create a cleaner and more modern interface, while
+            larger values can push a design toward a softer product look. This
+            kind of tool is helpful because it lets you compare subtle changes
+            visually instead of guessing values in code. It also makes it easier
+            to keep a consistent radius system across a full website, which
+            improves visual rhythm and makes UI components feel related.
           </p>
-<h3>Example CSS</h3>
+          <h3>Example CSS</h3>
           <pre><code>border-radius: 20px 40px 10px 30px;</code></pre>
           <p>Read the full guide here:</p>
           <a class="button button--secondary" href="/blog/border-radius-guide/">
@@ -91,14 +183,34 @@
           </a>
           <h3>Other CSS generators</h3>
           <ul class="tool-internal-links">
-            <li><a href="/tools/box-shadow-generator/">Box Shadow Generator</a></li>
-            <li><a href="/tools/border-radius-generator/">Border Radius Generator</a></li>
+            <li>
+              <a href="/tools/box-shadow-generator/">Box Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/border-radius-generator/"
+                >Border Radius Generator</a
+              >
+            </li>
             <li><a href="/tools/gradient-generator/">Gradient Generator</a></li>
-            <li><a href="/tools/color-palette-generator/">Color Palette Generator</a></li>
+            <li>
+              <a href="/tools/color-palette-generator/"
+                >Color Palette Generator</a
+              >
+            </li>
             <li><a href="/tools/css-grid-generator/">CSS Grid Generator</a></li>
-            <li><a href="/tools/glassmorphism-generator/">Glassmorphism Generator</a></li>
-            <li><a href="/tools/text-shadow-generator/">Text Shadow Generator</a></li>
-            <li><a href="/tools/css-transform-generator/">CSS Transform Generator</a></li>
+            <li>
+              <a href="/tools/glassmorphism-generator/"
+                >Glassmorphism Generator</a
+              >
+            </li>
+            <li>
+              <a href="/tools/text-shadow-generator/">Text Shadow Generator</a>
+            </li>
+            <li>
+              <a href="/tools/css-transform-generator/"
+                >CSS Transform Generator</a
+              >
+            </li>
           </ul>
         </div>
       </section>
@@ -106,9 +218,3 @@
     <script type="module" src="../../js/main.js"></script>
   </body>
 </html>
-
-
-
-
-
-
