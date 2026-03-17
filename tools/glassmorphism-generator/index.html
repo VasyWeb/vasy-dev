@@ -19,22 +19,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Generate CSS transform properties including rotate, scale and translate with live preview."
+      content="Create glassmorphism UI effects with blur, transparency and borders. Generate CSS code instantly."
     />
-    <meta property="og:title" content="CSS Transform Generator | Vasy.dev" />
+    <meta property="og:title" content="Glassmorphism Generator | Vasy.dev" />
     <meta
       property="og:description"
-      content="Generate CSS transform properties including rotate, scale and translate with live preview."
+      content="Create glassmorphism UI effects with blur, transparency and borders. Generate CSS code instantly."
     />
     <meta
       property="og:image"
-      content="../../images/mason-c-W7Jasy4wBYA-unsplash.webp"
+      content="https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp"
     />
     <meta property="og:type" content="website" />
-    <title>CSS Transform Generator | Vasy.dev</title>
+    <title>Glassmorphism Generator - Frosted Glass CSS Online | Vasy.dev</title>
     <link
       rel="canonical"
-      href="https://vasy.dev/tools/css-transform-generator/"
+      href="https://vasy.dev/tools/glassmorphism-generator/"
     />
     <script type="application/ld+json">
       {
@@ -56,8 +56,8 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "CSS Transform Generator",
-            "item": "https://vasy.dev/tools/css-transform-generator/"
+            "name": "Glassmorphism CSS Generator",
+            "item": "https://vasy.dev/tools/glassmorphism-generator/"
           }
         ]
       }
@@ -73,82 +73,85 @@
             <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-              <a href="../../tools/">Tools</a>
+              <a href="../">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-              <span aria-current="page">CSS Transform Generator</span>
+              <span aria-current="page">Glassmorphism CSS Generator</span>
             </nav>
-            <h1>CSS Transform Generator</h1>
+            <h1>Glassmorphism CSS Generator</h1>
             <p>
-              The CSS <code>transform</code> property lets you rotate, scale and
-              move elements visually without changing the document flow.
+              Glassmorphism uses <code>backdrop-filter</code>, blur,
+              transparency and soft borders to create layered translucent UI
+              panels with a frosted-glass effect.
             </p>
-            <a href="../../tools/" class="button button--secondary"
+            <a href="../" class="button button--secondary"
               >All tools</a
             >
           </div>
 
-          <section class="shadow-generator" aria-labelledby="transformGenTitle">
+          <section class="shadow-generator" aria-labelledby="glassGenTitle">
             <div class="shadow-generator__header">
-              <h2 id="transformGenTitle" class="shadow-generator__title">
-                Transform Controls
+              <h2 id="glassGenTitle" class="shadow-generator__title">
+                Glassmorphism Controls
               </h2>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
                 <label class="shadow-generator__control">
-                  <span>Rotate</span>
+                  <span>Blur</span>
                   <input
                     type="range"
-                    id="transformRotate"
-                    min="-180"
-                    max="180"
-                    value="45"
+                    id="glassBlur"
+                    min="0"
+                    max="30"
+                    value="12"
                   />
                 </label>
                 <label class="shadow-generator__control">
-                  <span>Scale</span>
+                  <span>Background Opacity</span>
                   <input
                     type="range"
-                    id="transformScale"
-                    min="0.5"
-                    max="2"
+                    id="glassBgOpacity"
+                    min="0"
+                    max="1"
                     step="0.01"
-                    value="1.2"
+                    value="0.2"
                   />
                 </label>
                 <label class="shadow-generator__control">
-                  <span>Translate X</span>
+                  <span>Border Radius</span>
                   <input
                     type="range"
-                    id="transformTranslateX"
-                    min="-100"
-                    max="100"
-                    value="10"
+                    id="glassRadius"
+                    min="0"
+                    max="40"
+                    value="12"
                   />
                 </label>
                 <label class="shadow-generator__control">
-                  <span>Translate Y</span>
+                  <span>Border Transparency</span>
                   <input
                     type="range"
-                    id="transformTranslateY"
-                    min="-100"
-                    max="100"
-                    value="20"
+                    id="glassBorderOpacity"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.3"
                   />
                 </label>
               </div>
               <div class="shadow-generator__preview-wrap">
                 <div class="shadow-generator__preview">
-                  <div id="transformPreview" class="transform-preview">
-                    Preview
+                  <div id="glassPreview" class="transform-preview">
+                    Glass UI
                   </div>
                 </div>
-                <code id="transformCode" class="shadow-generator__code"
-                  >transform: rotate(45deg) scale(1.2) translate(10px,
-                  20px);</code
+                <code id="glassCode" class="shadow-generator__code"
+                  >backdrop-filter: blur(12px); background: rgba(255, 255, 255,
+                  0.2); border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 12px;</code
                 >
                 <button
-                  id="copyTransformBtn"
+                  id="copyGlassBtn"
                   class="button shadow-generator__copy"
                   type="button"
                 >
@@ -164,32 +167,35 @@
         <div class="l-container">
           <h2>How this CSS generator works</h2>
           <p>
-            The CSS <code>transform</code> property changes how an element is
-            displayed without affecting the normal document flow. Common
-            transform functions include <code>translate()</code> for movement,
-            <code>rotate()</code> for angle changes and <code>scale()</code> for
-            resizing. This generator helps you combine those functions visually,
-            so you can see how a preview box reacts before copying the final
-            code. Beginners can understand the difference between moving,
-            rotating and scaling an element, while developers can build hover
-            states, animations and interactive UI effects faster.
+            Glassmorphism is a visual style that creates a frosted glass effect
+            using blur, transparency and light borders. In CSS, this usually
+            relies on <code>backdrop-filter</code> together with
+            semi-transparent backgrounds and subtle outlines. This generator
+            helps you test the main values quickly, including blur strength,
+            background opacity, border transparency and corner radius. Beginners
+            can see how each setting changes the glass effect, while developers
+            can generate the CSS much faster than adjusting every layer by hand
+            for cards, overlays and translucent panels.
           </p>
           <p>
-            Transforms are often used to create interaction without disturbing
-            layout flow, which makes them a reliable tool for polished
-            interfaces. Hover lift effects on cards, subtle scale changes on
-            buttons and movement on media thumbnails all depend on transform
-            values that feel natural. When those values are too strong, the UI
-            can feel unstable; when they are too small, the feedback gets lost.
-            A generator helps you find the right level quickly while seeing the
-            visual result in context. It also makes it easier to combine rotate,
-            scale and translate properties into one clean declaration that can
-            be reused across interactive components.
+            Glassmorphism works best when blur, transparency, borders and shadow
+            are balanced carefully. If the effect is too weak, the panel
+            disappears into the background; if it is too strong, it can hurt
+            readability and feel more decorative than useful. A generator helps
+            you explore that balance quickly by previewing how opacity and blur
+            interact together. This is especially useful for overlays, floating
+            cards, profile panels and promotional sections where you want
+            layered depth without losing contrast. Instead of adjusting several
+            values blindly, you can shape the effect visually and move faster
+            toward a style that feels deliberate and production-ready.
           </p>
           <h3>Example CSS</h3>
-          <pre><code>transform: rotate(45deg) scale(1.2) translate(10px, 20px);</code></pre>
+          <pre><code>backdrop-filter: blur(12px);
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 12px;</code></pre>
           <p>Read the full guide here:</p>
-          <a class="button button--secondary" href="/blog/css-transform-guide/">
+          <a class="button button--secondary" href="/blog/glassmorphism-guide/">
             Read the complete tutorial
           </a>
           <h3>Other CSS generators</h3>

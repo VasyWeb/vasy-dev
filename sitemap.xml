@@ -1,102 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vasy-dev.netlify.app/</loc>
+    <loc>https://vasy.dev/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/</loc>
+    <loc>https://vasy.dev/tools/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/box-shadow-generator/</loc>
+    <loc>https://vasy.dev/tools/box-shadow-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/border-radius-generator/</loc>
+    <loc>https://vasy.dev/tools/border-radius-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/gradient-generator/</loc>
+    <loc>https://vasy.dev/tools/gradient-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/color-palette-generator/</loc>
+    <loc>https://vasy.dev/tools/color-palette-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/text-shadow-generator/</loc>
+    <loc>https://vasy.dev/tools/text-shadow-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/css-transform-generator/</loc>
+    <loc>https://vasy.dev/tools/css-transform-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/glassmorphism-generator/</loc>
+    <loc>https://vasy.dev/tools/glassmorphism-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/css-grid-generator/</loc>
+    <loc>https://vasy.dev/tools/css-grid-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/flexbox-generator/</loc>
+    <loc>https://vasy.dev/tools/flexbox-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/css-animation-generator/</loc>
+    <loc>https://vasy.dev/tools/css-animation-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/css-filter-generator/</loc>
+    <loc>https://vasy.dev/tools/css-filter-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/converters/</loc>
+    <loc>https://vasy.dev/tools/converters/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/converters/px-to-rem.html</loc>
+    <loc>https://vasy.dev/tools/converters/px-to-rem.html</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/converters/rem-to-px.html</loc>
+    <loc>https://vasy.dev/tools/converters/rem-to-px.html</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/converters/px-to-em.html</loc>
+    <loc>https://vasy.dev/tools/converters/px-to-em.html</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/tools/converters/hex-to-rgb.html</loc>
+    <loc>https://vasy.dev/tools/converters/hex-to-rgb.html</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/projects/</loc>
+    <loc>https://vasy.dev/projects/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/</loc>
+    <loc>https://vasy.dev/blog/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/landing-page-converts/</loc>
+    <loc>https://vasy.dev/blog/landing-page-converts/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/scss-7-1-architecture/</loc>
+    <loc>https://vasy.dev/blog/scss-7-1-architecture/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/border-radius-guide/</loc>
+    <loc>https://vasy.dev/blog/border-radius-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/box-shadow-guide/</loc>
+    <loc>https://vasy.dev/blog/box-shadow-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/gradient-guide/</loc>
+    <loc>https://vasy.dev/blog/gradient-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/color-palette-guide/</loc>
+    <loc>https://vasy.dev/blog/color-palette-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/text-shadow-guide/</loc>
+    <loc>https://vasy.dev/blog/text-shadow-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/glassmorphism-guide/</loc>
+    <loc>https://vasy.dev/blog/glassmorphism-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/css-grid-guide/</loc>
+    <loc>https://vasy.dev/blog/css-grid-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/css-flexbox-guide/</loc>
+    <loc>https://vasy.dev/blog/css-flexbox-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/css-animation-guide/</loc>
+    <loc>https://vasy.dev/blog/css-animation-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/css-filter-guide/</loc>
+    <loc>https://vasy.dev/blog/css-filter-guide/</loc>
   </url>
   <url>
-    <loc>https://vasy-dev.netlify.app/blog/css-transform-guide/</loc>
+    <loc>https://vasy.dev/blog/css-transform-guide/</loc>
   </url>
 </urlset>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vasy-dev.netlify.app/sitemap.xml
+Sitemap: https://vasy.dev/sitemap.xml
