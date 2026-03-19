@@ -7,37 +7,40 @@
     <loc>https://vasy.dev/tools/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/box-shadow-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/border-radius-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/box-shadow-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/gradient-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/border-radius-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/color-palette-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/gradient-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/text-shadow-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/color-palette-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/css-transform-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/text-shadow-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/glassmorphism-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/css-transform-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/css-grid-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/glassmorphism-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/flexbox-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/css-grid-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/css-animation-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/flexbox-generator/</loc>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/css-filter-generator/</loc>
+    <loc>https://vasy.dev/tools/generators/css-animation-generator/</loc>
+  </url>
+  <url>
+    <loc>https://vasy.dev/tools/generators/css-filter-generator/</loc>
   </url>
   <url>
     <loc>https://vasy.dev/tools/converters/</loc>
