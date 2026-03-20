@@ -93,18 +93,15 @@
             >
           </div>
 
-          <section
-            class="gradient-generator"
-            aria-labelledby="gradientGenTitle"
-          >
-            <div class="gradient-generator__header">
-              <h2 id="gradientGenTitle" class="gradient-generator__title">
+          <section class="shadow-generator" aria-labelledby="gradientGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="gradientGenTitle" class="shadow-generator__title">
                 Gradient Controls
               </h2>
             </div>
-            <div class="gradient-generator__layout">
-              <div class="gradient-generator__controls">
-                <label class="gradient-generator__control"
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control"
                   ><span>Angle</span
                   ><input
                     type="range"
@@ -114,26 +111,29 @@
                     value="45"
                 /></label>
                 <label
-                  class="gradient-generator__control gradient-generator__control--color"
+                  class="shadow-generator__control gradient-generator__control--color"
                   ><span>Color 1</span
                   ><input type="color" id="gradientColor1" value="#ff6b6b"
                 /></label>
                 <label
-                  class="gradient-generator__control gradient-generator__control--color"
+                  class="shadow-generator__control gradient-generator__control--color"
                   ><span>Color 2</span
                   ><input type="color" id="gradientColor2" value="#4ecdc4"
                 /></label>
               </div>
-              <div class="gradient-generator__preview-wrap">
-                <div id="gradientPreview" class="gradient-generator__preview">
+              <div class="shadow-generator__preview-wrap">
+                <div
+                  id="gradientPreview"
+                  class="shadow-generator__preview gradient-generator__preview"
+                >
                   Preview
                 </div>
-                <code id="gradientCode" class="gradient-generator__code"
+                <code id="gradientCode" class="shadow-generator__code"
                   >background: linear-gradient(45deg, #ff6b6b, #4ecdc4);</code
                 >
                 <button
                   id="copyGradientBtn"
-                  class="button gradient-generator__copy"
+                  class="button shadow-generator__copy"
                   type="button"
                 >
                   Copy CSS

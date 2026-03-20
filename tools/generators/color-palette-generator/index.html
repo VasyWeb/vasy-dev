@@ -91,13 +91,14 @@
             >
           </div>
 
-          <section class="palette-generator" aria-labelledby="paletteGenTitle">
-            <div class="palette-generator__header">
-              <h2 id="paletteGenTitle" class="palette-generator__title">
+          <section class="shadow-generator" aria-labelledby="paletteGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="paletteGenTitle" class="shadow-generator__title">
                 Palette Controls
               </h2>
             </div>
-            <div class="palette-generator__actions">
+            <div class="shadow-generator__preview-wrap">
+              <div class="palette-generator__actions">
               <button
                 id="paletteRandomBtn"
                 class="button palette-generator__btn"
@@ -112,8 +113,8 @@
               >
                 Export CSS Variables
               </button>
-            </div>
-            <div class="palette-generator__swatches" id="paletteSwatches">
+              </div>
+              <div class="palette-generator__swatches" id="paletteSwatches">
               <article class="swatch" data-index="0">
                 <div class="swatch__color" style="background: #0ea5e9"></div>
                 <div class="swatch__meta">
@@ -179,11 +180,12 @@
                   </button>
                 </div>
               </article>
-            </div>
-            <code id="paletteCode" class="palette-generator__code"
+              </div>
+              <code id="paletteCode" class="shadow-generator__code"
               >:root { --color-1: #0EA5E9; --color-2: #6366F1; --color-3:
               #14B8A6; --color-4: #F97316; --color-5: #F43F5E; }</code
-            >
+              >
+            </div>
           </section>
         </div>
       </section>

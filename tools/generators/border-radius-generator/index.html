@@ -91,15 +91,15 @@
             >
           </div>
 
-          <section class="radius-generator" aria-labelledby="radiusGenTitle">
-            <div class="radius-generator__header">
-              <h2 id="radiusGenTitle" class="radius-generator__title">
+          <section class="shadow-generator" aria-labelledby="radiusGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="radiusGenTitle" class="shadow-generator__title">
                 Border Radius Controls
               </h2>
             </div>
-            <div class="radius-generator__layout">
-              <div class="radius-generator__controls">
-                <label class="radius-generator__control"
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control"
                   ><span>Top Left</span
                   ><input
                     type="range"
@@ -108,7 +108,7 @@
                     max="120"
                     value="20"
                 /></label>
-                <label class="radius-generator__control"
+                <label class="shadow-generator__control"
                   ><span>Top Right</span
                   ><input
                     type="range"
@@ -117,7 +117,7 @@
                     max="120"
                     value="40"
                 /></label>
-                <label class="radius-generator__control"
+                <label class="shadow-generator__control"
                   ><span>Bottom Right</span
                   ><input
                     type="range"
@@ -126,7 +126,7 @@
                     max="120"
                     value="10"
                 /></label>
-                <label class="radius-generator__control"
+                <label class="shadow-generator__control"
                   ><span>Bottom Left</span
                   ><input
                     type="range"
@@ -136,16 +136,19 @@
                     value="30"
                 /></label>
               </div>
-              <div class="radius-generator__preview-wrap">
-                <div id="radiusPreview" class="radius-generator__preview">
+              <div class="shadow-generator__preview-wrap">
+                <div
+                  id="radiusPreview"
+                  class="shadow-generator__preview radius-generator__preview"
+                >
                   Preview
                 </div>
-                <code id="radiusCode" class="radius-generator__code"
+                <code id="radiusCode" class="shadow-generator__code"
                   >border-radius: 20px 40px 10px 30px;</code
                 >
                 <button
                   id="copyRadiusBtn"
-                  class="button radius-generator__copy"
+                  class="button shadow-generator__copy"
                   type="button"
                 >
                   Copy CSS
