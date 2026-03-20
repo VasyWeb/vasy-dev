@@ -1,105 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vasy.dev/</loc>
+    <loc>https://vasy-dev.netlify.app/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/box-shadow-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/box-shadow-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/border-radius-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/border-radius-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/gradient-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/gradient-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/color-palette-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/color-palette-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/text-shadow-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/text-shadow-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/css-transform-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/css-transform-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/glassmorphism-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/glassmorphism-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/css-grid-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/css-grid-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/flexbox-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/flexbox-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/css-animation-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/css-animation-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/generators/css-filter-generator/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/generators/css-filter-generator/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/converters/</loc>
+    <loc>https://vasy-dev.netlify.app/tools/converters/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/converters/px-to-rem.html</loc>
+    <loc>https://vasy-dev.netlify.app/tools/converters/px-to-rem.html</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/converters/rem-to-px.html</loc>
+    <loc>https://vasy-dev.netlify.app/tools/converters/rem-to-px.html</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/converters/px-to-em.html</loc>
+    <loc>https://vasy-dev.netlify.app/tools/converters/px-to-em.html</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/tools/converters/hex-to-rgb.html</loc>
+    <loc>https://vasy-dev.netlify.app/tools/converters/hex-to-rgb.html</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/projects/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/landing-page-converts/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/landing-page-converts/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/scss-7-1-architecture/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/scss-7-1-architecture/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/border-radius-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/border-radius-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/box-shadow-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/box-shadow-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/gradient-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/gradient-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/color-palette-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/color-palette-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/text-shadow-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/text-shadow-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/glassmorphism-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/glassmorphism-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/css-grid-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/css-grid-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/css-flexbox-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/css-flexbox-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/css-animation-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/css-animation-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/css-filter-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/css-filter-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/blog/css-transform-guide/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
   <url>
-    <loc>https://vasy.dev/blog/css-transform-guide/</loc>
+    <loc>https://vasy-dev.netlify.app/projects/</loc>
+    <lastmod>2026-03-20</lastmod>
   </url>
 </urlset>
