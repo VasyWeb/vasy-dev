@@ -73,7 +73,7 @@
 .site-nav__toggle-line {
   display: block;
   height: 2px;
-  width: 1px;
+  width: 100%;
   background: color-mix(in srgb, var(--color-bg) 70%, var(--color-accent));
   margin: 3px 0;
   border-radius: 2px;
