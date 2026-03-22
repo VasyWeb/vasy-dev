@@ -1,37 +1,103 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
-    
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <meta
       name="description"
       content="Learn how CSS text-shadow works and generate readable text effects instantly with our text shadow generator."
     />
-    
 
-    <meta property="og:title" content="CSS Text Shadow Guide + Generator | Vasy.dev" />
+    <meta
+      property="og:title"
+      content="CSS Text Shadow Guide + Generator | Vasy-dev.netlify.app"
+    />
     <meta
       property="og:description"
       content="Learn how CSS text-shadow works and generate readable text effects instantly with our text shadow generator."
     />
-    <meta property="og:image" content="https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://vasy.dev/blog/text-shadow-guide/" />
-    <title>CSS Text Shadow Guide + Generator | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/blog/text-shadow-guide/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://vasy.dev/blog/"},{"@type":"ListItem","position":3,"name":"How to Create CSS Text Shadows That Stay Readable","item":"https://vasy.dev/blog/text-shadow-guide/"}]}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Create CSS Text Shadows That Stay Readable","description":"Learn how CSS text-shadow works and generate readable text effects instantly with our text shadow generator.","author":{"@type":"Person","name":"Vasy","url":"https://vasy.dev/"},"publisher":{"@type":"Organization","name":"Vasy.dev","url":"https://vasy.dev/","logo":{"@type":"ImageObject","url":"https://vasy.dev/favicon.svg"}},"mainEntityOfPage":"https://vasy.dev/blog/text-shadow-guide/","url":"https://vasy.dev/blog/text-shadow-guide/","image":"https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp","inLanguage":"en"}</script>
+    <meta
+      property="og:url"
+      content="https://vasy-dev.netlify.app/blog/text-shadow-guide/"
+    />
+    <title>CSS Text Shadow Guide + Generator | Vasy-dev.netlify.app</title>
+    <link
+      rel="canonical"
+      href="https://vasy-dev.netlify.app/blog/text-shadow-guide/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy-dev.netlify.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://vasy-dev.netlify.app/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to Create CSS Text Shadows That Stay Readable",
+            "item": "https://vasy-dev.netlify.app/blog/text-shadow-guide/"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Create CSS Text Shadows That Stay Readable",
+        "description": "Learn how CSS text-shadow works and generate readable text effects instantly with our text shadow generator.",
+        "author": {
+          "@type": "Person",
+          "name": "Vasy",
+          "url": "https://vasy-dev.netlify.app/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Vasy-dev.netlify.app",
+          "url": "https://vasy-dev.netlify.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://vasy-dev.netlify.app/favicon.svg"
+          }
+        },
+        "mainEntityOfPage": "https://vasy-dev.netlify.app/blog/text-shadow-guide/",
+        "url": "https://vasy-dev.netlify.app/blog/text-shadow-guide/",
+        "image": "https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp",
+        "inLanguage": "en"
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
@@ -39,14 +105,16 @@
     <main class="site-main">
       <section class="stack section-block section-slice section-slice--b">
         <div class="l-container">
-                    <nav class="breadcrumb" aria-label="Breadcrumb">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../../index.html">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <a href="../index.html">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-            <span aria-current="page">How to Create CSS Text Shadows That Stay Readable</span>
+            <span aria-current="page"
+              >How to Create CSS Text Shadows That Stay Readable</span
+            >
           </nav>
-<article class="blog-article">
+          <article class="blog-article">
             <h1>How to Create CSS Text Shadows That Stay Readable</h1>
             <p>
               The CSS <code>text-shadow</code> property lets you add depth,
@@ -58,8 +126,8 @@
               <h2 id="what-is-text-shadow">What is CSS text-shadow?</h2>
               <p>
                 <code>text-shadow</code> applies a shadow directly to text
-                characters. You control horizontal offset, vertical offset,
-                blur and color.
+                characters. You control horizontal offset, vertical offset, blur
+                and color.
               </p>
               <pre><code>text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
             </section>
@@ -76,10 +144,21 @@
             </section>
             <section aria-labelledby="generate-text-shadow">
               <h2 id="generate-text-shadow">Generate your own text shadow</h2>
-              <p>Use our generator to preview text-shadow combinations live and copy the CSS immediately.</p>
+              <p>
+                Use our generator to preview text-shadow combinations live and
+                copy the CSS immediately.
+              </p>
               <div class="blog-article__cta">
-                <a href="https://vasy.dev/tools/generators/text-shadow-generator/" class="button button--primary">CSS Text Shadow Generator</a>
-                <a href="../../tools/generators/text-shadow-generator/" class="button button--secondary">Open local tool page</a>
+                <a
+                  href="https://vasy-dev.netlify.app/tools/generators/text-shadow-generator/"
+                  class="button button--primary"
+                  >CSS Text Shadow Generator</a
+                >
+                <a
+                  href="../../tools/generators/text-shadow-generator/"
+                  class="button button--secondary"
+                  >Open local tool page</a
+                >
               </div>
             </section>
             <section aria-labelledby="text-shadow-tips">
@@ -97,30 +176,21 @@
               <h3>Can I use multiple text shadows?</h3>
               <p>Yes, you can separate multiple shadows with commas.</p>
               <h3>Does text-shadow help readability?</h3>
-              <p>Yes, subtle shadows can improve contrast on complex backgrounds.</p>
+              <p>
+                Yes, subtle shadows can improve contrast on complex backgrounds.
+              </p>
             </section>
           </article>
           <div class="blog__actions">
-            <a href="../index.html" class="button button--secondary">Back to blog</a>
-            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+            <a href="../index.html" class="button button--secondary"
+              >Back to blog</a
+            >
+            <a href="../../index.html" class="button button--primary"
+              >Back to portfolio</a
+            >
           </div>
         </div>
       </section>
     </main>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

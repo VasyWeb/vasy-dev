@@ -1,37 +1,103 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
-    
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <meta
       name="description"
       content="Understand the SCSS 7-1 architecture pattern and how it helps organize large frontend codebases."
     />
-    
 
-    <meta property="og:title" content="SCSS 7-1 Architecture Explained | Vasy.dev" />
+    <meta
+      property="og:title"
+      content="SCSS 7-1 Architecture Explained | Vasy-dev.netlify.app"
+    />
     <meta
       property="og:description"
       content="Understand the SCSS 7-1 architecture pattern and how it helps organize large frontend codebases."
     />
-    <meta property="og:image" content="https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://vasy.dev/blog/scss-7-1-architecture/" />
-    <title>SCSS 7-1 Architecture Explained | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/blog/scss-7-1-architecture/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://vasy.dev/blog/"},{"@type":"ListItem","position":3,"name":"SCSS 7-1 Architecture Explained","item":"https://vasy.dev/blog/scss-7-1-architecture/"}]}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"SCSS 7-1 Architecture Explained","description":"Understand the SCSS 7-1 architecture pattern and how it helps organize large frontend codebases.","author":{"@type":"Person","name":"Vasy","url":"https://vasy.dev/"},"publisher":{"@type":"Organization","name":"Vasy.dev","url":"https://vasy.dev/","logo":{"@type":"ImageObject","url":"https://vasy.dev/favicon.svg"}},"mainEntityOfPage":"https://vasy.dev/blog/scss-7-1-architecture/","url":"https://vasy.dev/blog/scss-7-1-architecture/","image":"https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp","inLanguage":"en"}</script>
+    <meta
+      property="og:url"
+      content="https://vasy-dev.netlify.app/blog/scss-7-1-architecture/"
+    />
+    <title>SCSS 7-1 Architecture Explained | Vasy-dev.netlify.app</title>
+    <link
+      rel="canonical"
+      href="https://vasy-dev.netlify.app/blog/scss-7-1-architecture/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy-dev.netlify.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://vasy-dev.netlify.app/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SCSS 7-1 Architecture Explained",
+            "item": "https://vasy-dev.netlify.app/blog/scss-7-1-architecture/"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "SCSS 7-1 Architecture Explained",
+        "description": "Understand the SCSS 7-1 architecture pattern and how it helps organize large frontend codebases.",
+        "author": {
+          "@type": "Person",
+          "name": "Vasy",
+          "url": "https://vasy-dev.netlify.app/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Vasy-dev.netlify.app",
+          "url": "https://vasy-dev.netlify.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://vasy-dev.netlify.app/favicon.svg"
+          }
+        },
+        "mainEntityOfPage": "https://vasy-dev.netlify.app/blog/scss-7-1-architecture/",
+        "url": "https://vasy-dev.netlify.app/blog/scss-7-1-architecture/",
+        "image": "https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp",
+        "inLanguage": "en"
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
@@ -39,37 +105,39 @@
     <main class="site-main">
       <section class="stack section-block section-slice section-slice--b">
         <div class="l-container">
-                    <nav class="breadcrumb" aria-label="Breadcrumb">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../../index.html">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <a href="../index.html">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <span aria-current="page">SCSS 7-1 Architecture Explained</span>
           </nav>
-<article class="blog-article">
+          <article class="blog-article">
             <h1>SCSS 7-1 Architecture Explained</h1>
 
             <p>
-              The SCSS 7-1 pattern is a folder structure that keeps styles modular and
-              predictable as a project grows. Instead of placing everything in one large
-              stylesheet, you split concerns into focused partials.
+              The SCSS 7-1 pattern is a folder structure that keeps styles
+              modular and predictable as a project grows. Instead of placing
+              everything in one large stylesheet, you split concerns into
+              focused partials.
             </p>
 
             <section aria-labelledby="what-is-7-1">
               <h2 id="what-is-7-1">What does 7-1 mean?</h2>
               <p>
-                The pattern uses seven folders and one main file. The main file imports
-                everything in a controlled order, while the folders separate concerns such
-                as abstracts, base styles, components, layout, pages, themes and vendors.
+                The pattern uses seven folders and one main file. The main file
+                imports everything in a controlled order, while the folders
+                separate concerns such as abstracts, base styles, components,
+                layout, pages, themes and vendors.
               </p>
             </section>
 
             <section aria-labelledby="why-use-7-1">
               <h2 id="why-use-7-1">Why use this architecture?</h2>
               <p>
-                It reduces stylesheet chaos, makes naming easier to maintain and helps
-                teams understand where new code belongs. That matters once a site moves
-                beyond a few simple pages.
+                It reduces stylesheet chaos, makes naming easier to maintain and
+                helps teams understand where new code belongs. That matters once
+                a site moves beyond a few simple pages.
               </p>
             </section>
 
@@ -85,8 +153,8 @@
   vendors/
   main.scss</code></pre>
               <p>
-                This structure works especially well when combined with a consistent naming
-                convention such as BEM.
+                This structure works especially well when combined with a
+                consistent naming convention such as BEM.
               </p>
             </section>
 
@@ -95,39 +163,28 @@
 
               <h3>Is SCSS 7-1 good for small websites?</h3>
               <p>
-                It can be, but the biggest benefits appear once the project has multiple
-                pages and reusable UI pieces.
+                It can be, but the biggest benefits appear once the project has
+                multiple pages and reusable UI pieces.
               </p>
 
               <h3>Do I have to use exactly seven folders?</h3>
               <p>
-                No. The pattern is a guideline. Adjust it when the project size or team
-                workflow requires a slightly different structure.
+                No. The pattern is a guideline. Adjust it when the project size
+                or team workflow requires a slightly different structure.
               </p>
             </section>
           </article>
 
           <div class="blog__actions">
-            <a href="../index.html" class="button button--secondary">Back to blog</a>
-            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+            <a href="../index.html" class="button button--secondary"
+              >Back to blog</a
+            >
+            <a href="../../index.html" class="button button--primary"
+              >Back to portfolio</a
+            >
           </div>
         </div>
       </section>
     </main>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
