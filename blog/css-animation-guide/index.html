@@ -1,37 +1,103 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
-    
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <meta
       name="description"
       content="Learn how CSS animations and keyframes work and use our animation generator to create modern UI effects faster."
     />
-    
 
-    <meta property="og:title" content="CSS Animation Guide: Keyframes and Modern UI Effects" />
+    <meta
+      property="og:title"
+      content="CSS Animation Guide: Keyframes and Modern UI Effects"
+    />
     <meta
       property="og:description"
       content="Learn how CSS animations and keyframes work and use our animation generator to create modern UI effects faster."
     />
-    <meta property="og:image" content="https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://vasy.dev/blog/css-animation-guide/" />
+    <meta
+      property="og:url"
+      content="https://vasy-dev.netlify.app/blog/css-animation-guide/"
+    />
     <title>CSS Animation Guide: Keyframes and Modern UI Effects</title>
-    <link rel="canonical" href="https://vasy.dev/blog/css-animation-guide/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://vasy.dev/blog/"},{"@type":"ListItem","position":3,"name":"CSS Animation Guide","item":"https://vasy.dev/blog/css-animation-guide/"}]}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"CSS Animation Guide","description":"Learn how CSS animations and keyframes work and use our animation generator to create modern UI effects faster.","author":{"@type":"Person","name":"Vasy","url":"https://vasy.dev/"},"publisher":{"@type":"Organization","name":"Vasy.dev","url":"https://vasy.dev/","logo":{"@type":"ImageObject","url":"https://vasy.dev/favicon.svg"}},"mainEntityOfPage":"https://vasy.dev/blog/css-animation-guide/","url":"https://vasy.dev/blog/css-animation-guide/","image":"https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp","inLanguage":"en"}</script>
+    <link
+      rel="canonical"
+      href="https://vasy-dev.netlify.app/blog/css-animation-guide/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy-dev.netlify.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://vasy-dev.netlify.app/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CSS Animation Guide",
+            "item": "https://vasy-dev.netlify.app/blog/css-animation-guide/"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "CSS Animation Guide",
+        "description": "Learn how CSS animations and keyframes work and use our animation generator to create modern UI effects faster.",
+        "author": {
+          "@type": "Person",
+          "name": "Vasy",
+          "url": "https://vasy-dev.netlify.app/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Vasy-dev.netlify.app",
+          "url": "https://vasy-dev.netlify.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://vasy-dev.netlify.app/favicon.svg"
+          }
+        },
+        "mainEntityOfPage": "https://vasy-dev.netlify.app/blog/css-animation-guide/",
+        "url": "https://vasy-dev.netlify.app/blog/css-animation-guide/",
+        "image": "https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp",
+        "inLanguage": "en"
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
@@ -39,24 +105,24 @@
     <main class="site-main">
       <section class="stack section-block section-slice section-slice--b">
         <div class="l-container">
-                    <nav class="breadcrumb" aria-label="Breadcrumb">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../../index.html">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <a href="../index.html">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <span aria-current="page">CSS Animation Guide</span>
           </nav>
-<article class="blog-article">
+          <article class="blog-article">
             <h1>CSS Animation Guide</h1>
             <p>
               CSS animations make interfaces feel more polished, interactive and
               easier to understand. Small motion effects can guide attention,
               confirm user actions and improve the overall rhythm of a page.
               Instead of relying on heavy JavaScript for simple motion, CSS
-              animations let developers create smooth visual feedback directly in
-              stylesheets. They are widely used in modern UI for hover states,
-              loading feedback, entrance effects and subtle transitions that
-              make components feel alive without overwhelming the user.
+              animations let developers create smooth visual feedback directly
+              in stylesheets. They are widely used in modern UI for hover
+              states, loading feedback, entrance effects and subtle transitions
+              that make components feel alive without overwhelming the user.
             </p>
 
             <section aria-labelledby="what-are-css-animations">
@@ -105,34 +171,32 @@ animation: fadeIn 1s ease;
             </section>
 
             <section aria-labelledby="use-animation-generator">
-              <h2 id="use-animation-generator">Use the CSS Animation Generator</h2>
+              <h2 id="use-animation-generator">
+                Use the CSS Animation Generator
+              </h2>
               <p>
                 Use the live CSS Animation Generator to experiment with
                 keyframes and generate production-ready CSS.
               </p>
               <div class="blog-article__cta">
-                <a href="../../tools/generators/css-animation-generator/" class="button button--primary">CSS Animation Generator</a>
+                <a
+                  href="../../tools/generators/css-animation-generator/"
+                  class="button button--primary"
+                  >CSS Animation Generator</a
+                >
               </div>
             </section>
           </article>
           <div class="blog__actions">
-            <a href="../index.html" class="button button--secondary">Back to blog</a>
-            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+            <a href="../index.html" class="button button--secondary"
+              >Back to blog</a
+            >
+            <a href="../../index.html" class="button button--primary"
+              >Back to portfolio</a
+            >
           </div>
         </div>
       </section>
     </main>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

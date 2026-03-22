@@ -1,37 +1,105 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
-    
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <meta
       name="description"
       content="CSS Grid guide for building responsive layouts with rows and columns, plus a live grid generator to speed up layout work."
     />
-    
 
-    <meta property="og:title" content="CSS Grid Guide: Build Responsive Layouts with Grid | Vasy.dev" />
+    <meta
+      property="og:title"
+      content="CSS Grid Guide: Build Responsive Layouts with Grid | Vasy-dev.netlify.app"
+    />
     <meta
       property="og:description"
       content="CSS Grid guide for building responsive layouts with rows and columns, plus a live grid generator to speed up layout work."
     />
-    <meta property="og:image" content="https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://vasy.dev/blog/css-grid-guide/" />
-    <title>CSS Grid Guide: Build Responsive Layouts with Grid | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/blog/css-grid-guide/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://vasy.dev/blog/"},{"@type":"ListItem","position":3,"name":"CSS Grid Guide","item":"https://vasy.dev/blog/css-grid-guide/"}]}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"CSS Grid Guide","description":"CSS Grid guide for building responsive layouts with rows and columns, plus a live grid generator to speed up layout work.","author":{"@type":"Person","name":"Vasy","url":"https://vasy.dev/"},"publisher":{"@type":"Organization","name":"Vasy.dev","url":"https://vasy.dev/","logo":{"@type":"ImageObject","url":"https://vasy.dev/favicon.svg"}},"mainEntityOfPage":"https://vasy.dev/blog/css-grid-guide/","url":"https://vasy.dev/blog/css-grid-guide/","image":"https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp","inLanguage":"en"}</script>
+    <meta
+      property="og:url"
+      content="https://vasy-dev.netlify.app/blog/css-grid-4guide/"
+    />
+    <title>
+      CSS Grid Guide: Build Responsive Layouts with Grid | Vasy-dev.netlify.app
+    </title>
+    <link
+      rel="canonical"
+      href="https://vasy-dev.netlify.app/blog/css-grid-guide/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy-dev.netlify.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://vasy-dev.netlify.app/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CSS Grid Guide",
+            "item": "https://vasy-dev.netlify.app/blog/css-grid-guide/"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "CSS Grid Guide",
+        "description": "CSS Grid guide for building responsive layouts with rows and columns, plus a live grid generator to speed up layout work.",
+        "author": {
+          "@type": "Person",
+          "name": "Vasy",
+          "url": "https://vasy-dev.netlify.app/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Vasy-dev.netlify.app",
+          "url": "https://vasy-dev.netlify.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://vasy-dev.netlify.app/favicon.svg"
+          }
+        },
+        "mainEntityOfPage": "https://vasy-dev.netlify.app/blog/css-grid-guide/",
+        "url": "https://vasy-dev.netlify.app/blog/css-grid-guide/",
+        "image": "https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp",
+        "inLanguage": "en"
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
@@ -39,14 +107,14 @@
     <main class="site-main">
       <section class="stack section-block section-slice section-slice--b">
         <div class="l-container">
-                    <nav class="breadcrumb" aria-label="Breadcrumb">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../../index.html">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <a href="../index.html">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <span aria-current="page">CSS Grid Guide</span>
           </nav>
-<article class="blog-article">
+          <article class="blog-article">
             <h1>CSS Grid Guide</h1>
             <p>
               CSS Grid is a two-dimensional layout system used for complex page
@@ -95,35 +163,28 @@ gap:20px;
             <section aria-labelledby="use-grid-generator">
               <h2 id="use-grid-generator">Use the Grid Generator</h2>
               <p>
-                Use the CSS Grid Generator to visually create responsive
-                layouts and copy the CSS instantly.
+                Use the CSS Grid Generator to visually create responsive layouts
+                and copy the CSS instantly.
               </p>
               <div class="blog-article__cta">
-                <a href="../../tools/generators/css-grid-generator/" class="button button--primary">CSS Grid Generator</a>
+                <a
+                  href="../../tools/generators/css-grid-generator/"
+                  class="button button--primary"
+                  >CSS Grid Generator</a
+                >
               </div>
             </section>
           </article>
           <div class="blog__actions">
-            <a href="../index.html" class="button button--secondary">Back to blog</a>
-            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+            <a href="../index.html" class="button button--secondary"
+              >Back to blog</a
+            >
+            <a href="../../index.html" class="button button--primary"
+              >Back to portfolio</a
+            >
           </div>
         </div>
       </section>
     </main>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
