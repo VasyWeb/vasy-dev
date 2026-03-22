@@ -1,37 +1,105 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-5YW4LB5N1T');
-  </script>
-    
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <meta
       name="description"
       content="Learn how CSS box-shadow works, see examples, and generate custom shadows with the Vasy.dev box-shadow generator."
     />
-    
 
-    <meta property="og:title" content="How to Create CSS Box Shadows (Beginner Guide + Generator) | Vasy.dev" />
+    <meta
+      property="og:title"
+      content="How to Create CSS Box Shadows (Beginner Guide + Generator) | Vasy.dev"
+    />
     <meta
       property="og:description"
       content="Learn how CSS box-shadow works, see examples, and generate custom shadows with the Vasy.dev box-shadow generator."
     />
-    <meta property="og:image" content="https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp" />
+    <meta
+      property="og:image"
+      content="https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://vasy.dev/blog/box-shadow-guide/" />
-    <title>How to Create CSS Box Shadows (Beginner Guide + Generator) | Vasy.dev</title>
-    <link rel="canonical" href="https://vasy.dev/blog/box-shadow-guide/" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://vasy.dev/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://vasy.dev/blog/"},{"@type":"ListItem","position":3,"name":"How to Create CSS Box Shadows (Beginner Guide + Generator)","item":"https://vasy.dev/blog/box-shadow-guide/"}]}</script>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to Create CSS Box Shadows (Beginner Guide + Generator)","description":"Learn how CSS box-shadow works, see examples, and generate custom shadows with the Vasy.dev box-shadow generator.","author":{"@type":"Person","name":"Vasy","url":"https://vasy.dev/"},"publisher":{"@type":"Organization","name":"Vasy.dev","url":"https://vasy.dev/","logo":{"@type":"ImageObject","url":"https://vasy.dev/favicon.svg"}},"mainEntityOfPage":"https://vasy.dev/blog/box-shadow-guide/","url":"https://vasy.dev/blog/box-shadow-guide/","image":"https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp","inLanguage":"en"}</script>
+    <meta
+      property="og:url"
+      content="https://vasy-dev.netlify.app/blog/box-shadow-guide/"
+    />
+    <title>
+      How to Create CSS Box Shadows (Beginner Guide + Generator) | Vasy.dev
+    </title>
+    <link
+      rel="canonical"
+      href="https://vasy-dev.netlify.app/blog/box-shadow-guide/"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://vasy.dev/blog/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to Create CSS Box Shadows (Beginner Guide + Generator)",
+            "item": "https://vasy.dev/blog/box-shadow-guide/"
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Create CSS Box Shadows (Beginner Guide + Generator)",
+        "description": "Learn how CSS box-shadow works, see examples, and generate custom shadows with the Vasy.dev box-shadow generator.",
+        "author": {
+          "@type": "Person",
+          "name": "Vasy",
+          "url": "https://vasy.dev/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Vasy.dev",
+          "url": "https://vasy.dev/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://vasy.dev/favicon.svg"
+          }
+        },
+        "mainEntityOfPage": "https://vasy.dev/blog/box-shadow-guide/",
+        "url": "https://vasy.dev/blog/box-shadow-guide/",
+        "image": "https://vasy.dev/images/mason-c-W7Jasy4wBYA-unsplash.webp",
+        "inLanguage": "en"
+      }
+    </script>
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="../../css/main.css" />
   </head>
@@ -39,33 +107,36 @@
     <main class="site-main">
       <section class="stack section-block section-slice section-slice--b">
         <div class="l-container">
-                    <nav class="breadcrumb" aria-label="Breadcrumb">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../../index.html">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <a href="../index.html">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-            <span aria-current="page">How to Create CSS Box Shadows (Beginner Guide + Generator)</span>
+            <span aria-current="page"
+              >How to Create CSS Box Shadows (Beginner Guide + Generator)</span
+            >
           </nav>
-<article class="blog-article">
+          <article class="blog-article">
             <h1>How to Create CSS Box Shadows (Beginner Guide + Generator)</h1>
 
             <p>
-              The CSS <strong>box-shadow</strong> property allows you to add shadow
-              effects around elements such as cards, buttons or images. Shadows help
-              create depth and improve the visual hierarchy of a layout.
+              The CSS <strong>box-shadow</strong> property allows you to add
+              shadow effects around elements such as cards, buttons or images.
+              Shadows help create depth and improve the visual hierarchy of a
+              layout.
             </p>
 
             <p>
-              In this guide you will learn how CSS <code>box-shadow</code> works and
-              how you can generate custom shadows instantly using our tool.
+              In this guide you will learn how CSS <code>box-shadow</code> works
+              and how you can generate custom shadows instantly using our tool.
             </p>
 
             <section aria-labelledby="what-is-box-shadow">
               <h2 id="what-is-box-shadow">What is CSS box-shadow?</h2>
               <p>
-                The <code>box-shadow</code> property adds shadow effects around the
-                frame of an HTML element. It accepts values for horizontal offset,
-                vertical offset, blur radius, spread radius and color.
+                The <code>box-shadow</code> property adds shadow effects around
+                the frame of an HTML element. It accepts values for horizontal
+                offset, vertical offset, blur radius, spread radius and color.
               </p>
             </section>
 
@@ -73,8 +144,8 @@
               <h2 id="box-shadow-example">Example of CSS box-shadow</h2>
               <pre><code>box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);</code></pre>
               <p>
-                This shadow moves 10px down, adds blur and creates a soft realistic
-                effect often used in modern UI design.
+                This shadow moves 10px down, adds blur and creates a soft
+                realistic effect often used in modern UI design.
               </p>
             </section>
 
@@ -118,26 +189,15 @@
           </article>
 
           <div class="blog__actions">
-            <a href="../index.html" class="button button--secondary">Back to blog</a>
-            <a href="../../index.html" class="button button--primary">Back to portfolio</a>
+            <a href="../index.html" class="button button--secondary"
+              >Back to blog</a
+            >
+            <a href="../../index.html" class="button button--primary"
+              >Back to portfolio</a
+            >
           </div>
         </div>
       </section>
     </main>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
