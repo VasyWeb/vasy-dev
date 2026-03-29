@@ -30,6 +30,10 @@
   outline-offset: 4px;
 }
 
+.card[aria-expanded="true"] {
+  z-index: 2;
+}
+
 .card__side {
   position: absolute;
   inset: 0;
@@ -175,6 +179,10 @@
     right: 12px;
     font-size: 0.7rem;
     opacity: 0.6;
+  }
+
+  .card[aria-expanded="true"]::after {
+    content: "Tap to close";
   }
 
   .card:hover .card__side--front,

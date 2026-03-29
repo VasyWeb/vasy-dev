@@ -33,6 +33,10 @@
   border: 1px solid color-mix(in srgb, var(--color-accent) 25%, var(--color-border));
   border-radius: 1rem;
   padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
   box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
   transition:
     transform 0.2s ease,
@@ -45,15 +49,31 @@
 }
 
 .service-card__title {
-  margin: 0 0 0.45rem;
+  margin: 0;
   font-size: 1.08rem;
 }
 
 .service-card__text {
-  margin: 0 0 0.9rem;
+  margin: 0;
+}
+
+.service-card__eyebrow {
+  margin: 0;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-chip-text);
+}
+
+.service-card__note {
+  margin: auto 0 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
 }
 
 .service-card__action {
+  margin-top: auto;
   border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
   background: color-mix(in srgb, var(--color-accent) 14%, var(--color-surface));
   color: var(--color-bg);
@@ -748,6 +768,10 @@
 
 .tools__header {
   margin-bottom: 1rem;
+}
+
+.tools__header > * + * {
+  margin-top: 0.8rem;
 }
 
 .tools__header .button {
