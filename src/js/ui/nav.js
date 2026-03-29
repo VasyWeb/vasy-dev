@@ -24,22 +24,3 @@ export const setupNav = () => {
     toggleButton.setAttribute("aria-expanded", "false");
   });
 };
-
-const cards = document.querySelectorAll(".card");
-
-cards.forEach((card) => {
-  card.addEventListener("click", (e) => {
-    // dacă se apasă pe link sau buton din card, nu face flip
-    if (e.target.closest("a") || e.target.closest("button")) return;
-
-    // închide celelalte carduri
-    cards.forEach((c) => {
-      if (c !== card) {
-        c.classList.remove("card--flipped");
-      }
-    });
-
-    // toggle card curent
-    card.classList.toggle("card--flipped");
-  });
-});

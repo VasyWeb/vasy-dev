@@ -1,4 +1,5 @@
 import { setupNav } from "./ui/nav.js";
+import { setupProjectCards } from "./ui/cards.js";
 import { setupShadowGenerator } from "./tools/shadow.js";
 import { setupRadiusGenerator } from "./tools/radius.js";
 import { setupPaletteGenerator } from "./tools/palette.js";
@@ -16,6 +17,7 @@ import { setupPxToEmConverter } from "./tools/px-to-em.js";
 import { setupHexToRgbConverter } from "./tools/hex-to-rgb.js";
 
 setupNav();
+setupProjectCards();
 setupShadowGenerator();
 setupRadiusGenerator();
 setupPaletteGenerator();

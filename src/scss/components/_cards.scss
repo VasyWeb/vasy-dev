@@ -25,6 +25,11 @@
   cursor: pointer;
 }
 
+.card:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
 .card__side {
   position: absolute;
   inset: 0;
