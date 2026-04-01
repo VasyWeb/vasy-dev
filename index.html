@@ -21,16 +21,16 @@
 
     <meta
       name="description"
-      content="Frontend developer portfolio showcasing fast, modern websites and developer tools built with HTML, SCSS and JavaScript."
+      content="Free CSS generators and frontend tools. Create box shadows, gradients, flexbox layouts and more. Fast, simple and ready to use."
     />
 
     <meta
       property="og:title"
-      content="Vasy-dev.netlify.app - Frontend Developer Portfolio | HTML, SCSS, JavaScript"
+      content="Free CSS Generators & Frontend Tools | Vasy.dev"
     />
     <meta
       property="og:description"
-      content="Frontend developer portfolio showcasing fast, modern websites and developer tools built with HTML, SCSS and JavaScript."
+      content="Free CSS generators and frontend tools. Create box shadows, gradients, flexbox layouts and more. Fast, simple and ready to use."
     />
     <meta
       property="og:image"
@@ -49,9 +49,7 @@
         "sameAs": ["https://github.com/VasyWeb"]
       }
     </script>
-    <title>
-      Vasy.dev - Frontend Developer Portfolio | HTML, SCSS, JavaScript
-    </title>
+    <title>Free CSS Generators & Frontend Tools | Vasy.dev</title>
     <link rel="canonical" href="https://vasy-dev.netlify.app/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -91,24 +89,16 @@
           </button>
           <ul class="site-nav__list" id="siteNavList">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#home">Home</a>
-            </li>
-            <li class="site-nav__item">
               <a class="site-nav__link" href="#tools">Tools</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#about">About</a>
+              <a class="site-nav__link" href="blog/">Blog</a>
             </li>
-
             <li class="site-nav__item">
               <a class="site-nav__link" href="#projects">Projects</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#services">Services</a>
-            </li>
-
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="blog/">Blog</a>
+              <a class="site-nav__link" href="#about">About</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="#contact">Contact</a>
@@ -249,6 +239,10 @@
             </ul>
 
             <a href="tools/" class="button button--primary">Open Tools Hub</a>
+            <p>Need a custom tool or frontend solution?</p>
+            <a href="#contact" class="button button--secondary"
+              >Work with me</a
+            >
           </div>
         </div>
       </section>
@@ -261,14 +255,14 @@
 
           <ul class="tool-category__list">
             <li>
-              <a href="blog/how-to-create-box-shadow-css/"
-                >How to create CSS box shadow</a
-              >
+              <a href="blog/box-shadow-guide/">How to create CSS box shadow</a>
             </li>
             <li>
-              <a href="blog/css-center-div/">How to center a div in CSS</a>
+              <a href="blog/css-grid-guide/">How to build CSS grid layouts</a>
             </li>
-            <li><a href="blog/flexbox-guide/">Flexbox layout guide</a></li>
+            <li>
+              <a href="blog/css-flexbox-guide/">Flexbox layout guide</a>
+            </li>
           </ul>
 
           <a href="blog/" class="button button--secondary">Read Articles</a>
@@ -311,14 +305,61 @@
           <div class="about__content">
             <h2>About</h2>
             <p>
-              Frontend developer focused on building tools, UI systems and fast
-              web experiences.
+              I build frontend tools and UI systems that help developers work
+              faster and more efficiently.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- 🔥 CONTACT -->
+      <!-- SERVICES -->
+      <section class="services section-block section-slice section-slice--a" id="services">
+        <div class="l-container services__container">
+          <div class="services__header">
+            <h2>Services</h2>
+            <p>
+              Practical frontend help focused on clean UI, fast pages and tools
+              that make real workflows easier.
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <article class="service-card">
+              <h3 class="service-card__title">Frontend Development</h3>
+              <p class="service-card__text">
+                Responsive websites and landing pages built with semantic HTML,
+                modern CSS and lightweight JavaScript.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3 class="service-card__title">UI Systems</h3>
+              <p class="service-card__text">
+                Reusable sections, design consistency and cleaner component
+                structure for growing websites.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3 class="service-card__title">Performance Optimization</h3>
+              <p class="service-card__text">
+                Improvements for loading speed, maintainability and smoother
+                browsing across devices.
+              </p>
+            </article>
+
+            <article class="service-card">
+              <h3 class="service-card__title">Tooling &amp; Prototypes</h3>
+              <p class="service-card__text">
+                Small generators, converters and interactive UI experiments for
+                product ideas and frontend workflows.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
       <section class="contact section-slice section-slice--a" id="contact">
         <div class="l-container">
           <h2>Contact</h2>
@@ -399,7 +440,7 @@
         </div>
       </div>
       <div class="footer__bottom l-container">
-        <p class="footer__copyright">(c) 2026 Vasy.dev. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 Vasy.dev. All rights reserved.</p>
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>
