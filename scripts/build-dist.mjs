@@ -9,6 +9,8 @@ const distDir = path.join(rootDir, "dist");
 
 const copyTargets = [
   ["index.html", "index.html"],
+  ["index-ro.html", "index-ro.html"],
+  ["index-cz.html", "index-cz.html"],
   ["robots.txt", "robots.txt"],
   ["sitemap.xml", "sitemap.xml"],
   ["favicon.svg", "favicon.svg"],
