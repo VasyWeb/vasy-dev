@@ -30,7 +30,8 @@
 
 .service-card {
   background: color-mix(in srgb, var(--color-surface) 78%, white);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 25%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 25%, var(--color-border));
   border-radius: 1rem;
   padding: 1.1rem;
   display: flex;
@@ -74,7 +75,11 @@
 
 .service-card__action {
   margin-top: auto;
-  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 35%,
+    var(--color-border)
+  );
   background: color-mix(in srgb, var(--color-accent) 14%, var(--color-surface));
   color: var(--color-bg);
 }
@@ -88,7 +93,8 @@
   padding: 1.4rem;
   border-radius: 1rem;
   background: color-mix(in srgb, var(--color-surface) 82%, white);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
   box-shadow: 0 14px 26px rgba(15, 23, 42, 0.08);
 }
 
@@ -166,7 +172,8 @@
 .shadow-generator {
   margin-top: 1rem;
   background: color-mix(in srgb, var(--color-surface) 86%, white);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 14px 26px rgba(15, 23, 42, 0.08);
@@ -212,7 +219,8 @@
 .shadow-generator__control input[type="color"],
 .shadow-generator__control select {
   width: 100%;
-  border: 1px solid color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
   border-radius: 0.7rem;
   padding: 0.75rem 0.9rem;
   background: color-mix(in srgb, var(--color-surface) 90%, white);
@@ -239,7 +247,11 @@
   border-radius: 0.9rem;
   padding: 1rem;
   background:
-    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.28), transparent 34%),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.28),
+      transparent 34%
+    ),
     linear-gradient(135deg, #0f172a, #2563eb 52%, #14b8a6);
   display: grid;
   place-items: center;
@@ -260,7 +272,11 @@
 
 .shadow-generator__copy {
   justify-self: start;
-  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 35%,
+    var(--color-border)
+  );
   background: color-mix(in srgb, var(--color-accent) 14%, var(--color-surface));
   color: var(--color-bg);
 }
@@ -364,7 +380,7 @@
 }
 
 .tool-category__list {
-  margin: 0;
+  margin: 2rem;
   padding-left: 1.2rem;
 }
 
@@ -421,7 +437,8 @@
 .radius-generator {
   margin-top: 1rem;
   background: color-mix(in srgb, var(--color-surface) 86%, white);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 14px 26px rgba(15, 23, 42, 0.08);
@@ -489,7 +506,11 @@
 
 .radius-generator__copy {
   justify-self: start;
-  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 35%,
+    var(--color-border)
+  );
   background: color-mix(in srgb, var(--color-accent) 14%, var(--color-surface));
   color: var(--color-bg);
 }
@@ -497,7 +518,8 @@
 .palette-generator {
   margin-top: 1rem;
   background: color-mix(in srgb, var(--color-surface) 86%, white);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 14px 26px rgba(15, 23, 42, 0.08);
@@ -520,7 +542,11 @@
 }
 
 .palette-generator__btn {
-  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 35%,
+    var(--color-border)
+  );
   background: color-mix(in srgb, var(--color-accent) 14%, var(--color-surface));
   color: var(--color-bg);
 }
@@ -568,7 +594,11 @@
 
 .swatch__lock[aria-pressed="true"] {
   background: color-mix(in srgb, var(--color-accent) 18%, #fff);
-  border-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-border));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 40%,
+    var(--color-border)
+  );
   color: var(--color-bg);
 }
 
@@ -586,7 +616,8 @@
 .gradient-generator {
   margin-top: 1rem;
   background: color-mix(in srgb, var(--color-surface) 86%, white);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: 0 14px 26px rgba(15, 23, 42, 0.08);
@@ -659,7 +690,11 @@
 
 .gradient-generator__copy {
   justify-self: start;
-  border-color: color-mix(in srgb, var(--color-accent) 35%, var(--color-border));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 35%,
+    var(--color-border)
+  );
   background: color-mix(in srgb, var(--color-accent) 14%, var(--color-surface));
   color: var(--color-bg);
 }
@@ -714,56 +749,92 @@
   --section-bg: #ecfeff;
   --section-overlay:
     linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(59, 130, 246, 0.06)),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.35), transparent 40%);
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.35),
+      transparent 40%
+    );
 }
 
 .projects {
   --section-bg: #eef2ff;
   --section-overlay:
     linear-gradient(120deg, rgba(99, 102, 241, 0.14), rgba(14, 165, 233, 0.08)),
-    radial-gradient(circle at 15% 30%, rgba(255, 255, 255, 0.3), transparent 38%);
+    radial-gradient(
+      circle at 15% 30%,
+      rgba(255, 255, 255, 0.3),
+      transparent 38%
+    );
 }
 
 .services {
   --section-bg: #fff7ed;
   --section-overlay:
-    linear-gradient(130deg, rgba(251, 146, 60, 0.15), rgba(253, 186, 116, 0.07)),
-    radial-gradient(circle at 75% 20%, rgba(255, 255, 255, 0.28), transparent 38%);
+    linear-gradient(
+      130deg,
+      rgba(251, 146, 60, 0.15),
+      rgba(253, 186, 116, 0.07)
+    ),
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(255, 255, 255, 0.28),
+      transparent 38%
+    );
 }
 
 .tools {
   --section-bg: #f8fafc;
   --section-overlay:
     linear-gradient(130deg, rgba(14, 165, 233, 0.08), rgba(59, 130, 246, 0.08)),
-    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.35), transparent 45%);
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.35),
+      transparent 45%
+    );
 }
 
 .stack {
   --section-bg: #eef2ff;
   --section-overlay:
     linear-gradient(135deg, rgba(99, 102, 241, 0.14), rgba(79, 70, 229, 0.08)),
-    radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.3), transparent 40%);
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(255, 255, 255, 0.3),
+      transparent 40%
+    );
 }
 
 .lighthouse {
   --section-bg: #ecfdf5;
   --section-overlay:
     linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(5, 150, 105, 0.08)),
-    radial-gradient(circle at 20% 25%, rgba(255, 255, 255, 0.32), transparent 42%);
+    radial-gradient(
+      circle at 20% 25%,
+      rgba(255, 255, 255, 0.32),
+      transparent 42%
+    );
 }
 
 .testimonials {
   --section-bg: #fff1f2;
   --section-overlay:
     linear-gradient(135deg, rgba(244, 63, 94, 0.13), rgba(251, 113, 133, 0.08)),
-    radial-gradient(circle at 78% 18%, rgba(255, 255, 255, 0.3), transparent 40%);
+    radial-gradient(
+      circle at 78% 18%,
+      rgba(255, 255, 255, 0.3),
+      transparent 40%
+    );
 }
 
 .contact {
   --section-bg: #f0fdf4;
   --section-overlay:
     linear-gradient(130deg, rgba(34, 197, 94, 0.14), rgba(16, 185, 129, 0.08)),
-    radial-gradient(circle at 20% 25%, rgba(255, 255, 255, 0.28), transparent 40%);
+    radial-gradient(
+      circle at 20% 25%,
+      rgba(255, 255, 255, 0.28),
+      transparent 40%
+    );
 }
 
 .tools__header {
@@ -781,7 +852,11 @@
 .tools__header .button--secondary {
   color: var(--color-bg);
   background: color-mix(in srgb, var(--color-surface) 88%, white);
-  border-color: color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 24%,
+    var(--color-border)
+  );
   backdrop-filter: none;
 }
 
@@ -795,7 +870,11 @@
 .blog__actions .button--secondary {
   color: var(--color-bg);
   background: color-mix(in srgb, var(--color-surface) 88%, white);
-  border-color: color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 24%,
+    var(--color-border)
+  );
   backdrop-filter: none;
 }
 
@@ -810,7 +889,8 @@
   padding: 0.5rem 0.8rem;
   border-radius: 999px;
   background: color-mix(in srgb, var(--color-surface) 76%, white);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
   color: var(--color-bg);
   font-weight: 600;
 }
@@ -830,7 +910,8 @@
   padding: 1rem;
   border-radius: 0.9rem;
   background: color-mix(in srgb, var(--color-surface) 80%, white);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 24%, var(--color-border));
   box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
 }
 
@@ -866,7 +947,8 @@
 .testimonial-card {
   padding: 1rem;
   border-radius: 0.9rem;
-  border: 1px solid color-mix(in srgb, var(--color-accent) 20%, var(--color-border));
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 20%, var(--color-border));
   background: color-mix(in srgb, var(--color-surface) 82%, white);
   box-shadow: 0 12px 22px rgba(15, 23, 42, 0.09);
 }
