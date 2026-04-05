@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "watch": "sass --watch src/scss/main.scss:dist/css/main.css",
+    "watch": "sass --watch src/scss/main.scss:css/main.css",
     "build": "node scripts/build-dist.mjs && sass src/scss/main.scss dist/css/main.css --style=compressed"
   },
   "devDependencies": {
