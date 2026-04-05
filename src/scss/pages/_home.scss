@@ -715,7 +715,8 @@
 }
 
 .section-slice + .section-slice {
-  margin-top: 2rem;
+  margin-top: 0;
+  padding: 2rem 0;
 }
 
 .section-slice::before,
