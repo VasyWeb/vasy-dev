@@ -221,8 +221,7 @@ p {
   inset: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .hero__overlay {
@@ -705,8 +704,7 @@ p {
 .card__media {
   width: 100%;
   height: 120px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.6rem;
   margin: 0 0 0.7rem;
   border: 1px solid var(--color-border);
@@ -1118,8 +1116,7 @@ p {
 .filter-preview {
   width: min(100%, 320px);
   height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0.9rem;
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-shadow: 0 12px 22px rgba(15, 23, 42, 0.22);
@@ -1770,3 +1767,5 @@ p {
     radial-gradient(circle at 90% 0%, #eff6ff 0%, rgba(239, 246, 255, 0) 35%),
     #f8fafc;
 }
+
+/*# sourceMappingURL=main.css.map */
