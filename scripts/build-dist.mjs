@@ -17,6 +17,7 @@ const copyTargets = [
   ["googlee82e5137119f44e9.html", "googlee82e5137119f44e9.html"],
   ["blog", "blog"],
   ["projects", "projects"],
+  ["resources", "resources"],
   ["tools", "tools"],
   ["src/js", "js"],
   ["src/images", "images"],
