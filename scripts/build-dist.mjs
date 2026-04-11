@@ -16,6 +16,7 @@ const copyTargets = [
   ["favicon.svg", "favicon.svg"],
   ["googlee82e5137119f44e9.html", "googlee82e5137119f44e9.html"],
   ["blog", "blog"],
+  ["printables", "printables"],
   ["projects", "projects"],
   ["resources", "resources"],
   ["tools", "tools"],
