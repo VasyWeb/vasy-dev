@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
 
     <meta
       name="description"
-      content="Generatoare CSS gratuite și unelte pentru frontend. Creează umbre, gradiente, layout-uri flexbox și multe altele. Rapid, simplu și gata de folosit."
+      content="Generatoare CSS gratuite și unelte frontend. Creează umbre, gradiente, layout-uri flexbox și multe altele. Rapid, simplu și gata de folosit."
     />
 
     <meta
@@ -30,7 +30,7 @@
     />
     <meta
       property="og:description"
-      content="Generatoare CSS gratuite și unelte pentru frontend. Creează umbre, gradiente, layout-uri flexbox și multe altele. Rapid, simplu și gata de folosit."
+      content="Generatoare CSS gratuite și unelte frontend. Creează umbre, gradiente, layout-uri flexbox și multe altele. Rapid, simplu și gata de folosit."
     />
     <meta
       property="og:image"
@@ -92,6 +92,9 @@
               <a class="site-nav__link" href="tools">Unelte</a>
             </li>
             <li class="site-nav__item">
+              <a class="site-nav__link" href="printables/">Printabile</a>
+            </li>
+            <li class="site-nav__item">
               <a class="site-nav__link" href="blog/">Blog</a>
             </li>
             <li class="site-nav__item">
@@ -106,28 +109,33 @@
           </ul>
           <div
             aria-label="Selector de limbă"
-            style="display: flex; align-items: center; gap: 0.45rem; margin-left: 1rem"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 0.45rem;
+              margin-left: 1rem;
+            "
           >
             <a
               href="/"
               aria-label="Versiunea în engleză"
               title="English"
               style="font-size: 1.1rem; text-decoration: none"
-              >🇬🇧</a
+              >đź‡¬đź‡§</a
             >
             <a
               href="/index-ro.html"
               aria-label="Versiunea în română"
-              title="Română"
+              title="RomĂ˘nÄ"
               style="font-size: 1.1rem; text-decoration: none"
-              >🇷🇴</a
+              >đź‡·đź‡´</a
             >
             <a
               href="/index-cz.html"
               aria-label="Versiunea în cehă"
-              title="Čeština"
+              title="ÄŚeĹˇtina"
               style="font-size: 1.1rem; text-decoration: none"
-              >🇨🇿</a
+              >đź‡¨đź‡ż</a
             >
           </div>
         </div>
@@ -135,7 +143,7 @@
     </header>
 
     <main class="site-main">
-      <!-- 🔥 HERO (FOCUS PE TOOLS) -->
+      <!-- đź”Ą HERO (FOCUS PE TOOLS) -->
       <section class="hero section-slice section-slice--a" id="home">
         <img
           class="hero__media"
@@ -148,14 +156,13 @@
 
         <div class="hero__content">
           <div class="hero__main">
-            <p class="hero__eyebrow">Unelte Frontend</p>
+            <p class="hero__eyebrow">Unelte frontend + resurse gratuite</p>
 
             <h1 class="hero__title">Generatoare CSS gratuite și unelte frontend</h1>
 
             <p class="hero__description">
-              Lucrează mai rapid cu unelte practice pentru dezvoltatori
-              frontend. Generează CSS, testează layout-uri și îmbunătățește-ți
-              fluxul de lucru instant.
+              Lucreaza mai rapid cu unelte practice pentru frontend si fise PDF gratuite
+              despre CSS. Genereaza cod, copiaza instant si imbunatateste-ti fluxul de lucru.
             </p>
 
             <div class="hero__actions">
@@ -164,14 +171,23 @@
                 >lucrează cu mine</a
               >
             </div>
+            <p
+              style="
+                margin-top: 10px;
+                font-size: 14px;
+                color: white;
+                opacity: 0.8;
+              "
+            >
+              đźŽ PDF-uri CSS gratuite incluse (fără signup)
+            </p>
           </div>
 
           <div class="hero-card hero__card">
             <h3 class="hero-card__title">Ce primești</h3>
             <p class="hero-card__description">
-              Unelte simple create pentru fluxuri reale de lucru frontend.
-              Generează cod, vezi previzualizarea instant și copiază un output
-              curat.
+              Unelte simple create pentru fluxuri reale de lucru frontend. Genereaza cod,
+              vezi previzualizarea instant si copiaza un output curat.
             </p>
 
             <div class="hero-card__metrics">
@@ -188,12 +204,47 @@
           </div>
         </div>
       </section>
+      <section class="section-block section-slice section-slice--b">
+        <div class="l-container printables-promo">
+          <p class="printables-promo__eyebrow">Nou</p>
+          <h2>Cărți de colorat printabile</h2>
+          <p>
+            Descopera carti de colorat printabile cu descarcare instant si
+            checkout simplu prin Gumroad.
+          </p>
+          <a href="/printables/" class="button button--primary">
+            Vezi printabilele
+          </a>
+        </div>
+      </section>
+      <!-- đźŽ FREE CSS RESOURCES -->
+      <section class="section-block section-slice section-slice--b">
+        <div class="l-container">
+          <h2>🎁 Resurse CSS gratuite</h2>
+          <p>
+            Descarcă fișe practice și ghiduri utile pentru dezvoltatori frontend.
+          </p>
 
-      <!-- 🔥 POPULAR TOOLS -->
+          <ul class="tool-category__list">
+            <li><a href="/resources/">CSS Cheat Sheet (PDF)</a></li>
+            <li><a href="/resources/">Ghid Flexbox (PDF)</a></li>
+            <li><a href="/resources/">Ghid Grid Layout (PDF)</a></li>
+            <li>
+              <a href="/resources/">Pachet componente UI (PDF)</a>
+            </li>
+          </ul>
+
+          <a href="/resources/" class="button button--primary">
+            Descarcă PDF-urile gratuite
+          </a>
+        </div>
+      </section>
+
+      <!-- đź”Ą POPULAR TOOLS -->
       <section class="section-block section-slice section-slice--b">
         <div class="l-container">
           <h2>Unelte CSS populare</h2>
-          <p>Cele mai folosite unelte frontend de către dezvoltatori.</p>
+          <p>Cele mai folosite unelte frontend de către dezvoltatori. Copiază CSS instant.</p>
 
           <ul class="tool-category__list">
             <li>
@@ -222,10 +273,10 @@
         </div>
       </section>
 
-      <!-- 🔥 BLOG (FOARTE IMPORTANT PENTRU SEO) -->
+      <!-- đź”Ą BLOG (FOARTE IMPORTANT PENTRU SEO) -->
       <section class="section-block section-slice section-slice--b">
         <div class="l-container">
-          <h2>Ghiduri Frontend</h2>
+          <h2>Ghiduri frontend</h2>
           <p>Învață cum să folosești uneltele CSS și să rezolvi probleme comune de frontend.</p>
 
           <ul class="tool-category__list">
@@ -233,7 +284,7 @@
               <a href="blog/box-shadow-guide/">Cum creezi un box shadow în CSS</a>
             </li>
             <li>
-              <a href="blog/css-grid-guide/">Cum construiești layout-uri CSS grid</a>
+              <a href="blog/css-grid-guide/">Cum construiești layout-uri CSS Grid</a>
             </li>
             <li>
               <a href="blog/css-flexbox-guide/">Ghid pentru layout-uri Flexbox</a>
@@ -244,7 +295,7 @@
         </div>
       </section>
 
-      <!-- 🔥 PROJECTS (SECONDARY) -->
+      <!-- đź”Ą PROJECTS (SECONDARY) -->
       <section class="projects section-slice section-slice--a" id="projects">
         <div class="projects__container">
           <div class="projects__header">
@@ -257,14 +308,14 @@
         </div>
       </section>
 
-      <!-- 🔥 ABOUT (MUTAT JOS) -->
+      <!-- đź”Ą ABOUT (MUTAT JOS) -->
       <section class="about section-slice section-slice--b" id="about">
         <div class="about__container">
           <div class="about__content">
             <h2>Despre</h2>
             <p>
-              Construiesc unelte frontend și sisteme UI care îi ajută pe
-              dezvoltatori să lucreze mai rapid și mai eficient.
+              Construiesc unelte frontend si sisteme UI care ii ajuta pe dezvoltatori sa lucreze
+              mai rapid si mai eficient.
             </p>
           </div>
         </div>
@@ -279,8 +330,8 @@
           <div class="services__header">
             <h2>Ai nevoie de un site rapid și modern?</h2>
             <p>
-              Ajut afacerile și dezvoltatorii să creeze site-uri și unelte
-              curate, performante, care se încarcă repede, arată modern și
+              Ajut afacerile și dezvoltatorii să construiască site-uri și
+              unelte curate, performante, care se încarcă rapid, arată modern și
               transformă vizitatorii în clienți.
             </p>
           </div>
@@ -289,8 +340,8 @@
             <article class="service-card">
               <h3 class="service-card__title">Landing page-uri care convertesc</h3>
               <p class="service-card__text">
-                Pagini moderne și responsive, concepute să transforme
-                vizitatorii în clienți reali, nu doar în trafic.
+                Pagini moderne și responsive, create să transforme vizitatorii
+                în clienți reali, nu doar în trafic.
               </p>
             </article>
 
@@ -305,8 +356,8 @@
             <article class="service-card">
               <h3 class="service-card__title">UI curat și sisteme reutilizabile</h3>
               <p class="service-card__text">
-                Componente UI scalabile și un design coerent care fac proiectul
-                tău mai ușor de întreținut și de extins.
+                Componente UI scalabile și design coerent care fac proiectul tău
+                mai ușor de întreținut și extins.
               </p>
             </article>
 
@@ -348,8 +399,8 @@
         <div class="footer__brand">
           <a href="#home" class="footer__logo">Vasy.dev</a>
           <p class="footer__text">
-            Design modern, frontend de înaltă performanță și experiențe web
-            construite pentru conversie.
+            Design modern, frontend de înaltă performanță și experiențe web construite
+            pentru conversie.
           </p>
           <p class="footer__text">
             Proiecte și unelte pentru dezvoltatori create de Vasy.dev
@@ -416,6 +467,30 @@
         </p>
       </div>
     </footer>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
