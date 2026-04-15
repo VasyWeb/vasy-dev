@@ -21,6 +21,7 @@ export const setupHeroCarousel = () => {
   const nextButton = root.querySelector("[data-hero-next]");
   const dotsHost = root.querySelector("[data-hero-dots]");
   const status = root.querySelector("[data-hero-status]");
+  const media = root.querySelector(".hero__media");
 
   if (slides.length < 2 || !prevButton || !nextButton || !dotsHost || !status) {
     return;
@@ -48,6 +49,20 @@ export const setupHeroCarousel = () => {
     status.textContent = title ? `Current slide: ${title}` : `Current slide ${activeIndex + 1}`;
   };
 
+  const updateMedia = () => {
+    if (!media) {
+      return;
+    }
+
+    const nextSource = slides[activeIndex].dataset.heroImage;
+
+    if (!nextSource || media.getAttribute("src") === nextSource) {
+      return;
+    }
+
+    media.setAttribute("src", nextSource);
+  };
+
   const render = (nextIndex) => {
     activeIndex = clampIndex(nextIndex, slides.length);
 
@@ -62,6 +77,7 @@ export const setupHeroCarousel = () => {
     });
 
     updateStatus();
+    updateMedia();
   };
 
   const stopAutoplay = () => {
