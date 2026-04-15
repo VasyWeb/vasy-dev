@@ -129,14 +129,14 @@
             <a
               href="/index-ro.html"
               aria-label="Versiunea în română"
-              title="RomĂ˘nÄ"
+              title="Română"
               style="font-size: 1.1rem; text-decoration: none"
               >🇷🇴</a
             >
             <a
               href="/index-cz.html"
               aria-label="Versiunea în cehă"
-              title="ÄŚeĹˇtina"
+              title="Čeština"
               style="font-size: 1.1rem; text-decoration: none"
               >🇨🇿</a
             >
@@ -147,7 +147,7 @@
 
     <main class="site-main">
       <!-- đź”Ą HERO (FOCUS PE TOOLS) -->
-      <section class="hero section-slice section-slice--a" id="home">
+      <section class="hero section-slice section-slice--a" id="home" data-carousel>
         <img
           class="hero__media"
           src="images/mason-c-W7Jasy4wBYA-unsplash.webp"
@@ -157,61 +157,211 @@
         />
         <div class="hero__overlay"></div>
 
-        <div class="hero__content">
-          <div class="hero__main">
-            <p class="hero__eyebrow">Unelte frontend + resurse gratuite</p>
+        <div
+          class="hero__viewport"
+          aria-roledescription="carousel"
+          aria-label="Punctele principale din hero"
+        >
+          <article
+            class="hero__slide is-active"
+            data-hero-slide
+            data-hero-image="images/mason-c-W7Jasy4wBYA-unsplash.webp"
+            role="group"
+            aria-roledescription="slide"
+            aria-label="1 din 3"
+            aria-hidden="false"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Unelte frontend + resurse gratuite</p>
 
-            <h1 class="hero__title">
-              Generatoare CSS gratuite și unelte frontend
-            </h1>
+              <h1 class="hero__title">
+                Generatoare CSS gratuite și unelte frontend
+              </h1>
 
-            <p class="hero__description">
-              Lucreaza mai rapid cu unelte practice pentru frontend si fise PDF
-              gratuite despre CSS. Genereaza cod, copiaza instant si
-              imbunatateste-ti fluxul de lucru.
-            </p>
+              <p class="hero__description">
+                Lucrează mai rapid cu unelte practice pentru frontend și fișe
+                PDF gratuite despre CSS. Generează cod, copiază instant și
+                îmbunătățește-ți fluxul de lucru.
+              </p>
 
-            <div class="hero__actions">
-              <a href="tools" class="button button--primary"
-                >Explorează uneltele</a
-              >
-              <a href="#contact" class="button button--secondary"
-                >lucrează cu mine</a
-              >
+              <div class="hero__actions">
+                <a href="tools" class="button button--primary"
+                  >Explorează uneltele</a
+                >
+                <a href="#contact" class="button button--secondary"
+                  >lucrează cu mine</a
+                >
+              </div>
+              <p class="hero__note">
+                PDF-uri CSS gratuite incluse. Fără signup.
+              </p>
             </div>
-            <p
-              style="
-                margin-top: 10px;
-                font-size: 14px;
-                color: white;
-                opacity: 0.8;
-              "
-            >
-              🎁PDF-uri CSS gratuite incluse (fără signup)
-            </p>
-          </div>
 
-          <div class="hero-card hero__card">
-            <h3 class="hero-card__title">Ce primești</h3>
-            <p class="hero-card__description">
-              Unelte simple create pentru fluxuri reale de lucru frontend.
-              Genereaza cod, vezi previzualizarea instant si copiaza un output
-              curat.
-            </p>
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Set de unelte recomandat</p>
+              <h2 class="hero-card__title">Ce primești</h2>
+              <p class="hero-card__description">
+                Un pachet practic de generatoare, preview-uri și output gata de
+                copiat pentru fluxuri reale de lucru frontend.
+              </p>
 
-            <div class="hero-card__metrics">
-              <div class="hero-card__metric">
-                <strong>Generatoare</strong><span>gata de utilizare</span>
-              </div>
-              <div class="hero-card__metric">
-                <strong>Previzualizare live</strong
-                ><span>feedback instant</span>
-              </div>
-              <div class="hero-card__metric">
-                <strong>CSS curat</strong><span>copiază și folosește</span>
+              <div class="hero-card__metrics">
+                <div class="hero-card__metric">
+                  <strong>Generatoare</strong><span>gata de utilizare</span>
+                </div>
+                <div class="hero-card__metric">
+                  <strong>Previzualizare live</strong
+                  ><span>feedback instant</span>
+                </div>
+                <div class="hero-card__metric">
+                  <strong>CSS curat</strong><span>copiază și folosește</span>
+                </div>
               </div>
             </div>
-          </div>
+          </article>
+
+          <article
+            class="hero__slide"
+            data-hero-slide
+            data-hero-image="images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+            role="group"
+            aria-roledescription="slide"
+            aria-label="2 din 3"
+            aria-hidden="true"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Lansează mai rapid</p>
+
+              <h2 class="hero__title">
+                Construiește mai repede cu pattern-uri UI reutilizabile
+              </h2>
+
+              <p class="hero__description">
+                Folosește blocuri frontend practice, sisteme curate de secțiuni
+                și carduri reutilizabile ca să treci rapid de la idee la un UI
+                bine finisat.
+              </p>
+
+              <div class="hero__actions">
+                <a href="/projects/index.html" class="button button--primary"
+                  >Vezi proiectele</a
+                >
+                <a href="blog/" class="button button--secondary"
+                  >Citește ghidurile</a
+                >
+              </div>
+              <p class="hero__note">
+                Gândit să rămână responsive fără să încarce inutil interfața.
+              </p>
+            </div>
+
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Preview vizual</p>
+              <h2 class="hero-card__title">Sistem de secțiuni reutilizabil</h2>
+              <div class="hero-preview__panel">
+                <span class="hero-preview__chip">Hero</span>
+                <span class="hero-preview__chip">Secțiuni</span>
+                <span class="hero-preview__chip">Carduri</span>
+              </div>
+              <div class="hero-preview__list">
+                <div class="hero-preview__item">
+                  <strong>Layout responsive</strong>
+                  <span>Pe bază de grid și sigur pe mobil</span>
+                </div>
+                <div class="hero-preview__item">
+                  <strong>Carduri reutilizabile</strong>
+                  <span>Structură comună și interacțiuni coerente</span>
+                </div>
+                <div class="hero-preview__item">
+                  <strong>Naming curat</strong>
+                  <span>Ușor de extins pentru secțiuni viitoare</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero__slide"
+            data-hero-slide
+            data-hero-image="images/jordan-harrison-40XgDxBfYXM-unsplash.jpg"
+            role="group"
+            aria-roledescription="slide"
+            aria-label="3 din 3"
+            aria-hidden="true"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Monetizează-ți munca</p>
+
+              <h2 class="hero__title">
+                Prezintă unelte, resurse și printabile în același loc
+              </h2>
+
+              <p class="hero__description">
+                Combină pagini SEO, generatoare utile și produse digitale ușor
+                de vândut într-un singur sistem frontend simplu de întreținut.
+              </p>
+
+              <div class="hero__actions">
+                <a href="/printables/" class="button button--primary"
+                  >Vezi printabilele</a
+                >
+                <a href="/resources/" class="button button--secondary"
+                  >Răsfoiește resursele</a
+                >
+              </div>
+              <p class="hero__note">
+                Creat să susțină conținut, unelte și pagini de produs într-un
+                singur flux.
+              </p>
+            </div>
+
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Preview vizual</p>
+              <h2 class="hero-card__title">Conținut + funnel de produs</h2>
+              <div class="hero-preview__stack">
+                <div
+                  class="hero-preview__stack-card hero-preview__stack-card--accent"
+                >
+                  <span>Unelte</span>
+                </div>
+                <div class="hero-preview__stack-card">
+                  <span>Ghiduri</span>
+                </div>
+                <div class="hero-preview__stack-card">
+                  <span>Printabile</span>
+                </div>
+              </div>
+              <p class="hero-card__description">
+                O structură curată pentru trafic, engagement și vânzări ușoare
+                de produse digitale.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero__controls">
+          <button
+            class="hero__control"
+            type="button"
+            data-hero-prev
+            aria-label="Arată slide-ul anterior"
+          >
+            Prev
+          </button>
+          <div
+            class="hero__dots"
+            data-hero-dots
+            aria-label="Navigare slide-uri hero"
+          ></div>
+          <button
+            class="hero__control"
+            type="button"
+            data-hero-next
+            aria-label="Arată slide-ul următor"
+          >
+            Next
+          </button>
+          <p class="hero__status" data-hero-status aria-live="polite"></p>
         </div>
       </section>
       <section class="section-block section-slice section-slice--b">

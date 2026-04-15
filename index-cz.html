@@ -129,14 +129,14 @@
             <a
               href="/index-ro.html"
               aria-label="Rumunska verze"
-              title="RomĂ˘nÄ"
+              title="Română"
               style="font-size: 1.1rem; text-decoration: none"
               >🇷🇴</a
             >
             <a
               href="/index-cz.html"
               aria-label="Ceska verze"
-              title="ÄŚeĹˇtina"
+              title="Čeština"
               style="font-size: 1.1rem; text-decoration: none"
               >🇨🇿</a
             >
@@ -147,7 +147,7 @@
 
     <main class="site-main">
       <!-- đź”Ą HERO (FOCUS PE TOOLS) -->
-      <section class="hero section-slice section-slice--a" id="home">
+      <section class="hero section-slice section-slice--a" id="home" data-carousel>
         <img
           class="hero__media"
           src="images/mason-c-W7Jasy4wBYA-unsplash.webp"
@@ -157,59 +157,211 @@
         />
         <div class="hero__overlay"></div>
 
-        <div class="hero__content">
-          <div class="hero__main">
-            <p class="hero__eyebrow">Frontend nastroje + zdroje zdarma</p>
+        <div
+          class="hero__viewport"
+          aria-roledescription="carousel"
+          aria-label="Hlavní carousel stránky"
+        >
+          <article
+            class="hero__slide is-active"
+            data-hero-slide
+            data-hero-image="images/mason-c-W7Jasy4wBYA-unsplash.webp"
+            role="group"
+            aria-roledescription="slide"
+            aria-label="1 z 3"
+            aria-hidden="false"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Frontend nástroje + zdroje zdarma</p>
 
-            <h1 class="hero__title">
-              Bezplatne CSS generatory a frontend nastroje
-            </h1>
+              <h1 class="hero__title">
+                Bezplatné CSS generátory a frontend nástroje
+              </h1>
 
-            <p class="hero__description">
-              Pracujte rychleji s praktickymi frontend nastroji a bezplatnymi
-              CSS PDF tahaky Generujte kod, okamzite kopirujte a vylepsete svuj
-              workflow.
-            </p>
+              <p class="hero__description">
+                Pracujte rychleji s praktickými frontend nástroji a bezplatnými
+                CSS PDF taháky. Generujte kód, okamžitě kopírujte a vylepšete
+                svůj workflow.
+              </p>
 
-            <div class="hero__actions">
-              <a href="tools" class="button button--primary"
-                >Prozkoumat nastroje</a
-              >
-              <a href="#contact" class="button button--secondary"
-                >spolupracovat se mnou</a
-              >
+              <div class="hero__actions">
+                <a href="tools" class="button button--primary"
+                  >Prozkoumat nástroje</a
+                >
+                <a href="#contact" class="button button--secondary"
+                  >spolupracovat se mnou</a
+                >
+              </div>
+              <p class="hero__note">
+                Bezplatné CSS PDF v ceně. Bez registrace.
+              </p>
             </div>
-            <p
-              style="
-                margin-top: 10px;
-                font-size: 14px;
-                color: white;
-                opacity: 0.8;
-              "
-            >
-              🎁 Bezplatne CSS PDF v cene (bez registrace)
-            </p>
-          </div>
 
-          <div class="hero-card hero__card">
-            <h3 class="hero-card__title">Co ziskate</h3>
-            <p class="hero-card__description">
-              Jednoduche nastroje vytvorene pro skutecne frontend workflow.
-              Generujte kod, okamzite zobrazte nahled a kopirujte cisty vystup.
-            </p>
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Doporučený toolkit</p>
+              <h2 class="hero-card__title">Co získáte</h2>
+              <p class="hero-card__description">
+                Praktický balík generátorů, náhledů a výstupu připraveného ke
+                kopírování pro skutečné frontend workflow.
+              </p>
 
-            <div class="hero-card__metrics">
-              <div class="hero-card__metric">
-                <strong>Generatory</strong><span>pripravene k pouziti</span>
-              </div>
-              <div class="hero-card__metric">
-                <strong>Zivy nahled</strong><span>okamzita zpetna vazba</span>
-              </div>
-              <div class="hero-card__metric">
-                <strong>Ciste CSS</strong><span>zkopirujte a pouzijte</span>
+              <div class="hero-card__metrics">
+                <div class="hero-card__metric">
+                  <strong>Generátory</strong><span>připravené k použití</span>
+                </div>
+                <div class="hero-card__metric">
+                  <strong>Živý náhled</strong><span>okamžitá zpětná vazba</span>
+                </div>
+                <div class="hero-card__metric">
+                  <strong>Čisté CSS</strong><span>zkopírujte a použijte</span>
+                </div>
               </div>
             </div>
-          </div>
+          </article>
+
+          <article
+            class="hero__slide"
+            data-hero-slide
+            data-hero-image="images/christopher-gower-m_HRfLhgABo-unsplash.jpg"
+            role="group"
+            aria-roledescription="slide"
+            aria-label="2 z 3"
+            aria-hidden="true"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Spusťte rychleji</p>
+
+              <h2 class="hero__title">
+                Vytvářejte rychleji s opakovaně použitelnými UI patterny
+              </h2>
+
+              <p class="hero__description">
+                Použijte praktické frontend bloky, čisté systémy sekcí a
+                opakovaně použitelné karty, abyste se rychle dostali od nápadu
+                k dobře vyladěnému UI.
+              </p>
+
+              <div class="hero__actions">
+                <a href="/projects/index.html" class="button button--primary"
+                  >Zobrazit projekty</a
+                >
+                <a href="blog/" class="button button--secondary"
+                  >Číst průvodce</a
+                >
+              </div>
+              <p class="hero__note">
+                Navrženo tak, aby vše zůstalo responsive bez zbytečného
+                vizuálního šumu.
+              </p>
+            </div>
+
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Vizuální náhled</p>
+              <h2 class="hero-card__title">Opakovaně použitelný systém sekcí</h2>
+              <div class="hero-preview__panel">
+                <span class="hero-preview__chip">Hero</span>
+                <span class="hero-preview__chip">Sekce</span>
+                <span class="hero-preview__chip">Karty</span>
+              </div>
+              <div class="hero-preview__list">
+                <div class="hero-preview__item">
+                  <strong>Responsive layout</strong>
+                  <span>Postavené na gridu a bezpečné pro mobil</span>
+                </div>
+                <div class="hero-preview__item">
+                  <strong>Opakovaně použitelné karty</strong>
+                  <span>Sdílená struktura a konzistentní interakce</span>
+                </div>
+                <div class="hero-preview__item">
+                  <strong>Čisté názvosloví</strong>
+                  <span>Snadné rozšíření pro další sekce</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero__slide"
+            data-hero-slide
+            data-hero-image="images/jordan-harrison-40XgDxBfYXM-unsplash.jpg"
+            role="group"
+            aria-roledescription="slide"
+            aria-label="3 z 3"
+            aria-hidden="true"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Zpeněžte svou práci</p>
+
+              <h2 class="hero__title">
+                Představte nástroje, zdroje i printables na jednom místě
+              </h2>
+
+              <p class="hero__description">
+                Propojte SEO stránky, užitečné generátory a digitální produkty
+                do jednoho frontend systému, který se snadno udržuje.
+              </p>
+
+              <div class="hero__actions">
+                <a href="/printables/" class="button button--primary"
+                  >Prohlédnout printables</a
+                >
+                <a href="/resources/" class="button button--secondary"
+                  >Procházet zdroje</a
+                >
+              </div>
+              <p class="hero__note">
+                Vytvořeno tak, aby podporovalo obsah, nástroje i produktové
+                stránky v jednom toku.
+              </p>
+            </div>
+
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Vizuální náhled</p>
+              <h2 class="hero-card__title">Obsah + produktový funnel</h2>
+              <div class="hero-preview__stack">
+                <div
+                  class="hero-preview__stack-card hero-preview__stack-card--accent"
+                >
+                  <span>Nástroje</span>
+                </div>
+                <div class="hero-preview__stack-card">
+                  <span>Průvodce</span>
+                </div>
+                <div class="hero-preview__stack-card">
+                  <span>Printables</span>
+                </div>
+              </div>
+              <p class="hero-card__description">
+                Čistá struktura pro traffic, engagement a nenáročný prodej
+                digitálních produktů.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero__controls">
+          <button
+            class="hero__control"
+            type="button"
+            data-hero-prev
+            aria-label="Zobrazit předchozí slide"
+          >
+            Prev
+          </button>
+          <div
+            class="hero__dots"
+            data-hero-dots
+            aria-label="Navigace hero slidů"
+          ></div>
+          <button
+            class="hero__control"
+            type="button"
+            data-hero-next
+            aria-label="Zobrazit další slide"
+          >
+            Next
+          </button>
+          <p class="hero__status" data-hero-status aria-live="polite"></p>
         </div>
       </section>
       <section class="section-block section-slice section-slice--b">
