@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -121,21 +121,21 @@
               aria-label="English version"
               title="English"
               style="font-size: 1.1rem; text-decoration: none"
-              >🇬🇧</a
+              >đź‡¬đź‡§</a
             >
             <a
               href="/index-ro.html"
               aria-label="Romanian version"
-              title="Română"
+              title="RomĂ˘nÄ"
               style="font-size: 1.1rem; text-decoration: none"
-              >🇷🇴</a
+              >đź‡·đź‡´</a
             >
             <a
               href="/index-cz.html"
               aria-label="Czech version"
-              title="Čeština"
+              title="ÄŚeĹˇtina"
               style="font-size: 1.1rem; text-decoration: none"
-              >🇨🇿</a
+              >đź‡¨đź‡ż</a
             >
           </div>
         </div>
@@ -143,8 +143,8 @@
     </header>
 
     <main class="site-main">
-      <!-- 🔥 HERO (FOCUS PE TOOLS) -->
-      <section class="hero section-slice section-slice--a" id="home">
+      <!-- đź”Ą HERO (FOCUS PE TOOLS) -->
+      <section class="hero section-slice section-slice--a" id="home" data-carousel>
         <img
           class="hero__media"
           src="images/mason-c-W7Jasy4wBYA-unsplash.webp"
@@ -154,54 +154,185 @@
         />
         <div class="hero__overlay"></div>
 
-        <div class="hero__content">
-          <div class="hero__main">
-            <p class="hero__eyebrow">Frontend Tools + Free Resources</p>
+                <div
+          class="hero__viewport"
+          aria-roledescription="carousel"
+          aria-label="Homepage hero highlights"
+        >
+          <article
+            class="hero__slide is-active"
+            data-hero-slide
+            role="group"
+            aria-roledescription="slide"
+            aria-label="1 of 3"
+            aria-hidden="false"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Frontend Tools + Free Resources</p>
 
-            <h1 class="hero__title">Free CSS Generators & Frontend Tools</h1>
+              <h1 class="hero__title">Free CSS Generators & Frontend Tools</h1>
 
-            <p class="hero__description">
-              Build faster with practical frontend tools and free CSS cheat
-              sheets. Generate code, copy instantly and improve your workflow.
-            </p>
+              <p class="hero__description">
+                Build faster with practical frontend tools and free CSS cheat
+                sheets. Generate code, copy instantly and improve your workflow.
+              </p>
 
-            <div class="hero__actions">
-              <a href="tools" class="button button--primary">Explore Tools</a>
-              <a href="#contact" class="button button--secondary"
-                >work with me</a
-              >
+              <div class="hero__actions">
+                <a href="tools" class="button button--primary">Explore Tools</a>
+                <a href="#contact" class="button button--secondary"
+                  >work with me</a
+                >
+              </div>
+              <p class="hero__note">Free CSS PDFs included. No signup required.</p>
             </div>
-            <p
-              style="
-                margin-top: 10px;
-                font-size: 14px;
-                color: white;
-                opacity: 0.8;
-              "
-            >
-              🎁 Free CSS PDFs included (no signup)
-            </p>
-          </div>
 
-          <div class="hero-card hero__card">
-            <h3 class="hero-card__title">What you get</h3>
-            <p class="hero-card__description">
-              Simple tools built for real frontend workflows. Generate code,
-              preview instantly and copy clean output.
-            </p>
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Featured Toolkit</p>
+              <h2 class="hero-card__title">What you get</h2>
+              <p class="hero-card__description">
+                A practical stack of generators, previews and copy-ready output
+                built for real frontend workflows.
+              </p>
 
-            <div class="hero-card__metrics">
-              <div class="hero-card__metric">
-                <strong>Generators</strong><span>ready to use</span>
-              </div>
-              <div class="hero-card__metric">
-                <strong>Live Preview</strong><span>instant feedback</span>
-              </div>
-              <div class="hero-card__metric">
-                <strong>Clean CSS</strong><span>copy & use</span>
+              <div class="hero-card__metrics">
+                <div class="hero-card__metric">
+                  <strong>Generators</strong><span>ready to use</span>
+                </div>
+                <div class="hero-card__metric">
+                  <strong>Live Preview</strong><span>instant feedback</span>
+                </div>
+                <div class="hero-card__metric">
+                  <strong>Clean CSS</strong><span>copy & use</span>
+                </div>
               </div>
             </div>
-          </div>
+          </article>
+
+          <article
+            class="hero__slide"
+            data-hero-slide
+            role="group"
+            aria-roledescription="slide"
+            aria-label="2 of 3"
+            aria-hidden="true"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Launch Faster</p>
+
+              <h2 class="hero__title">Build Faster With Reusable UI Patterns</h2>
+
+              <p class="hero__description">
+                Use practical frontend building blocks, clean section systems
+                and reusable cards to move from idea to polished UI quickly.
+              </p>
+
+              <div class="hero__actions">
+                <a href="/projects/index.html" class="button button--primary"
+                  >View Projects</a
+                >
+                <a href="blog/" class="button button--secondary">Read Guides</a>
+              </div>
+              <p class="hero__note">Designed to stay responsive without extra UI clutter.</p>
+            </div>
+
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Preview Visual</p>
+              <h2 class="hero-card__title">Reusable section system</h2>
+              <div class="hero-preview__panel">
+                <span class="hero-preview__chip">Hero</span>
+                <span class="hero-preview__chip">Sections</span>
+                <span class="hero-preview__chip">Cards</span>
+              </div>
+              <div class="hero-preview__list">
+                <div class="hero-preview__item">
+                  <strong>Responsive layout</strong>
+                  <span>Grid-first and mobile safe</span>
+                </div>
+                <div class="hero-preview__item">
+                  <strong>Reusable cards</strong>
+                  <span>Shared structure and interactions</span>
+                </div>
+                <div class="hero-preview__item">
+                  <strong>Clean naming</strong>
+                  <span>Easy to extend for future sections</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="hero__slide"
+            data-hero-slide
+            role="group"
+            aria-roledescription="slide"
+            aria-label="3 of 3"
+            aria-hidden="true"
+          >
+            <div class="hero__main">
+              <p class="hero__eyebrow">Monetize Your Work</p>
+
+              <h2 class="hero__title">Showcase Tools, Resources and Printables Together</h2>
+
+              <p class="hero__description">
+                Combine SEO pages, useful generators and sellable digital
+                products in one frontend system that is simple to maintain.
+              </p>
+
+              <div class="hero__actions">
+                <a href="/printables/" class="button button--primary"
+                  >Shop Printables</a
+                >
+                <a href="/resources/" class="button button--secondary"
+                  >Browse Resources</a
+                >
+              </div>
+              <p class="hero__note">Made to support content, tools and product pages in one flow.</p>
+            </div>
+
+            <div class="hero-card hero-preview hero__preview">
+              <p class="hero-preview__eyebrow">Preview Visual</p>
+              <h2 class="hero-card__title">Content + product funnel</h2>
+              <div class="hero-preview__stack">
+                <div class="hero-preview__stack-card hero-preview__stack-card--accent">
+                  <span>Tools</span>
+                </div>
+                <div class="hero-preview__stack-card">
+                  <span>Guides</span>
+                </div>
+                <div class="hero-preview__stack-card">
+                  <span>Printables</span>
+                </div>
+              </div>
+              <p class="hero-card__description">
+                A clean structure for traffic, engagement and lightweight product sales.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero__controls">
+          <button
+            class="hero__control"
+            type="button"
+            data-hero-prev
+            aria-label="Show previous hero slide"
+          >
+            Prev
+          </button>
+          <div
+            class="hero__dots"
+            data-hero-dots
+            aria-label="Hero slide navigation"
+          ></div>
+          <button
+            class="hero__control"
+            type="button"
+            data-hero-next
+            aria-label="Show next hero slide"
+          >
+            Next
+          </button>
+          <p class="hero__status" data-hero-status aria-live="polite"></p>
         </div>
       </section>
       <section class="section-block section-slice section-slice--b">
@@ -217,10 +348,10 @@
           </a>
         </div>
       </section>
-      <!-- 🎁 FREE CSS RESOURCES -->
+      <!-- đźŽ FREE CSS RESOURCES -->
       <section class="section-block section-slice section-slice--b">
         <div class="l-container">
-          <h2>🎁 Free CSS Resources</h2>
+          <h2>đźŽ Free CSS Resources</h2>
           <p>
             Download practical cheat sheets and guides for frontend developers.
           </p>
@@ -240,7 +371,7 @@
         </div>
       </section>
 
-      <!-- 🔥 POPULAR TOOLS -->
+      <!-- đź”Ą POPULAR TOOLS -->
       <section class="section-block section-slice section-slice--b">
         <div class="l-container">
           <h2>Popular CSS Tools</h2>
@@ -273,7 +404,7 @@
         </div>
       </section>
 
-      <!-- 🔥 BLOG (FOARTE IMPORTANT PENTRU SEO) -->
+      <!-- đź”Ą BLOG (FOARTE IMPORTANT PENTRU SEO) -->
       <section class="section-block section-slice section-slice--b">
         <div class="l-container">
           <h2>Frontend Guides</h2>
@@ -295,7 +426,7 @@
         </div>
       </section>
 
-      <!-- 🔥 PROJECTS (SECONDARY) -->
+      <!-- đź”Ą PROJECTS (SECONDARY) -->
       <section class="projects section-slice section-slice--a" id="projects">
         <div class="projects__container">
           <div class="projects__header">
@@ -308,7 +439,7 @@
         </div>
       </section>
 
-      <!-- 🔥 ABOUT (MUTAT JOS) -->
+      <!-- đź”Ą ABOUT (MUTAT JOS) -->
       <section class="about section-slice section-slice--b" id="about">
         <div class="about__container">
           <div class="about__content">
@@ -470,3 +601,4 @@
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
+
