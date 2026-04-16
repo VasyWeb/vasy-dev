@@ -118,7 +118,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--theme-main">
+  <body class="page page--theme-main page--blog-article">
     <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
@@ -142,7 +142,9 @@
               <a class="site-nav__link" href="/printables/">Printables</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="/blog/" aria-current="page">Blog</a>
+              <a class="site-nav__link" href="/blog/" aria-current="page"
+                >Blog</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="/projects/">Projects</a>
@@ -180,9 +182,10 @@
         </div>
       </nav>
     </header>
+
     <main class="site-main">
-      <section class="stack section-block section-slice section-slice--b">
-        <div class="l-container">
+      <section class="stack section-block section-slice section-slice--b article-page">
+        <div class="l-container article-page__container">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
@@ -190,8 +193,17 @@
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <span aria-current="page">CSS Flexbox Guide</span>
           </nav>
-          <article class="blog-article">
+
+          <header class="article-page__intro">
+            <p class="article-page__eyebrow">Frontend Guide</p>
             <h1>CSS Flexbox Guide</h1>
+            <p class="article-page__lead">
+              Learn how Flexbox works, where it shines, and how to build faster,
+              cleaner responsive layouts with the generator.
+            </p>
+          </header>
+
+          <article class="blog-article">
             <p>
               CSS Flexbox is one of the easiest ways to build modern layouts in
               web design. It helps developers align items, center content and
@@ -204,7 +216,7 @@
             </p>
 
             <section aria-labelledby="what-is-flexbox">
-              <h2 id="what-is-flexbox">What is CSS Flexbox</h2>
+              <h2 id="what-is-flexbox">What Is CSS Flexbox?</h2>
               <p>
                 CSS Flexbox is a one-dimensional layout system used to
                 distribute space and align elements inside a container. Unlike
@@ -215,9 +227,7 @@
                 a row or a column, while the cross axis runs perpendicular to
                 it. This model makes it much easier to center items, push them
                 apart, reorder them visually and keep layouts flexible across
-                different screen sizes. It is a practical solution for menus,
-                button groups, cards, media objects and many UI patterns that
-                need strong alignment without complex CSS hacks.
+                different screen sizes.
               </p>
             </section>
 
@@ -264,22 +274,25 @@
                 <a
                   href="/tools/generators/flexbox-generator/"
                   class="button button--primary"
-                  >Flexbox Generator</a
+                  >Open Flexbox Generator</a
                 >
+                <a href="/tools/generators/" class="button button--secondary">
+                  Browse all generators
+                </a>
               </div>
             </section>
           </article>
-          <div class="blog__actions">
-            <a href="/blog/" class="button button--secondary"
-              >Back to blog</a
-            >
-            <a href="/#home" class="button button--primary"
-              >Back to homepage</a
+
+          <div class="blog__actions article-page__actions">
+            <a href="/blog/" class="button button--secondary">Back to blog</a>
+            <a href="/tools/" class="button button--primary"
+              >Explore more tools</a
             >
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer section-slice section-slice--b" id="footer">
       <div class="footer__container l-container">
         <div class="footer__brand">

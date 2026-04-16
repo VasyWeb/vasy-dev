@@ -44,7 +44,8 @@
     <meta
       property="og:url"
       content="https://vasy-dev.netlify.app/blog/gradient-guide/"
-    />    <meta name="twitter:card" content="summary_large_image" />
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="CSS Gradient Guide + Generator | Vasy.dev"
@@ -117,7 +118,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--theme-main">
+  <body class="page page--theme-main page--blog-article">
     <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
@@ -141,7 +142,9 @@
               <a class="site-nav__link" href="/printables/">Printables</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="/blog/" aria-current="page">Blog</a>
+              <a class="site-nav__link" href="/blog/" aria-current="page"
+                >Blog</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="/projects/">Projects</a>
@@ -153,7 +156,7 @@
               <a class="site-nav__link" href="/#contact">Contact</a>
             </li>
           </ul>
-                              <div class="site-nav__languages" aria-label="Language selector">
+          <div class="site-nav__languages" aria-label="Language selector">
             <a
               href="/"
               aria-label="English version"
@@ -179,9 +182,10 @@
         </div>
       </nav>
     </header>
+
     <main class="site-main">
-      <section class="stack section-block section-slice section-slice--b">
-        <div class="l-container">
+      <section class="stack section-block section-slice section-slice--b article-page">
+        <div class="l-container article-page__container">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
@@ -192,11 +196,17 @@
               Gradients</span
             >
           </nav>
-          <article class="blog-article">
-            <h1>
-              CSS Gradient Guide: How to Create Beautiful Background Gradients
-            </h1>
 
+          <header class="article-page__intro">
+            <p class="article-page__eyebrow">Frontend Guide</p>
+            <h1>CSS Gradient Guide: How to Create Beautiful Background Gradients</h1>
+            <p class="article-page__lead">
+              Learn how gradients work in CSS, when to use them, and how to
+              build smoother, more polished background blends with the tool.
+            </p>
+          </header>
+
+          <article class="blog-article">
             <p>
               CSS gradients are color transitions generated directly in CSS
               without using image files. They are useful because they add depth,
@@ -214,7 +224,7 @@
             </p>
 
             <section aria-labelledby="what-is-gradient">
-              <h2 id="what-is-gradient">What is a CSS gradient?</h2>
+              <h2 id="what-is-gradient">What Is a CSS Gradient?</h2>
               <p>
                 A CSS gradient creates a smooth transition between two or more
                 colors. Instead of loading a background image, the browser
@@ -225,7 +235,7 @@
             </section>
 
             <section aria-labelledby="gradient-types">
-              <h2 id="gradient-types">Types of CSS gradients</h2>
+              <h2 id="gradient-types">Types of CSS Gradients</h2>
               <p>
                 The two most common types are linear gradients and radial
                 gradients. Linear gradients move colors along a straight axis,
@@ -246,7 +256,7 @@ background: radial-gradient(circle, #ff7e5f, #feb47b);</code></pre>
             </section>
 
             <section aria-labelledby="gradient-example">
-              <h2 id="gradient-example">Example of CSS gradient background</h2>
+              <h2 id="gradient-example">Example of a Gradient Background</h2>
               <pre><code>.hero {
   background: linear-gradient(135deg, #667eea, #764ba2);
 }</code></pre>
@@ -260,7 +270,7 @@ background: radial-gradient(circle, #ff7e5f, #feb47b);</code></pre>
             </section>
 
             <section aria-labelledby="generate-gradient">
-              <h2 id="generate-gradient">Generate your own gradient</h2>
+              <h2 id="generate-gradient">Generate Your Own Gradient</h2>
               <p>
                 If you want to test different angles and color combinations
                 quickly, a generator is faster than writing every value
@@ -272,14 +282,16 @@ background: radial-gradient(circle, #ff7e5f, #feb47b);</code></pre>
                   href="/tools/generators/gradient-generator/"
                   class="button button--primary"
                 >
-                  CSS Gradient Generator
+                  Open Gradient Generator
                 </a>
-                <a href="/tools/generators/" class="button button--secondary">Browse all generators</a>
+                <a href="/tools/generators/" class="button button--secondary">
+                  Browse all generators
+                </a>
               </div>
             </section>
 
             <section aria-labelledby="gradient-tips">
-              <h2 id="gradient-tips">Tips for better gradients</h2>
+              <h2 id="gradient-tips">Tips for Better Gradients</h2>
               <ul>
                 <li>Use subtle color transitions.</li>
                 <li>Avoid too many colors.</li>
@@ -303,9 +315,7 @@ background: radial-gradient(circle, #ff7e5f, #feb47b);</code></pre>
                 directly by CSS, often used for backgrounds and UI accents.
               </p>
 
-              <h3>
-                What is the difference between linear and radial gradients?
-              </h3>
+              <h3>What is the difference between linear and radial gradients?</h3>
               <p>
                 Linear gradients follow a line and direction, while radial
                 gradients expand outward from a center point in a circular or
@@ -321,77 +331,16 @@ background: radial-gradient(circle, #ff7e5f, #feb47b);</code></pre>
             </section>
           </article>
 
-          <div class="blog__actions">
+          <div class="blog__actions article-page__actions">
             <a href="/blog/" class="button button--secondary">Back to blog</a>
-          <p class="footer__text">
-            Modern design, high-performance frontend, and web experiences built
-            for conversion.
-          </p>
-          <p class="footer__text">
-            Projects and developer tools created by Vasy.dev
-          </p>
-          <div class="footer__socials">
-            <a
-              href="https://nexora-demo.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="Nexora"
-              >NX</a
-            >
-            <a
-              href="https://vasytech.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="VasyTech"
-              >VT</a
-            >
-            <a
-              href="https://github.com/VasyWeb"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="GitHub"
-              >GH</a
+            <a href="/tools/" class="button button--primary"
+              >Explore more tools</a
             >
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="footer__col">
-          <h3 class="footer__title">Navigation</h3>
-          <a href="/#home" class="footer__link">Home</a>
-          <a href="/#about" class="footer__link">About</a>
-          <a href="/projects/" class="footer__link">Projects</a>
-          <a href="/#services" class="footer__link">Services</a>
-          <a href="/tools/" class="footer__link">Tools</a>
-          <a href="/blog/" class="footer__link">Blog</a>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Shop</h3>
-          <a href="/printables/" class="footer__link">Printable Books</a>
-          <a href="/resources/" class="footer__link">Free Resources</a>
-          <a href="/tools/" class="footer__link">Frontend Tools</a>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Contact</h3>
-          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
-            >milanjakub9@gmail.com
-          </a>
-          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
-          <p class="footer__text">Available for new projects in 2026.</p>
-          <a href="/#contact" class="button footer__cta">Send Brief</a>
-        </div>
-      </div>
-      <div class="footer__bottom l-container">
-        <p class="footer__copyright">
-          &copy; 2026 Vasy.dev. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <script type="module" src="/js/main.js"></script>
     <footer class="footer section-slice section-slice--b" id="footer">
       <div class="footer__container l-container">
         <div class="footer__brand">
