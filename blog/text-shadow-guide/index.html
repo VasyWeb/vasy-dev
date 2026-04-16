@@ -23,10 +23,14 @@
       name="description"
       content="Learn how CSS text-shadow works and generate readable text effects instantly with our text shadow generator."
     />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
 
     <meta
       property="og:title"
-      content="CSS Text Shadow Guide + Generator | Vasy-dev.netlify.app"
+      content="CSS Text Shadow Guide + Generator | Vasy.dev"
     />
     <meta
       property="og:description"
@@ -40,8 +44,20 @@
     <meta
       property="og:url"
       content="https://vasy-dev.netlify.app/blog/text-shadow-guide/"
+    />    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CSS Text Shadow Guide + Generator | Vasy.dev"
     />
-    <title>CSS Text Shadow Guide + Generator | Vasy-dev.netlify.app</title>
+    <meta
+      name="twitter:description"
+      content="Learn how CSS text-shadow works and generate readable text effects instantly with our text shadow generator."
+    />
+    <meta
+      name="twitter:image"
+      content="https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp"
+    />
+    <title>CSS Text Shadow Guide + Generator | Vasy.dev</title>
     <link
       rel="canonical"
       href="https://vasy-dev.netlify.app/blog/text-shadow-guide/"
@@ -85,7 +101,7 @@
         },
         "publisher": {
           "@type": "Organization",
-          "name": "Vasy-dev.netlify.app",
+          "name": "Vasy.dev",
           "url": "https://vasy-dev.netlify.app/",
           "logo": {
             "@type": "ImageObject",
@@ -98,17 +114,78 @@
         "inLanguage": "en"
       }
     </script>
-    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--home page--theme-main">
+  <body class="page page--theme-main">
+    <header class="site-header" id="top">
+      <nav class="site-nav">
+        <div class="site-nav__container l-container">
+          <a href="/#home" class="site-nav__logo">Vasy<span>D</span>ev</a>
+          <button
+            class="site-nav__toggle"
+            id="siteNavToggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="siteNavList"
+          >
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+          </button>
+          <ul class="site-nav__list" id="siteNavList">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/tools/">Tools</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/printables/">Printables</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/blog/" aria-current="page">Blog</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/projects/">Projects</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/#about">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/#contact">Contact</a>
+            </li>
+          </ul>
+                              <div class="site-nav__languages" aria-label="Language selector">
+            <a
+              href="/"
+              aria-label="English version"
+              class="site-nav__lang-link"
+              title="English"
+              >&#x1F1EC;&#x1F1E7;</a
+            >
+            <a
+              href="/index-ro.html"
+              aria-label="Romanian version"
+              class="site-nav__lang-link"
+              title="Romanian"
+              >&#x1F1F7;&#x1F1F4;</a
+            >
+            <a
+              href="/index-cz.html"
+              aria-label="Czech version"
+              class="site-nav__lang-link"
+              title="Czech"
+              >&#x1F1E8;&#x1F1FF;</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
     <main class="site-main">
       <section class="stack section-block section-slice section-slice--b">
         <div class="l-container">
           <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="../../index.html">Home</a>
+            <a href="/">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-            <a href="../index.html">Blog</a>
+            <a href="/blog/">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <span aria-current="page"
               >How to Create CSS Text Shadows That Stay Readable</span
@@ -150,47 +227,152 @@
               </p>
               <div class="blog-article__cta">
                 <a
-                  href="https://vasy-dev.netlify.app/tools/generators/text-shadow-generator/"
+                  href="/tools/generators/text-shadow-generator/"
                   class="button button--primary"
                   >CSS Text Shadow Generator</a
                 >
-                <a
-                  href="../../tools/generators/text-shadow-generator/"
-                  class="button button--secondary"
-                  >Open local tool page</a
-                >
-              </div>
-            </section>
-            <section aria-labelledby="text-shadow-tips">
-              <h2 id="text-shadow-tips">Tips for better text shadows</h2>
-              <ul>
-                <li>Use small blur values for readable UI text.</li>
-                <li>Prefer subtle opacity instead of very dark shadows.</li>
-                <li>Test shadows on real backgrounds, not only on white.</li>
-              </ul>
-            </section>
-            <section aria-labelledby="text-shadow-faq">
-              <h2 id="text-shadow-faq">FAQ</h2>
-              <h3>What does text-shadow do in CSS?</h3>
-              <p>It adds a shadow effect to text characters.</p>
-              <h3>Can I use multiple text shadows?</h3>
-              <p>Yes, you can separate multiple shadows with commas.</p>
-              <h3>Does text-shadow help readability?</h3>
-              <p>
-                Yes, subtle shadows can improve contrast on complex backgrounds.
-              </p>
-            </section>
-          </article>
-          <div class="blog__actions">
-            <a href="../index.html" class="button button--secondary"
-              >Back to blog</a
+                <a href="/tools/generators/" class="button button--secondary">Browse all generators</a>
+          <p class="footer__text">
+            Modern design, high-performance frontend, and web experiences built
+            for conversion.
+          </p>
+          <p class="footer__text">
+            Projects and developer tools created by Vasy.dev
+          </p>
+          <div class="footer__socials">
+            <a
+              href="https://nexora-demo.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="Nexora"
+              >NX</a
             >
-            <a href="../../index.html" class="button button--primary"
-              >Back to portfolio</a
+            <a
+              href="https://vasytech.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="VasyTech"
+              >VT</a
+            >
+            <a
+              href="https://github.com/VasyWeb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="GitHub"
+              >GH</a
             >
           </div>
         </div>
-      </section>
-    </main>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Navigation</h3>
+          <a href="/#home" class="footer__link">Home</a>
+          <a href="/#about" class="footer__link">About</a>
+          <a href="/projects/" class="footer__link">Projects</a>
+          <a href="/#services" class="footer__link">Services</a>
+          <a href="/tools/" class="footer__link">Tools</a>
+          <a href="/blog/" class="footer__link">Blog</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Shop</h3>
+          <a href="/printables/" class="footer__link">Printable Books</a>
+          <a href="/resources/" class="footer__link">Free Resources</a>
+          <a href="/tools/" class="footer__link">Frontend Tools</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Contact</h3>
+          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
+            >milanjakub9@gmail.com
+          </a>
+          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
+          <p class="footer__text">Available for new projects in 2026.</p>
+          <a href="/#contact" class="button footer__cta">Send Brief</a>
+        </div>
+      </div>
+      <div class="footer__bottom l-container">
+        <p class="footer__copyright">
+          &copy; 2026 Vasy.dev. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+    <footer class="footer section-slice section-slice--b" id="footer">
+      <div class="footer__container l-container">
+        <div class="footer__brand">
+          <a href="/#home" class="footer__logo">Vasy<span>D</span>ev</a>
+          <p class="footer__text">
+            Modern design, high-performance frontend, and web experiences built
+            for conversion.
+          </p>
+          <p class="footer__text">
+            Projects and developer tools created by Vasy.dev
+          </p>
+          <div class="footer__socials">
+            <a
+              href="https://nexora-demo.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="Nexora"
+              >NX</a
+            >
+            <a
+              href="https://vasytech.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="VasyTech"
+              >VT</a
+            >
+            <a
+              href="https://github.com/VasyWeb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="GitHub"
+              >GH</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Navigation</h3>
+          <a href="/#home" class="footer__link">Home</a>
+          <a href="/#about" class="footer__link">About</a>
+          <a href="/projects/" class="footer__link">Projects</a>
+          <a href="/#services" class="footer__link">Services</a>
+          <a href="/tools/" class="footer__link">Tools</a>
+          <a href="/blog/" class="footer__link">Blog</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Shop</h3>
+          <a href="/printables/" class="footer__link">Printable Books</a>
+          <a href="/resources/" class="footer__link">Free Resources</a>
+          <a href="/tools/" class="footer__link">Frontend Tools</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Contact</h3>
+          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
+            >milanjakub9@gmail.com
+          </a>
+          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
+          <p class="footer__text">Available for new projects in 2026.</p>
+          <a href="/#contact" class="button footer__cta">Send Brief</a>
+        </div>
+      </div>
+      <div class="footer__bottom l-container">
+        <p class="footer__copyright">
+          &copy; 2026 Vasy.dev. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
