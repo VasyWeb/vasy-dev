@@ -989,6 +989,28 @@
   padding-bottom: 1.8rem;
 }
 
+.tools.section-block + .section-block .l-container > * + * {
+  margin-top: 1rem;
+}
+
+.tools.section-block + .section-block h2,
+.tools.section-block + .section-block h3,
+.tools.section-block + .section-block p,
+.tools.section-block + .section-block pre,
+.tools.section-block + .section-block ul {
+  margin-bottom: 0;
+}
+
+.tools.section-block + .section-block h3 {
+  margin-top: 1.35rem;
+}
+
+.tools.section-block + .section-block pre + p,
+.tools.section-block + .section-block p + .button,
+.tools.section-block + .section-block ul + .button {
+  margin-top: 1.15rem;
+}
+
 .article-page__actions {
   align-items: center;
   justify-content: space-between;
