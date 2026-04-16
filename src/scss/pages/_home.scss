@@ -970,6 +970,25 @@
   backdrop-filter: none;
 }
 
+.tools.section-block + .section-block .button--secondary {
+  color: var(--color-bg);
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-surface));
+  border-color: color-mix(
+    in srgb,
+    var(--color-accent) 28%,
+    var(--color-border)
+  );
+  backdrop-filter: none;
+}
+
+.tools.section-block + .section-block .button--secondary:hover {
+  background: color-mix(in srgb, var(--color-accent) 18%, var(--color-surface));
+}
+
+.tools.section-block + .section-block .l-container {
+  padding-bottom: 1.8rem;
+}
+
 .article-page__actions {
   align-items: center;
   justify-content: space-between;
