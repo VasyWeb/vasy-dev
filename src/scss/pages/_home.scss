@@ -693,6 +693,98 @@
   overflow-x: auto;
 }
 
+.tool-control-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 88px;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.tool-control-pair input[type="number"] {
+  text-align: center;
+  font-weight: 700;
+}
+
+.neumorphism-generator {
+  margin-top: 1rem;
+  background: color-mix(in srgb, var(--color-surface) 86%, white);
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 28%, var(--color-border));
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 14px 26px rgba(15, 23, 42, 0.08);
+}
+
+.neumorphism-generator__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.neumorphism-generator__actions .button--secondary {
+  color: var(--color-bg);
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-surface));
+}
+
+.neumorphism-generator__presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.neumorphism-generator__preset {
+  border: 1px solid
+    color-mix(in srgb, var(--color-accent) 20%, var(--color-border));
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  background: color-mix(in srgb, var(--color-surface) 90%, white);
+  color: var(--color-bg);
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.neumorphism-generator__preset:hover,
+.neumorphism-generator__preset:focus-visible {
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
+  outline: none;
+}
+
+.neumorphism-generator__preview {
+  min-height: 280px;
+  border-radius: 1.1rem;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.neumorphism-generator__card {
+  width: min(100%, 240px);
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+  padding: 1.4rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: color-mix(in srgb, #0f172a 78%, white);
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    border-radius 0.2s ease;
+}
+
+.neumorphism-generator__card small {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: color-mix(in srgb, #0f172a 52%, white);
+}
+
 .gradient-generator {
   margin-top: 1rem;
   background: color-mix(in srgb, var(--color-surface) 86%, white);
@@ -1176,6 +1268,10 @@
 
   .palette-generator__swatches {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tool-control-pair {
+    grid-template-columns: 1fr;
   }
 
   .gradient-generator__layout {
