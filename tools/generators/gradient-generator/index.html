@@ -18,37 +18,58 @@
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta
       name="description"
-      content="Create beautiful CSS gradients instantly. Generate linear and radial gradient code for your website."
+      content="Create CSS gradients instantly with live preview, angle controls and copy-ready linear gradient code for modern interfaces."
     />
-
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
     <meta
       property="og:title"
-      content="CSS Gradient Generator - Linear and Radial Gradients Online | Vasy-dev.netlify.app"
+      content="CSS Gradient Generator | Linear and Radial Tool | Vasy.dev"
     />
     <meta
       property="og:description"
-      content="Create beautiful CSS gradients instantly. Generate linear and radial gradient code for your website."
+      content="Create CSS gradients instantly with live preview, angle controls and copy-ready linear gradient code for modern interfaces."
     />
     <meta
       property="og:image"
-      content="https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp"
+      content="https://vasy-dev.netlify.app/images/og-preview.webp"
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
       content="https://vasy-dev.netlify.app/tools/generators/gradient-generator/"
     />
-    <title>
-      CSS Gradient Generator - Linear and Radial Gradients Online |
-      Vasy-dev.netlify.app
-    </title>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="CSS Gradient Generator | Linear and Radial Tool | Vasy.dev"
+    />
+    <meta
+      name="twitter:description"
+      content="Build, preview and copy CSS gradients quickly for hero sections, buttons and colorful UI surfaces."
+    />
+    <meta
+      name="twitter:image"
+      content="https://vasy-dev.netlify.app/images/og-preview.webp"
+    />
+    <title>CSS Gradient Generator | Linear and Radial Tool | Vasy.dev</title>
     <link
       rel="canonical"
       href="https://vasy-dev.netlify.app/tools/generators/gradient-generator/"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Gradient Generator",
+        "url": "https://vasy-dev.netlify.app/tools/generators/gradient-generator/",
+        "description": "Create CSS gradients instantly with live preview, angle controls and copy-ready linear gradient code for modern interfaces."
+      }
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -81,28 +102,93 @@
         ]
       }
     </script>
-    <link rel="icon" href="../../../favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="../../../css/main.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body class="page page--theme-main">
+    <header class="site-header" id="top">
+      <nav class="site-nav">
+        <div class="site-nav__container l-container">
+          <a href="/#home" class="site-nav__logo">Vasy<span>D</span>ev</a>
+          <button
+            class="site-nav__toggle"
+            id="siteNavToggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="siteNavList"
+          >
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+          </button>
+          <ul class="site-nav__list" id="siteNavList">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/tools/" aria-current="page"
+                >Tools</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/printables/">Printables</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/blog/">Blog</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/projects/">Projects</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/#about">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="site-nav__languages" aria-label="Language selector">
+            <a
+              href="/"
+              aria-label="English version"
+              class="site-nav__lang-link"
+              title="English"
+              >&#x1F1EC;&#x1F1E7;</a
+            >
+            <a
+              href="/index-ro.html"
+              aria-label="Romanian version"
+              class="site-nav__lang-link"
+              title="Romanian"
+              >&#x1F1F7;&#x1F1F4;</a
+            >
+            <a
+              href="/index-cz.html"
+              aria-label="Czech version"
+              class="site-nav__lang-link"
+              title="Czech"
+              >&#x1F1E8;&#x1F1FF;</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main class="site-main">
       <section class="tools section-block section-slice section-slice--a">
         <div class="l-container tools__container">
           <div class="tools__header">
             <nav class="breadcrumb" aria-label="Breadcrumb">
-              <a href="../../../index.html">Home</a>
+              <a href="/">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-              <a href="../../index.html">Tools</a>
+              <a href="/tools/">Tools</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-              <a href="../index.html">Generators</a>
+              <a href="/tools/generators/">Generators</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">Gradient Generator</span>
             </nav>
             <h1>Gradient Generator</h1>
             <p>
-              Create linear gradients with live preview and copy CSS output.
+              Create linear gradients with live preview and copy CSS output for
+              colorful modern interfaces.
             </p>
-            <a href="../index.html" class="button button--secondary"
+            <a href="/tools/generators/" class="button button--secondary"
               >All generators</a
             >
           </div>
@@ -172,9 +258,6 @@
             while <code>radial-gradient()</code> spreads color from a center
             point outward. This generator helps you test angles and color
             combinations quickly so you can build attractive interfaces faster.
-            Beginners can see how gradient direction changes the feel of a
-            layout, and developers can copy ready-to-use CSS without manually
-            experimenting in DevTools.
           </p>
           <p>
             Gradients are useful for adding depth and energy to backgrounds,
@@ -182,11 +265,8 @@
             stop position or color intensity can make a design feel either more
             premium or more playful, so being able to preview those changes
             immediately saves a lot of time. A generator is especially helpful
-            when you want to create a gradient that still supports readable text
-            and does not overpower the rest of the interface. It also helps
-            teams move from experimentation into implementation faster because
-            the final CSS can be copied directly into a real project with fewer
-            manual tweaks afterward.
+            when you want to create a gradient that still supports readable
+            text and does not overpower the rest of the interface.
           </p>
           <h3>Example CSS</h3>
           <pre><code>background: linear-gradient(45deg, #ff6b6b, #4ecdc4);</code></pre>
@@ -240,6 +320,79 @@
         </div>
       </section>
     </main>
-    <script type="module" src="../../../js/main.js"></script>
+
+    <footer class="footer section-slice section-slice--b" id="footer">
+      <div class="footer__container l-container">
+        <div class="footer__brand">
+          <a href="/#home" class="footer__logo">Vasy<span>D</span>ev</a>
+          <p class="footer__text">
+            Modern design, high-performance frontend, and web experiences built
+            for conversion.
+          </p>
+          <p class="footer__text">
+            Projects and developer tools created by Vasy.dev
+          </p>
+          <div class="footer__socials">
+            <a
+              href="https://nexora-demo.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="Nexora"
+              >NX</a
+            >
+            <a
+              href="https://vasytech.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="VasyTech"
+              >VT</a
+            >
+            <a
+              href="https://github.com/VasyWeb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="GitHub"
+              >GH</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Navigation</h3>
+          <a href="/#home" class="footer__link">Home</a>
+          <a href="/#about" class="footer__link">About</a>
+          <a href="/projects/" class="footer__link">Projects</a>
+          <a href="/#services" class="footer__link">Services</a>
+          <a href="/tools/" class="footer__link">Tools</a>
+          <a href="/blog/" class="footer__link">Blog</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Shop</h3>
+          <a href="/printables/" class="footer__link">Printable Books</a>
+          <a href="/resources/" class="footer__link">Free Resources</a>
+          <a href="/tools/" class="footer__link">Frontend Tools</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Contact</h3>
+          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
+            >milanjakub9@gmail.com
+          </a>
+          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
+          <p class="footer__text">Available for new projects in 2026.</p>
+          <a href="/#contact" class="button footer__cta">Send Brief</a>
+        </div>
+      </div>
+      <div class="footer__bottom l-container">
+        <p class="footer__copyright">
+          &copy; 2026 Vasy.dev. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
