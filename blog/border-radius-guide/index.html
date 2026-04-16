@@ -41,7 +41,8 @@
     <meta
       property="og:url"
       content="https://vasy-dev.netlify.app/blog/border-radius-guide/"
-    />    <meta name="twitter:card" content="summary_large_image" />
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="CSS Border Radius Guide + Generator"
@@ -114,7 +115,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--theme-main">
+  <body class="page page--theme-main page--blog-article">
     <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
@@ -150,7 +151,7 @@
               <a class="site-nav__link" href="/#contact">Contact</a>
             </li>
           </ul>
-                              <div class="site-nav__languages" aria-label="Language selector">
+          <div class="site-nav__languages" aria-label="Language selector">
             <a
               href="/"
               aria-label="English version"
@@ -177,20 +178,28 @@
       </nav>
     </header>
     <main class="site-main">
-      <section class="stack section-block section-slice section-slice--b">
-        <div class="l-container">
+      <section
+        class="stack section-block section-slice section-slice--b article-page"
+      >
+        <div class="l-container article-page__container">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <a href="/blog/">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-            <span aria-current="page"
-              >CSS Border Radius Explained: Create Perfect Rounded Corners</span
-            >
+            <span aria-current="page">CSS Border Radius Guide</span>
           </nav>
-          <article class="blog-article">
-            <h1>CSS Border Radius Explained: Create Perfect Rounded Corners</h1>
 
+          <header class="article-page__intro">
+            <p class="article-page__eyebrow">Frontend Guide</p>
+            <h1>CSS Border Radius Guide</h1>
+            <p class="article-page__lead">
+              Learn how rounded corners affect interface tone and how to build
+              cleaner buttons, cards and shapes faster with the generator.
+            </p>
+          </header>
+
+          <article class="blog-article">
             <p>
               The CSS <code>border-radius</code> property controls how rounded
               the corners of an element should be. It is one of the simplest
@@ -208,9 +217,7 @@
             </p>
 
             <section aria-labelledby="how-border-radius-works">
-              <h2 id="how-border-radius-works">
-                How border-radius works in CSS
-              </h2>
+              <h2 id="how-border-radius-works">How Border Radius Works in CSS</h2>
               <p>
                 The <code>border-radius</code> property can accept from one to
                 four values. This gives you precise control over each corner of
@@ -235,7 +242,7 @@ border-radius: 10px 20px 30px 40px;</code></pre>
             </section>
 
             <section aria-labelledby="border-radius-example">
-              <h2 id="border-radius-example">Example of CSS border radius</h2>
+              <h2 id="border-radius-example">Example of CSS Border Radius</h2>
               <pre><code>.box {
   border-radius: 20px;
 }</code></pre>
@@ -248,7 +255,7 @@ border-radius: 10px 20px 30px 40px;</code></pre>
             </section>
 
             <section aria-labelledby="generate-border-radius">
-              <h2 id="generate-border-radius">Generate your border radius</h2>
+              <h2 id="generate-border-radius">Use the Border Radius Generator</h2>
               <p>
                 Writing the values manually is easy for basic cases, but a
                 generator is much faster when you want to test different corner
@@ -260,16 +267,16 @@ border-radius: 10px 20px 30px 40px;</code></pre>
                   href="/tools/generators/border-radius-generator/"
                   class="button button--primary"
                 >
-                  CSS Border Radius Generator
+                  Open Border Radius Generator
                 </a>
-                <a href="/tools/generators/" class="button button--secondary">Browse all generators</a>
+                <a href="/tools/generators/" class="button button--secondary">
+                  Browse all generators
+                </a>
               </div>
             </section>
 
             <section aria-labelledby="border-radius-tips">
-              <h2 id="border-radius-tips">
-                Tips for using border-radius in modern UI
-              </h2>
+              <h2 id="border-radius-tips">Tips for Using Border Radius in Modern UI</h2>
               <ul>
                 <li>Use small radius values for subtle UI.</li>
                 <li>Use larger radius for cards and buttons.</li>
@@ -310,77 +317,15 @@ border-radius: 10px 20px 30px 40px;</code></pre>
             </section>
           </article>
 
-          <div class="blog__actions">
+          <div class="blog__actions article-page__actions">
             <a href="/blog/" class="button button--secondary">Back to blog</a>
-          <p class="footer__text">
-            Modern design, high-performance frontend, and web experiences built
-            for conversion.
-          </p>
-          <p class="footer__text">
-            Projects and developer tools created by Vasy.dev
-          </p>
-          <div class="footer__socials">
-            <a
-              href="https://nexora-demo.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="Nexora"
-              >NX</a
-            >
-            <a
-              href="https://vasytech.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="VasyTech"
-              >VT</a
-            >
-            <a
-              href="https://github.com/VasyWeb"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="GitHub"
-              >GH</a
+            <a href="/tools/" class="button button--primary"
+              >Explore more tools</a
             >
           </div>
         </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Navigation</h3>
-          <a href="/#home" class="footer__link">Home</a>
-          <a href="/#about" class="footer__link">About</a>
-          <a href="/projects/" class="footer__link">Projects</a>
-          <a href="/#services" class="footer__link">Services</a>
-          <a href="/tools/" class="footer__link">Tools</a>
-          <a href="/blog/" class="footer__link">Blog</a>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Shop</h3>
-          <a href="/printables/" class="footer__link">Printable Books</a>
-          <a href="/resources/" class="footer__link">Free Resources</a>
-          <a href="/tools/" class="footer__link">Frontend Tools</a>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Contact</h3>
-          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
-            >milanjakub9@gmail.com
-          </a>
-          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
-          <p class="footer__text">Available for new projects in 2026.</p>
-          <a href="/#contact" class="button footer__cta">Send Brief</a>
-        </div>
-      </div>
-      <div class="footer__bottom l-container">
-        <p class="footer__copyright">
-          &copy; 2026 Vasy.dev. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <script type="module" src="/js/main.js"></script>
+      </section>
+    </main>
     <footer class="footer section-slice section-slice--b" id="footer">
       <div class="footer__container l-container">
         <div class="footer__brand">

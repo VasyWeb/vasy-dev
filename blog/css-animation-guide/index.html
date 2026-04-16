@@ -118,7 +118,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--theme-main">
+  <body class="page page--theme-main page--blog-article">
     <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
@@ -181,8 +181,10 @@
       </nav>
     </header>
     <main class="site-main">
-      <section class="stack section-block section-slice section-slice--b">
-        <div class="l-container">
+      <section
+        class="stack section-block section-slice section-slice--b article-page"
+      >
+        <div class="l-container article-page__container">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
@@ -190,8 +192,17 @@
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <span aria-current="page">CSS Animation Guide</span>
           </nav>
-          <article class="blog-article">
+
+          <header class="article-page__intro">
+            <p class="article-page__eyebrow">Frontend Guide</p>
             <h1>CSS Animation Guide</h1>
+            <p class="article-page__lead">
+              Learn how keyframes work, where animation helps the interface,
+              and how to build lighter motion effects with the generator.
+            </p>
+          </header>
+
+          <article class="blog-article">
             <p>
               CSS animations make interfaces feel more polished, interactive and
               easier to understand. Small motion effects can guide attention,
@@ -260,17 +271,19 @@ animation: fadeIn 1s ease;
                 <a
                   href="/tools/generators/css-animation-generator/"
                   class="button button--primary"
-                  >CSS Animation Generator</a
+                  >Open Animation Generator</a
                 >
+                <a href="/tools/generators/" class="button button--secondary">
+                  Browse all generators
+                </a>
               </div>
             </section>
           </article>
-          <div class="blog__actions">
-            <a href="/blog/" class="button button--secondary"
-              >Back to blog</a
-            >
-            <a href="/#home" class="button button--primary"
-              >Back to homepage</a
+
+          <div class="blog__actions article-page__actions">
+            <a href="/blog/" class="button button--secondary">Back to blog</a>
+            <a href="/tools/" class="button button--primary"
+              >Explore more tools</a
             >
           </div>
         </div>

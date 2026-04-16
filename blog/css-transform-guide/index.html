@@ -118,7 +118,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--theme-main">
+  <body class="page page--theme-main page--blog-article">
     <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
@@ -142,7 +142,9 @@
               <a class="site-nav__link" href="/printables/">Printables</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="/blog/" aria-current="page">Blog</a>
+              <a class="site-nav__link" href="/blog/" aria-current="page"
+                >Blog</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="/projects/">Projects</a>
@@ -180,9 +182,10 @@
         </div>
       </nav>
     </header>
+
     <main class="site-main">
-      <section class="stack section-block section-slice section-slice--b">
-        <div class="l-container">
+      <section class="stack section-block section-slice section-slice--b article-page">
+        <div class="l-container article-page__container">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
@@ -190,8 +193,17 @@
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <span aria-current="page">CSS Transform Guide</span>
           </nav>
-          <article class="blog-article">
+
+          <header class="article-page__intro">
+            <p class="article-page__eyebrow">Frontend Guide</p>
             <h1>CSS Transform Guide</h1>
+            <p class="article-page__lead">
+              Learn how transforms work, where they help the most, and how to
+              create cleaner rotate, scale and translate effects with the tool.
+            </p>
+          </header>
+
+          <article class="blog-article">
             <p>
               CSS transforms change how elements appear visually in the
               interface without changing normal document flow. They are a core
@@ -204,7 +216,7 @@
             </p>
 
             <section aria-labelledby="what-is-transform">
-              <h2 id="what-is-transform">What is CSS Transform</h2>
+              <h2 id="what-is-transform">What Is CSS Transform?</h2>
               <p>
                 The CSS <code>transform</code> property changes the visual state
                 of an element. Common transform functions include
@@ -241,22 +253,25 @@
                 <a
                   href="/tools/generators/css-transform-generator/"
                   class="button button--primary"
-                  >Transform Generator</a
+                  >Open Transform Generator</a
                 >
+                <a href="/tools/generators/" class="button button--secondary">
+                  Browse all generators
+                </a>
               </div>
             </section>
           </article>
-          <div class="blog__actions">
-            <a href="/blog/" class="button button--secondary"
-              >Back to blog</a
-            >
-            <a href="/#home" class="button button--primary"
-              >Back to homepage</a
+
+          <div class="blog__actions article-page__actions">
+            <a href="/blog/" class="button button--secondary">Back to blog</a>
+            <a href="/tools/" class="button button--primary"
+              >Explore more tools</a
             >
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer section-slice section-slice--b" id="footer">
       <div class="footer__container l-container">
         <div class="footer__brand">
