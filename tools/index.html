@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
@@ -13,40 +13,80 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
+
       gtag("config", "G-5YW4LB5N1T");
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta
       name="description"
-      content="Frontend tools including CSS generators, converters and checkers designed to speed up modern UI development workflows."
+      content="Explore CSS generators, converters and practical frontend tools built to speed up layout, styling and everyday UI workflows."
     />
-
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
     <meta
       property="og:title"
-      content="Frontend Tools - CSS Generators, Converters and Utilities | Vasy-dev.netlify.app"
+      content="Frontend Tools | CSS Generators, Converters and Utilities | Vasy.dev"
     />
     <meta
       property="og:description"
-      content="Frontend tools including CSS generators, converters and checkers designed to speed up modern UI development workflows."
+      content="Explore CSS generators, converters and practical frontend tools built to speed up layout, styling and everyday UI workflows."
     />
     <meta
       property="og:image"
-      content="https://vasy-dev.netlify.app/images/mason-c-W7Jasy4wBYA-unsplash.webp"
+      content="https://vasy-dev.netlify.app/images/og-preview.webp"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vasy-dev.netlify.app/tools/" />
-    <title>
-      Frontend Tools - CSS Generators, Converters and Utilities |
-      Vasy-dev.netlify.app
-    </title>
-
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Frontend Tools | CSS Generators, Converters and Utilities | Vasy.dev"
+    />
+    <meta
+      name="twitter:description"
+      content="CSS generators, converters and practical frontend utilities for faster UI work."
+    />
+    <meta
+      name="twitter:image"
+      content="https://vasy-dev.netlify.app/images/og-preview.webp"
+    />
+    <title>Frontend Tools | CSS Generators, Converters and Utilities | Vasy.dev</title>
     <link rel="canonical" href="https://vasy-dev.netlify.app/tools/" />
-
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/css/main.css" />
-
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Frontend Tools",
+        "url": "https://vasy-dev.netlify.app/tools/",
+        "description": "CSS generators, converters and practical frontend tools for faster development workflows.",
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "WebPage",
+                "name": "CSS Generators",
+                "url": "https://vasy-dev.netlify.app/tools/generators/"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "WebPage",
+                "name": "CSS Converters",
+                "url": "https://vasy-dev.netlify.app/tools/converters/"
+              }
+            }
+          ]
+        }
+      }
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -67,9 +107,75 @@
         ]
       }
     </script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
 
   <body class="page page--theme-main">
+    <header class="site-header" id="top">
+      <nav class="site-nav">
+        <div class="site-nav__container l-container">
+          <a href="/#home" class="site-nav__logo">Vasy.dev</a>
+          <button
+            class="site-nav__toggle"
+            id="siteNavToggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="siteNavList"
+          >
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+          </button>
+          <ul class="site-nav__list" id="siteNavList">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/tools/" aria-current="page"
+                >Tools</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/printables/">Printables</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/blog/">Blog</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/projects/">Projects</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/#about">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="site-nav__languages" aria-label="Language selector">
+            <a
+              href="/"
+              aria-label="English version"
+              class="site-nav__lang-link"
+              title="English"
+              >🇬🇧</a
+            >
+            <a
+              href="/index-ro.html"
+              aria-label="Romanian version"
+              class="site-nav__lang-link"
+              title="Română"
+              >🇷🇴</a
+            >
+            <a
+              href="/index-cz.html"
+              aria-label="Czech version"
+              class="site-nav__lang-link"
+              title="Čeština"
+              >🇨🇿</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main class="site-main">
       <section
         class="tools section-block section-slice section-slice--a"
@@ -86,15 +192,17 @@
             <h1>CSS Generators, Converters and Frontend Tools</h1>
 
             <p>
-              Choose a tool category and work faster with generators, converters
-              and utilities built for modern frontend development.
+              Explore practical frontend tools built to speed up layout,
+              styling, visual effects and everyday UI tasks.
             </p>
             <p>
-              Start with a generator when you want live visual output, or jump
-              into a converter for quick unit and color transformations.
+              Start with generators when you want live previews and copy-ready
+              CSS, or jump into converters for fast unit and color changes.
             </p>
 
-            <a href="/" class="button button--secondary">Back to portfolio</a>
+            <a href="/#home" class="button button--secondary">
+              Back to homepage
+            </a>
           </div>
 
           <div class="services__grid">
@@ -103,8 +211,8 @@
 
               <p class="service-card__text">
                 Generate production-ready CSS for layouts, visual effects and
-                interface styling. These tools provide live previews and
-                ready-to-copy CSS values.
+                interface styling. These tools include live previews and
+                ready-to-copy output.
               </p>
 
               <ul class="tool-category__list">
@@ -126,8 +234,8 @@
               <h2 class="service-card__title">CSS Converters</h2>
 
               <p class="service-card__text">
-                Convert units and formats used in responsive design and frontend
-                workflows. Quick utilities for everyday development tasks.
+                Convert units and formats used in responsive design and modern
+                frontend workflows with quick, lightweight utilities.
               </p>
 
               <ul class="tool-category__list">
@@ -145,25 +253,100 @@
 
             <article class="service-card">
               <h2 class="service-card__title">Frontend Checkers</h2>
-              <p class="service-card__eyebrow">Coming next</p>
+              <p class="service-card__eyebrow">Coming soon</p>
 
               <p class="service-card__text">
                 Validation tools for accessibility, UI quality and CSS output
-                inspection. Additional frontend utilities will be added soon.
+                inspection. Additional frontend utilities will be added here as
+                the toolkit grows.
               </p>
 
               <ul class="tool-category__list">
-                <li>Accessibility Checker (coming soon)</li>
+                <li>Accessibility Checker</li>
               </ul>
 
               <p class="service-card__note">
-                This category stays visible so the toolkit can grow in one
-                place instead of splitting into separate sections later.
+                This space stays visible so future tools fit into one clear
+                navigation structure instead of splitting into separate pages.
               </p>
             </article>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="footer section-slice section-slice--b" id="footer">
+      <div class="footer__container l-container">
+        <div class="footer__brand">
+          <a href="/#home" class="footer__logo">Vasy.dev</a>
+          <p class="footer__text">
+            Modern design, high-performance frontend, and web experiences built
+            for conversion.
+          </p>
+          <p class="footer__text">
+            Projects and developer tools created by Vasy.dev
+          </p>
+          <div class="footer__socials">
+            <a
+              href="https://nexora-demo.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="Nexora"
+              >NX</a
+            >
+            <a
+              href="https://vasytech.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="VasyTech"
+              >VT</a
+            >
+            <a
+              href="https://github.com/VasyWeb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="GitHub"
+              >GH</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Navigation</h3>
+          <a href="/#home" class="footer__link">Home</a>
+          <a href="/#about" class="footer__link">About</a>
+          <a href="/projects/" class="footer__link">Projects</a>
+          <a href="/#services" class="footer__link">Services</a>
+          <a href="/tools/" class="footer__link">Tools</a>
+          <a href="/blog/" class="footer__link">Blog</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Shop</h3>
+          <a href="/printables/" class="footer__link">Printable Books</a>
+          <a href="/resources/" class="footer__link">Free Resources</a>
+          <a href="/tools/" class="footer__link">Frontend Tools</a>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Contact</h3>
+          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
+            >milanjakub9@gmail.com
+          </a>
+          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
+          <p class="footer__text">Available for new projects in 2026.</p>
+          <a href="/#contact" class="button footer__cta">Send Brief</a>
+        </div>
+      </div>
+      <div class="footer__bottom l-container">
+        <p class="footer__copyright">
+          &copy; 2026 Vasy.dev. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>

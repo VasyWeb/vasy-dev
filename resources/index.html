@@ -2,158 +2,362 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Free CSS Resources & Cheat Sheets | Vasy.dev</title>
-
     <meta
       name="description"
-      content="Download free CSS cheat sheets, flexbox guides, grid layouts and UI packs. Practical resources for frontend developers."
+      content="Download free CSS cheat sheets, flexbox guides, grid layouts and UI packs. Practical frontend resources that help you build faster."
     />
-
-    <link rel="stylesheet" href="/css/main.css" />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta
+      property="og:title"
+      content="Free CSS Resources & Cheat Sheets | Vasy.dev"
+    />
+    <meta
+      property="og:description"
+      content="Download free CSS cheat sheets, flexbox guides, grid layouts and UI packs. Practical frontend resources that help you build faster."
+    />
+    <meta
+      property="og:image"
+      content="https://vasy-dev.netlify.app/images/og-preview.webp"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://vasy-dev.netlify.app/resources/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Free CSS Resources & Cheat Sheets | Vasy.dev"
+    />
+    <meta
+      name="twitter:description"
+      content="Free frontend cheat sheets, CSS guides and downloadable PDFs for faster UI work."
+    />
+    <meta
+      name="twitter:image"
+      content="https://vasy-dev.netlify.app/images/og-preview.webp"
+    />
+    <title>Free CSS Resources & Cheat Sheets | Vasy.dev</title>
+    <link rel="canonical" href="https://vasy-dev.netlify.app/resources/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Free CSS Resources & Cheat Sheets",
+        "url": "https://vasy-dev.netlify.app/resources/",
+        "description": "Free CSS cheat sheets, guides and downloadable frontend resources.",
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "CSS Cheat Sheet",
+                "url": "https://vasy-dev.netlify.app/resources/pdf/Frontend%20Cheat%20Sheet%20for%20Developers.pdf"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "Flexbox Guide",
+                "url": "https://vasy-dev.netlify.app/resources/pdf/Flexbox%20Cheat%20Sheet%20(No%20More%20Guessing).pdf"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "CSS Grid Guide",
+                "url": "https://vasy-dev.netlify.app/resources/pdf/CSS%20Grid%20Made%20Simple%20(Visual%20Layout%20Guide).pdf"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "CreativeWork",
+                "name": "UI Components Pack",
+                "url": "https://vasy-dev.netlify.app/resources/pdf/7%20UI%20Mistakes%20That%20Kill%20Your%20Website%20(And%20Cost%20You%20Clients).pdf"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vasy-dev.netlify.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Resources",
+            "item": "https://vasy-dev.netlify.app/resources/"
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
 
   <body class="page page--theme-main">
-    <!-- NAVBAR -->
-    <header class="site-header">
+    <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
-          <a href="/" class="site-nav__logo">Vasy.dev</a>
-
-          <ul class="site-nav__list">
-            <li><a class="site-nav__link" href="/tools/">Tools</a></li>
-            <li><a class="site-nav__link" href="/resources/">Free PDFs</a></li>
-            <li><a class="site-nav__link" href="/blog/">Blog</a></li>
+          <a href="/#home" class="site-nav__logo">Vasy.dev</a>
+          <button
+            class="site-nav__toggle"
+            id="siteNavToggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            aria-controls="siteNavList"
+          >
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+          </button>
+          <ul class="site-nav__list" id="siteNavList">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/tools/">Tools</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/printables/">Printables</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/blog/">Blog</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/projects/">Projects</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/#about">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="/#contact">Contact</a>
+            </li>
           </ul>
+          <div class="site-nav__languages" aria-label="Language selector">
+            <a
+              href="/"
+              aria-label="English version"
+              class="site-nav__lang-link"
+              title="English"
+              >🇬🇧</a
+            >
+            <a
+              href="/index-ro.html"
+              aria-label="Romanian version"
+              class="site-nav__lang-link"
+              title="Română"
+              >🇷🇴</a
+            >
+            <a
+              href="/index-cz.html"
+              aria-label="Czech version"
+              class="site-nav__lang-link"
+              title="Čeština"
+              >🇨🇿</a
+            >
+          </div>
         </div>
       </nav>
     </header>
 
     <main class="site-main">
-      <!-- HERO -->
-      <section class="section-block">
-        <div class="l-container">
-          <h1>🎁 Free CSS Resources & Cheat Sheets</h1>
-          <p>
-            Download practical guides to build faster with CSS and frontend
-            tools. No signup. 100% free.
-          </p>
-        </div>
-      </section>
-
-      <!-- PDF GRID -->
-      <section class="section-block">
-        <div class="l-container resources-grid">
-          <!-- CARD -->
-          <div class="resource-card">
-            <h3>CSS Cheat Sheet</h3>
-            <p>Quick reference for modern CSS properties and layouts.</p>
-            <a
-              href="/resources/pdf/Frontend Cheat Sheet for Developers.pdf"
-              download
-              class="button button--primary"
-            >
-              Download PDF
-            </a>
+      <section class="stack section-block section-slice section-slice--b">
+        <div class="l-container printables-page">
+          <div class="printables-page__hero">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <span aria-current="page">Free CSS Resources</span>
+            </nav>
+            <p class="printables-page__eyebrow">Free Downloadable Resources</p>
+            <h1>Free CSS Resources &amp; Cheat Sheets</h1>
+            <p class="printables-page__intro">
+              Download practical PDFs that help you move faster with CSS,
+              layout systems and frontend workflows. No signup required.
+            </p>
           </div>
 
-          <!-- CARD -->
-          <div class="resource-card">
-            <h3>Flexbox Guide</h3>
-            <p>Master flexbox layouts with simple visual examples.</p>
-            <a
-              href="/resources/pdf/Flexbox Cheat Sheet (No More Guessing).pdf"
-              download
-              class="button button--primary"
-            >
-              Download PDF
-            </a>
+          <div class="resources-grid">
+            <div class="resource-card">
+              <h2>CSS Cheat Sheet</h2>
+              <p>Quick reference for modern CSS properties and layouts.</p>
+              <a
+                href="/resources/pdf/Frontend Cheat Sheet for Developers.pdf"
+                download
+                class="button button--primary"
+              >
+                Download PDF
+              </a>
+            </div>
+
+            <div class="resource-card">
+              <h2>Flexbox Guide</h2>
+              <p>Master flexbox layouts with simple visual examples.</p>
+              <a
+                href="/resources/pdf/Flexbox Cheat Sheet (No More Guessing).pdf"
+                download
+                class="button button--primary"
+              >
+                Download PDF
+              </a>
+            </div>
+
+            <div class="resource-card">
+              <h2>CSS Grid Guide</h2>
+              <p>Create responsive layouts more confidently using CSS Grid.</p>
+              <a
+                href="/resources/pdf/CSS Grid Made Simple (Visual Layout Guide).pdf"
+                download
+                class="button button--primary"
+              >
+                Download PDF
+              </a>
+            </div>
+
+            <div class="resource-card">
+              <h2>UI Components Pack</h2>
+              <p>Useful UI patterns and ideas for faster interface work.</p>
+              <a
+                href="/resources/pdf/7 UI Mistakes That Kill Your Website (And Cost You Clients).pdf"
+                download
+                class="button button--primary"
+              >
+                Download PDF
+              </a>
+            </div>
           </div>
 
-          <!-- CARD -->
-          <div class="resource-card">
-            <h3>CSS Grid Guide</h3>
-            <p>Create responsive layouts easily using CSS Grid.</p>
-            <a
-              href="/resources/pdf/CSS Grid Made Simple (Visual Layout Guide).pdf"
-              download
-              class="button button--primary"
-            >
-              Download PDF
+          <section class="printables-note" aria-labelledby="resourceBenefits">
+            <h2 id="resourceBenefits">Why these downloads help</h2>
+            <p>
+              Save time with ready-to-use references, learn faster from
+              practical examples and improve your frontend workflow with assets
+              you can keep open while building.
+            </p>
+          </section>
+
+          <div class="printables-promo">
+            <p class="printables-promo__eyebrow">Next Step</p>
+            <h2>Put the resources into practice</h2>
+            <p>
+              After downloading the PDFs, use the live tools to generate CSS,
+              test layouts and speed up production work.
+            </p>
+            <a href="/tools/" class="button button--primary">
+              Explore CSS Tools
             </a>
           </div>
-
-          <!-- CARD -->
-          <div class="resource-card">
-            <h3>UI Components Pack</h3>
-            <p>Ready-to-use UI elements for faster development.</p>
-            <a
-              href="/resources/pdf/7 UI Mistakes That Kill Your Website (And Cost You Clients).pdf"
-              download
-              class="button button--primary"
-            >
-              Download PDF
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- BENEFITS -->
-      <section class="section-block">
-        <div class="l-container">
-          <h2>Why download these?</h2>
-          <ul>
-            <li>⚡ Save time with ready-to-use CSS</li>
-            <li>🎯 Learn faster with practical examples</li>
-            <li>🚀 Improve your frontend workflow</li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="section-block">
-        <div class="l-container">
-          <h2>Start building faster 🚀</h2>
-          <a href="/tools/" class="button button--primary">
-            Explore CSS Tools
-          </a>
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer section-slice section-slice--b" id="footer">
       <div class="footer__container l-container">
         <div class="footer__brand">
-          <a href="/" class="footer__logo">Vasy.dev</a>
+          <a href="/#home" class="footer__logo">Vasy.dev</a>
           <p class="footer__text">
-            Free frontend tools and resources for developers.
+            Modern design, high-performance frontend, and web experiences built
+            for conversion.
           </p>
+          <p class="footer__text">
+            Projects and developer tools created by Vasy.dev
+          </p>
+          <div class="footer__socials">
+            <a
+              href="https://nexora-demo.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="Nexora"
+              >NX</a
+            >
+            <a
+              href="https://vasytech.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="VasyTech"
+              >VT</a
+            >
+            <a
+              href="https://github.com/VasyWeb"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer__social"
+              aria-label="GitHub"
+              >GH</a
+            >
+          </div>
         </div>
 
         <div class="footer__col">
           <h3 class="footer__title">Navigation</h3>
-          <a href="/" class="footer__link">Home</a>
+          <a href="/#home" class="footer__link">Home</a>
+          <a href="/#about" class="footer__link">About</a>
+          <a href="/projects/" class="footer__link">Projects</a>
+          <a href="/#services" class="footer__link">Services</a>
           <a href="/tools/" class="footer__link">Tools</a>
-          <a href="/resources/" class="footer__link">Resources</a>
           <a href="/blog/" class="footer__link">Blog</a>
         </div>
 
         <div class="footer__col">
+          <h3 class="footer__title">Shop</h3>
+          <a href="/printables/" class="footer__link">Printable Books</a>
+          <a href="/resources/" class="footer__link">Free Resources</a>
+          <a href="/tools/" class="footer__link">Frontend Tools</a>
+        </div>
+
+        <div class="footer__col">
           <h3 class="footer__title">Contact</h3>
-          <a href="mailto:milanjakub9@gmail.com" class="footer__link">
-            Email
+          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
+            >milanjakub9@gmail.com
           </a>
+          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
+          <p class="footer__text">Available for new projects in 2026.</p>
+          <a href="/#contact" class="button footer__cta">Send Brief</a>
         </div>
       </div>
-
       <div class="footer__bottom l-container">
         <p class="footer__copyright">
           &copy; 2026 Vasy.dev. All rights reserved.
         </p>
       </div>
     </footer>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
