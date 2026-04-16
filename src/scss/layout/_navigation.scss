@@ -21,11 +21,18 @@
 }
 
 .site-nav__logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-bg);
   text-decoration: none;
   letter-spacing: 0.02em;
+}
+
+.site-nav__logo span {
+  color: var(--color-accent);
 }
 
 .site-nav__list {
