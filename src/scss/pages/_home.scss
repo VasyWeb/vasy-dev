@@ -25,10 +25,11 @@
 .services__cta {
   text-align: center;
   margin-top: 2.5rem;
+  padding-top: 0.35rem;
 }
 
 .services__cta-note {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   opacity: 0.7;
 }
 
@@ -507,6 +508,10 @@
   margin-top: 0.35rem;
 }
 
+.tool-category__list + .button {
+  margin-top: 1.35rem;
+}
+
 .radius-generator {
   margin-top: 1rem;
   background: color-mix(in srgb, var(--color-surface) 86%, white);
@@ -939,6 +944,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
+}
+
+.contact .l-container {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.contact .l-container > p {
+  margin: 0;
 }
 
 .blog__actions .button--secondary {
