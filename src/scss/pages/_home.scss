@@ -390,7 +390,7 @@
 }
 
 .tool-category__list {
-  margin: 2rem;
+  margin: 1.25rem 0 0;
   padding-left: 1.2rem;
 }
 
@@ -1112,6 +1112,12 @@
   opacity: 0.92;
 }
 
+.product-card a:focus-visible,
+.breadcrumb a:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-accent) 72%, #fff);
+  outline-offset: 3px;
+}
+
 .printables-note {
   padding: 1.2rem;
   border-radius: 1rem;
@@ -1131,6 +1137,10 @@
 }
 
 @media (max-width: 768px) {
+  .tool-category__list {
+    margin-top: 1rem;
+  }
+
   .products-grid {
     grid-template-columns: 1fr;
   }

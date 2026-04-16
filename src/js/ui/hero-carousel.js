@@ -11,7 +11,7 @@ const CAROUSEL_I18N = {
     statusPrefix: "Slide curent:",
   },
   cs: {
-    dotLabel: "Přejít na hero slide",
+    dotLabel: "Přejít na slide hero sekce",
     statusPrefix: "Aktuální slide:",
   },
 };

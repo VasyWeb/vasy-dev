@@ -43,15 +43,28 @@
   text-decoration: none;
   color: var(--color-muted);
   font-weight: 600;
+  border-radius: 999px;
+  padding: 0.2rem 0.35rem;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
 }
 
 .site-nav__link:hover {
   color: var(--color-accent);
 }
 
+.site-nav__link:focus-visible,
+.site-nav__lang-link:focus-visible,
+.site-nav__toggle:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--color-accent) 68%, #fff);
+  outline-offset: 3px;
+}
+
 .site-nav__link[aria-current="page"] {
   color: var(--color-bg);
   font-weight: 700;
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
 }
 
 .site-nav__languages {
@@ -154,5 +167,25 @@
 
   .site-nav__list--open {
     display: flex;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-nav__container {
+    gap: 0.6rem;
+  }
+
+  .site-nav__languages {
+    margin-left: 0;
+  }
+
+  .site-nav__lang-link {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1rem;
+  }
+
+  .site-nav__toggle {
+    margin-left: 0.35rem;
   }
 }
