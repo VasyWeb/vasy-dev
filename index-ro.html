@@ -92,13 +92,13 @@
           </button>
           <ul class="site-nav__list" id="siteNavList">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="tools">Unelte</a>
+              <a class="site-nav__link" href="/tools/">Unelte</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="printables/">Printabile</a>
+              <a class="site-nav__link" href="/printables/">Printabile</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="blog/">Blog</a>
+              <a class="site-nav__link" href="/blog/">Blog</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="#projects">Proiecte</a>
@@ -110,34 +110,27 @@
               <a class="site-nav__link" href="#contact">Contact</a>
             </li>
           </ul>
-          <div
-            aria-label="Selector de limbă"
-            style="
-              display: flex;
-              align-items: center;
-              gap: 0.45rem;
-              margin-left: 1rem;
-            "
-          >
+          <div class="site-nav__languages" aria-label="Selector de limbă">
             <a
               href="/"
               aria-label="Versiunea în engleză"
               title="English"
-              style="font-size: 1.1rem; text-decoration: none"
+              class="site-nav__lang-link"
               >🇬🇧</a
             >
             <a
               href="/index-ro.html"
               aria-label="Versiunea în română"
+              aria-current="page"
               title="Română"
-              style="font-size: 1.1rem; text-decoration: none"
+              class="site-nav__lang-link"
               >🇷🇴</a
             >
             <a
               href="/index-cz.html"
               aria-label="Versiunea în cehă"
               title="Čeština"
-              style="font-size: 1.1rem; text-decoration: none"
+              class="site-nav__lang-link"
               >🇨🇿</a
             >
           </div>
@@ -185,15 +178,15 @@
               </p>
 
               <div class="hero__actions">
-                <a href="tools" class="button button--primary"
+                <a href="/tools/" class="button button--primary"
                   >Explorează uneltele</a
                 >
                 <a href="#contact" class="button button--secondary"
-                  >lucrează cu mine</a
+                  >Lucrează cu mine</a
                 >
               </div>
               <p class="hero__note">
-                PDF-uri CSS gratuite incluse. Fără signup.
+                PDF-uri CSS gratuite incluse. Fără cont.
               </p>
             </div>
 
@@ -243,10 +236,10 @@
               </p>
 
               <div class="hero__actions">
-                <a href="/projects/index.html" class="button button--primary"
+                <a href="/projects/" class="button button--primary"
                   >Vezi proiectele</a
                 >
-                <a href="blog/" class="button button--secondary"
+                <a href="/blog/" class="button button--secondary"
                   >Citește ghidurile</a
                 >
               </div>
@@ -346,7 +339,7 @@
             data-hero-prev
             aria-label="Arată slide-ul anterior"
           >
-            Prev
+            Anterior
           </button>
           <div
             class="hero__dots"
@@ -359,7 +352,7 @@
             data-hero-next
             aria-label="Arată slide-ul următor"
           >
-            Next
+            Următorul
           </button>
           <p class="hero__status" data-hero-status aria-live="polite"></p>
         </div>
@@ -369,7 +362,7 @@
           <p class="printables-promo__eyebrow">Nou</p>
           <h2>Cărți de colorat printabile</h2>
           <p>
-            Descopera carti de colorat printabile cu descarcare instant si
+            Descoperă cărți de colorat printabile cu descărcare instant și
             checkout simplu prin Gumroad.
           </p>
           <a href="/printables/" class="button button--primary">
@@ -433,7 +426,7 @@
             </li>
           </ul>
 
-          <a href="tools/" class="button button--primary"
+          <a href="/tools/" class="button button--primary"
             >Vezi toate uneltele</a
           >
         </div>
@@ -466,7 +459,7 @@
             </li>
           </ul>
 
-          <a href="blog/" class="button button--primary">Citește articolele</a>
+          <a href="/blog/" class="button button--primary">Citește articolele</a>
         </div>
       </section>
 
@@ -477,7 +470,7 @@
             <h2>Proiecte</h2>
             <p>Selecție de proiecte frontend și experimente.</p>
           </div>
-          <a href="/projects/index.html" class="button button--primary"
+          <a href="/projects/" class="button button--primary"
             >Vezi proiectele</a
           >
         </div>
@@ -489,8 +482,8 @@
           <div class="about__content">
             <h2>Despre</h2>
             <p>
-              Construiesc unelte frontend si sisteme UI care ii ajuta pe
-              dezvoltatori sa lucreze mai rapid si mai eficient.
+              Construiesc unelte frontend și sisteme UI care îi ajută pe
+              dezvoltatori să lucreze mai rapid și mai eficient.
             </p>
           </div>
         </div>
@@ -552,11 +545,11 @@
             </article>
           </div>
 
-          <div style="text-align: center; margin-top: 2.5rem">
+          <div class="services__cta">
             <a href="#contact" class="button button--primary">
               Cere o ofertă gratuită
             </a>
-            <p style="margin-top: 0.8rem; opacity: 0.7">
+            <p class="services__cta-note">
               De obicei răspund în câteva ore.
             </p>
           </div>
@@ -621,8 +614,8 @@
           <a href="#about" class="footer__link">Despre</a>
           <a href="#projects" class="footer__link">Proiecte</a>
           <a href="#services" class="footer__link">Servicii</a>
-          <a href="#tools" class="footer__link">Unelte</a>
-          <a href="blog/" class="footer__link">Blog</a>
+          <a href="/tools/" class="footer__link">Unelte</a>
+          <a href="/blog/" class="footer__link">Blog</a>
         </div>
 
         <div class="footer__col">

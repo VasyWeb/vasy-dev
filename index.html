@@ -89,13 +89,13 @@
           </button>
           <ul class="site-nav__list" id="siteNavList">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="tools">Tools</a>
+              <a class="site-nav__link" href="/tools/">Tools</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="printables/">Printables</a>
+              <a class="site-nav__link" href="/printables/">Printables</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="blog/">Blog</a>
+              <a class="site-nav__link" href="/blog/">Blog</a>
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="#projects">Projects</a>
@@ -107,34 +107,27 @@
               <a class="site-nav__link" href="#contact">Contact</a>
             </li>
           </ul>
-          <div
-            aria-label="Language selector"
-            style="
-              display: flex;
-              align-items: center;
-              gap: 0.45rem;
-              margin-left: 1rem;
-            "
-          >
+          <div class="site-nav__languages" aria-label="Language selector">
             <a
               href="/"
               aria-label="English version"
+              aria-current="page"
               title="English"
-              style="font-size: 1.1rem; text-decoration: none"
+              class="site-nav__lang-link"
               >🇬🇧</a
             >
             <a
               href="/index-ro.html"
               aria-label="Romanian version"
               title="Română"
-              style="font-size: 1.1rem; text-decoration: none"
+              class="site-nav__lang-link"
               >🇷🇴</a
             >
             <a
               href="/index-cz.html"
               aria-label="Czech version"
               title="Čeština"
-              style="font-size: 1.1rem; text-decoration: none"
+              class="site-nav__lang-link"
               >🇨🇿</a
             >
           </div>
@@ -179,9 +172,9 @@
               </p>
 
               <div class="hero__actions">
-                <a href="tools" class="button button--primary">Explore Tools</a>
+                <a href="/tools/" class="button button--primary">Explore Tools</a>
                 <a href="#contact" class="button button--secondary"
-                  >work with me</a
+                  >Work With Me</a
                 >
               </div>
               <p class="hero__note">Free CSS PDFs included. No signup required.</p>
@@ -229,10 +222,10 @@
               </p>
 
               <div class="hero__actions">
-                <a href="/projects/index.html" class="button button--primary"
+                <a href="/projects/" class="button button--primary"
                   >View Projects</a
                 >
-                <a href="blog/" class="button button--secondary">Read Guides</a>
+                <a href="/blog/" class="button button--secondary">Read Guides</a>
               </div>
               <p class="hero__note">Designed to stay responsive without extra UI clutter.</p>
             </div>
@@ -320,7 +313,7 @@
             data-hero-prev
             aria-label="Show previous hero slide"
           >
-            Prev
+            Previous
           </button>
           <div
             class="hero__dots"
@@ -403,7 +396,7 @@
             </li>
           </ul>
 
-          <a href="tools/" class="button button--primary">View All Tools</a>
+          <a href="/tools/" class="button button--primary">View All Tools</a>
         </div>
       </section>
 
@@ -425,7 +418,7 @@
             </li>
           </ul>
 
-          <a href="blog/" class="button button--primary">Read Articles</a>
+          <a href="/blog/" class="button button--primary">Read Articles</a>
         </div>
       </section>
 
@@ -436,7 +429,7 @@
             <h2>Projects</h2>
             <p>Selected frontend builds and experiments.</p>
           </div>
-          <a href="/projects/index.html" class="button button--primary"
+          <a href="/projects/" class="button button--primary"
             >View Projects</a
           >
         </div>
@@ -504,11 +497,11 @@
             </article>
           </div>
 
-          <div style="text-align: center; margin-top: 2.5rem">
+          <div class="services__cta">
             <a href="#contact" class="button button--primary">
               Get a Free Quote
             </a>
-            <p style="margin-top: 0.8rem; opacity: 0.7">
+            <p class="services__cta-note">
               Usually reply within a few hours.
             </p>
           </div>
@@ -573,8 +566,8 @@
           <a href="#about" class="footer__link">About</a>
           <a href="#projects" class="footer__link">Projects</a>
           <a href="#services" class="footer__link">Services</a>
-          <a href="#tools" class="footer__link">Tools</a>
-          <a href="blog/" class="footer__link">Blog</a>
+          <a href="/tools/" class="footer__link">Tools</a>
+          <a href="/blog/" class="footer__link">Blog</a>
         </div>
 
         <div class="footer__col">

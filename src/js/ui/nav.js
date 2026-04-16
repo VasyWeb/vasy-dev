@@ -23,4 +23,27 @@ export const setupNav = () => {
     navList.classList.remove(openClass);
     toggleButton.setAttribute("aria-expanded", "false");
   });
+
+  document.addEventListener("click", (event) => {
+    if (
+      !navList.classList.contains(openClass) ||
+      navList.contains(event.target) ||
+      toggleButton.contains(event.target)
+    ) {
+      return;
+    }
+
+    navList.classList.remove(openClass);
+    toggleButton.setAttribute("aria-expanded", "false");
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !navList.classList.contains(openClass)) {
+      return;
+    }
+
+    navList.classList.remove(openClass);
+    toggleButton.setAttribute("aria-expanded", "false");
+    toggleButton.focus();
+  });
 };
