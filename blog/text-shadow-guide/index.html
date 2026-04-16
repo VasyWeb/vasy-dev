@@ -44,7 +44,8 @@
     <meta
       property="og:url"
       content="https://vasy-dev.netlify.app/blog/text-shadow-guide/"
-    />    <meta name="twitter:card" content="summary_large_image" />
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="CSS Text Shadow Guide + Generator | Vasy.dev"
@@ -117,7 +118,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--theme-main">
+  <body class="page page--theme-main page--blog-article">
     <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
@@ -153,7 +154,7 @@
               <a class="site-nav__link" href="/#contact">Contact</a>
             </li>
           </ul>
-                              <div class="site-nav__languages" aria-label="Language selector">
+          <div class="site-nav__languages" aria-label="Language selector">
             <a
               href="/"
               aria-label="English version"
@@ -180,19 +181,29 @@
       </nav>
     </header>
     <main class="site-main">
-      <section class="stack section-block section-slice section-slice--b">
-        <div class="l-container">
+      <section
+        class="stack section-block section-slice section-slice--b article-page"
+      >
+        <div class="l-container article-page__container">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <a href="/blog/">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-            <span aria-current="page"
-              >How to Create CSS Text Shadows That Stay Readable</span
-            >
+            <span aria-current="page">CSS Text Shadow Guide</span>
           </nav>
+
+          <header class="article-page__intro">
+            <p class="article-page__eyebrow">Frontend Guide</p>
+            <h1>CSS Text Shadow Guide</h1>
+            <p class="article-page__lead">
+              Learn how text shadows add contrast without hurting readability
+              and how to tune cleaner typography effects faster with the
+              generator.
+            </p>
+          </header>
+
           <article class="blog-article">
-            <h1>How to Create CSS Text Shadows That Stay Readable</h1>
             <p>
               The CSS <code>text-shadow</code> property lets you add depth,
               contrast and atmosphere to typography. It is often used in hero
@@ -200,7 +211,7 @@
               from the background.
             </p>
             <section aria-labelledby="what-is-text-shadow">
-              <h2 id="what-is-text-shadow">What is CSS text-shadow?</h2>
+              <h2 id="what-is-text-shadow">What Is CSS Text Shadow?</h2>
               <p>
                 <code>text-shadow</code> applies a shadow directly to text
                 characters. You control horizontal offset, vertical offset, blur
@@ -209,7 +220,7 @@
               <pre><code>text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);</code></pre>
             </section>
             <section aria-labelledby="text-shadow-example">
-              <h2 id="text-shadow-example">Example of CSS text-shadow</h2>
+              <h2 id="text-shadow-example">Example of CSS Text Shadow</h2>
               <pre><code>h1 {
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }</code></pre>
@@ -220,7 +231,7 @@
               </p>
             </section>
             <section aria-labelledby="generate-text-shadow">
-              <h2 id="generate-text-shadow">Generate your own text shadow</h2>
+              <h2 id="generate-text-shadow">Use the Text Shadow Generator</h2>
               <p>
                 Use our generator to preview text-shadow combinations live and
                 copy the CSS immediately.
@@ -229,78 +240,35 @@
                 <a
                   href="/tools/generators/text-shadow-generator/"
                   class="button button--primary"
-                  >CSS Text Shadow Generator</a
+                  >Open Text Shadow Generator</a
                 >
-                <a href="/tools/generators/" class="button button--secondary">Browse all generators</a>
-          <p class="footer__text">
-            Modern design, high-performance frontend, and web experiences built
-            for conversion.
-          </p>
-          <p class="footer__text">
-            Projects and developer tools created by Vasy.dev
-          </p>
-          <div class="footer__socials">
-            <a
-              href="https://nexora-demo.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="Nexora"
-              >NX</a
-            >
-            <a
-              href="https://vasytech.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="VasyTech"
-              >VT</a
-            >
-            <a
-              href="https://github.com/VasyWeb"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="GitHub"
-              >GH</a
+                <a href="/tools/generators/" class="button button--secondary">
+                  Browse all generators
+                </a>
+              </div>
+            </section>
+
+            <section aria-labelledby="text-shadow-tips">
+              <h2 id="text-shadow-tips">Tips for Readable Text Shadows</h2>
+              <p>
+                Small offsets and softer blur values usually feel cleaner than
+                large dramatic shadows. The goal is to separate text from the
+                background, not to make the letters look fuzzy. On buttons,
+                hero headlines and overlays, subtle settings often create the
+                strongest result.
+              </p>
+            </section>
+          </article>
+
+          <div class="blog__actions article-page__actions">
+            <a href="/blog/" class="button button--secondary">Back to blog</a>
+            <a href="/tools/" class="button button--primary"
+              >Explore more tools</a
             >
           </div>
         </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Navigation</h3>
-          <a href="/#home" class="footer__link">Home</a>
-          <a href="/#about" class="footer__link">About</a>
-          <a href="/projects/" class="footer__link">Projects</a>
-          <a href="/#services" class="footer__link">Services</a>
-          <a href="/tools/" class="footer__link">Tools</a>
-          <a href="/blog/" class="footer__link">Blog</a>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Shop</h3>
-          <a href="/printables/" class="footer__link">Printable Books</a>
-          <a href="/resources/" class="footer__link">Free Resources</a>
-          <a href="/tools/" class="footer__link">Frontend Tools</a>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Contact</h3>
-          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
-            >milanjakub9@gmail.com
-          </a>
-          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
-          <p class="footer__text">Available for new projects in 2026.</p>
-          <a href="/#contact" class="button footer__cta">Send Brief</a>
-        </div>
-      </div>
-      <div class="footer__bottom l-container">
-        <p class="footer__copyright">
-          &copy; 2026 Vasy.dev. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <script type="module" src="/js/main.js"></script>
+      </section>
+    </main>
     <footer class="footer section-slice section-slice--b" id="footer">
       <div class="footer__container l-container">
         <div class="footer__brand">

@@ -44,7 +44,8 @@
     <meta
       property="og:url"
       content="https://vasy-dev.netlify.app/blog/glassmorphism-guide/"
-    />    <meta name="twitter:card" content="summary_large_image" />
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="Glassmorphism Guide + Generator | Vasy.dev"
@@ -117,7 +118,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--theme-main">
+  <body class="page page--theme-main page--blog-article">
     <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
@@ -153,7 +154,7 @@
               <a class="site-nav__link" href="/#contact">Contact</a>
             </li>
           </ul>
-                              <div class="site-nav__languages" aria-label="Language selector">
+          <div class="site-nav__languages" aria-label="Language selector">
             <a
               href="/"
               aria-label="English version"
@@ -180,19 +181,29 @@
       </nav>
     </header>
     <main class="site-main">
-      <section class="stack section-block section-slice section-slice--b">
-        <div class="l-container">
+      <section
+        class="stack section-block section-slice section-slice--b article-page"
+      >
+        <div class="l-container article-page__container">
           <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="/">Home</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
             <a href="/blog/">Blog</a>
             <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
-            <span aria-current="page"
-              >Glassmorphism in CSS: How to Build Frosted Glass UI Panels</span
-            >
+            <span aria-current="page">Glassmorphism Guide</span>
           </nav>
+
+          <header class="article-page__intro">
+            <p class="article-page__eyebrow">Frontend Guide</p>
+            <h1>Glassmorphism Guide</h1>
+            <p class="article-page__lead">
+              Learn how frosted glass UI works, when it adds depth without
+              noise, and how to tune blur and transparency faster with the
+              generator.
+            </p>
+          </header>
+
           <article class="blog-article">
-            <h1>Glassmorphism in CSS: How to Build Frosted Glass UI Panels</h1>
             <p>
               Glassmorphism is a UI style that combines blur, transparency and
               soft borders to create translucent panels. It became popular in
@@ -200,7 +211,7 @@
             </p>
             <section aria-labelledby="what-is-glassmorphism">
               <h2 id="what-is-glassmorphism">
-                What creates the glassmorphism effect?
+                What Creates the Glassmorphism Effect?
               </h2>
               <p>
                 The core ingredients are <code>backdrop-filter</code>,
@@ -213,9 +224,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 12px;</code></pre>
             </section>
             <section aria-labelledby="generate-glassmorphism">
-              <h2 id="generate-glassmorphism">
-                Generate your own glass effect
-              </h2>
+              <h2 id="generate-glassmorphism">Use the Glassmorphism Generator</h2>
               <p>
                 Use our generator to adjust blur, opacity, border strength and
                 radius values live before copying the final CSS.
@@ -224,78 +233,35 @@ border-radius: 12px;</code></pre>
                 <a
                   href="/tools/generators/glassmorphism-generator/"
                   class="button button--primary"
-                  >Glassmorphism Generator</a
+                  >Open Glassmorphism Generator</a
                 >
-                <a href="/tools/generators/" class="button button--secondary">Browse all generators</a>
-          <p class="footer__text">
-            Modern design, high-performance frontend, and web experiences built
-            for conversion.
-          </p>
-          <p class="footer__text">
-            Projects and developer tools created by Vasy.dev
-          </p>
-          <div class="footer__socials">
-            <a
-              href="https://nexora-demo.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="Nexora"
-              >NX</a
-            >
-            <a
-              href="https://vasytech.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="VasyTech"
-              >VT</a
-            >
-            <a
-              href="https://github.com/VasyWeb"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="footer__social"
-              aria-label="GitHub"
-              >GH</a
+                <a href="/tools/generators/" class="button button--secondary">
+                  Browse all generators
+                </a>
+              </div>
+            </section>
+
+            <section aria-labelledby="when-to-use-glassmorphism">
+              <h2 id="when-to-use-glassmorphism">When to Use Glassmorphism</h2>
+              <p>
+                Glassmorphism works best when the background has enough color or
+                texture to show through the blur. It is often effective for
+                floating cards, login panels, pricing boxes or layered dashboard
+                modules. The effect is strongest when it supports hierarchy,
+                not when every surface on the page competes for attention.
+              </p>
+            </section>
+          </article>
+
+          <div class="blog__actions article-page__actions">
+            <a href="/blog/" class="button button--secondary">Back to blog</a>
+            <a href="/tools/" class="button button--primary"
+              >Explore more tools</a
             >
           </div>
         </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Navigation</h3>
-          <a href="/#home" class="footer__link">Home</a>
-          <a href="/#about" class="footer__link">About</a>
-          <a href="/projects/" class="footer__link">Projects</a>
-          <a href="/#services" class="footer__link">Services</a>
-          <a href="/tools/" class="footer__link">Tools</a>
-          <a href="/blog/" class="footer__link">Blog</a>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Shop</h3>
-          <a href="/printables/" class="footer__link">Printable Books</a>
-          <a href="/resources/" class="footer__link">Free Resources</a>
-          <a href="/tools/" class="footer__link">Frontend Tools</a>
-        </div>
-
-        <div class="footer__col">
-          <h3 class="footer__title">Contact</h3>
-          <a href="mailto:milanjakub9@gmail.com" class="footer__link"
-            >milanjakub9@gmail.com
-          </a>
-          <a href="tel:+40747700904" class="footer__link">+40 747 700 904</a>
-          <p class="footer__text">Available for new projects in 2026.</p>
-          <a href="/#contact" class="button footer__cta">Send Brief</a>
-        </div>
-      </div>
-      <div class="footer__bottom l-container">
-        <p class="footer__copyright">
-          &copy; 2026 Vasy.dev. All rights reserved.
-        </p>
-      </div>
-    </footer>
-    <script type="module" src="/js/main.js"></script>
+      </section>
+    </main>
     <footer class="footer section-slice section-slice--b" id="footer">
       <div class="footer__container l-container">
         <div class="footer__brand">

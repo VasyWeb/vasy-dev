@@ -130,7 +130,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/css/main.css" />
   </head>
-  <body class="page page--theme-main">
+  <body class="page page--theme-main page--blog-article">
     <header class="site-header" id="top">
       <nav class="site-nav">
         <div class="site-nav__container l-container">
@@ -174,21 +174,21 @@
               aria-label="English version"
               class="site-nav__lang-link"
               title="English"
-              >🇬🇧</a
+              >&#x1F1EC;&#x1F1E7;</a
             >
             <a
               href="/index-ro.html"
               aria-label="Romanian version"
               class="site-nav__lang-link"
-              title="Română"
-              >🇷🇴</a
+              title="Romanian"
+              >&#x1F1F7;&#x1F1F4;</a
             >
             <a
               href="/index-cz.html"
               aria-label="Czech version"
               class="site-nav__lang-link"
-              title="Čeština"
-              >🇨🇿</a
+              title="Czech"
+              >&#x1F1E8;&#x1F1FF;</a
             >
           </div>
         </div>
@@ -197,21 +197,26 @@
 
     <main class="site-main">
       <section
-        class="stack section-block section-slice section-slice--b"
+        class="stack section-block section-slice section-slice--b article-page"
         id="blog"
       >
-        <div class="l-container">
+        <div class="l-container article-page__container">
           <section class="blog-list" aria-labelledby="more-articles">
             <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="/">Home</a>
               <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
               <span aria-current="page">Blog</span>
             </nav>
-            <h1 id="more-articles">Frontend Blog</h1>
-            <p>
-              Practical frontend articles focused on CSS, UI systems,
-              performance and clean architecture.
-            </p>
+
+            <header class="article-page__intro">
+              <p class="article-page__eyebrow">Frontend Library</p>
+              <h1 id="more-articles">Frontend Blog</h1>
+              <p class="article-page__lead">
+                Practical frontend articles focused on CSS, UI systems,
+                performance and clean architecture, all connected to the tools
+                and workflows used across Vasy.dev.
+              </p>
+            </header>
 
             <div class="services__grid">
               <article class="service-card">
@@ -365,11 +370,13 @@
             </div>
           </section>
 
-          <div class="blog__actions">
+          <div class="blog__actions article-page__actions">
             <a href="/tools/" class="button button--secondary"
               >Explore Tools</a
             >
-            <a href="/#home" class="button button--primary">Back to homepage</a>
+            <a href="/projects/" class="button button--primary"
+              >Explore Projects</a
+            >
           </div>
         </div>
       </section>
