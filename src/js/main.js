@@ -1,6 +1,7 @@
 import { setupNav } from "./ui/nav.js";
 import { setupProjectCards } from "./ui/cards.js";
 import { setupHeroCarousel } from "./ui/hero-carousel.js";
+import { setupAnalytics } from "./utils/analytics.js";
 import { setupShadowGenerator } from "./tools/shadow.js";
 import { setupRadiusGenerator } from "./tools/radius.js";
 import { setupPaletteGenerator } from "./tools/palette.js";
@@ -18,6 +19,7 @@ import { setupRemToPxConverter } from "./tools/rem-to-px.js";
 import { setupPxToEmConverter } from "./tools/px-to-em.js";
 import { setupHexToRgbConverter } from "./tools/hex-to-rgb.js";
 
+setupAnalytics();
 setupNav();
 setupHeroCarousel();
 setupProjectCards();

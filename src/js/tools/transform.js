@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 export const setupTransformGenerator = () => {
   const inputs = {
@@ -15,6 +16,33 @@ export const setupTransformGenerator = () => {
   if (!Object.values(inputs).every(Boolean) || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "css_transform_generator",
+    controls: [
+      {
+        element: inputs.rotate,
+        controlName: "rotate",
+        getValue: () => Number(inputs.rotate.value)
+      },
+      {
+        element: inputs.scale,
+        controlName: "scale",
+        getValue: () => Number(inputs.scale.value)
+      },
+      {
+        element: inputs.translateX,
+        controlName: "translate_x",
+        getValue: () => Number(inputs.translateX.value)
+      },
+      {
+        element: inputs.translateY,
+        controlName: "translate_y",
+        getValue: () => Number(inputs.translateY.value)
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const rotate = Number(inputs.rotate.value);

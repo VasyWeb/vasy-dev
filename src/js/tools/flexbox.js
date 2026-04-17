@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 export const setupFlexboxGenerator = () => {
   const inputs = {
@@ -15,6 +16,33 @@ export const setupFlexboxGenerator = () => {
   if (!Object.values(inputs).every(Boolean) || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "flexbox_generator",
+    controls: [
+      {
+        element: inputs.direction,
+        controlName: "flex_direction",
+        getValue: () => inputs.direction.value
+      },
+      {
+        element: inputs.justifyContent,
+        controlName: "justify_content",
+        getValue: () => inputs.justifyContent.value
+      },
+      {
+        element: inputs.alignItems,
+        controlName: "align_items",
+        getValue: () => inputs.alignItems.value
+      },
+      {
+        element: inputs.gap,
+        controlName: "gap",
+        getValue: () => Number(inputs.gap.value)
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const direction = inputs.direction.value;

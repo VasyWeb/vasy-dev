@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 export const setupRadiusGenerator = () => {
   const inputs = {
@@ -15,6 +16,33 @@ export const setupRadiusGenerator = () => {
   if (!Object.values(inputs).every(Boolean) || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "border_radius_generator",
+    controls: [
+      {
+        element: inputs.tl,
+        controlName: "top_left_radius",
+        getValue: () => Number(inputs.tl.value)
+      },
+      {
+        element: inputs.tr,
+        controlName: "top_right_radius",
+        getValue: () => Number(inputs.tr.value)
+      },
+      {
+        element: inputs.br,
+        controlName: "bottom_right_radius",
+        getValue: () => Number(inputs.br.value)
+      },
+      {
+        element: inputs.bl,
+        controlName: "bottom_left_radius",
+        getValue: () => Number(inputs.bl.value)
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const tl = Number(inputs.tl.value);

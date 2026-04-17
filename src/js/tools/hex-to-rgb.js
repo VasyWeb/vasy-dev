@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 const normalizeHex = (value) => {
   const trimmed = value.trim().replace(/^#/, "");
@@ -41,6 +42,24 @@ export const setupHexToRgbConverter = () => {
   if (!colorInput || !hexInput || !output || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "hex_to_rgb_converter",
+    controls: [
+      {
+        element: colorInput,
+        controlName: "color_picker",
+        getValue: () => colorInput.value
+      },
+      {
+        element: hexInput,
+        controlName: "hex_value",
+        getValue: () => hexInput.value,
+        throttleMs: 900
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const updateFromHex = (hexValue) => {
     const rgbValue = hexToRgb(hexValue);

@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 export const setupGridGenerator = () => {
   const inputs = {
@@ -15,6 +16,34 @@ export const setupGridGenerator = () => {
   if (!Object.values(inputs).every(Boolean) || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "css_grid_generator",
+    controls: [
+      {
+        element: inputs.columns,
+        controlName: "columns",
+        getValue: () => Number(inputs.columns.value)
+      },
+      {
+        element: inputs.rows,
+        controlName: "rows",
+        getValue: () => Number(inputs.rows.value)
+      },
+      {
+        element: inputs.gap,
+        controlName: "gap",
+        getValue: () => Number(inputs.gap.value)
+      },
+      {
+        element: inputs.templateColumns,
+        controlName: "template_columns",
+        getValue: () => inputs.templateColumns.value,
+        throttleMs: 900
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const syncTemplateColumns = () => {
     inputs.templateColumns.value = `repeat(${Number(inputs.columns.value)}, 1fr)`;

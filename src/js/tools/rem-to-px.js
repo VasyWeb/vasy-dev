@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 const formatPxValue = (value) => {
   const rounded = Number(value.toFixed(4));
@@ -17,6 +18,23 @@ export const setupRemToPxConverter = () => {
   if (!remInput || !baseInput || !output || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "rem_to_px_converter",
+    controls: [
+      {
+        element: remInput,
+        controlName: "rem_value",
+        getValue: () => Number(remInput.value)
+      },
+      {
+        element: baseInput,
+        controlName: "base_font_size",
+        getValue: () => Number(baseInput.value)
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const rem = Number(remInput.value) || 0;

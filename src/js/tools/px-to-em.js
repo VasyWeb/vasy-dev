@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 const formatEmValue = (value) => {
   const rounded = Number(value.toFixed(4));
@@ -17,6 +18,23 @@ export const setupPxToEmConverter = () => {
   if (!pxInput || !baseInput || !output || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "px_to_em_converter",
+    controls: [
+      {
+        element: pxInput,
+        controlName: "px_value",
+        getValue: () => Number(pxInput.value)
+      },
+      {
+        element: baseInput,
+        controlName: "base_font_size",
+        getValue: () => Number(baseInput.value)
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const px = Number(pxInput.value) || 0;

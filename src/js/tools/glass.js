@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 export const setupGlassGenerator = () => {
   const inputs = {
@@ -15,6 +16,33 @@ export const setupGlassGenerator = () => {
   if (!Object.values(inputs).every(Boolean) || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "glassmorphism_generator",
+    controls: [
+      {
+        element: inputs.blur,
+        controlName: "blur",
+        getValue: () => Number(inputs.blur.value)
+      },
+      {
+        element: inputs.bgOpacity,
+        controlName: "background_opacity",
+        getValue: () => Number(inputs.bgOpacity.value)
+      },
+      {
+        element: inputs.radius,
+        controlName: "border_radius",
+        getValue: () => Number(inputs.radius.value)
+      },
+      {
+        element: inputs.borderOpacity,
+        controlName: "border_opacity",
+        getValue: () => Number(inputs.borderOpacity.value)
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const blur = Number(inputs.blur.value);

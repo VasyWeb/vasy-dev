@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 export const setupShadowGenerator = () => {
   const inputs = {
@@ -16,6 +17,38 @@ export const setupShadowGenerator = () => {
   if (!Object.values(inputs).every(Boolean) || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "box_shadow_generator",
+    controls: [
+      {
+        element: inputs.x,
+        controlName: "horizontal_offset",
+        getValue: () => Number(inputs.x.value)
+      },
+      {
+        element: inputs.y,
+        controlName: "vertical_offset",
+        getValue: () => Number(inputs.y.value)
+      },
+      {
+        element: inputs.blur,
+        controlName: "blur_radius",
+        getValue: () => Number(inputs.blur.value)
+      },
+      {
+        element: inputs.spread,
+        controlName: "spread_radius",
+        getValue: () => Number(inputs.spread.value)
+      },
+      {
+        element: inputs.opacity,
+        controlName: "shadow_opacity",
+        getValue: () => Number(inputs.opacity.value)
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const x = Number(inputs.x.value);

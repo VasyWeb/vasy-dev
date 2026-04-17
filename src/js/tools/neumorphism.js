@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 const DEFAULTS = {
   background: "#e6edf5",
@@ -100,6 +101,65 @@ export const setupNeumorphismGenerator = () => {
   ) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "neumorphism_generator",
+    controls: [
+      {
+        element: controls.background,
+        controlName: "background_color",
+        getValue: () => controls.background.value
+      },
+      {
+        element: controls.radius,
+        controlName: "border_radius",
+        getValue: () => Number(controls.radius.value)
+      },
+      {
+        element: controls.radiusNumber,
+        controlName: "border_radius",
+        getValue: () => Number(controls.radiusNumber.value)
+      },
+      {
+        element: controls.distance,
+        controlName: "shadow_distance",
+        getValue: () => Number(controls.distance.value)
+      },
+      {
+        element: controls.distanceNumber,
+        controlName: "shadow_distance",
+        getValue: () => Number(controls.distanceNumber.value)
+      },
+      {
+        element: controls.blur,
+        controlName: "blur",
+        getValue: () => Number(controls.blur.value)
+      },
+      {
+        element: controls.blurNumber,
+        controlName: "blur",
+        getValue: () => Number(controls.blurNumber.value)
+      },
+      {
+        element: controls.intensity,
+        controlName: "shadow_strength",
+        getValue: () => Number(controls.intensity.value)
+      },
+      {
+        element: controls.intensityNumber,
+        controlName: "shadow_strength",
+        getValue: () => Number(controls.intensityNumber.value)
+      },
+      {
+        element: controls.mode,
+        controlName: "mode",
+        getValue: () => controls.mode.value
+      }
+    ],
+    copyButton: copyBtn,
+    resetButton: resetBtn,
+    presetButtons: Array.from(presetButtons)
+  });
 
   const syncPair = (rangeInput, numberInput) => {
     const updateNumber = () => {

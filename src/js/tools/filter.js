@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 export const setupFilterGenerator = () => {
   const inputs = {
@@ -17,6 +18,43 @@ export const setupFilterGenerator = () => {
   if (!Object.values(inputs).every(Boolean) || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "css_filter_generator",
+    controls: [
+      {
+        element: inputs.blur,
+        controlName: "blur",
+        getValue: () => Number(inputs.blur.value)
+      },
+      {
+        element: inputs.brightness,
+        controlName: "brightness",
+        getValue: () => Number(inputs.brightness.value)
+      },
+      {
+        element: inputs.contrast,
+        controlName: "contrast",
+        getValue: () => Number(inputs.contrast.value)
+      },
+      {
+        element: inputs.grayscale,
+        controlName: "grayscale",
+        getValue: () => Number(inputs.grayscale.value)
+      },
+      {
+        element: inputs.saturate,
+        controlName: "saturate",
+        getValue: () => Number(inputs.saturate.value)
+      },
+      {
+        element: inputs.hueRotate,
+        controlName: "hue_rotate",
+        getValue: () => Number(inputs.hueRotate.value)
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const blur = Number(inputs.blur.value);

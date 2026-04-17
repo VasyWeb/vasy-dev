@@ -1,5 +1,6 @@
 import { getById } from "../utils/dom.js";
 import { withCopyFeedback } from "../utils/copy.js";
+import { setupToolTracking } from "../utils/analytics.js";
 
 const animationDefinitions = {
   fadeIn: {
@@ -46,6 +47,33 @@ export const setupAnimationGenerator = () => {
   if (!Object.values(inputs).every(Boolean) || !preview || !code || !copyBtn) {
     return;
   }
+
+  setupToolTracking({
+    toolName: "css_animation_generator",
+    controls: [
+      {
+        element: inputs.name,
+        controlName: "animation_name",
+        getValue: () => inputs.name.value
+      },
+      {
+        element: inputs.duration,
+        controlName: "duration_seconds",
+        getValue: () => Number(inputs.duration.value)
+      },
+      {
+        element: inputs.timingFunction,
+        controlName: "timing_function",
+        getValue: () => inputs.timingFunction.value
+      },
+      {
+        element: inputs.iterationCount,
+        controlName: "iteration_count",
+        getValue: () => inputs.iterationCount.value
+      }
+    ],
+    copyButton: copyBtn
+  });
 
   const update = () => {
     const name = inputs.name.value;
