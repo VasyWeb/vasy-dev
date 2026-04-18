@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Free CSS box-shadow generator with live preview, adjustable sliders and copy-ready code for modern UI design."
+      content="CSS box-shadow generator with live preview, pro presets, component tabs and export-ready code for modern UI design."
     />
     <meta
       name="robots"
@@ -32,7 +32,7 @@
     />
     <meta
       property="og:description"
-      content="Free CSS box-shadow generator with live preview, adjustable sliders and copy-ready code for modern UI design."
+      content="Build modern box shadows with live preview, preset packs, UI component tabs and copy-ready CSS, SCSS and Tailwind snippets."
     />
     <meta
       property="og:image"
@@ -50,13 +50,13 @@
     />
     <meta
       name="twitter:description"
-      content="Create, preview and copy CSS box-shadow values instantly for cards, buttons and interface layers."
+      content="Create, preview and export box-shadow styles with presets, real component previews and multiple code formats."
     />
     <meta
       name="twitter:image"
       content="https://vasy-dev.netlify.app/images/og-preview.webp"
     />
-    <title>CSS Box Shadow Generator | Live Preview Tool | Vasy.dev</title>
+    <title>CSS Box Shadow Generator | Pro Presets and Live Preview | Vasy.dev</title>
     <link
       rel="canonical"
       href="https://vasy-dev.netlify.app/tools/generators/box-shadow-generator/"
@@ -67,7 +67,7 @@
         "@type": "WebPage",
         "name": "CSS Box Shadow Generator",
         "url": "https://vasy-dev.netlify.app/tools/generators/box-shadow-generator/",
-        "description": "Free CSS box-shadow generator with live preview, adjustable sliders and copy-ready code for modern UI design."
+        "description": "CSS box-shadow generator with live preview, pro presets, component tabs and export-ready code for modern UI design."
       }
     </script>
     <script type="application/ld+json">
@@ -198,6 +198,11 @@
               <h2 id="shadowGenTitle" class="shadow-generator__title">
                 Box Shadow Controls
               </h2>
+              <p class="shadow-generator__subtitle">
+                Keep the free sliders for fast shadow tuning, then explore the
+                first pro upgrade with presets, real UI previews, multiple
+                export formats and modern shadow variations.
+              </p>
             </div>
             <div class="shadow-generator__layout">
               <div class="shadow-generator__controls">
@@ -249,19 +254,240 @@
                 /></label>
               </div>
               <div class="shadow-generator__preview-wrap">
-                <div id="shadowPreview" class="shadow-generator__preview">
-                  Preview
+                <div class="shadow-generator__toolbar">
+                  <div
+                    class="shadow-generator__tab-group"
+                    aria-label="Preview component"
+                  >
+                    <button
+                      type="button"
+                      class="shadow-generator__tab is-active"
+                      data-shadow-component="card"
+                    >
+                      Card
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__tab"
+                      data-shadow-component="button"
+                    >
+                      Button
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__tab"
+                      data-shadow-component="input"
+                    >
+                      Input
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__tab"
+                      data-shadow-component="modal"
+                    >
+                      Modal
+                    </button>
+                  </div>
+
+                  <div
+                    class="shadow-generator__tab-group shadow-generator__tab-group--format"
+                    aria-label="Export format"
+                  >
+                    <button
+                      type="button"
+                      class="shadow-generator__tab is-active"
+                      data-shadow-format="css"
+                    >
+                      CSS
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__tab"
+                      data-shadow-format="scss"
+                    >
+                      SCSS
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__tab"
+                      data-shadow-format="tailwind"
+                    >
+                      Tailwind
+                    </button>
+                  </div>
                 </div>
+
+                <div
+                  id="shadowPreview"
+                  class="shadow-generator__preview shadow-generator__preview--pro"
+                  data-shadow-theme="light"
+                >
+                  <div
+                    class="shadow-generator__component is-active"
+                    data-shadow-panel="card"
+                  >
+                    <article
+                      id="shadowPreviewCard"
+                      class="shadow-generator__sample shadow-generator__sample--card"
+                    >
+                      <strong>Marketing Card</strong>
+                      <span>Soft depth for modern sections and product UI.</span>
+                    </article>
+                  </div>
+
+                  <div
+                    class="shadow-generator__component"
+                    data-shadow-panel="button"
+                  >
+                    <button
+                      id="shadowPreviewButton"
+                      type="button"
+                      class="shadow-generator__sample shadow-generator__sample--button"
+                    >
+                      Primary Action
+                    </button>
+                  </div>
+
+                  <div
+                    class="shadow-generator__component"
+                    data-shadow-panel="input"
+                  >
+                    <label
+                      id="shadowPreviewInput"
+                      class="shadow-generator__sample shadow-generator__sample--input"
+                    >
+                      <span>Email Address</span>
+                      <input
+                        type="email"
+                        value="hello@vasy.dev"
+                        aria-label="Preview input"
+                        readonly
+                      />
+                    </label>
+                  </div>
+
+                  <div
+                    class="shadow-generator__component"
+                    data-shadow-panel="modal"
+                  >
+                    <section
+                      id="shadowPreviewModal"
+                      class="shadow-generator__sample shadow-generator__sample--modal"
+                    >
+                      <p class="shadow-generator__sample-kicker">Upgrade Flow</p>
+                      <strong>Pro Shadow Lab</strong>
+                      <span>Preview layered depth on a modal-sized surface.</span>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="shadow-generator__actions">
+                  <button
+                    id="generateShadowVariantsBtn"
+                    class="button button--secondary shadow-generator__pro-action"
+                    type="button"
+                  >
+                    Generate 6 Modern Shadows
+                  </button>
+                  <button
+                    id="copyShadowBtn"
+                    class="button shadow-generator__copy"
+                    type="button"
+                  >
+                    Copy CSS
+                  </button>
+                </div>
+
                 <code id="shadowCode" class="shadow-generator__code"
                   >box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);</code
                 >
-                <button
-                  id="copyShadowBtn"
-                  class="button shadow-generator__copy"
-                  type="button"
+              </div>
+            </div>
+
+            <div class="shadow-generator__pro">
+              <div class="shadow-generator__pro-header">
+                <p class="shadow-generator__badge">Pro Shadow Lab</p>
+                <h3>Preset library, variants and recent history</h3>
+                <p>
+                  This first pro version focuses on things that save real time:
+                  ready-made shadow directions, real component previews and
+                  cleaner exports for production work.
+                </p>
+              </div>
+
+              <div class="shadow-generator__pro-grid">
+                <section
+                  class="shadow-generator__pro-card"
+                  aria-labelledby="shadowPresetTitle"
                 >
-                  Copy CSS
-                </button>
+                  <h4 id="shadowPresetTitle">Preset Library</h4>
+                  <div class="shadow-generator__preset-list">
+                    <button
+                      type="button"
+                      class="shadow-generator__preset"
+                      data-shadow-preset="soft-card"
+                      data-analytics-preset="soft_card"
+                    >
+                      Soft Card
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__preset"
+                      data-shadow-preset="button-depth"
+                      data-analytics-preset="button_depth"
+                    >
+                      Button Depth
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__preset"
+                      data-shadow-preset="floating-card"
+                      data-analytics-preset="floating_card"
+                    >
+                      Floating Card
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__preset"
+                      data-shadow-preset="dark-ui"
+                      data-analytics-preset="dark_ui"
+                    >
+                      Dark UI
+                    </button>
+                    <button
+                      type="button"
+                      class="shadow-generator__preset"
+                      data-shadow-preset="neumorphic-soft"
+                      data-analytics-preset="neumorphic_soft"
+                    >
+                      Neumorphic Soft
+                    </button>
+                  </div>
+                </section>
+
+                <section
+                  class="shadow-generator__pro-card"
+                  aria-labelledby="shadowVariantsTitle"
+                >
+                  <h4 id="shadowVariantsTitle">Generated Variations</h4>
+                  <div
+                    id="shadowVariants"
+                    class="shadow-generator__variant-list"
+                    aria-live="polite"
+                  ></div>
+                </section>
+
+                <section
+                  class="shadow-generator__pro-card"
+                  aria-labelledby="shadowHistoryTitle"
+                >
+                  <h4 id="shadowHistoryTitle">Recent Shadow History</h4>
+                  <div
+                    id="shadowHistory"
+                    class="shadow-generator__history-list"
+                    aria-live="polite"
+                  ></div>
+                </section>
               </div>
             </div>
           </section>
