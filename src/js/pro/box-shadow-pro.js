@@ -38,15 +38,40 @@ const toShadowValue = ({ x, y, blur, spread, opacity, inset = false }) =>
 
 const formatShadowCode = (format, shadowValue, values) => {
   if (format === "scss") {
-    return `$shadow-x: ${values.x}px;
-$shadow-y: ${values.y}px;
-$shadow-blur: ${values.blur}px;
-$shadow-spread: ${values.spread}px;
-$shadow-opacity: ${values.opacity};
-$box-shadow-pro: ${shadowValue};
+    const softShadow = `${values.x}px ${Math.max(2, Math.round(values.y * 0.45))}px ${Math.max(
+      10,
+      Math.round(values.blur * 0.55)
+    )}px ${Math.round(values.spread * 0.5)}px rgba(15, 23, 42, ${Math.max(
+      0.08,
+      Number((values.opacity * 0.45).toFixed(2))
+    )})`;
+
+    return `$shadow-color: rgba(15, 23, 42, ${values.opacity});
+$shadow-soft: ${softShadow};
+$shadow-base: ${shadowValue};
+$shadow-strong: ${values.x}px ${Math.round(values.y * 1.25)}px ${Math.round(
+      values.blur * 1.3
+    )}px ${Math.round(values.spread * 0.75)}px rgba(15, 23, 42, ${Math.min(
+      0.6,
+      Number((values.opacity * 1.2).toFixed(2))
+    )});
+
+$shadow-scale: (
+  soft: $shadow-soft,
+  base: $shadow-base,
+  strong: $shadow-strong
+);
+
+@mixin shadow-level($level: base) {
+  box-shadow: map-get($shadow-scale, $level);
+}
 
 .card {
-  box-shadow: $box-shadow-pro;
+  @include shadow-level(base);
+}
+
+.card--raised {
+  @include shadow-level(strong);
 }`;
   }
 
