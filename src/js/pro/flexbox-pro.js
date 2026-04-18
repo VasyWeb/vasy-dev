@@ -72,8 +72,20 @@ export const setupFlexboxPro = () => {
   const copyBtn = getById("copyProFlexBtn");
   const gapInput = getById("flexGap");
   const countInput = getById("proFlexChildren");
+  const directionInput = getById("flexDirection");
+  const justifyInput = getById("flexJustifyContent");
+  const alignInput = getById("flexAlignItems");
 
-  if (!preview || !code || !copyBtn || !gapInput || !countInput) {
+  if (
+    !preview ||
+    !code ||
+    !copyBtn ||
+    !gapInput ||
+    !countInput ||
+    !directionInput ||
+    !justifyInput ||
+    !alignInput
+  ) {
     return;
   }
 
@@ -87,6 +99,18 @@ export const setupFlexboxPro = () => {
     exportFormat: "css"
   };
 
+  const applyLayoutPreset = (layoutKey) => {
+    const layout = layouts[layoutKey];
+    if (!layout) {
+      return;
+    }
+
+    directionInput.value = layout.direction;
+    justifyInput.value = layout.justifyContent;
+    alignInput.value = layout.alignItems;
+    gapInput.value = String(layout.gap);
+  };
+
   const renderPreview = () => {
     const layout = layouts[state.layout];
     const childCount = Math.max(2, Math.min(6, Number(countInput.value)));
@@ -96,9 +120,9 @@ export const setupFlexboxPro = () => {
 
     preview.style.width = viewportScales[state.viewport];
     preview.style.display = "flex";
-    preview.style.flexDirection = layout.direction;
-    preview.style.justifyContent = layout.justifyContent;
-    preview.style.alignItems = layout.alignItems;
+    preview.style.flexDirection = directionInput.value;
+    preview.style.justifyContent = justifyInput.value;
+    preview.style.alignItems = alignInput.value;
     preview.style.gap = `${Number(gapInput.value)}px`;
 
     preview.innerHTML = items.map((item) => `<div>${item}</div>`).join("");
@@ -107,9 +131,9 @@ export const setupFlexboxPro = () => {
   const renderCode = () => {
     const layout = layouts[state.layout];
     const css = `display: flex;
-flex-direction: ${layout.direction};
-justify-content: ${layout.justifyContent};
-align-items: ${layout.alignItems};
+flex-direction: ${directionInput.value};
+justify-content: ${justifyInput.value};
+align-items: ${alignInput.value};
 gap: ${Number(gapInput.value)}px;`;
 
     code.textContent =
@@ -124,6 +148,9 @@ gap: ${Number(gapInput.value)}px;`;
   setupToolTracking({
     toolName: "flexbox_generator_pro",
     controls: [
+      { element: directionInput, controlName: "flex_direction", getValue: () => directionInput.value },
+      { element: justifyInput, controlName: "justify_content", getValue: () => justifyInput.value },
+      { element: alignInput, controlName: "align_items", getValue: () => alignInput.value },
       { element: gapInput, controlName: "gap", getValue: () => Number(gapInput.value) },
       { element: countInput, controlName: "child_count", getValue: () => Number(countInput.value) }
     ],
@@ -135,6 +162,7 @@ gap: ${Number(gapInput.value)}px;`;
     button.addEventListener("click", () => {
       state.layout = button.getAttribute("data-flex-layout");
       setActive(layoutButtons, state.layout, "data-flex-layout");
+      applyLayoutPreset(state.layout);
       update();
     });
   });
@@ -155,8 +183,12 @@ gap: ${Number(gapInput.value)}px;`;
     });
   });
 
-  gapInput.addEventListener("input", update);
-  countInput.addEventListener("input", update);
+  [directionInput, justifyInput, alignInput, gapInput, countInput].forEach((input) =>
+    input.addEventListener("input", update)
+  );
+  [directionInput, justifyInput, alignInput].forEach((input) =>
+    input.addEventListener("change", update)
+  );
 
   copyBtn.addEventListener("click", () =>
     withCopyFeedback(copyBtn, code.textContent, "Copy Pro Code")
@@ -165,6 +197,7 @@ gap: ${Number(gapInput.value)}px;`;
   setActive(layoutButtons, state.layout, "data-flex-layout");
   setActive(viewportButtons, state.viewport, "data-flex-viewport");
   setActive(exportButtons, state.exportFormat, "data-flex-export");
+  applyLayoutPreset(state.layout);
   update();
 };
 

@@ -1942,6 +1942,8 @@
 }
 
 .pro-tool__preview {
+  position: relative;
+  isolation: isolate;
   min-height: 260px;
   border-radius: 1rem;
   padding: 1rem;
@@ -1956,6 +1958,25 @@
   display: grid;
   place-items: center;
   overflow: hidden;
+}
+
+.pro-tool__preview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.18) 0 1px, transparent 1px),
+    radial-gradient(circle at 72% 32%, rgba(255, 255, 255, 0.14) 0 1px, transparent 1px),
+    radial-gradient(circle at 48% 76%, rgba(15, 23, 42, 0.08) 0 1px, transparent 1px);
+  background-size: 18px 18px, 24px 24px, 22px 22px;
+  mix-blend-mode: soft-light;
+}
+
+.pro-tool__preview[data-noise]::after {
+  opacity: 0.95;
 }
 
 .pro-tool__preview[data-theme="dark"] {

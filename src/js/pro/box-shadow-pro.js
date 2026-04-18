@@ -3,11 +3,11 @@ import { withCopyFeedback } from "../utils/copy.js";
 import { setupToolTracking } from "../utils/analytics.js";
 
 const presets = {
-  soft_card: { x: 0, y: 18, blur: 42, spread: -14, opacity: 0.18 },
-  button_depth: { x: 0, y: 10, blur: 24, spread: -10, opacity: 0.22 },
-  floating_card: { x: 0, y: 26, blur: 50, spread: -18, opacity: 0.24 },
-  dark_ui: { x: 0, y: 18, blur: 36, spread: -12, opacity: 0.48 },
-  neumorphic_soft: { x: 12, y: 12, blur: 24, spread: -8, opacity: 0.15 }
+  soft_card: { x: 0, y: 18, blur: 42, spread: -14, opacity: 0.18, theme: "light" },
+  button_depth: { x: 0, y: 10, blur: 24, spread: -10, opacity: 0.22, theme: "light" },
+  floating_card: { x: 0, y: 26, blur: 50, spread: -18, opacity: 0.24, theme: "light" },
+  dark_ui: { x: 0, y: 18, blur: 36, spread: -12, opacity: 0.48, theme: "dark" },
+  neumorphic_soft: { x: 12, y: 12, blur: 24, spread: -8, opacity: 0.15, theme: "light" }
 };
 
 const readValues = (inputs) => ({
@@ -20,7 +20,7 @@ const readValues = (inputs) => ({
 
 const setValues = (inputs, values) => {
   Object.entries(values).forEach(([key, value]) => {
-    if (inputs[key]) {
+    if (key !== "theme" && inputs[key]) {
       inputs[key].value = String(value);
     }
   });
@@ -117,6 +117,7 @@ export const setupBoxShadowPro = () => {
   const state = {
     component: "card",
     format: "css",
+    theme: "light",
     history: []
   };
 
@@ -143,6 +144,7 @@ export const setupBoxShadowPro = () => {
       button.textContent = entry.label;
       button.addEventListener("click", () => {
         setValues(inputs, entry.values);
+        state.theme = entry.theme || "light";
         update();
       });
       historyRoot.append(button);
@@ -155,7 +157,7 @@ export const setupBoxShadowPro = () => {
 
   const remember = (label, values) => {
     state.history = [
-      { label, values: { ...values } },
+      { label, values: { ...values }, theme: state.theme },
       ...state.history.filter((entry) => entry.label !== label)
     ].slice(0, 5);
     renderHistory();
@@ -185,6 +187,7 @@ export const setupBoxShadowPro = () => {
     const values = readValues(inputs);
     const shadowValue = toShadowValue(values);
 
+    preview.setAttribute("data-shadow-theme", state.theme);
     samples.forEach((sample) => applyShadowToSample(sample, shadowValue, state.component));
     code.textContent = formatShadowCode(state.format, shadowValue);
     syncSamples();
@@ -250,6 +253,7 @@ export const setupBoxShadowPro = () => {
       }
 
       setValues(inputs, values);
+      state.theme = values.theme || "light";
       remember(button.textContent.trim(), values);
       update();
       renderVariants();

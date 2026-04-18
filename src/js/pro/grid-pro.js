@@ -4,68 +4,106 @@ import { setupToolTracking } from "../utils/analytics.js";
 
 const templates = {
   dashboard: {
+    columns: 3,
+    areas: [
+      ["header", "header", "header"],
+      ["sidebar", "main", "stats"],
+      ["sidebar", "main", "activity"]
+    ],
+    items: [
+      { area: "header", label: "Header" },
+      { area: "sidebar", label: "Sidebar" },
+      { area: "main", label: "Overview" },
+      { area: "stats", label: "Stats" },
+      { area: "activity", label: "Activity" }
+    ],
+    css: (gap, rowHeight) => `display: grid;
+grid-template-columns: 240px minmax(240px, 1fr) minmax(240px, 1fr);
+grid-template-areas:
+  "header header header"
+  "sidebar main stats"
+  "sidebar main activity";
+grid-auto-rows: minmax(${rowHeight}px, auto);
+gap: ${gap}px;`,
     html: `<div class="dashboard">
   <header>Header</header>
   <aside>Sidebar</aside>
   <main>Overview</main>
   <section>Stats</section>
   <section>Activity</section>
-</div>`,
-    css: `display: grid;
-grid-template-columns: 240px 1fr 1fr;
-grid-template-areas:
-  "header header header"
-  "sidebar main stats"
-  "sidebar main activity";
-gap: 20px;`,
-    items: ["Header", "Sidebar", "Overview", "Stats", "Activity"],
-    columns: "240px minmax(240px, 1fr) minmax(240px, 1fr)"
+</div>`
   },
   gallery: {
+    columns: null,
+    areas: null,
+    items: [
+      { label: "Hero" },
+      { label: "Tile 1" },
+      { label: "Tile 2" },
+      { label: "Tile 3" },
+      { label: "Tile 4" },
+      { label: "Tile 5" }
+    ],
+    css: (gap, rowHeight, columnCount) => `display: grid;
+grid-template-columns: repeat(${columnCount}, minmax(0, 1fr));
+grid-auto-rows: ${rowHeight}px;
+gap: ${gap}px;`,
     html: `<div class="gallery">
   <figure>Hero</figure>
-  <figure>1</figure>
-  <figure>2</figure>
-  <figure>3</figure>
-  <figure>4</figure>
-</div>`,
-    css: `display: grid;
-grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-grid-auto-rows: 140px;
-gap: 18px;`,
-    items: ["Hero", "Tile 1", "Tile 2", "Tile 3", "Tile 4"],
-    columns: "repeat(auto-fit, minmax(160px, 1fr))"
+  <figure>Tile 1</figure>
+  <figure>Tile 2</figure>
+  <figure>Tile 3</figure>
+</div>`
   },
   blog: {
-    html: `<div class="blog-layout">
-  <header>Lead Story</header>
-  <article>Story One</article>
-  <article>Story Two</article>
-  <aside>Newsletter</aside>
-</div>`,
-    css: `display: grid;
+    columns: 2,
+    areas: [
+      ["lead", "sidebar"],
+      ["story1", "sidebar"],
+      ["story2", "sidebar"]
+    ],
+    items: [
+      { area: "lead", label: "Lead" },
+      { area: "story1", label: "Story One" },
+      { area: "story2", label: "Story Two" },
+      { area: "sidebar", label: "Newsletter" }
+    ],
+    css: (gap, rowHeight) => `display: grid;
 grid-template-columns: 2fr 1fr;
 grid-template-areas:
   "lead sidebar"
   "story1 sidebar"
   "story2 sidebar";
-gap: 22px;`,
-    items: ["Lead", "Story One", "Story Two", "Newsletter"],
-    columns: "2fr 1fr"
+grid-auto-rows: minmax(${rowHeight}px, auto);
+gap: ${gap}px;`,
+    html: `<div class="blog-layout">
+  <header>Lead Story</header>
+  <article>Story One</article>
+  <article>Story Two</article>
+  <aside>Newsletter</aside>
+</div>`
   },
   admin: {
+    columns: null,
+    areas: null,
+    items: [
+      { label: "Nav" },
+      { label: "Traffic" },
+      { label: "Revenue" },
+      { label: "Tasks" },
+      { label: "Users" },
+      { label: "Alerts" }
+    ],
+    css: (gap, rowHeight, columnCount) => `display: grid;
+grid-template-columns: repeat(${Math.max(4, columnCount * 2)}, minmax(0, 1fr));
+grid-auto-rows: ${rowHeight}px;
+gap: ${gap}px;`,
     html: `<div class="admin-grid">
   <nav>Nav</nav>
   <section>Traffic</section>
   <section>Revenue</section>
   <section>Tasks</section>
-  <section>Users</section>
-</div>`,
-    css: `display: grid;
-grid-template-columns: repeat(12, 1fr);
-gap: 16px;`,
-    items: ["Nav", "Traffic", "Revenue", "Tasks", "Users"],
-    columns: "repeat(12, 1fr)"
+</div>`
   }
 };
 
@@ -82,6 +120,9 @@ const setActive = (buttons, value, attribute) => {
     button.setAttribute("aria-pressed", String(isActive));
   });
 };
+
+const renderAreas = (areas) =>
+  areas.map((row) => `"${row.join(" ")}"`).join("\n");
 
 export const setupGridPro = () => {
   const preview = getById("proGridPreview");
@@ -105,19 +146,58 @@ export const setupGridPro = () => {
     exportFormat: "css"
   };
 
+  const getGap = () => Number(gapInput.value);
+  const getColumnCount = () => Math.max(2, Number(columnsInput.value));
+  const getRowHeight = () => Math.max(80, Number(rowsInput.value) * 38);
+
   const renderPreview = () => {
     const template = templates[state.template];
+    const gap = getGap();
+    const rowHeight = getRowHeight();
+    const columnCount = getColumnCount();
+
     preview.style.width = viewportScales[state.viewport];
-    preview.style.gridTemplateColumns = template.columns;
-    preview.style.gap = `${Number(gapInput.value)}px`;
+    preview.style.gap = `${gap}px`;
+    preview.style.gridTemplateAreas = "";
+    preview.style.gridTemplateColumns = "";
+    preview.style.gridAutoRows = `${rowHeight}px`;
+
+    if (template.areas) {
+      preview.style.gridTemplateAreas = renderAreas(template.areas);
+      preview.style.gridTemplateColumns = `repeat(${template.columns}, minmax(0, 1fr))`;
+    } else if (state.template === "gallery") {
+      preview.style.gridTemplateColumns = `repeat(${columnCount}, minmax(0, 1fr))`;
+    } else {
+      preview.style.gridTemplateColumns = `repeat(${Math.max(4, columnCount * 2)}, minmax(0, 1fr))`;
+    }
+
     preview.innerHTML = template.items
-      .map((item) => `<div>${item}</div>`)
+      .map((item, index) => {
+        const style = [];
+        if (item.area) {
+          style.push(`grid-area:${item.area}`);
+        }
+        if (state.template === "gallery" && index === 0) {
+          style.push(`grid-column:span ${Math.min(columnCount, 2)}`);
+          style.push("grid-row:span 2");
+        }
+        if (state.template === "admin" && index === 0) {
+          style.push("grid-column:span 4");
+        }
+        if (state.template === "admin" && index > 0) {
+          style.push("grid-column:span 2");
+        }
+        return `<div style="${style.join(";")}">${item.label}</div>`;
+      })
       .join("");
   };
 
   const renderCode = () => {
     const template = templates[state.template];
-    const baseCss = template.css.replace(/gap: .*?;/, `gap: ${Number(gapInput.value)}px;`);
+    const gap = getGap();
+    const rowHeight = getRowHeight();
+    const columnCount = getColumnCount();
+    const baseCss = template.css(gap, rowHeight, columnCount);
 
     code.textContent =
       state.exportFormat === "html"
@@ -165,6 +245,8 @@ export const setupGridPro = () => {
     });
   });
 
+  columnsInput.addEventListener("input", update);
+  rowsInput.addEventListener("input", update);
   gapInput.addEventListener("input", update);
 
   copyBtn.addEventListener("click", () =>

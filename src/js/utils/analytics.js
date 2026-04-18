@@ -22,6 +22,7 @@ const getPathToken = (pathname = window.location.pathname) => {
 const getToolNameFromPath = (pathname = window.location.pathname) => {
   const generatorMatch = pathname.match(/^\/tools\/generators\/([^/]+)\/$/i);
   const converterMatch = pathname.match(/^\/tools\/converters\/([^/]+\.html)$/i);
+  const proMatch = pathname.match(/^\/tools\/pro\/([^/]+)\/$/i);
 
   if (generatorMatch) {
     return toToken(generatorMatch[1]);
@@ -29,6 +30,10 @@ const getToolNameFromPath = (pathname = window.location.pathname) => {
 
   if (converterMatch) {
     return toToken(converterMatch[1].replace(/\.html$/i, ""));
+  }
+
+  if (proMatch) {
+    return toToken(proMatch[1]);
   }
 
   if (!pathname.includes("/tools/")) {
