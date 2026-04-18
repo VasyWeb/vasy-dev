@@ -183,8 +183,8 @@
             </nav>
             <h1>Box Shadow Generator Pro</h1>
             <p>
-              This premium version keeps the core free controls and adds presets,
-              component previews, export formats, quick variations and recent shadow history.
+              Build polished interface depth faster with reusable presets, real UI
+              previews, cleaner exports and shadow history you can actually reuse.
             </p>
             <a href="/tools/premium/" class="button button--secondary">All premium tools</a>
           </div>
@@ -239,10 +239,13 @@
             <section class="shadow-generator__pro" aria-labelledby="proShadowTitle">
               <div class="shadow-generator__pro-header">
                 <p class="shadow-generator__badge">Pro Shadow Lab</p>
-                <h3 id="proShadowTitle">Build modern shadows on real UI components.</h3>
+                <h3 id="proShadowTitle">Turn one shadow idea into a reusable UI system.</h3>
                 <p>
-                  Apply presets, switch preview targets and export production-ready shadow code for
-                  CSS, SCSS and Tailwind workflows.
+                  Start with a proven preset, test it on a real component, then export clean code
+                  for CSS, SCSS or Tailwind without rebuilding the same shadow by hand.
+                </p>
+                <p class="shadow-generator__pro-value">
+                  Faster workflow. Better previews. Cleaner exports.
                 </p>
               </div>
 
@@ -261,6 +264,8 @@
                   </button>
                 </div>
               </div>
+
+              <p class="shadow-generator__format-label" id="proShadowFormatLabel">Active format: CSS</p>
 
               <div class="shadow-generator__preview shadow-generator__preview--pro" id="proShadowPreview">
                 <div class="shadow-generator__component">
@@ -291,7 +296,7 @@
 
               <div class="shadow-generator__actions">
                 <button id="generateShadowVariantsBtn" class="button shadow-generator__pro-action" type="button">
-                  Generate 6 Modern Shadows
+                  Generate 6 Professional Variations
                 </button>
                 <button id="copyProShadowBtn" class="button shadow-generator__pro-action" type="button">
                   Copy Pro Code
@@ -303,6 +308,9 @@
               <div class="shadow-generator__pro-grid">
                 <article class="shadow-generator__pro-card">
                   <h4>Preset Library</h4>
+                  <p class="shadow-generator__pro-card-text">
+                    Start from shadows that already feel right for product UI.
+                  </p>
                   <div class="shadow-generator__preset-list">
                     <button class="shadow-generator__preset" type="button" data-shadow-preset="soft_card">
                       Soft Card
@@ -316,6 +324,21 @@
                     <button class="shadow-generator__preset" type="button" data-shadow-preset="dark_ui">
                       Dark UI
                     </button>
+                    <button class="shadow-generator__preset" type="button" data-shadow-preset="modal_depth">
+                      Modal Depth
+                    </button>
+                    <button class="shadow-generator__preset" type="button" data-shadow-preset="subtle_inset">
+                      Subtle Inset
+                    </button>
+                    <button class="shadow-generator__preset" type="button" data-shadow-preset="glass_card">
+                      Glass Card
+                    </button>
+                    <button class="shadow-generator__preset" type="button" data-shadow-preset="dashboard_card">
+                      Dashboard Card
+                    </button>
+                    <button class="shadow-generator__preset" type="button" data-shadow-preset="soft_input">
+                      Soft Input
+                    </button>
                     <button class="shadow-generator__preset" type="button" data-shadow-preset="neumorphic_soft">
                       Neumorphic Soft
                     </button>
@@ -324,11 +347,17 @@
 
                 <article class="shadow-generator__pro-card">
                   <h4>Generated Variations</h4>
+                  <p class="shadow-generator__pro-card-text">
+                    Generate a small set of useful directions, then apply the one that fits fastest.
+                  </p>
                   <div class="shadow-generator__variant-list" id="proShadowVariants"></div>
                 </article>
 
                 <article class="shadow-generator__pro-card">
                   <h4>Recent History</h4>
+                  <p class="shadow-generator__pro-card-text">
+                    Reapply the last shadows you tested without rebuilding them from scratch.
+                  </p>
                   <div class="shadow-generator__history-list" id="proShadowHistory"></div>
                 </article>
               </div>

@@ -3,11 +3,16 @@ import { withCopyFeedback } from "../utils/copy.js";
 import { setupToolTracking } from "../utils/analytics.js";
 
 const presets = {
-  soft_card: { x: 0, y: 18, blur: 42, spread: -14, opacity: 0.18, theme: "light" },
-  button_depth: { x: 0, y: 10, blur: 24, spread: -10, opacity: 0.22, theme: "light" },
-  floating_card: { x: 0, y: 26, blur: 50, spread: -18, opacity: 0.24, theme: "light" },
-  dark_ui: { x: 0, y: 18, blur: 36, spread: -12, opacity: 0.48, theme: "dark" },
-  neumorphic_soft: { x: 12, y: 12, blur: 24, spread: -8, opacity: 0.15, theme: "light" }
+  soft_card: { x: 0, y: 16, blur: 32, spread: -12, opacity: 0.16, theme: "light", inset: false },
+  floating_card: { x: 0, y: 26, blur: 52, spread: -18, opacity: 0.22, theme: "light", inset: false },
+  button_depth: { x: 0, y: 10, blur: 22, spread: -10, opacity: 0.24, theme: "light", inset: false },
+  dark_ui: { x: 0, y: 18, blur: 38, spread: -14, opacity: 0.48, theme: "dark", inset: false },
+  modal_depth: { x: 0, y: 30, blur: 60, spread: -22, opacity: 0.26, theme: "light", inset: false },
+  subtle_inset: { x: 0, y: 2, blur: 10, spread: 0, opacity: 0.18, theme: "light", inset: true },
+  glass_card: { x: 0, y: 18, blur: 40, spread: -20, opacity: 0.14, theme: "light", inset: false },
+  dashboard_card: { x: 0, y: 12, blur: 28, spread: -16, opacity: 0.18, theme: "light", inset: false },
+  soft_input: { x: 0, y: 8, blur: 20, spread: -12, opacity: 0.14, theme: "light", inset: false },
+  neumorphic_soft: { x: 10, y: 10, blur: 24, spread: -10, opacity: 0.16, theme: "light", inset: false }
 };
 
 const readValues = (inputs) => ({
@@ -26,12 +31,19 @@ const setValues = (inputs, values) => {
   });
 };
 
-const toShadowValue = ({ x, y, blur, spread, opacity }) =>
-  `${x}px ${y}px ${blur}px ${spread}px rgba(15, 23, 42, ${opacity})`;
+const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
-const formatShadowCode = (format, shadowValue) => {
+const toShadowValue = ({ x, y, blur, spread, opacity, inset = false }) =>
+  `${inset ? "inset " : ""}${x}px ${y}px ${blur}px ${spread}px rgba(15, 23, 42, ${opacity})`;
+
+const formatShadowCode = (format, shadowValue, values) => {
   if (format === "scss") {
-    return `$box-shadow-pro: ${shadowValue};
+    return `$shadow-x: ${values.x}px;
+$shadow-y: ${values.y}px;
+$shadow-blur: ${values.blur}px;
+$shadow-spread: ${values.spread}px;
+$shadow-opacity: ${values.opacity};
+$box-shadow-pro: ${shadowValue};
 
 .card {
   box-shadow: $box-shadow-pro;
@@ -41,6 +53,11 @@ const formatShadowCode = (format, shadowValue) => {
   if (format === "tailwind") {
     return `boxShadow: {
   pro: "${shadowValue}"
+},
+extend: {
+  boxShadow: {
+    pro: "${shadowValue}"
+  }
 }`;
   }
 
@@ -63,18 +80,94 @@ const applyShadowToSample = (sample, shadowValue, component) => {
   sample.style.boxShadow = shadowValue;
   if (component === "button") {
     sample.style.transform = "translateY(-1px)";
+  } else if (component === "modal") {
+    sample.style.transform = "translateY(-4px)";
   } else {
     sample.style.transform = "none";
   }
 };
 
-const createVariation = (values, index) => ({
-  x: Math.max(-32, Math.min(32, values.x + index * 2)),
-  y: Math.max(6, values.y + 4 + index * 2),
-  blur: Math.max(14, values.blur + 8 + index * 2),
-  spread: Math.max(-18, values.spread - 2),
-  opacity: Math.min(0.55, Number((values.opacity + 0.03 * index).toFixed(2)))
-});
+const variationBlueprints = [
+  {
+    label: "Soft Lift",
+    getValues: (values) => ({
+      x: 0,
+      y: clamp(values.y + 4, 10, 26),
+      blur: clamp(values.blur + 12, 24, 56),
+      spread: clamp(values.spread - 4, -20, 8),
+      opacity: clamp(Number((values.opacity + 0.02).toFixed(2)), 0.12, 0.32),
+      inset: false
+    })
+  },
+  {
+    label: "Product Card",
+    getValues: (values) => ({
+      x: 0,
+      y: clamp(values.y + 8, 12, 30),
+      blur: clamp(values.blur + 20, 28, 64),
+      spread: clamp(values.spread - 10, -22, 4),
+      opacity: clamp(Number((values.opacity + 0.04).toFixed(2)), 0.14, 0.38),
+      inset: false
+    })
+  },
+  {
+    label: "Quiet Button",
+    getValues: (values) => ({
+      x: 0,
+      y: clamp(values.y - 2, 4, 14),
+      blur: clamp(values.blur - 2, 16, 28),
+      spread: clamp(values.spread - 8, -18, 0),
+      opacity: clamp(Number((values.opacity - 0.04).toFixed(2)), 0.1, 0.22),
+      inset: false
+    })
+  },
+  {
+    label: "Inset Surface",
+    getValues: (values) => ({
+      x: 0,
+      y: 2,
+      blur: clamp(values.blur - 8, 10, 24),
+      spread: clamp(values.spread + 2, -4, 6),
+      opacity: clamp(Number((values.opacity - 0.08).toFixed(2)), 0.08, 0.2),
+      inset: true
+    })
+  },
+  {
+    label: "Dark Panel",
+    getValues: (values) => ({
+      x: 0,
+      y: clamp(values.y + 6, 12, 22),
+      blur: clamp(values.blur + 8, 20, 42),
+      spread: clamp(values.spread - 6, -18, 2),
+      opacity: clamp(Number((values.opacity + 0.12).toFixed(2)), 0.28, 0.5),
+      inset: false,
+      theme: "dark"
+    })
+  },
+  {
+    label: "Modal Depth",
+    getValues: (values) => ({
+      x: 0,
+      y: clamp(values.y + 12, 18, 34),
+      blur: clamp(values.blur + 24, 34, 70),
+      spread: clamp(values.spread - 16, -26, -6),
+      opacity: clamp(Number((values.opacity + 0.06).toFixed(2)), 0.16, 0.34),
+      inset: false
+    })
+  }
+];
+
+const formatLabel = (format) => {
+  if (format === "scss") {
+    return "SCSS variables";
+  }
+
+  if (format === "tailwind") {
+    return "Tailwind config";
+  }
+
+  return "CSS";
+};
 
 export const setupBoxShadowPro = () => {
   const inputs = {
@@ -90,6 +183,7 @@ export const setupBoxShadowPro = () => {
   const generateBtn = getById("generateShadowVariantsBtn");
   const historyRoot = getById("proShadowHistory");
   const variantsRoot = getById("proShadowVariants");
+  const formatLabelElement = getById("proShadowFormatLabel");
 
   if (
     !Object.values(inputs).every(Boolean) ||
@@ -98,7 +192,8 @@ export const setupBoxShadowPro = () => {
     !copyBtn ||
     !generateBtn ||
     !historyRoot ||
-    !variantsRoot
+    !variantsRoot ||
+    !formatLabelElement
   ) {
     return;
   }
@@ -118,6 +213,7 @@ export const setupBoxShadowPro = () => {
     component: "card",
     format: "css",
     theme: "light",
+    inset: false,
     history: []
   };
 
@@ -125,6 +221,7 @@ export const setupBoxShadowPro = () => {
     samples.forEach((sample) => {
       const isActive = sample.getAttribute("data-shadow-sample") === state.component;
       sample.classList.toggle("is-active", isActive);
+      sample.closest(".shadow-generator__component")?.classList.toggle("is-active", isActive);
     });
   };
 
@@ -145,6 +242,7 @@ export const setupBoxShadowPro = () => {
       button.addEventListener("click", () => {
         setValues(inputs, entry.values);
         state.theme = entry.theme || "light";
+        state.inset = Boolean(entry.inset);
         update();
       });
       historyRoot.append(button);
@@ -157,7 +255,7 @@ export const setupBoxShadowPro = () => {
 
   const remember = (label, values) => {
     state.history = [
-      { label, values: { ...values }, theme: state.theme },
+      { label, values: { ...values }, theme: state.theme, inset: state.inset },
       ...state.history.filter((entry) => entry.label !== label)
     ].slice(0, 5);
     renderHistory();
@@ -167,29 +265,31 @@ export const setupBoxShadowPro = () => {
     variantsRoot.innerHTML = "";
     const baseValues = readValues(inputs);
 
-    Array.from({ length: 6 }, (_, index) => createVariation(baseValues, index)).forEach(
-      (variation, index) => {
+    variationBlueprints.forEach((blueprint) => {
+      const variation = blueprint.getValues(baseValues);
         const button = document.createElement("button");
         button.type = "button";
         button.className = "shadow-generator__variant";
-        button.textContent = `Variant ${index + 1}`;
+        button.textContent = blueprint.label;
         button.addEventListener("click", () => {
           setValues(inputs, variation);
-          remember(`Variant ${index + 1}`, variation);
+          state.theme = variation.theme || "light";
+          state.inset = Boolean(variation.inset);
+          remember(blueprint.label, variation);
           update();
         });
         variantsRoot.append(button);
-      }
-    );
+      });
   };
 
   const update = () => {
     const values = readValues(inputs);
-    const shadowValue = toShadowValue(values);
+    const shadowValue = toShadowValue({ ...values, inset: state.inset });
 
     preview.setAttribute("data-shadow-theme", state.theme);
     samples.forEach((sample) => applyShadowToSample(sample, shadowValue, state.component));
-    code.textContent = formatShadowCode(state.format, shadowValue);
+    code.textContent = formatShadowCode(state.format, shadowValue, values);
+    formatLabelElement.textContent = `Active format: ${formatLabel(state.format)}`;
     syncSamples();
   };
 
@@ -254,6 +354,7 @@ export const setupBoxShadowPro = () => {
 
       setValues(inputs, values);
       state.theme = values.theme || "light";
+      state.inset = Boolean(values.inset);
       remember(button.textContent.trim(), values);
       update();
       renderVariants();
