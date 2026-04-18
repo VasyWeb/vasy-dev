@@ -18,7 +18,7 @@ function stripTags(value) {
 }
 
 function toAbsoluteUrl(relativePath) {
-  return new URL(relativePath, "https://vasy.dev/").toString();
+  return new URL(relativePath, "https://vasy-dev.netlify.app/").toString();
 }
 
 function getMatch(content, pattern, label, filePath) {
@@ -42,15 +42,15 @@ function buildArticleSchema({ headline, description, canonicalUrl, imageUrl }) {
       author: {
         "@type": "Person",
         name: "Vasy",
-        url: "https://vasy.dev/"
+          url: "https://vasy-dev.netlify.app/"
       },
       publisher: {
         "@type": "Organization",
         name: "Vasy.dev",
-        url: "https://vasy.dev/",
+        url: "https://vasy-dev.netlify.app/",
         logo: {
           "@type": "ImageObject",
-          url: "https://vasy.dev/favicon.svg"
+        url: "https://vasy-dev.netlify.app/favicon.svg"
         }
       },
       mainEntityOfPage: canonicalUrl,

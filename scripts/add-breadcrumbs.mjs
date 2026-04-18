@@ -82,7 +82,7 @@ function blogArticleConfig(slug) {
 
   return {
     filePath,
-    canonicalAnchor: `<link rel="canonical" href="https://vasy.dev/blog/${slug}/" />`,
+      canonicalAnchor: `<link rel="canonical" href="https://vasy-dev.netlify.app/blog/${slug}/" />`,
     visibleAnchor: '<article class="blog-article">',
     visibleMarkup: `          <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../../index.html">Home</a>
@@ -92,9 +92,9 @@ function blogArticleConfig(slug) {
             <span aria-current="page">${title}</span>
           </nav>`,
     items: [
-      { name: "Home", url: "https://vasy.dev/" },
-      { name: "Blog", url: "https://vasy.dev/blog/" },
-      { name: title, url: `https://vasy.dev/blog/${slug}/` }
+        { name: "Home", url: "https://vasy-dev.netlify.app/" },
+        { name: "Blog", url: "https://vasy-dev.netlify.app/blog/" },
+        { name: title, url: `https://vasy-dev.netlify.app/blog/${slug}/` }
     ]
   };
 }
@@ -112,7 +112,7 @@ function toolPageConfig(slug) {
 
   return {
     filePath,
-    canonicalAnchor: `<link rel="canonical" href="https://vasy.dev/tools/${slug}/" />`,
+      canonicalAnchor: `<link rel="canonical" href="https://vasy-dev.netlify.app/tools/${slug}/" />`,
     visibleAnchor: "<h1>",
     visibleMarkup: `            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../../index.html">Home</a>
@@ -122,15 +122,15 @@ function toolPageConfig(slug) {
               <span aria-current="page">${title}</span>
             </nav>`,
     items: [
-      { name: "Home", url: "https://vasy.dev/" },
-      { name: "Tools", url: "https://vasy.dev/tools/" },
-      { name: title, url: `https://vasy.dev/tools/${slug}/` }
+        { name: "Home", url: "https://vasy-dev.netlify.app/" },
+        { name: "Tools", url: "https://vasy-dev.netlify.app/tools/" },
+        { name: title, url: `https://vasy-dev.netlify.app/tools/${slug}/` }
     ]
   };
 }
 
 updateFile(path.join(rootDir, "blog", "index.html"), {
-  canonicalAnchor: '<link rel="canonical" href="https://vasy.dev/blog/" />',
+      canonicalAnchor: '<link rel="canonical" href="https://vasy-dev.netlify.app/blog/" />',
   visibleAnchor: '<h1 id="more-articles">Blog</h1>',
   visibleMarkup: `            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../index.html">Home</a>
@@ -138,13 +138,13 @@ updateFile(path.join(rootDir, "blog", "index.html"), {
               <span aria-current="page">Blog</span>
             </nav>`,
   items: [
-    { name: "Home", url: "https://vasy.dev/" },
-    { name: "Blog", url: "https://vasy.dev/blog/" }
+        { name: "Home", url: "https://vasy-dev.netlify.app/" },
+        { name: "Blog", url: "https://vasy-dev.netlify.app/blog/" }
   ]
 });
 
 updateFile(path.join(rootDir, "tools", "index.html"), {
-  canonicalAnchor: '<link rel="canonical" href="https://vasy.dev/tools/" />',
+      canonicalAnchor: '<link rel="canonical" href="https://vasy-dev.netlify.app/tools/" />',
   visibleAnchor: "<h1>CSS Tools</h1>",
   visibleMarkup: `            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../index.html">Home</a>
@@ -152,13 +152,13 @@ updateFile(path.join(rootDir, "tools", "index.html"), {
               <span aria-current="page">Tools</span>
             </nav>`,
   items: [
-    { name: "Home", url: "https://vasy.dev/" },
-    { name: "Tools", url: "https://vasy.dev/tools/" }
+        { name: "Home", url: "https://vasy-dev.netlify.app/" },
+        { name: "Tools", url: "https://vasy-dev.netlify.app/tools/" }
   ]
 });
 
 updateFile(path.join(rootDir, "projects", "index.html"), {
-  canonicalAnchor: '<link rel="canonical" href="https://vasy.dev/projects/" />',
+      canonicalAnchor: '<link rel="canonical" href="https://vasy-dev.netlify.app/projects/" />',
   visibleAnchor: '<h1 class="projects__title">Projects</h1>',
   visibleMarkup: `            <nav class="breadcrumb" aria-label="Breadcrumb">
               <a href="../index.html">Home</a>
@@ -166,8 +166,8 @@ updateFile(path.join(rootDir, "projects", "index.html"), {
               <span aria-current="page">Projects</span>
             </nav>`,
   items: [
-    { name: "Home", url: "https://vasy.dev/" },
-    { name: "Projects", url: "https://vasy.dev/projects/" }
+        { name: "Home", url: "https://vasy-dev.netlify.app/" },
+        { name: "Projects", url: "https://vasy-dev.netlify.app/projects/" }
   ]
 });
 
