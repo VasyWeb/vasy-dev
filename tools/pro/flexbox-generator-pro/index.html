@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Flexbox Generator Pro adds layout templates, viewport modes, child count control and HTML plus CSS exports."
+    />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta property="og:title" content="Flexbox Generator Pro | Premium CSS Tool | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Use premium layout templates and responsive preview modes to generate more complete flexbox patterns."
+    />
+    <meta property="og:image" content="https://vasy-dev.netlify.app/images/og-preview.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vasy-dev.netlify.app/tools/pro/flexbox-generator-pro/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flexbox Generator Pro | Premium CSS Tool | Vasy.dev" />
+    <meta
+      name="twitter:description"
+      content="Premium flexbox templates, responsive previews and HTML plus CSS exports."
+    />
+    <meta name="twitter:image" content="https://vasy-dev.netlify.app/images/og-preview.webp" />
+    <title>Flexbox Generator Pro | Premium CSS Tool | Vasy.dev</title>
+    <link rel="canonical" href="https://vasy-dev.netlify.app/tools/pro/flexbox-generator-pro/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body class="page page--theme-main">
+    <header class="site-header" id="top">
+      <nav class="site-nav">
+        <div class="site-nav__container l-container">
+          <a href="/#home" class="site-nav__logo">Vasy<span>D</span>ev</a>
+          <button class="site-nav__toggle" id="siteNavToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNavList">
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+          </button>
+          <ul class="site-nav__list" id="siteNavList">
+            <li class="site-nav__item"><a class="site-nav__link" href="/tools/" aria-current="page">Tools</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/blog/">Blog</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/projects/">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <a href="/tools/">Tools</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <a href="/tools/premium/">Premium Tools</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <span aria-current="page">Flexbox Generator Pro</span>
+            </nav>
+            <h1>Flexbox Generator Pro</h1>
+            <p>Use the free align and gap controls, then move into reusable layout templates and richer exports.</p>
+            <a href="/tools/premium/" class="button button--secondary">All premium tools</a>
+          </div>
+
+          <section class="shadow-generator" aria-labelledby="flexboxGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="flexboxGenTitle" class="shadow-generator__title">Core Flexbox Controls</h2>
+            </div>
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control"><span>Display</span><input type="text" value="flex" readonly /></label>
+                <label class="shadow-generator__control"><span>Flex Direction</span><select id="flexDirection"><option value="row" selected>row</option><option value="column">column</option><option value="row-reverse">row-reverse</option><option value="column-reverse">column-reverse</option></select></label>
+                <label class="shadow-generator__control"><span>Justify Content</span><select id="flexJustifyContent"><option value="flex-start">flex-start</option><option value="center" selected>center</option><option value="flex-end">flex-end</option><option value="space-between">space-between</option><option value="space-around">space-around</option><option value="space-evenly">space-evenly</option></select></label>
+                <label class="shadow-generator__control"><span>Align Items</span><select id="flexAlignItems"><option value="stretch">stretch</option><option value="flex-start">flex-start</option><option value="center" selected>center</option><option value="flex-end">flex-end</option><option value="baseline">baseline</option></select></label>
+                <label class="shadow-generator__control"><span>Gap</span><input type="range" id="flexGap" min="0" max="60" value="20" /></label>
+              </div>
+              <div class="shadow-generator__preview-wrap">
+                <div class="shadow-generator__preview">
+                  <div id="flexPreview" class="flex-preview"><div class="flex-preview__item">1</div><div class="flex-preview__item">2</div><div class="flex-preview__item">3</div><div class="flex-preview__item">4</div></div>
+                </div>
+                <code id="flexCode" class="shadow-generator__code">display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;</code>
+                <button id="copyFlexBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+              </div>
+            </div>
+
+            <section class="pro-tool" aria-labelledby="proFlexTitle">
+              <div class="pro-tool__header">
+                <p class="pro-tool__eyebrow">Pro Flex Studio</p>
+                <h3 id="proFlexTitle">Generate reusable flex layouts for real sections and components.</h3>
+              </div>
+              <div class="pro-tool__grid">
+                <article class="pro-tool__card">
+                  <h4>Layout Templates</h4>
+                  <div class="pro-tool__chips">
+                    <button class="pro-tool__chip" type="button" data-flex-layout="navbar">Navbar</button>
+                    <button class="pro-tool__chip" type="button" data-flex-layout="hero">Centered Hero</button>
+                    <button class="pro-tool__chip" type="button" data-flex-layout="cards">Cards Row</button>
+                    <button class="pro-tool__chip" type="button" data-flex-layout="pricing">Pricing Cards</button>
+                  </div>
+                  <label class="shadow-generator__control"><span>Children</span><input type="number" id="proFlexChildren" min="2" max="6" value="3" /></label>
+                  <div class="pro-tool__tabs">
+                    <button class="pro-tool__tab" type="button" data-flex-viewport="desktop">Desktop</button>
+                    <button class="pro-tool__tab" type="button" data-flex-viewport="tablet">Tablet</button>
+                    <button class="pro-tool__tab" type="button" data-flex-viewport="mobile">Mobile</button>
+                  </div>
+                </article>
+
+                <article class="pro-tool__card">
+                  <h4>Responsive Preview</h4>
+                  <div class="pro-tool__preview">
+                    <div class="pro-tool__flex-preview" id="proFlexPreview"></div>
+                  </div>
+                </article>
+
+                <article class="pro-tool__card">
+                  <h4>Export</h4>
+                  <div class="pro-tool__tabs">
+                    <button class="pro-tool__tab" type="button" data-flex-export="css">CSS</button>
+                    <button class="pro-tool__tab" type="button" data-flex-export="html">HTML + CSS</button>
+                  </div>
+                  <code id="proFlexCode" class="pro-tool__code">display: flex;</code>
+                  <button id="copyProFlexBtn" class="button" type="button">Copy Pro Code</button>
+                </article>
+              </div>
+            </section>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-slice section-slice--b" id="footer">
+      <div class="footer__container l-container">
+        <div class="footer__brand">
+          <a href="/#home" class="footer__logo">Vasy<span>D</span>ev</a>
+          <p class="footer__text">Projects and developer tools created by Vasy.dev</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/pro/flexbox-pro.js"></script>
+  </body>
+</html>

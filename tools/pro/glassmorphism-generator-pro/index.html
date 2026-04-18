@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5YW4LB5N1T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-5YW4LB5N1T");
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Glassmorphism Generator Pro adds preset packs, background switching, component previews and export-ready premium glass CSS."
+    />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+    <meta property="og:title" content="Glassmorphism Generator Pro | Premium CSS Tool | Vasy.dev" />
+    <meta
+      property="og:description"
+      content="Preview glass UI cards on multiple backgrounds and export premium-ready backdrop-filter setups."
+    />
+    <meta property="og:image" content="https://vasy-dev.netlify.app/images/og-preview.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vasy-dev.netlify.app/tools/pro/glassmorphism-generator-pro/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Glassmorphism Generator Pro | Premium CSS Tool | Vasy.dev" />
+    <meta
+      name="twitter:description"
+      content="Premium glass presets, component previews and background switchers for polished UI work."
+    />
+    <meta name="twitter:image" content="https://vasy-dev.netlify.app/images/og-preview.webp" />
+    <title>Glassmorphism Generator Pro | Premium CSS Tool | Vasy.dev</title>
+    <link rel="canonical" href="https://vasy-dev.netlify.app/tools/pro/glassmorphism-generator-pro/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body class="page page--theme-main">
+    <header class="site-header" id="top">
+      <nav class="site-nav">
+        <div class="site-nav__container l-container">
+          <a href="/#home" class="site-nav__logo">Vasy<span>D</span>ev</a>
+          <button class="site-nav__toggle" id="siteNavToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNavList">
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+            <span class="site-nav__toggle-line" aria-hidden="true"></span>
+          </button>
+          <ul class="site-nav__list" id="siteNavList">
+            <li class="site-nav__item"><a class="site-nav__link" href="/tools/" aria-current="page">Tools</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/blog/">Blog</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="/projects/">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section class="tools section-block section-slice section-slice--a">
+        <div class="l-container tools__container">
+          <div class="tools__header">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="/">Home</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <a href="/tools/">Tools</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <a href="/tools/premium/">Premium Tools</a>
+              <span class="breadcrumb__separator" aria-hidden="true">&gt;</span>
+              <span aria-current="page">Glassmorphism Generator Pro</span>
+            </nav>
+            <h1>Glassmorphism Generator Pro</h1>
+            <p>Keep the core free blur and transparency controls, then layer in backgrounds, component tabs and preset packs.</p>
+            <a href="/tools/premium/" class="button button--secondary">All premium tools</a>
+          </div>
+
+          <section class="shadow-generator" aria-labelledby="glassGenTitle">
+            <div class="shadow-generator__header">
+              <h2 id="glassGenTitle" class="shadow-generator__title">Core Glass Controls</h2>
+            </div>
+            <div class="shadow-generator__layout">
+              <div class="shadow-generator__controls">
+                <label class="shadow-generator__control"><span>Blur</span><input type="range" id="glassBlur" min="0" max="30" value="12" /></label>
+                <label class="shadow-generator__control"><span>Background Opacity</span><input type="range" id="glassBgOpacity" min="0" max="1" step="0.01" value="0.2" /></label>
+                <label class="shadow-generator__control"><span>Border Radius</span><input type="range" id="glassRadius" min="0" max="40" value="12" /></label>
+                <label class="shadow-generator__control"><span>Border Transparency</span><input type="range" id="glassBorderOpacity" min="0" max="1" step="0.01" value="0.3" /></label>
+              </div>
+              <div class="shadow-generator__preview-wrap">
+                <div class="shadow-generator__preview">
+                  <div id="glassPreview" class="transform-preview">Glass UI</div>
+                </div>
+                <code id="glassCode" class="shadow-generator__code">backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 12px;</code>
+                <button id="copyGlassBtn" class="button shadow-generator__copy" type="button">Copy CSS</button>
+              </div>
+            </div>
+
+            <section class="pro-tool" aria-labelledby="proGlassTitle">
+              <div class="pro-tool__header">
+                <p class="pro-tool__eyebrow">Pro Glass Studio</p>
+                <h3 id="proGlassTitle">Preview realistic glass UI on real backgrounds.</h3>
+              </div>
+
+              <div class="pro-tool__grid">
+                <article class="pro-tool__card">
+                  <h4>Preset Packs</h4>
+                  <div class="pro-tool__chips">
+                    <button class="pro-tool__chip" type="button" data-glass-preset="glass_card">Glass Card</button>
+                    <button class="pro-tool__chip" type="button" data-glass-preset="navbar_glass">Navbar Glass</button>
+                    <button class="pro-tool__chip" type="button" data-glass-preset="modal_glass">Modal Glass</button>
+                    <button class="pro-tool__chip" type="button" data-glass-preset="dark_glass">Dark Glass</button>
+                    <button class="pro-tool__chip" type="button" data-glass-preset="colorful_glass">Colorful Glass</button>
+                  </div>
+                  <label class="shadow-generator__control">
+                    <span>Noise overlay</span>
+                    <input id="proGlassNoise" type="checkbox" />
+                  </label>
+                </article>
+
+                <article class="pro-tool__card">
+                  <h4>Background + Component</h4>
+                  <div class="pro-tool__tabs">
+                    <button class="pro-tool__tab" type="button" data-glass-theme="light">Light</button>
+                    <button class="pro-tool__tab" type="button" data-glass-theme="dark">Dark</button>
+                    <button class="pro-tool__tab" type="button" data-glass-theme="gradient">Gradient</button>
+                    <button class="pro-tool__tab" type="button" data-glass-theme="image">Image</button>
+                  </div>
+                  <div class="pro-tool__tabs">
+                    <button class="pro-tool__tab" type="button" data-glass-component="card">Card</button>
+                    <button class="pro-tool__tab" type="button" data-glass-component="button">Button</button>
+                    <button class="pro-tool__tab" type="button" data-glass-component="modal">Modal</button>
+                  </div>
+                  <div class="pro-tool__preview" id="proGlassPreview">
+                    <div class="pro-tool__sample" data-glass-sample="card">
+                      <article class="pro-tool__demo-card"><strong>Glass Card</strong><p class="pro-tool__demo-muted">Frosted surface for pricing, widgets and dashboards.</p></article>
+                    </div>
+                    <div class="pro-tool__sample" data-glass-sample="button">
+                      <button class="pro-tool__demo-button">Glass CTA</button>
+                    </div>
+                    <div class="pro-tool__sample" data-glass-sample="modal">
+                      <article class="pro-tool__demo-panel"><strong>Invite team</strong><p class="pro-tool__demo-muted">A modal shell with backdrop blur and subtle border.</p></article>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="pro-tool__card">
+                  <h4>Premium Export</h4>
+                  <code id="proGlassCode" class="pro-tool__code">backdrop-filter: blur(18px);</code>
+                  <button id="copyProGlassBtn" class="button" type="button">Copy Pro Code</button>
+                </article>
+              </div>
+            </section>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-slice section-slice--b" id="footer">
+      <div class="footer__container l-container">
+        <div class="footer__brand">
+          <a href="/#home" class="footer__logo">Vasy<span>D</span>ev</a>
+          <p class="footer__text">Projects and developer tools created by Vasy.dev</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/pro/glass-pro.js"></script>
+  </body>
+</html>
