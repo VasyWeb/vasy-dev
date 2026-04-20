@@ -14,16 +14,43 @@ const createPaywall = () => {
     <div class="pro-paywall__container l-container">
       <div class="pro-paywall__card">
         <p class="pro-paywall__eyebrow">Premium Access</p>
-        <h1 id="proPaywallTitle">Unlock Pro Tools</h1>
+        <h1 id="proPaywallTitle">Stop wasting time tweaking CSS by hand.</h1>
         <p class="pro-paywall__lead">
-          Get presets, better exports, real UI previews and faster workflows for the premium CSS tools.
+          Unlock Pro Tools for presets, better exports, real UI previews and faster frontend workflows.
         </p>
         <div class="pro-paywall__actions">
           <a class="button service-card__action--pro" href="${GUMROAD_URL}" target="_blank" rel="noopener noreferrer" data-cta>
-            Buy Access
+            Buy Pro Access
           </a>
         </div>
+        <ul class="pro-paywall__proof-list" aria-label="Premium access benefits">
+          <li>Instant access after purchase</li>
+          <li>One-time payment</li>
+          <li>No subscription</li>
+          <li>All current Pro tools included</li>
+        </ul>
+        <div class="pro-paywall__preview" aria-label="Locked premium preview">
+          <div class="pro-paywall__preview-copy">
+            <p class="pro-paywall__eyebrow">Premium Preview</p>
+            <h2>See the workflow before you unlock it.</h2>
+            <p>
+              Pro tools are built for reusable presets, export-ready code and real UI components.
+            </p>
+          </div>
+          <div class="pro-paywall__chips">
+            <span>Shadow presets</span>
+            <span>SCSS/Tailwind exports</span>
+            <span>Real UI previews</span>
+          </div>
+          <div class="pro-paywall__locked-demo">
+            <article>
+              <strong>Premium preview locked</strong>
+              <span>Unlock to use the full Pro workflow.</span>
+            </article>
+          </div>
+        </div>
         <form class="pro-paywall__form" id="proPaywallForm">
+          <p class="pro-paywall__helper">Enter your Gumroad access code below after purchase.</p>
           <label class="pro-paywall__label" for="proAccessCode">
             Access code
           </label>
