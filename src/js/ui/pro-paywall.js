@@ -1,6 +1,6 @@
 const ACCESS_STORAGE_KEY = "vasy_pro_access";
-const PRO_ACCESS_CODE = "REPLACE_WITH_MY_ACCESS_CODE";
-const GUMROAD_URL = "REPLACE_WITH_MY_GUMROAD_LINK";
+const PRO_ACCESS_CODE = "VASY-PRO-2026";
+const GUMROAD_URL = "https://milanjakub.gumroad.com/l/vasy-pro-tools";
 
 const isProPage = () => window.location.pathname.startsWith("/tools/pro/");
 
