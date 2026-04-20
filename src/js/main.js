@@ -1,6 +1,7 @@
 import { setupNav } from "./ui/nav.js";
 import { setupProjectCards } from "./ui/cards.js";
 import { setupHeroCarousel } from "./ui/hero-carousel.js";
+import { setupProPaywall } from "./ui/pro-paywall.js";
 import { setupAnalytics } from "./utils/analytics.js";
 import { setupShadowGenerator } from "./tools/shadow.js";
 import { setupRadiusGenerator } from "./tools/radius.js";
@@ -20,6 +21,7 @@ import { setupPxToEmConverter } from "./tools/px-to-em.js";
 import { setupHexToRgbConverter } from "./tools/hex-to-rgb.js";
 
 setupAnalytics();
+setupProPaywall();
 setupNav();
 setupHeroCarousel();
 setupProjectCards();
