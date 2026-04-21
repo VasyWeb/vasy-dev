@@ -260,7 +260,30 @@
                   class="button shadow-generator__copy"
                   type="button"
                 >
-                  Copy CSS
+                  Copy Ready-to-use CSS
+                </button>
+                <p
+                  id="shadowFeedback"
+                  class="shadow-generator__feedback"
+                  aria-live="polite"
+                ></p>
+              </div>
+            </div>
+
+            <div class="shadow-generator__free-presets" aria-label="Quick shadow presets">
+              <p class="shadow-generator__free-presets-title">Quick presets</p>
+              <div class="shadow-generator__preset-list">
+                <button class="shadow-generator__preset" type="button" data-shadow-free-preset="soft_card">
+                  Soft Card
+                </button>
+                <button class="shadow-generator__preset" type="button" data-shadow-free-preset="clean_button">
+                  Clean Button
+                </button>
+                <button class="shadow-generator__preset" type="button" data-shadow-free-preset="floating_panel">
+                  Floating Panel
+                </button>
+                <button class="shadow-generator__preset" type="button" data-shadow-free-preset="subtle_depth">
+                  Subtle Depth
                 </button>
               </div>
             </div>
@@ -271,6 +294,20 @@
               </p>
               <a href="/tools/pro/box-shadow-generator-pro/" class="button button--secondary">
                 Open Pro Tool
+              </a>
+            </aside>
+
+            <aside
+              id="shadowProPrompt"
+              class="shadow-generator__upgrade shadow-generator__upgrade--prompt"
+              aria-label="Try the premium box shadow generator"
+              hidden
+            >
+              <p class="shadow-generator__upgrade-text">
+                Want better presets, real UI previews and advanced exports?
+              </p>
+              <a href="/tools/pro/box-shadow-generator-pro/" class="button button--secondary">
+                Try Pro -&gt;
               </a>
             </aside>
           </section>

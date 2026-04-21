@@ -710,6 +710,27 @@
   color: var(--color-bg);
 }
 
+.shadow-generator__feedback {
+  min-height: 1.35rem;
+  margin: -0.25rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #4338ca;
+}
+
+.shadow-generator__free-presets {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.shadow-generator__free-presets-title {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--color-bg);
+}
+
 .shadow-generator__toolbar,
 .shadow-generator__actions,
 .shadow-generator__tab-group,
@@ -1013,6 +1034,18 @@
   gap: 0.85rem;
   align-items: center;
   justify-content: space-between;
+}
+
+.shadow-generator__upgrade[hidden] {
+  display: none;
+}
+
+.shadow-generator__upgrade--prompt {
+  margin-top: 0.75rem;
+  border-color: color-mix(in srgb, #2563eb 28%, var(--color-border));
+  background:
+    linear-gradient(160deg, rgba(37, 99, 235, 0.1), rgba(79, 70, 229, 0.07)),
+    color-mix(in srgb, var(--color-surface) 88%, white);
 }
 
 .shadow-generator__upgrade-text {
