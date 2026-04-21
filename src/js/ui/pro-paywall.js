@@ -6,7 +6,59 @@ const isProPage = () => window.location.pathname.startsWith("/tools/pro/");
 
 const hasProAccess = () => localStorage.getItem(ACCESS_STORAGE_KEY) === "unlocked";
 
+const toToken = (value) =>
+  String(value ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "") || "unknown";
+
+const getProToolName = () => {
+  const match = window.location.pathname.match(/^\/tools\/pro\/([^/]+)\/?/i);
+  return match ? toToken(match[1]) : "unknown_pro_tool";
+};
+
+const getNudgeCopy = (toolName) => {
+  if (toolName.includes("gradient")) {
+    return {
+      title: "Still tweaking gradients?",
+      text: "Unlock Pro -> 2 seconds instead of 10 minutes."
+    };
+  }
+
+  if (toolName.includes("shadow")) {
+    return {
+      title: "Still tweaking shadows?",
+      text: "Unlock Pro -> 2 seconds instead of 10 minutes."
+    };
+  }
+
+  if (toolName.includes("grid") || toolName.includes("flexbox")) {
+    return {
+      title: "Still rebuilding layouts?",
+      text: "Unlock Pro -> use presets instead of starting from scratch."
+    };
+  }
+
+  return {
+    title: "Still tweaking CSS?",
+    text: "Unlock Pro -> faster workflows with better presets and exports."
+  };
+};
+
+const trackBuyClick = (toolName) => {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  window.gtag("event", "buy_click", {
+    tool: toolName
+  });
+};
+
 const createPaywall = () => {
+  const toolName = getProToolName();
+  const nudge = getNudgeCopy(toolName);
   const section = document.createElement("section");
   section.className = "pro-paywall section-block section-slice section-slice--a";
   section.setAttribute("aria-labelledby", "proPaywallTitle");
@@ -19,10 +71,11 @@ const createPaywall = () => {
           Unlock Pro Tools for presets, better exports, real UI previews and faster frontend workflows.
         </p>
         <div class="pro-paywall__actions">
-          <a class="button service-card__action--pro" href="${GUMROAD_URL}" target="_blank" rel="noopener noreferrer" data-cta>
+          <a class="button service-card__action--pro" href="${GUMROAD_URL}" target="_blank" rel="noopener noreferrer" data-cta data-buy-access data-tool-name="${toolName}">
             Buy Pro Access
           </a>
         </div>
+        <p class="pro-paywall__trust-line">Instant access &bull; One-time payment &bull; No subscription</p>
         <ul class="pro-paywall__proof-list" aria-label="Premium access benefits">
           <li>Instant access after purchase</li>
           <li>One-time payment</li>
@@ -48,6 +101,10 @@ const createPaywall = () => {
               <span>Unlock to use the full Pro workflow.</span>
             </article>
           </div>
+        </div>
+        <div class="pro-paywall__nudge" id="proPaywallNudge" hidden>
+          <strong>${nudge.title}</strong>
+          <span>${nudge.text}</span>
         </div>
         <form class="pro-paywall__form" id="proPaywallForm">
           <p class="pro-paywall__helper">Enter your Gumroad access code below after purchase.</p>
@@ -84,6 +141,18 @@ export const setupProPaywall = () => {
   const form = paywall.querySelector("#proPaywallForm");
   const input = paywall.querySelector("#proAccessCode");
   const message = paywall.querySelector("#proPaywallMessage");
+  const buyButton = paywall.querySelector("[data-buy-access]");
+  const nudge = paywall.querySelector("#proPaywallNudge");
+
+  buyButton?.addEventListener("click", () => {
+    trackBuyClick(buyButton.getAttribute("data-tool-name") || getProToolName());
+  });
+
+  window.setTimeout(() => {
+    if (!hasProAccess() && nudge) {
+      nudge.hidden = false;
+    }
+  }, 25000);
 
   form?.addEventListener("submit", (event) => {
     event.preventDefault();
