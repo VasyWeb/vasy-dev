@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Product UI Assets Preview</title>
+    <link rel="stylesheet" href="assets.css" />
+    <style>
+      body {
+        margin: 0;
+        background: #f5f7fb;
+        color: #111827;
+        font-family:
+          Inter,
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+      }
+
+      .preview-shell {
+        width: min(100% - 2rem, 1180px);
+        margin-inline: auto;
+        padding: 3rem 0;
+      }
+
+      .preview-header {
+        display: grid;
+        gap: 0.65rem;
+        margin-bottom: 2rem;
+      }
+
+      .preview-header h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 1;
+      }
+
+      .preview-header p {
+        max-width: 64ch;
+        margin: 0;
+        color: #64748b;
+        line-height: 1.7;
+      }
+
+      .preview-section {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.25rem;
+        padding: 1.25rem;
+        border: 1px solid rgba(15, 23, 42, 0.1);
+        border-radius: 1.25rem;
+        background: #fff;
+        box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.06);
+      }
+
+      .preview-section h2 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      .preview-stage {
+        border-radius: 1rem;
+        overflow: hidden;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        background: #f8fafc;
+      }
+
+      .preview-stage--center {
+        min-height: 16rem;
+        display: grid;
+        place-items: center;
+      }
+
+      .preview-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      @media (max-width: 760px) {
+        .preview-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="preview-shell">
+      <header class="preview-header">
+        <h1>Digital Product UI Assets Preview</h1>
+        <p>
+          Local preview for the UI assets collected on the dev branch. This page
+          is not linked from the public site and loads <code>assets.css</code>
+          directly, so you can inspect the components without running the main
+          site build.
+        </p>
+      </header>
+
+      <section class="preview-section">
+        <h2>Asset 001: Rounded Hover Lift Button</h2>
+        <div class="preview-stage preview-stage--center">
+          <div class="ui-button-lift-demo">
+            <button class="ui-button-lift" type="button">Submit</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="preview-section">
+        <h2>Asset 002: Seven Box Shadow Hover Effects</h2>
+        <div class="preview-stage">
+          <div class="buttons">
+            <h1>Simple hover effects with <code>box-shadow</code></h1>
+            <button class="fill">Fill In</button>
+            <button class="pulse">Pulse</button>
+            <button class="close">Close</button>
+            <button class="raise">Raise</button>
+            <button class="up">Fill Up</button>
+            <button class="slide">Slide</button>
+            <button class="offset">Offset</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="preview-section">
+        <h2>Asset 003: Gradient Background Hover Buttons</h2>
+        <div class="preview-stage">
+          <div class="gradient-button-container">
+            <a href="#" class="gradient-btn gradient-btn-1">Hover me</a>
+            <a href="#" class="gradient-btn gradient-btn-2">Hover me</a>
+            <a href="#" class="gradient-btn gradient-btn-3">Hover me</a>
+            <a href="#" class="gradient-btn gradient-btn-4">Hover me</a>
+            <a href="#" class="gradient-btn gradient-btn-5">Hover me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="preview-section">
+        <h2>Asset 004: Eleven Animated Gradient Hover Buttons</h2>
+        <div class="preview-stage">
+          <div class="animated-gradient-buttons">
+            <button class="animated-gradient-btn animated-gradient-btn-1">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-2">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-3">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-4">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-5">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-6">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-7">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-8">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-9">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-10">
+              Button
+            </button>
+            <button class="animated-gradient-btn animated-gradient-btn-11">
+              Button
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="preview-section">
+        <h2>Asset 005: Premium Pill CTA Button</h2>
+        <div class="preview-stage preview-stage--center">
+          <a href="#" class="ui-premium-pill">
+            <span class="ui-premium-pill__label">Get Started</span>
+            <span class="ui-premium-pill__icon" aria-hidden="true">-&gt;</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="preview-section">
+        <h2>Asset 006: Premium Reveal Product Card</h2>
+        <div class="preview-stage">
+          <div class="preview-grid">
+            <article class="ui-reveal-product-card">
+              <div
+                class="ui-reveal-product-card__shine"
+                aria-hidden="true"
+              ></div>
+              <div class="ui-reveal-product-card__content">
+                <span class="ui-reveal-product-card__eyebrow"
+                  >Premium Asset</span
+                >
+                <h3>Modern UI Card</h3>
+                <p>
+                  Reusable layout for products, tools and digital downloads.
+                </p>
+              </div>
+              <a href="#" class="ui-reveal-product-card__bar">
+                <span>View Asset</span>
+                <span aria-hidden="true">-&gt;</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
